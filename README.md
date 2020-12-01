@@ -1,5 +1,13 @@
 # risloo-samples
+## Samples list
+### MBTI short form `MBTI9A`
+### MBTI long form `MBTI93`
+### Raven Standard `MBTI9A`
+### Raven Advanced `MBTI93`
+### Raven Colered `MBTI9Q`
 
+## Usage
+`$serial.py [-type $type -data $data] [-u run unittest]`
 
 For running test, You must run `MBTI9A.py` [60 questions]  by the following options:
 1. `MBTI9A.py -id [json file address (an absolute address not relative) in the local system or an url address or raw json data]  -it [type of your input ; for example : 'raw', 'local' , 'remote']`.
