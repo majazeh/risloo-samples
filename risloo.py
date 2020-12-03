@@ -15,8 +15,9 @@ class risloo():
         self.scale.scoring()
 
     def export(self):
-        sys.stdout.write(json.dumps(self.scale.score.toDict()) + "\n")
+        print(json.dumps(self.scale.score.toDict()), flush=True)
         
 if (__name__ == '__main__'):
     rsl = risloo(**unilities.get_args())
+    sys.stdout.flush()
     rsl.export()

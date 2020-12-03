@@ -5,6 +5,11 @@ class Data:
     def __init__(self, data, type = 'raw'):
         self.__data = loader(data, type).load()
         self.score = Score()
+        prerequisites = self.__data['prerequisites']
+        self.__prerequisites = {}
+        for prerequisite in prerequisites:
+            self.__prerequisites[prerequisite.get('label')] = prerequisite
+
     
     def scoring(self):
         for method in self.scores:
@@ -13,3 +18,10 @@ class Data:
     
     def items(self):
         return enumerate(self.__data['items'])
+    
+    def prerequisites(self):
+        return self.__prerequisites
+    
+    def prerequisite(self, label, key = None):
+        result = self.__prerequisites.get(label)
+        return result.get(key) if key != None else result
