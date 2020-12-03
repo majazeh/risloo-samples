@@ -6,9 +6,12 @@ class MBTI9A(Data):
     def scoring_raw(self, score):
         score.set(dictionary.factors_name, 0)
         for i, item in self.items():
-            answer = int(item.get('user_answered'))
-            factor = dictionary.factors[answer][i + 1]
-            score.increase(factor) if factor else None
+            try:
+                answer = int(item.get('user_answered'))
+                factor = dictionary.factors[answer][i + 1]
+                score.increase(factor) if factor else None
+            except:
+                pass
     
     def scoring_report(self, score):
         report = ''
