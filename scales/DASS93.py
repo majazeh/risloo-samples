@@ -1,12 +1,10 @@
 from Data import Data
-import scales.dictionary.DASS9Q as dictionary
+import scales.dictionary.DASS93 as dictionary
 
-class DASS9Q(Data):
-    scores = {'raw':None , 'report':None}
+class DASS93(Data):
+    scores = {'raw':None , 'report':None }
  
-    def scoring_raw(self, score):      
-      
-        
+    def scoring_raw(self, score):
         score.set(dictionary.factors_name,0)
         
         for i, item in self.items():
@@ -18,18 +16,15 @@ class DASS9Q(Data):
                 pass
     
     def scoring_report(self, score):
-        
         for factor in dictionary.factors_name:
             
             interval_dict = dictionary.factors_interval[factor]
-            factor_value = score.get(factor)
+            factor_value = 2 * score.get(factor)
 
             intensity = self.get_intensity(factor_value ,interval_dict)
             score.set(factor + '_intensity' , intensity)
 
-    
     def get_intensity(self, factor_value ,interval_dict):
-        
         intervals = list(interval_dict.keys())
         
         for interval in intervals:
@@ -39,14 +34,3 @@ class DASS9Q(Data):
 
             else:
                 return interval_dict[interval]
-
-
-
-
-    
-       
-    
-        
-        
-
-    

@@ -5,10 +5,7 @@ class DASS9A(Data):
     scores = {'raw':None , 'report':None }
  
     def scoring_raw(self, score):      
-      
-        
         score.set(dictionary.factors_name,0)
-        
         for i, item in self.items():
             try:
                 answer = int(item.get('user_answered'))
@@ -18,19 +15,15 @@ class DASS9A(Data):
                 pass
     
     def scoring_report(self, score):
-        
         for factor in dictionary.factors_name:
-            
             interval_dict = dictionary.factors_interval[factor]
-            factor_value = 2 * score.get(factor)
+            factor_value = score.get(factor)
 
             intensity = self.get_intensity(factor_value ,interval_dict)
             score.set(factor + '_intensity' , intensity)
 
     def get_intensity(self, factor_value ,interval_dict):
-        
         intervals = list(interval_dict.keys())
-        
         for interval in intervals:
             if len(interval) == 2:
                 if interval[0] <= factor_value <= interval[1]:
@@ -38,21 +31,3 @@ class DASS9A(Data):
 
             else:
                 return interval_dict[interval]
-
-
-
-
-            
-
-        
-        
-
-
-    
-
-       
-    
-        
-        
-
-    
