@@ -6,6 +6,7 @@ class MBTI93(MBTI9A):
     def scoring_raw(self, score):
         score.set(dictionary.factors_name, 0)
         for i, item in self.items():
+            if(item.get('user_answered') == None): continue
             answer = int(item.get('user_answered'))
             try:
                 factor = dictionary.factors[answer][i + 1]
