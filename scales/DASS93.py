@@ -1,11 +1,12 @@
 from Data import Data
 import scales.dictionary.DASS93 as dictionary
+import scales.dictionary.DASS as g_dictionary
 
 class DASS93(Data):
     scores = {'raw':None , 'report':None }
  
     def scoring_raw(self, score):
-        score.set(dictionary.factors_name,0)
+        score.set(g_dictionary.factors_name,0)
         
         for i, item in self.items():
             try:
@@ -16,9 +17,9 @@ class DASS93(Data):
                 pass
     
     def scoring_report(self, score):
-        for factor in dictionary.factors_name:
+        for factor in g_dictionary.factors_name:
             
-            interval_dict = dictionary.factors_interval[factor]
+            interval_dict = g_dictionary.factors_interval[factor]
             factor_value = 2 * score.get(factor)
 
             intensity = self.get_intensity(factor_value ,interval_dict)
