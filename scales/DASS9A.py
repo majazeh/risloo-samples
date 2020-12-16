@@ -3,7 +3,7 @@ import scales.dictionary.DASS9A as dictionary
 import scales.dictionary.DASS as g_dictionary
 
 class DASS9A(Data):
-    scores = {'raw':None , 'report':None }
+    scores = {'raw':None , 'report':'intensity' }
  
     def scoring_raw(self, score):      
         score.set(g_dictionary.factors_name,0)
@@ -18,10 +18,10 @@ class DASS9A(Data):
     def scoring_report(self, score):
         for factor in g_dictionary.factors_name:
             interval_dict = g_dictionary.factors_interval[factor]
-            factor_value = score.get(factor)
+            factor_value = self.score.get(factor)
 
             intensity = self.get_intensity(factor_value ,interval_dict)
-            score.set(factor + '_intensity' , intensity)
+            score.set(factor , intensity)
 
     def get_intensity(self, factor_value ,interval_dict):
         intervals = list(interval_dict.keys())
