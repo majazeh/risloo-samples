@@ -1,7 +1,7 @@
 from Data import Data
-import scales.dictionary.RAVEN9Q as dictionary
+import scales.dictionary.Raven9Q as dictionary
 
-class RAVEN9Q(Data):
+class Raven9Q(Data):
     scores = {'raw' :  None , 'percentile_rank':'percentile_rank','iq' : 'iq'  }# 
     
     def scoring_raw(self, score):
@@ -15,7 +15,6 @@ class RAVEN9Q(Data):
     def scoring_iq(self, score):      
         
         score.set(dictionary.factors_name_iq,0)
-        print(score.get('england'))
         self.grade_ravan_rahnema_iq(score)
         self.grade_irani_iq(score )
     
@@ -26,7 +25,7 @@ class RAVEN9Q(Data):
 
         score.set(dictionary.factors_name_percentile,0)
         raw_score = self.score.get('raw') 
-        age = int(self.prequesties()[1]['user_answered'])
+        age = int(self.prerequisite('age').get('user_answered'))
         
         self.grade_ravan_rahnema_percentile(score , raw_score , age )
         self.grade_england_percentile(score , raw_score , age )
@@ -51,7 +50,7 @@ class RAVEN9Q(Data):
     def grade_irani_iq(self, score):
 
         raw_score = self.score.get('raw')
-        age = int(self.prequesties()[1]['user_answered'])
+        age = int(self.prerequisite('age').get('user_answered'))
         
 
         irani_dict = dictionary.IQ_irani 

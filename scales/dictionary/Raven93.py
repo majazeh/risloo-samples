@@ -33,7 +33,7 @@ iq = {
     }
 }
 
-percentage = {
+percentile = {
     149: '+99',
     148: '+99',
     147: '+99',
@@ -140,4 +140,4 @@ level = {
     0 : {'level' : 0, 'title' : 'عقب‌مانده'},
 }
 
-factors_name = ('pre', 'raw', 'iq', 'percentage', 'report')
+factors_name = ('pre', 'raw', 'iq', 'percentile', 'report')
