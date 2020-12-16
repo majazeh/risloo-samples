@@ -1,9 +1,8 @@
-factors_name = ('Stress' ,'Anxiety' , 'Depression')
-factors_intensity = ('Stress_instensity' ,'Anxiety_instensity' , 'Depression_instensity')
+factors_name = ('stress' ,'anxiety' , 'depression')
 
 
 factors_interval = { 
-    'Depression': { (0,9):'Normal' , (10,13):'slight' , (14,20):'medium' ,(21,27): 'drastic',  (28,):'very_drastic' },
-    'Anxiety': { (0,7):'Normal' , (8,9):'slight' , (10,14):'medium' ,(15,19): 'drastic',  (20,):'very_drastic' },
-    'Stress': { (0,14):'Normal' , (15,18):'slight' , (19,25):'medium' ,(26,33): 'drastic',  (33,):'very_drastic' } 
+    'depression': { (0,9):0 , (10,13):1 , (14,20):2 ,(21,27): 3,  (28,):4 },
+    'anxiety': { (0,7):0 , (8,9):1 , (10,14):2 ,(15,19): 3,  (20,):4 },
+    'stress': { (0,14):0 , (15,18):1 , (19,25):2 ,(26,33): 3,  (33,):4 } 
     }

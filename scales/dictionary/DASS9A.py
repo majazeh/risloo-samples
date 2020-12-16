@@ -1,6 +1,6 @@
 factors = {
-    1 :'Stress' , 2 :'Anxiety' , 3 :'Depression' , 4 :'Anxiety' , 5 :'Depression' , 6 :'Stress' ,  7:'Anxiety' , 8 :'Stress' , 9 :'Anxiety' , 10 :'Depression' , 11 :'Stress' , 12 :'Stress' , 13 :'Depression' , 14 :'Stress' , 15 :'Anxiety' , 16 :'Depression' ,
-    17 :'Depression' , 18 :'Stress' , 19 :'Anxiety' , 20 :'Anxiety' , 21 :'Depression', 
-    22 :'Stress' , 23 :'Anxiety' , 24 :'Depression' , 25 :'Anxiety' , 26 :'Depression' , 27 :'Stress' ,  28:'Anxiety' , 29 :'Stress' , 30 :'Anxiety' , 31 :'Depression' , 32 :'Stress' , 33 :'Stress' , 34 :'Depression' , 35 :'Stress' , 36 :'Anxiety' , 37 :'Depression' ,
-    38 :'Depression' , 39 :'Stress' , 40 :'Anxiety' , 41 :'Anxiety' , 42 :'Depression'
+    1 :'stress' , 2 :'anxiety' , 3 :'depression' , 4 :'anxiety' , 5 :'depression' , 6 :'stress' ,  7:'anxiety' , 8 :'stress' , 9 :'anxiety' , 10 :'depression' , 11 :'stress' , 12 :'stress' , 13 :'depression' , 14 :'stress' , 15 :'anxiety' , 16 :'depression' ,
+    17 :'depression' , 18 :'stress' , 19 :'anxiety' , 20 :'anxiety' , 21 :'depression', 
+    22 :'stress' , 23 :'anxiety' , 24 :'depression' , 25 :'anxiety' , 26 :'depression' , 27 :'stress' ,  28:'anxiety' , 29 :'stress' , 30 :'anxiety' , 31 :'depression' , 32 :'stress' , 33 :'stress' , 34 :'depression' , 35 :'stress' , 36 :'anxiety' , 37 :'depression' ,
+    38 :'depression' , 39 :'stress' , 40 :'anxiety' , 41 :'anxiety' , 42 :'depression'
 }
