@@ -8,8 +8,9 @@ class DASS9A(Data):
     def scoring_raw(self, score):      
         score.set(g_dictionary.factors_name,0)
         for i, item in self.items():
+            if(item.get('user_answered') == None): continue
             try:
-                answer = int(item.get('user_answered'))
+                answer = int(item.get('user_answered')) - 1 
                 factor = dictionary.factors[i + 1]
                 score.increase(factor , answer ) if factor else None
             except:
