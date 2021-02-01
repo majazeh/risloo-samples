@@ -2,16 +2,18 @@ import unilities
 import warnings
 import json
 import sys
+import re
 
 class risloo():
     def __init__(self, **args):
         input_type = args['input_type']
         data = args['input_data']
         args['output_type']
+        scale_name = "_" + args['scale']if re.search("^\d", args['scale']) else args['scale']
         try:
-            self.scale = getattr(__import__('scales.' + args['scale'], fromlist=[args['scale']]), args['scale'])(data, input_type)
+            self.scale = getattr(__import__('scales.' + scale_name, fromlist=[scale_name]), scale_name)(data, input_type)
         except:
-            raise Exception('scale `%s` not defined', args['scale'])
+            raise Exception('scale `%s` not defined', scale_name)
         self.scale.scoring()
 
     def export(self):
