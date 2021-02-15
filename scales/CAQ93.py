@@ -19,7 +19,7 @@ class CAQ93(Data):
             if(weight != 0):
                 score.increase('raw_' + factor[0], weight)
                 score.increase('raw_result', weight)
-                if(key >= 20):
+                if(key <= 20):
                     score.increase('hidden_anxiety', weight)
                 else:
                     score.increase('obvious_anxiety', weight)
