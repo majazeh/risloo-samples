@@ -2,24 +2,44 @@ import unilities
 import warnings
 import json
 import sys
-import re
 
 class risloo():
     def __init__(self, **args):
         input_type = args['input_type']
         data = args['input_data']
-        args['output_type']
-        scale_name = "_" + args['scale']if re.search("^\d", args['scale']) else args['scale']
+
+        dash = ''
+        if args['scale'][0].isdigit():
+            dash = '_'
+
+
+        # Scoring
         try:
-            self.scale = getattr(__import__('scales.' + scale_name, fromlist=[scale_name]), scale_name)(data, input_type)
+            self.scoring_scale = getattr(__import__('scoring.' + args['scale'] , fromlist=[args['scale']]), dash + args['scale'])(data, input_type)
+            
         except:
-            raise Exception('scale `%s` not defined', scale_name)
-        self.scale.scoring()
+            raise Exception('score scale `%s` not defined', args['scale'])
+        self.scoring_scale.scoring()
+        
+        
+        #Interpretation if it is needed
+        if args['Interpretation']:
+
+            try:
+                self.interpreting_scale = getattr(__import__('interpreting.'  + args['scale'], fromlist=[args['scale']]), dash + args['scale'])(data, input_type)
+                
+            except:
+                raise Exception('interp scale `%s` not defined', args['scale'])
+
+
+            self.interpreting_scale.interpreting()
+
 
     def export(self):
-        print(json.dumps(self.scale.score.toDict()), flush=True)
+        #sys.stdout.write(json.dumps(self.scoring_scale.score.toDict()) + "\n")
+        
+        sys.stdout.write(self.interpreting_scale.interpret.get_text() + "\n")
         
 if (__name__ == '__main__'):
     rsl = risloo(**unilities.get_args())
-    sys.stdout.flush()
     rsl.export()
