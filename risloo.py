@@ -5,6 +5,7 @@ import sys
 
 class risloo():
     def __init__(self, **args):
+        self.args = args 
         input_type = args['input_type']
         data = args['input_data']
 
@@ -36,9 +37,10 @@ class risloo():
 
 
     def export(self):
-        #sys.stdout.write(json.dumps(self.scoring_scale.score.toDict()) + "\n")
+        sys.stdout.write(json.dumps(self.scoring_scale.score.toDict()) + "\n")
         
-        sys.stdout.write(self.interpreting_scale.interpret.get_text() + "\n")
+        if self.args['Interpretation']:
+            sys.stdout.write(self.interpreting_scale.interpret.get_text() + "\n")
         
 if (__name__ == '__main__'):
     rsl = risloo(**unilities.get_args())
