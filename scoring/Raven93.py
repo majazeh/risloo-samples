@@ -1,5 +1,5 @@
 from Data import Data
-import scales.dictionary.Raven93 as dictionary
+import scoring.dictionary.Raven93 as dictionary
 
 class Raven93(Data):
     scores = {'raw' :  None, 'iq' : None, 'percentile' : None, 'level' : None}

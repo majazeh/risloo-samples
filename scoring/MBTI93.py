@@ -1,5 +1,5 @@
 from scales.MBTI9A import MBTI9A
-import scales.dictionary.MBTI93 as dictionary
+import scoring.dictionary.MBTI93 as dictionary
 
 class MBTI93(MBTI9A):
     scores = {'raw' :  None, 'report' : None}

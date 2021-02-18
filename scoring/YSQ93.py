@@ -1,5 +1,5 @@
 from Data import Data
-import scales.dictionary.YSQ93 as dictionary
+import scoring.dictionary.YSQ93 as dictionary
 
 class YSQ93(Data):
     scores = {'raw':None}

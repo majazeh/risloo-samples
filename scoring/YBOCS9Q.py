@@ -1,7 +1,7 @@
 from Data import Data
-import scales.dictionary.YBOCS9A as dictionary
+import scoring.dictionary.YBOCS9Q as dictionary
 
-class YBOCS9A(Data):
+class YBOCS9Q(Data):
     scores = {'raw':None }
  
     def scoring_raw(self, score):      

@@ -1,5 +1,5 @@
 from Data import Data
-import scales.dictionary._16PF9A as dictionary
+import scoring.dictionary._16PF9A as dictionary
 
 class _16PF9A(Data):
     scores = {'raw':None, 'norm': None}

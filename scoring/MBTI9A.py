@@ -1,5 +1,5 @@
 from Data import Data
-import scales.dictionary.MBTI9A as dictionary
+import scoring.dictionary.MBTI9A as dictionary
 
 class MBTI9A(Data):
     scores = {'raw' :  None, 'report' : None}

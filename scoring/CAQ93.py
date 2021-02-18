@@ -1,5 +1,5 @@
 from Data import Data
-import scales.dictionary.CAQ93 as dictionary
+import scoring.dictionary.CAQ93 as dictionary
 
 class CAQ93(Data):
     scores = {'raw':None, 'norm' : None}
