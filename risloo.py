@@ -16,7 +16,7 @@ class risloo():
 
         # Scoring
         try:
-            self.scoring_scale = getattr(__import__('scoring.' + args['scale'] , fromlist=[args['scale']]), dash + args['scale'])(data, input_type)
+            self.scoring_scale = getattr(__import__('scoring.' + dash + args['scale'] , fromlist=[args['scale']]), dash + args['scale'])(data, input_type)
             
         except:
             raise Exception('score scale `%s` not defined', args['scale'])
