@@ -1,0 +1,918 @@
+{
+    "title": "آزمون mmpi فرم کوتاه",
+    "version": "1",
+    "edition": "",
+    "edition_version": null,
+    "filler": "client",
+    "description": "## دستور اجرای آزمون\n\nاین پرسشنامه شامل 71 جمله است که هر یک حالت، عقیده یا تجربه‌ای را بیان می‌کند. خواهشمند است هر یک از این جمله‌ها را به دقت مطالعه کنید و موافقت یا مخالفت خود را با انتخاب گزینه بلی (برای موافقت) و گزینه خیر (برای مخالفت) مشخص نمایید.",
+    "prerequisites": [
+        {
+            "type": "text",
+            "label": "gender",
+            "text": "جنسیت",
+            "answer": {
+                "type": "select",
+                "options": [
+                    "زن",
+                    "مرد"
+                ]
+            },
+            "alias": "gender",
+            "force": true,
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "label": "age",
+            "text": "سن",
+            "answer": {
+                "type": "number"
+            },
+            "alias": "age",
+            "force": true,
+            "user_answered": "37"
+        },
+        {
+            "type": "text",
+            "label": "education",
+            "text": "تحصیلات",
+            "answer": {
+                "type": "select",
+                "options": [
+                    "ابتدایی اول",
+                    "ابتدایی دوم",
+                    "متوسطه اول",
+                    "متوسطه دوم",
+                    "دیپلم",
+                    "کارشناسی",
+                    "کارشناسی ارشد",
+                    "پزشکی عمومی",
+                    "متخصص",
+                    "دکتری تخصصی",
+                    "حوزوی مقدمات",
+                    "حوزوی سطح۱",
+                    "حوزوی سطح۲",
+                    "حوزوی سطح۳",
+                    "حوزوی سطح۴"
+                ]
+            },
+            "alias": "education",
+            "force": true,
+            "user_answered": "3"
+        }
+    ],
+    "items": [
+        {
+            "type": "text",
+            "text": "اشتهای خوبی دارم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "بیشتر صبح‌ها خوش و سرحال از خواب بیدار می‌شوم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "زندگی روزانه من پر از چیزهای جالبی است که برایم جالبند.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "موقع کار فشار و ناراحتی زیادی احساس می‌کنم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "گاهی فکرهای بدی می‌کنم که نمی‌شود درباره آن صحبت کرد.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "خیلی کم دچار یبوست می‌شوم(یا اصلاً دچار یبوست نمی‌شوم).",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "بعضی وقتها خیلی دلم می‌خواهد خانواده‌ام را ترک کنم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "گاهی اوقات آنچنان به گریه یا خنده می‌افتم که نمی‌توانم جلوی آن را بگیرم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "هرچند وقت یکبار تهوع و استفراغ ناراحتم می‌کند.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "به نظرم هیچ کَس مرا درک نمی‌کند.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "گاهی دلم می‌خواهد فحش بدهم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "هرچند شب یکبار دچار کابوس می‌شوم (خوابهای وحشتناک می‌بینم).",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "برایم مشکل است که حواسم را روی کاری متمرکز کنم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "من تجربه‌های مخصوص و عجیبی داشته‌ام.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "اگر دیگران برایم نزده بودند(پشت سرم بدگویی نکرده بودند) من بیشتر موفق بودم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "در دوران جوانی(نوجوانی) مرتکب یک سرقت جزئی شده‌ام.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "گاه گاه روزها، هفته‌ها و حتی ماهها بوده که دست و دلم به کار نرفته است.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "خوابم آشفته و ناراحت است.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "با دیگران که هستم تحمّل شنیدن حرفهای عجیب و غریب آنها را ندارم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "اکثر کسانی که مرا می‌شناسند از من خوششان می‌آید.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "ای کاش به اندازه دیگران خوشحال بودم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "اغلب مجبور بوده‌ام از کسانی اطاعت کنم که به اندازه من نمی‌فهمیدند.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "فکر می‌کنم بسیاری از مردم برای جلب کمک و همدردی دیگران بدبختی های خود را بزرگتر  جلوه می‌دهند.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "بعضی وقتها خشمگین می‌شوم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "واقعاً اعتماد به نفس ندارم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "خیلی کم از پرش و تکان ماهیچه‌هایم ناراحت می‌شوم. (یا اصلاً دچار پرش و تکان ماهیچه ها نمی‌شوم)",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "خیلی وقتها احساس می‌کنم که مرتکب کار زشت یا خطایی شده‌ام.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "بیشتر اوقات خوشحالم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "بعضی اشخاص آنقدر تحکّم می‌کنند که حتی وقتی می‌دانم که حق با آنهاست، دلم می‌خواهد برخلاف آنچه می‌خواهند رفتار کنم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "معتقدم بر ضدّ من توطئه چینی می‌شود.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "اغلب مردم حاضرند حتی با شیوه های غیر عادلانه به منافع و مزایائی برسند.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "معده‌ام خیلی ناراحتم می‌کند.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "اغلب نمی‌فهمم که چرا آنقدر بدخُلق و بدقِلق شده‌ام.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "بعضی اوقات افکارم سریعتر از آن بوده که بتوانم به زبان بیاورم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "فکر می‌کنم که زندگی خانوادگی‌ام  به خوبی زندگی اغلب کسانی است که می‌شناسم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "گاهی وقتها احساس می‌کنم که واقعاً آدم بی‌مصرفی هستم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "در چند سال اخیر بیشتر اوقات حالم خوب بوده است.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "در زندگی من مواقعی بوده که در آن دست به کارهایی زده‌ام که بعدها نمی‌دانستم چه بوده است.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "احساس می‌کنم که غالباً بی دلیل مجازات شده‌ام.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "هیچوقت حالم بهتر از حالا نبوده است.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "برایم مهم نیست که دیگران درباره من چه فکر می‌کنند.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "حافظه‌ام خوب است.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "گفتگو با غریبه‌ها برایم دشوار است.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "اغلب سر تا پا احساس ضعف می‌کنم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "خیلی کم دچار سردرد می‌شوم. (یا اصلاً دچار سردرد نمی‌شوم).",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "تا به حال اشکالی در حفظ تعادل خود در موقع راه رفتن نداشته‌ام.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "بین کسانی که می‌شناسم بعضی‌ها را دوست ندارم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "کسانی هستند که سعی دارند افکار و عقاید مرا بدُزدند",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "کاش اینقدر خجالتی نبودم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "معتقدم که گناهانم غیر قابل بخشش هستند.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "غالباً از چیزی دلواپسم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "رفقایم غالباً مورد پسند پدر و مادرم نبوده‌اند.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "کمی‌پشت سر دیگران غیبت می‌کنم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "بعضی وقتها احساس می‌کنم که خیلی آسان تصمیم می‌گیرم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "تقریباً هیچوقت تپش قلب و یا تنگی نفس نداشته‌ام.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "زود از جا در می‌روم و زود آرام می‌گیرم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "بعضی وقتها آنقدر بیقرار  بوده‌ام که نمی‌توانستم یکجا بند شوم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "والدین و اعضاء خانواده ام بیش از حد لازم از من ایراد می‌گیرند.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "برای هیچکس چندان مهم نیست که چه بر سرم می‌آید.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "سوء استفاده از کسی که خودش چنین امکانی را می‌دهد، بد نمی‌دانم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "گاهی اوقات احساس می‌کنم سرشار از انرژی هستم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "قدرت بینایی من بخوبی سالهای قبل است. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "خیلی کم متوجه شده‌ام که گوشم زنگ بزند یا وِزوِز کند.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "یکی دوبار در زندگی احساس کرده‌ام که کسی سعی دارد با هیپنوتیزم و تلقین مرا وادار به انجام کارهایی بکند. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "مواقعی بوده است که بدون علت خاص و برخلاف معمول با نشاط بوده‌ام.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "حتی وقتی هم که با دیگرانم غالباً احساس تنهایی می‌کنم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "فکر می‌کنم تقریباً هر کس برای اینکه به دردسر نیافتد، دروغ خواهد گفت.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "من حسّاس‌تر از دیگران هستم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": " مواقعی است که مغزم کُندتر از معمول کار می‌کند.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "غالباً مردم مرا نا امید می‌کنند. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "در خوش گذرانی افراط کرده‌ام.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        }
+    ]
+}

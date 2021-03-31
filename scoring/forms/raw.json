@@ -1,0 +1,81 @@
+{
+    "title" : "",
+    "version": "1",
+    "edition": "",
+    "edition_version": null,
+    "filler": "client",
+    "description": "",
+    "prerequisites" : [
+        {
+            "type" : "text",
+            "label" : "gender",
+            "text" : "جنسیت",
+            "answer" : {
+                "type" : "select",
+                "options" : [
+                    "زن",
+                    "مرد"
+                ]
+            },
+            "alias" : "gender",
+            "force" : true
+        },
+        {
+            "type": "text",
+            "label" : "age",
+            "text": "سن",
+            "answer": {
+                "type": "number"
+            },
+            "alias" : "age",
+            "force": true
+        },
+        {
+            "type": "text",
+            "label" : "education",
+            "text": "تحصیلات",
+            "answer": {
+                "type": "select",
+                "options" : [
+                    "ابتدایی اول",
+                    "ابتدایی دوم",
+                    "متوسطه اول",
+                    "متوسطه دوم",
+                    "دیپلم",
+                    "کارشناسی",
+                    "کارشناسی ارشد",
+                    "پزشکی عمومی",
+                    "متخصص",
+                    "دکتری تخصصی",
+                    "حوزوی مقدمات",
+                    "حوزوی سطح۱",
+                    "حوزوی سطح۲",
+                    "حوزوی سطح۳",
+                    "حوزوی سطح۴"
+                ]
+            },
+            "alias" : "education",
+            "force": true
+        }
+    ],
+    "items": [
+        
+        {
+            "type" : "text",
+            "text" : "از هویت خودم و کاری که برای شادکامی‌خودم انجام می‌دهم، احساس خوبی دارم.",
+            "answer" : {
+                "type" : "optional",
+                "options" : [
+                    "هیچ‌وقت",
+                    "به ندرت",
+                    "گاهی",
+                    "اغلب",
+                    "مدام",
+                    "همیشه"
+                ]
+            }
+        }
+        
+
+    ]
+}

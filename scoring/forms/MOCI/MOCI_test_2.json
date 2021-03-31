@@ -1,0 +1,426 @@
+{
+    "title": " مقیاس وسواس فکری - عملی مادزلی",
+    "version": "1",
+    "edition": "",
+    "edition_version": null,
+    "filler": "client",
+    "description": "## دستور اجرای آزمون\n\nلطفا پس از مطالعه هر عبارت، اگر محتوای آن درباره شما درست است، گزینه بلی را انتخاب کنید و اگر درباره شما نادرست است، گزینه نه را انتخاب کنید. در این پرسشنامه پاسخ‌های صحیح یا غلط و پرسش‌های گمراه‌کننده وجود ندارد. به تمام عبارات با سرعت پاسخ دهید و درباره معنای دقیق آن‌ها وقت خود را زیاد تلف نکنید. ",
+    "prerequisites": [
+        {
+            "type": "text",
+            "label": "gender",
+            "text": "جنسیت",
+            "answer": {
+                "type": "select",
+                "options": [
+                    "زن",
+                    "مرد"
+                ]
+            },
+            "alias": "gender",
+            "force": true,
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "label": "age",
+            "text": "سن",
+            "answer": {
+                "type": "number"
+            },
+            "alias": "age",
+            "force": true,
+            "user_answered": "37"
+        },
+        {
+            "type": "text",
+            "label": "education",
+            "text": "تحصیلات",
+            "answer": {
+                "type": "select",
+                "options": [
+                    "ابتدایی اول",
+                    "ابتدایی دوم",
+                    "متوسطه اول",
+                    "متوسطه دوم",
+                    "دیپلم",
+                    "کارشناسی",
+                    "کارشناسی ارشد",
+                    "پزشکی عمومی",
+                    "متخصص",
+                    "دکتری تخصصی",
+                    "حوزوی مقدمات",
+                    "حوزوی سطح۱",
+                    "حوزوی سطح۲",
+                    "حوزوی سطح۳",
+                    "حوزوی سطح۴"
+                ]
+            },
+            "alias": "education",
+            "force": true,
+            "user_answered": "10"
+        }
+    ],
+    "items": [
+        {
+            "type": "text",
+            "text": "من به دلیل احتمال آلوده شدن، از تلفن عمومی استفاده نمی‌کنم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "اغلب افکار زشتی به ذهنم خطور می‌کند و نمی‌توانم از دست آن‌ها خلاص شوم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "من در مقایسه با بیشتر مردم، درست‌کاری بیشتر بهاد می‌‌دهم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "من اغلب دیر می‌کن زیرا به نظر می‌رسد، نمی‌توانم کارها را به موقع انجام دهم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "وقتی حیوانی را لمس کنم، درباره آلوده شدن نگرانی بیهوده پیدا نمی‌کنم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "اغلب باید چندبار چیزها را بازبینی کنم (مانند اجاق گاز، شیرهای آب، درها و غیره)",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "وجدان بسیار سخت‌گیری دارم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "تقریبا در همه روزها به دلیل افکار نامطلوبی که بر خلاف اراده‌ام به ذهنم می‌آیند، دچار ناراحتی می‌شوم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "اگر به طور تصادفی به کسی برخورد کنم، دچار نگرانی بیهوه نمی‌شوم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "درباره کارهای ساده‌ای که هر روز انجام می‌دهم معمولا دچار تردید‌های جدی می‌شوم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "هیچ کدام از والدینم در دوران کودکی من سخت‌گیری نکرده‌اند. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "کارهایم معمولا به تاخیر می‌افتند، زیرا هر چیزی را باید بارها مرور کنم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "من معمولا از صابون به میزان معمولی استفاده می‌کنم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "بعضی از اعداد بسیار نحس هستند. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "من نامه‌ها را قبل از پست کردن چندبار مرور یا بازبینی نمی‌کنم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "صبح‌ها زمان زیادی را صرف لباس پوشیدن نمی‌کنم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "درباره پاکیزگی نگرانی افراطی ندارم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "یکی از مشکلات اساسی من توجه بیش از حد به جزئيات است. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "من از دستشویی‌ها بدون هیچ‌گونه تردیدی استفاده می‌‌کنم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "مشکل اصلی من باز‌بینی مکرر است. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "من درباره میکروب‌ها و بیماری‌ها نگرانی بیهوده ندارم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "من معمولا چیزها را بیش از یک‌بار بازبینی نمی‌کنم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "در انجام کارهای معمولی زیاد دقیق و سخت‌گیر نیستم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "پس از دست زدن به پول احساس نمی‌کنم که دست‌هایم کثیف شده‌اند. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "وقتی کارهای معمول انجام می‌دهم، شمارش نمی‌کنم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "صبح‌ها زمان نسبتا زیادی را صرف شستشوی خودم می‌کنم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "من از مواد ضدعفونی‌کننده زیاد استفاده نمی‌کنم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "هر روز زمان زیادی را صرف بازبینی مکرر چیزها می‌کنم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "منظم کردن لباس‌هایم در شب زیاد طول نمی‌کشد. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "حتی وقتی کاری را با دقت زیاد انجام می‌دهم، اغلب احساس می‌کنم کاملا درست نیست. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بله",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        }
+    ]
+}

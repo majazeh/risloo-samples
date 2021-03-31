@@ -1,0 +1,2233 @@
+{
+    "title" : "",
+    "status" : "draft",
+    "version": "1",
+    "edition": "",
+    "edition_version": null,
+    "filler": "client",
+    "description": "## دستور اجرای آزمون\n\nافراد ممکن است از این جمله‌ها برای توصیف پدر یا مادرشان استفاده کنند. لطفا هر جمله را به دقت بخوانید و ببینید تا چه حد توصیف درستی از پدر و مادرتان به دست می‌دهد. اگر کس دیگری جانشین پدر یا مادرتان بوده است (مثل مادربزرگ، پدربزرگ، پرستار و ...) لطفا در دایره دیگری نمره دهید .",
+    "prerequisites" : [
+        {
+            "type" : "text",
+            "label" : "gender",
+            "text" : "جنسیت",
+            "answer" : {
+                "type" : "select",
+                "options" : [
+                    "زن",
+                    "مرد"
+                ]
+            },
+            "alias" : "gender",
+            "force" : true
+        },
+        {
+            "type": "text",
+            "label" : "age",
+            "text": "سن",
+            "answer": {
+                "type": "number"
+            },
+            "alias" : "age",
+            "force": true
+        },
+        {
+            "type": "text",
+            "label" : "education",
+            "text": "تحصیلات",
+            "answer": {
+                "type": "select",
+                "options" : [
+                    "ابتدایی اول",
+                    "ابتدایی دوم",
+                    "متوسطه اول",
+                    "متوسطه دوم",
+                    "دیپلم",
+                    "کارشناسی",
+                    "کارشناسی ارشد",
+                    "پزشکی عمومی",
+                    "متخصص",
+                    "دکتری تخصصی",
+                    "حوزوی مقدمات",
+                    "حوزوی سطح۱",
+                    "حوزوی سطح۲",
+                    "حوزوی سطح۳",
+                    "حوزوی سطح۴"
+                ]
+            },
+            "alias" : "education",
+            "force": true
+        },
+        {
+            "type" : "text",
+            "text": "اگر مراقبی غیر از پدر و مادر دارید، نام ایشان را این‌جا وارد کنید، در غیر این صورت این قسمت را خالی رها کنید",
+            "answer" : {
+                "type" : "text"
+            },
+            "alias" : "third",
+            "label" : "third"
+        }
+    ],
+    "items": [
+        {
+            "type" : "text",
+            "text" : "عاشقانه مرا دوست داشت و با من مانند یک فرد خاص رفتار می‌کند.",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "زمان‌هایی را به من اختصاص می‌داد و به من توجه می‌کرد. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "مرا راهنمایی می‌کرد. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "به حرف‌های دل من گوش می‌داد، مرا درک می‌کرد و احساسات خود را با من در میان می‌گذاشت.",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "صمیمیت خود را به صورت نوازش و در آغوش گرفتن به من نشان می‌داد. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "وقتی من بچه بودم، فوت کرد یا منزل را برای همیشه ترک کرد. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "فردی غیرقابل پیش‌بینی، معتاد و دمدمی مزاج بود. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "برادران یا خواهرانم را به من ترجیح می‌داد. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "برای مدت زمان‌های طولانی مرا تنها می‌گذاشت. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "به من دروغ می‌گفت، مرا فریب می‌داد و با من دشمن بود. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "مرا مورد آزار جسمی، جنسی یا هیجانی قرار می‌داد. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "از من برای ارضای نیازهایش استفاده می‌کرد. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "به نظر می‌رسید که از آزار دادن دیگران لذت می‌برد. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "شدیدا نگران بود که مبادا به من آسیبی برسد. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "شدیدا نگران بود که مبادا من بیمار شوم. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "خیلی ترسو بود. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "از من خیلی حمایت می‌کرد. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "طوری با من رفتار می‌کرد که نمی‌توانستم به تصمیم‌ها یا قضاوت‌های خودم اعتماد داشته باشم.",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "به من اجازه نمی‌داد کارها را طبق سبک و سیاق دلخواهم انجام بدهم. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "طوری با من رفتار می‌کرد که انگار به توانایی‌های من اعتماد نداشت. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "خیلی مرا سرزنش می‌کرد.",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "طوری با من رفتار می‌کرد که احساس می‌کردم مرا دوست ندارد یا طرد شده هستم. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "طوری با من رفتار می‌کرد که انگار ایرادی داشتم. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "طوری با من رفتار می‌کرد که هر وقت مرود احترام قرار می‌گرفتم، خجالت می‌کشیدم. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "هیچ‌گاه آموزش‌های لازم برای موفقیت در تحصیل را به من نیاموخت. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "طوری با من رفتار می‌کرد که انگار من آدم احمق یا دست و پا چلفتی هستم. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "واقعا نمی‌خواست که من موفق شوم. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "همیشه می‌گفت شکست می‌خوری. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "طوری با من رفتار می کرد که انگار خواسته‌های من اهمیتی نداشت. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "بدون در نظر گرفتن خواسته‌های من، هر کاری که دلش می‌خواست انجام می‌داد. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "طوری زندگی من را کنترل می‌کرد که من فرصت انتخاب زیادی نداشتم. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "هر چیزی مطابق نظرات و خواسته‌های والدین بود. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "نیازهای خودش را قربانی منافع خانواده می‌کرد. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "قادر نبود مسئولیت‌های روزانه خودش را انجام دهد و در نتیجه کارهای او روی دوش من می‌افتاد. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "ناخرسند بود و برای حمیات و درک شدن به من متکی بود. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "چنان احساس قوی بودن را در من ایجاد کرده بود که من باید دلسوز دیگران باشم. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "انتظارات زیادی از خودش داشت. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "از من انتظار داشت که در هر شرائطی بهترین باشم و به بهترین نحو ممکن عمل کنم. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "در مورد من بسیار کمال‌گرا بود، به طوری که هر کاری باید به بهترین و کامل‌ترین نحو صورت می‌گرفت. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "این احساس را در من ایجاد کرده بود که انگار هر کاری را که من انجام می‌دهم پر از عیب و ایراد است. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "قوانین سفت و سخت و غیرقابل انعطافی برای درست و نادرست قایل بود. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "در مقابل انجام نادرست یا روند کند کارها، بسیار کم طاقت بود. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "درست انجام دادن کارها به لذت بردن از کار یا آرامش داشتن ترجیح داشت. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "در کارهای من بسیار دخالت می‌کرد و در بسیاری از موارد برای نظرات و کارهای من ارزشی قایل نبود. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "این احساس را در من ایجاد کرده بود که من فرد خاصی هستم و از دیگران برتر هستم. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "توقعات زیادی از من داشت و انتظار داشت که همه کارها به روش و سبک دلخواه او پیش برود. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "احساس مسئولیت در قابل دیگران را به من یاد نداده بود. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "قوانین و مقررات یا ساختارهای محدودی را برای من ایجاد کرده بود. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "مقرررات و مسئولیت‌های کمی برای من ایجاده کرده بود. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "به من اجازه داده بود تا بیش از حد عصبانی شوم یا کنترل خودم را از دست بدهم. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "بی‌نظم بود. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "ما بسیار به هم نزدیک بودیم به طوری که کاملا همدیگر را درک می‌کردیم. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "احساس می‌کردم که به حد کافی از استقلال و فردیت لازم برخودار نیستم و شخصیتی مجزا از او ندارم. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "احساس می‌کردم که انگار نمی‌توانم در مسیر زندگی، خودم سرنوشتم را تعیین کنم، چون او بسیار قوی و تاثیرگذار بود. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "احساس می‌کردم که اگر از همدیگر جدا شویم، آسیب خواهیم دید. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "در مورد مشکلات مالی خانواده، بسیار نگران بود. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "این احساس را در من ایجاد کرده بود که اگر کوچکترین خطایی از من سر بزند، اتفاق بدی روی می‌دهد. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "منفی‌نگر بود و اغلب منتظر بدترین نتیجه بود. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "دائم به جنبه‌های منفی زندگی یا رویدادها فکر می‌کرد. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "هر چیزی را زیر سیطره کنترل خود می گرفت.",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "برای بیان عواطف یا آسیب‌پذیری‌های خود احساس راحتی نمی‌کرد. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "خیلی منظم بود و ثبات را به تغییر ترجیح می‌داد. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "به ندرت عصبانیت خود را ابراز می‌کرد. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "بسیار تودار بود و به ندرت در مورد احساساتش صحبت می‌کرد. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "وقتی من کار اشتباهی انجام می‌دادم خیلی عصبانی می‌شد یا شدیدا مرا سرزنش می‌کرد. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "اگر کار خطایی انجام می‌دادم، مرا تنبیه می‌کرد. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "اگر اشتباهی از من سر می زد مرا به برچسب‌هایی مثل احمق یا کودن صدا می‌کرد. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "وقتی کارها درست پیش نمی‌رفت، دیگران را سرزنش می‌کرد. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "خیلی به موقعیت اجتماعی و ظاهر اهمیت می‌داد. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "تاکید بسیار زیادی بر موقعیت و رقابت داشت. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "خیلی نگران این مسئله بود که رفتار من در نظر دیگران چطور جلو می‌کند.",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        },
+        {
+            "type" : "text",
+            "text" : "به نظر می‌رسید وقتی که من کار درست انجام می‌دادم مرا بیشتر دوست می‌داشت و توجه بیشتری به من می‌کرد. ",
+            "answer" : {
+                "type" : "table_radio",
+                "headers" : [
+                    {
+                        "type" :"text",
+                        "text" : "مادر"
+                    },
+                    {
+                        "type" :"text",
+                        "text" : "پدر"
+                    },
+                    {
+                        "type" : "text",
+                        "text" : "#prerequisites.third",
+                        "condition" : "#prerequisites.third <> null"
+                    }
+                ],
+                "rows" : [
+                    "کاملاً غلط",
+                    "تقریباً غلط",
+                    "بیشتر درست است تا غلط",
+                    "اندکی درست",
+                    "تقریباُ درست",
+                    "کاملاً درست"
+                ]
+            }
+        }
+    ]
+}
