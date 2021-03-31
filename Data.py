@@ -1,10 +1,14 @@
 from loader import loader
 from Score import Score
+from Interpret import Interpret
+
 class Data:
     scores = {'raw' : None}
     def __init__(self, data, type = 'raw'):
         self.__data = loader(data, type).load()
         self.score = Score()
+        self.interpret = Interpret()
+
         prerequisites = self.__data['prerequisites']
         self.__prerequisites = {}
         for prerequisite in prerequisites:
@@ -16,6 +20,12 @@ class Data:
             getattr(self, 'scoring_' + method)(self.score.tree(self.scores[method]))
         return self.score
     
+    def interpreting(self):
+        for method in self.interprets:
+            getattr(self, 'interpreting_' + method)(self.interpret)
+    
+        return self.interpret
+
     def items(self):
         return enumerate(self.__data['items'])
     
