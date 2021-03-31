@@ -42,7 +42,7 @@ factors = {
     , 41 :('detached_self_soother_mode',)
     , 42 :('angry_child_mode',)
     , 43 :('detached_protoctor_mode',)
-    , 44 :('vulnerable_child_mode' , 'self_aggrandizer_mode',)
+    , 44 :( 'self_aggrandizer_mode',)
     , 45 :('demanding_parent_mode' ,)
     , 46 :('engraed_child_mode',)
     , 47:('angry_child_mode',)
@@ -59,7 +59,7 @@ factors = {
     , 58 :('punishing_parent_mode',)
     , 59 :('detached_protoctor_mode',)
     , 60 :('engraed_child_mode' ,)
-    , 61 :('impulsive_child_mode' , 'happy_child_mode' ,)#
+    , 61 :('impulsive_child_mode' , 'happy_child_mode' )#
     , 62 :('healthyy_adult_mode' ,)
     , 63 :('angry_child_mode' ,)
     , 64 :('detached_protoctor_mode' ,)
@@ -82,7 +82,7 @@ factors = {
     , 81 :('self_aggrandizer_mode',)
     , 82 :('demanding_parent_mode',)
     , 83 :('demanding_parent_mode',)
-    , 84 :('vulnerable_child_mode' , 'punishing_parent_mode',)
+    , 84 :( 'punishing_parent_mode',)
     , 85 :('healthyy_adult_mode',) 
     , 86 :('detached_self_soother_mode',)
     , 87:('punishing_parent_mode',)
@@ -95,8 +95,8 @@ factors = {
     , 94 :('punishing_parent_mode',)
     , 95 :('happy_child_mode',)
     , 96 :('happy_child_mode',)
-    #, 97 :('',)
-    , 98 :('engraed_child_mode' , 'impulsive_child_mode',)#
+    , 97 :( 'impulsive_child_mode',)
+    , 98 :('engraed_child_mode' ,)
     , 99 :('bully_and_attack_mode',)
     , 100 :('compliand_surrender_mode' ,)
     , 101 :('engraed_child_mode',)

@@ -1,7 +1,7 @@
 from Data import Data
-import scoring.dictionary.YMQ93 as dictionary
+import scoring.dictionary.HPL as dictionary
 
-class YMQ93(Data):
+class HPL(Data):
     scores = {'raw' :  None }# 
     
     def scoring_raw(self, score):

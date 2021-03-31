@@ -1,16 +1,15 @@
 from Data import Data
-import scoring.dictionary.YMQ93 as dictionary
+import scoring.dictionary.CADS as dictionary
 
-class YMQ93(Data):
+class CADS(Data):
     scores = {'raw' :  None }# 
     
     def scoring_raw(self, score):
         for i, item in self.items():   
             try:
                 answer = int(item.get('user_answered')) 
-                factors = dictionary.factors[i + 1]
-                for factor in factors:
-                    score.increase(factor , answer ) if factor else None
+                
+                score.increase('raw' , answer-1 ) # 1 is mapped to 0  
             except:
                 pass
         
