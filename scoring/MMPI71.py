@@ -32,10 +32,10 @@ class MMPI71(Data):
     
     def get_gender_and_education_dictionary(self):
         
-        prequesties = self.prequesties()
-        gender_label = int(prequesties[0]['user_answered'])
-        education_label = int(prequesties[2]['user_answered'])
-        
+        prequesties = self.prerequisites()
+        gender_label = int(prequesties["gender"]['user_answered'])
+        education_label = int(prequesties["education"]['user_answered'])
+          
         
         if gender_label == 1 :# Woman
             if education_label <= 5 :# student
