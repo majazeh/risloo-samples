@@ -21,13 +21,13 @@ class JRAQ(Data):
                 for factor in factors:
                         
                         self.raw_1_scoring(factor = factor , question = i+1 , answer = answer ,score = score, key_word = key_word_1  )
-                        self.raw_2_scoring(factor =factor , question = i+1 , answer = answer ,score = score, key_word = key_word_2 )                            
+                        self.raw_2_scoring(factor =factor , question = i+1 , answer = answer ,score = score, key_word = key_word_2 ) 
+                        self.raw_3_scoring (factor ,answer ,score ,key_word_1 , key_word_2, key_word_3)                           
             except:
                 pass
 
         
-        self.raw_3_scoring(score ,key_word_1 ,key_word_2 , key_word_3 )
-
+    
     
     def raw_1_scoring(self, factor , question ,answer ,score ,key_word  ):
         
@@ -54,18 +54,45 @@ class JRAQ(Data):
         
         else:            
             score.increase(key_word + factor , answer - 1 )
-        return score  
         
         
     
 
-    def raw_3_scoring(self, score ,key_word_1 , key_word_2, key_word_3):
+    def raw_3_scoring(self, factor  ,answer ,score ,key_word_1 , key_word_2, key_word_3):
+        
+        if factor == dictionary.f2 or factor == dictionary.f3 :
+            
+            # first scoring
+            if answer == 1 or answer == 2 :
+                sco = 1
+            else :
+                sco = 0
+
+            # reverse-scoring
+            score.increase(key_word_3 + key_word_1 ,sco )
+            
+            # second scoring
+            # reverse-scoring
+            score.increase(key_word_3 + key_word_2 , 4 - answer)
+            
+            
+        
+        else :
+            
+            # first scoring
+            if answer == 1 or answer == 2 :
+                sco = 0
+            else :
+                sco = 1
+
+            # direct-scoring
+            score.increase(key_word_3 + key_word_1 ,sco )
+            
+            # second scoring
+            # direct-scoring
+            score.increase(key_word_3 + key_word_2 , answer - 1)
         
 
-        value = score.get(key_word_1 + dictionary.f1) + 1 /score.get(key_word_1 + dictionary.f2) + 1/score.get(key_word_1 + dictionary.f3)  
-        score.set(key_word_3 +  key_word_1 , value ) 
-                
-        value = score.get(key_word_2 + dictionary.f1) + 1 /score.get(key_word_2 + dictionary.f2) + 1/score.get(key_word_2 + dictionary.f3)  
-        score.set(key_word_3 +  key_word_2 , value ) 
+            
         
     
