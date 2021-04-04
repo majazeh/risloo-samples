@@ -2,6 +2,7 @@ import unilities
 import warnings
 import json
 import sys
+import openpyxl
 
 class risloo():
     def __init__(self, **args):
@@ -43,7 +44,7 @@ class risloo():
             sys.stdout.write(self.interpreting_scale.interpret.get_text() + "\n")
     
     def export_excell(self):
-        my_path = '/home/mostafa/Majazeh/tests/scoring/forms/'
+        my_path = '/home/mostafa/Majazeh/risloo-samples/scoring/forms/'
         addr = self.args['input_data'].split('.json')[0]
         num = addr[-1]
         names = addr.split('/')
@@ -72,5 +73,5 @@ class risloo():
         
 if (__name__ == '__main__'):
     rsl = risloo(**unilities.get_args())
-    # rsl.export_excell()
+    rsl.export_excell()
     rsl.export()
