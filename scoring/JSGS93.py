@@ -1,7 +1,7 @@
 from Data import Data
-import scoring.dictionary.JSGS as dictionary
+import scoring.dictionary.JSGS93 as dictionary
 
-class JSGS(Data):
+class JSGS93(Data):
     scores = {'raw' :  None }# 
     
     def scoring_raw(self, score):

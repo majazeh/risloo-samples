@@ -63,10 +63,26 @@ class risloo():
         sheet.cell(row = 1, column=3).value = 'پاسخ دستی کارشناس'
         
         out_dic = self.scoring_scale.score.toDict()
-        for i,key in enumerate(out_dic.keys()):
-            out_dic[key]
-            sheet.cell(row= i+2, column=1).value = key
-            sheet.cell(row= i+2, column=2).value = out_dic[key]
+        cnt = 2 
+        for key in out_dic.keys():
+            
+            sheet.cell(row= cnt  , column=1).value = key
+            
+            if isinstance(out_dic[key], dict):
+                
+                for new_key in out_dic[key].keys():
+                    cnt = cnt + 1
+                    
+                    sheet.cell(row= cnt , column=1).value = new_key
+                    sheet.cell(row= cnt, column=2).value = out_dic[key][new_key]
+                
+                
+                cnt = cnt + 1 
+            else :
+                
+                sheet.cell(row= cnt, column=2).value = out_dic[key]
+                cnt = cnt + 1
+
         
         book.save(excell_path)
 

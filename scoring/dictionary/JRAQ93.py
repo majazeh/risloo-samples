@@ -1,6 +1,6 @@
 f1 = 'religious_adherence'
-f2 = 'Religious_ambivalence'
-f3 = 'Religious_disobedience'
+f2 = 'religious_ambivalence'
+f3 = 'religious_disobedience'
 
 option_numbers = 4
 
