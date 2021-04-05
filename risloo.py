@@ -57,7 +57,7 @@ class risloo():
         test_name = names [-2]
         file_name = names [-1].split('_')[0]
      
-        with open( my_path + '/' + test_name + '/' + file_name + '_test_' + num +'_result' +'.json', 'w') as file:
+        with open( my_path + '/' + file_name + '_test_' + num +'_result' +'.json', 'w') as file:
             json.dump(self.scoring_scale.score.toDict(), file, ensure_ascii=False ,indent= 4)
 
         
