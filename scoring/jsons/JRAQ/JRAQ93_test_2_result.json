@@ -1,0 +1,14 @@
+{
+    "clinical": {
+        "religious_ambivalence": 13,
+        "religious_adherence": 14,
+        "religious_disobedience": 11
+    },
+    "researchical": {
+        "religious_ambivalence": 33,
+        "religious_adherence": 38,
+        "religious_disobedience": 25
+    },
+    "clinical_raw": 29,
+    "researchical_raw": 97
+}

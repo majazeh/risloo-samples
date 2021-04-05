@@ -43,7 +43,26 @@ class risloo():
         if self.args['Interpretation']:
             sys.stdout.write(self.interpreting_scale.interpret.get_text() + "\n")
     
-    def export_excell(self):
+    
+    def export_excell_and_json(self):
+        
+
+        #json
+        my_path = '/home/mostafa/Majazeh/risloo-samples/scoring/jsons/'
+        
+        addr = self.args['input_data'].split('.json')[0]
+        num = addr[-1]
+        names = addr.split('/')
+        
+        test_name = names [-2]
+        file_name = names [-1].split('_')[0]
+     
+        with open( my_path + '/' + test_name + '/' + file_name + '_test_' + num +'_result' +'.json', 'w') as file:
+            json.dump(self.scoring_scale.score.toDict(), file, ensure_ascii=False ,indent= 4)
+
+        
+
+        #excell
         my_path = '/home/mostafa/Majazeh/risloo-samples/scoring/forms/'
         addr = self.args['input_data'].split('.json')[0]
         num = addr[-1]
@@ -89,5 +108,5 @@ class risloo():
         
 if (__name__ == '__main__'):
     rsl = risloo(**unilities.get_args())
-    rsl.export_excell()
+    rsl.export_excell_and_json()
     rsl.export()
