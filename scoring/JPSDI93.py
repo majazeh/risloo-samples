@@ -1,6 +1,5 @@
 from Data import Data
 import scoring.dictionary.JPSDI93 as dictionary
-import numpy as np
 
 class JPSDI93(Data):
     scores = {'raw' :  None }# 
