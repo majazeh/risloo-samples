@@ -28,8 +28,7 @@ class JPSDI93(Data):
         
         
 
-        string = ''
+        string = []
         for i in range(len(maxims)) :
-            string = string + factors[maxims[i]] + ','
-        
-        score.set('sath_tahavol_ravani_fard', string)
+            string.append(maxims[i])
+        score.set('psdi', ''.join([str(elem) for elem in string]))
