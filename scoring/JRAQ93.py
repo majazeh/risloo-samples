@@ -17,7 +17,7 @@ class JRAQ93(Data):
                 
                 for factor in factors:
                          
-                        self.third_scoring (factor ,answer ,score )                           
+                        self.third_scoring (factor ,i+1 , answer ,score )                           
             except:
                 pass
 
@@ -79,40 +79,48 @@ class JRAQ93(Data):
         
     
 
-    def third_scoring(self, factor  ,answer ,score ):
+    def third_scoring(self, factor ,question ,answer ,score ):
         
         if factor == dictionary.f2 or factor == dictionary.f3 :
-            
+            # reverse-scoring
+
             # first scoring
             if answer == 1 or answer == 2 :
                 sco = 1
             else :
                 sco = 0
 
-            # reverse-scoring
+            
             score.increase('clinical_raw' ,sco )
             
             # second scoring
-            # reverse-scoring
             score.increase('researchical_raw' , 4 - answer)
             
             
         
-        else :
-            
+        else :# else is for the f1 factor
+
             # first scoring
             if answer == 1 or answer == 2 :
                 sco = 0
             else :
                 sco = 1
 
-            # direct-scoring
-            score.increase('clinical_raw' ,sco )
+
+            if question in dictionary.reverse_scoring_numbers[factor]:
+                # reverse-scoring
+                score.increase('clinical_raw' ,1 - sco )
+                score.increase('researchical_raw' , 4 - answer ) 
+
             
-            # second scoring
-            # direct-scoring
-            score.increase('researchical_raw' , answer - 1)
-        
+            else: 
+                # direct-scoring      
+                score.increase('clinical_raw' ,sco )     
+                score.increase('researchical_raw' , answer - 1 )
+
+                
+            
+
 
             
         
