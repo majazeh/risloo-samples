@@ -10,7 +10,7 @@ class JPSDI93(Data):
                 answer = int(item.get('user_answered')) 
                 factor = dictionary.factors[i + 1][answer]
                 
-                score.increase(factor , answer ) 
+                score.increase(factor , 1 ) 
             except:
                 pass
         
@@ -28,6 +28,7 @@ class JPSDI93(Data):
         
 
         string = []
+        my_seperator = ','
         for i in range(len(maxims)) :
-            string.append(maxims[i])
-        score.set('psdi', ''.join([str(elem) for elem in string]))
+            string.append(factors[maxims[i]])
+        score.set('psdi', my_seperator.join([str(elem) for elem in string]))
