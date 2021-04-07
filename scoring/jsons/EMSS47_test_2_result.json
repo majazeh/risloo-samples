@@ -1,0 +1,23 @@
+{
+    "raw": 132,
+    "t_score": 33,
+    "t_score_summary": "عدم رضایت از روابط زناشویی همسران",
+    "marital_communication": 23,
+    "personality_issues": 18,
+    "religious_orientation": 12,
+    "Conflict_resolution": 15,
+    "financial_management": 13,
+    "leisure_activities": 14,
+    "sexual_relationship": 10,
+    "children_&_marriage": 12,
+    "family_&_friends": 15,
+    "personality_issues_interpretation": "رضایت متوسط",
+    "marital_communication_interpretation": "رضایت زیاد",
+    "Conflict_resolution_interpretation": "رضایت متوسط",
+    "financial_management_interpretation": "رضایت متوسط",
+    "leisure_activities_interpretation": "رضایت متوسط",
+    "sexual_relationship_interpretation": "عدم رضایت",
+    "children_&_marriage_interpretation": "عدم رضایت",
+    "family_&_friends_interpretation": "رضایت متوسط",
+    "religious_orientation_interpretation": "عدم رضایت"
+}

@@ -64,7 +64,7 @@ class EMSS47(Data):
                 return None
     
     def level2_report(self, score):
-        dictionary.option_numbers = option_numbers
+        option_numbers = dictionary.option_numbers 
         for i, item in self.items():   
             try:
                 answer = int(item.get('user_answered')) 
@@ -93,7 +93,7 @@ class EMSS47(Data):
     def scale_interpreting(self,score ,test_factor ,test_factor_numbers):
         
         test_value = score.get(test_factor)
-        test_normalized = (test_value // test_factor_numbers)+1
+        test_normalized = round(test_value / test_factor_numbers)
         interpretation = dictionary.factors_interpretation[test_normalized]
         score.set(test_factor + '_interpretation' , interpretation ) 
 
