@@ -9,7 +9,7 @@ class CADS(Data):
             try:
                 answer = int(item.get('user_answered')) 
                 
-                score.increase('raw' , answer-1 ) # 1 is mapped to 0  
+                score.increase('raw' , answer-1 ) # 1 is mapped to 0              
             except:
                 pass
         
