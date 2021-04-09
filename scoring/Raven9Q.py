@@ -7,6 +7,7 @@ class Raven9Q(Data):
     def scoring_raw(self, score):
         score.set('raw', 0)
         for i, item in self.items():
+            if(item.get('user_answered') == None): continue
             answer = int(item.get('user_answered'))
             result = self.check_correctness(answer , i+1 )
             score.increase('raw') if result else None
