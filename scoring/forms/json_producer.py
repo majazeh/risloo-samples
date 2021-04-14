@@ -1,10 +1,9 @@
 import json
-from random import randint
 from openpyxl import Workbook ,load_workbook
 from pathlib import Path
 
 my_path = str(Path(__file__).resolve().parent)
-
+my_par_dir = my_path.split('/forms')[0]
 
 
 # raw form loading
@@ -13,19 +12,19 @@ with open( my_path +'/raw.json', 'r') as file:
 
 
 ########################### Parameter setting ################################
-test_name = 'AEQ'
-file_name = 'AEQ'
+test_name = 'Alaki'
+file_name = 'Alaki'
 
 options_list = [
-                    "تقریبا هیچ وقت",
-                    "خیلی کم",
-                    "گاهی اوقات",
-                    "بیشتر اوقات",
-                    "تقریبا همیشه"
+                    "گزینه الف",
+                    "گزینه ب",
+                    "گزینه پ",
+                    "گزینه ت",
+                    "گزینه ث"
                     ]
 num_options = len(options_list)
 
-data["title"] = "پرسش‌نامه ارزیابی سطح کلی اضطراب"
+data["title"] = "افسردگی کودکان و نوجوانان - جان‌بزرگی"
 # data["description"] ="## دستور اجرای آزمون\n\nابتدا هر مجموعه را بخوانید و سپس نزدیک‌ترین فکر متناسب با حال کنونی خود را مشخص کنید. تاکید می‌کنیم که هر چند ممکن است شما با چند گزینه موافق باشید اما صرفا یک گزینه را انتخاب کنید که بازگو کننده زبان حال کنونی شماست"  
 # data["description"] = "## دستور اجرای آزمون\n\nلطفا پس از مطالعه هر عبارت، اگر محتوای آن درباره شما درست است، گزینه بلی را انتخاب کنید و اگر درباره شما نادرست است، گزینه نه را انتخاب کنید. در این پرسشنامه پاسخ‌های صحیح یا غلط و پرسش‌های گمراه‌کننده وجود ندارد. به تمام عبارات با سرعت پاسخ دهید و درباره معنای دقیق آن‌ها وقت خود را زیاد تلف نکنید. "
 data["description"] ="## دستور اجرای آزمون\n\nافراد از این جمله‌ها ممکن است برای توصیف خودشان استفاده کنند. لطفا هر جمله را به دقت بخوانید و ببینید که چقدر به آن جمله اعتقاد دارید یا بر اساس مقیاس فراوانی به آن پاسخ دهید. " 
@@ -50,16 +49,16 @@ item["answer"]["options"] = options_list
 
 ########################## load questions excell ###########################
 
-book = load_workbook(my_path + '/' + test_name +'/' + file_name  + '.xlsx')
+book = load_workbook(my_par_dir + '/tests/'  + test_name +'/' + file_name  + '.xlsx')
 sheet = book.active
 
 
 question_numbers =  sheet.max_row - 1
-print(question_numbers)
+print("question_numbers: ",question_numbers)
 
 
 for i in range(question_numbers):
-    item["text"] = sheet.cell(row = i+2, column=1).value
+    item["text"] = str(sheet.cell(row = i+2, column=1).value)
     items.append(item.copy())
 
 data["items"] = items
@@ -70,35 +69,5 @@ with open( my_path + '/' + test_name + '/' + file_name +'.json', 'w') as file:
 
 
 
-# Test producing
-##################### user_answered #######################################
-data["prerequisites"][0] ["user_answered"] = "2" # 1 for woman and 2 for man
-data["prerequisites"][1] ["user_answered"] = "37" # age
-data["prerequisites"][2] ["user_answered"] = "8"#str(randint(1,10)) # education options from 1 to 10
-
-for j in range (2):
-    book = Workbook()
-    sheet = book.active
-    
-    sheet.title = "question_answers"
-   
-    sheet.cell(row = 1, column=1).value = 'شماره سوالات'
-    sheet.cell(row = 1, column=2).value = 'پاسخ  گزینه فرد'
-    
-    
-    for i,item in enumerate(data["items"]):
-        
-        item ["user_answered"] = str(randint(1,num_options))
-        sheet.cell(row = i+2, column=1).value = i+1
-        sheet.cell(row = i+2, column=2).value = item ["user_answered"]
-    
-        
-
-
-
-    book.save( my_path + '/' + test_name +'/' + file_name + '_test_' + str(j+1) + '.xlsx') 
-
-    with open( my_path + '/' + test_name + '/' + file_name +'_test_'+ str(j+1) + '.json', 'w') as file:
-        json.dump(data, file , ensure_ascii=False ,indent= 4)
 
 
