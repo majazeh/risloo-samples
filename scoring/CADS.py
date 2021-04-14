@@ -9,8 +9,29 @@ class CADS(Data):
             try:
                 answer = int(item.get('user_answered')) 
                 
-                score.increase('raw' , answer-1 ) # 1 is mapped to 0              
+                if i+1 <= 12 :
+                    score.increase('raw' , answer-1 ) # 1 is mapped to 0 
+
+                else :
+                    if answer == 1 :
+                        score.increase('raw' , 1 )
+                    else :
+                        score.increase('raw' , 0 )
+      
+                             
             except:
                 pass
         
-     
+
+        raw_score = score.get('raw')
+        
+        intervals = list(dictionary.factors_interpretation.keys())
+        
+        for interval in intervals:
+            
+            if interval[0] <= raw_score <= interval[1]:
+                
+                score.set('interpretation', dictionary.factors_interpretation[interval])
+
+        
+        
