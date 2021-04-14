@@ -2,11 +2,14 @@ import unilities
 import warnings
 import json
 import sys
-# import openpyxl
+from pathlib import Path
+import openpyxl
 
 class risloo():
     def __init__(self, **args):
         self.args = args 
+        self.my_dir = str(Path(__file__).resolve().parent)
+        
         input_type = args['input_type']
         data = args['input_data']
 
@@ -44,26 +47,10 @@ class risloo():
             sys.stdout.write(self.interpreting_scale.interpret.get_text() + "\n")
     
     
-    def export_excell_and_json(self):
-        
-
-        #json
-        my_path = '/home/mostafa/Majazeh/risloo-samples/scoring/jsons/'
-        
-        addr = self.args['input_data'].split('.json')[0]
-        num = addr[-1]
-        names = addr.split('/')
-        
-        test_name = names [-2]
-        file_name = names [-1].split('_')[0]
-     
-        with open( my_path + '/' + file_name + '_test_' + num +'_result' +'.json', 'w') as file:
-            json.dump(self.scoring_scale.score.toDict(), file, ensure_ascii=False ,indent= 4)
-
-        
+    def export_excell(self):
 
         #excell
-        my_path = '/home/mostafa/Majazeh/risloo-samples/scoring/forms/'
+        my_path = self.my_dir + '/scoring/tests/'
         addr = self.args['input_data'].split('.json')[0]
         num = addr[-1]
         names = addr.split('/')
@@ -72,12 +59,18 @@ class risloo():
         file_name = names [-1].split('_')[0]
         
         
-        excell_path = my_path + '/' + test_name + '/' + file_name +'_test_' + num + '.xlsx'
+        excell_path = my_path + test_name + '/' + names [-1] + '.xlsx'
+        
         book = openpyxl.load_workbook(excell_path )
+
         
+        if "outputs"  in book.sheetnames:
+             sheet = book["outputs"]
+        else :
+            book.create_sheet("outputs")
+            sheet = book["outputs"]
+
         
-        book.create_sheet("outputs")
-        sheet = book["outputs"]
         sheet.cell(row = 1, column=2).value = 'پاسخ سیستم'
         sheet.cell(row = 1, column=3).value = 'پاسخ دستی کارشناس'
         
@@ -104,9 +97,29 @@ class risloo():
 
         
         book.save(excell_path)
+    
+    def export_json(self) :
+
+        #json
+        my_path = self.my_dir + '/scoring/jsons/'
+        
+        
+        addr = self.args['input_data'].split('.json')[0]
+        names = addr.split('/')
+        
+        test_name = names [-2]
+        
+        with open( my_path + test_name +'/'+ names[-1] + '_result' +'.json', 'w') as file:
+            json.dump(self.scoring_scale.score.toDict(), file, ensure_ascii=False ,indent= 4)
+
+
+
 
         
 if (__name__ == '__main__'):
     rsl = risloo(**unilities.get_args())
-    # rsl.export_excell_and_json()
     rsl.export()
+    rsl.export_json()
+    # rsl.export_excell()
+    
+    
