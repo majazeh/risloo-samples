@@ -1,0 +1,376 @@
+{
+    "title": "افسردگی کودکان و نوجوانان - جان‌بزرگی",
+    "version": "1",
+    "edition": "",
+    "edition_version": null,
+    "filler": "client",
+    "description": "## دستور اجرای آزمون\n\nافراد از این جمله‌ها ممکن است برای توصیف خودشان استفاده کنند. لطفا هر جمله را به دقت بخوانید و ببینید که چقدر به آن جمله اعتقاد دارید یا بر اساس مقیاس فراوانی به آن پاسخ دهید. ",
+    "prerequisites": [
+        {
+            "type": "text",
+            "label": "gender",
+            "text": "جنسیت",
+            "answer": {
+                "type": "select",
+                "options": [
+                    "زن",
+                    "مرد"
+                ]
+            },
+            "alias": "gender",
+            "force": true,
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "label": "age",
+            "text": "سن",
+            "answer": {
+                "type": "number"
+            },
+            "alias": "age",
+            "force": true,
+            "user_answered": "37"
+        },
+        {
+            "type": "text",
+            "label": "education",
+            "text": "تحصیلات",
+            "answer": {
+                "type": "select",
+                "options": [
+                    "ابتدایی اول",
+                    "ابتدایی دوم",
+                    "متوسطه اول",
+                    "متوسطه دوم",
+                    "دیپلم",
+                    "کارشناسی",
+                    "کارشناسی ارشد",
+                    "پزشکی عمومی",
+                    "متخصص",
+                    "دکتری تخصصی",
+                    "حوزوی مقدمات",
+                    "حوزوی سطح۱",
+                    "حوزوی سطح۲",
+                    "حوزوی سطح۳",
+                    "حوزوی سطح۴"
+                ]
+            },
+            "alias": "education",
+            "force": true,
+            "user_answered": "8"
+        }
+    ],
+    "items": [
+        {
+            "type": "text",
+            "text": 1,
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "گزینه الف",
+                    "گزینه ب",
+                    "گزینه پ",
+                    "گزینه ت",
+                    "گزینه ث"
+                ]
+            },
+            "user_answered": "3"
+        },
+        {
+            "type": "text",
+            "text": 2,
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "گزینه الف",
+                    "گزینه ب",
+                    "گزینه پ",
+                    "گزینه ت",
+                    "گزینه ث"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": 3,
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "گزینه الف",
+                    "گزینه ب",
+                    "گزینه پ",
+                    "گزینه ت",
+                    "گزینه ث"
+                ]
+            },
+            "user_answered": "5"
+        },
+        {
+            "type": "text",
+            "text": 4,
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "گزینه الف",
+                    "گزینه ب",
+                    "گزینه پ",
+                    "گزینه ت",
+                    "گزینه ث"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "type": "text",
+            "text": 5,
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "گزینه الف",
+                    "گزینه ب",
+                    "گزینه پ",
+                    "گزینه ت",
+                    "گزینه ث"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "type": "text",
+            "text": 6,
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "گزینه الف",
+                    "گزینه ب",
+                    "گزینه پ",
+                    "گزینه ت",
+                    "گزینه ث"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "type": "text",
+            "text": 7,
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "گزینه الف",
+                    "گزینه ب",
+                    "گزینه پ",
+                    "گزینه ت",
+                    "گزینه ث"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": 8,
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "گزینه الف",
+                    "گزینه ب",
+                    "گزینه پ",
+                    "گزینه ت",
+                    "گزینه ث"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "type": "text",
+            "text": 9,
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "گزینه الف",
+                    "گزینه ب",
+                    "گزینه پ",
+                    "گزینه ت",
+                    "گزینه ث"
+                ]
+            },
+            "user_answered": "5"
+        },
+        {
+            "type": "text",
+            "text": 10,
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "گزینه الف",
+                    "گزینه ب",
+                    "گزینه پ",
+                    "گزینه ت",
+                    "گزینه ث"
+                ]
+            },
+            "user_answered": "3"
+        },
+        {
+            "type": "text",
+            "text": 11,
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "گزینه الف",
+                    "گزینه ب",
+                    "گزینه پ",
+                    "گزینه ت",
+                    "گزینه ث"
+                ]
+            },
+            "user_answered": "5"
+        },
+        {
+            "type": "text",
+            "text": 12,
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "گزینه الف",
+                    "گزینه ب",
+                    "گزینه پ",
+                    "گزینه ت",
+                    "گزینه ث"
+                ]
+            },
+            "user_answered": "5"
+        },
+        {
+            "type": "text",
+            "text": 13,
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "گزینه الف",
+                    "گزینه ب",
+                    "گزینه پ",
+                    "گزینه ت",
+                    "گزینه ث"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": 14,
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "گزینه الف",
+                    "گزینه ب",
+                    "گزینه پ",
+                    "گزینه ت",
+                    "گزینه ث"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": 15,
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "گزینه الف",
+                    "گزینه ب",
+                    "گزینه پ",
+                    "گزینه ت",
+                    "گزینه ث"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": 16,
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "گزینه الف",
+                    "گزینه ب",
+                    "گزینه پ",
+                    "گزینه ت",
+                    "گزینه ث"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": 17,
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "گزینه الف",
+                    "گزینه ب",
+                    "گزینه پ",
+                    "گزینه ت",
+                    "گزینه ث"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": 18,
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "گزینه الف",
+                    "گزینه ب",
+                    "گزینه پ",
+                    "گزینه ت",
+                    "گزینه ث"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": 19,
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "گزینه الف",
+                    "گزینه ب",
+                    "گزینه پ",
+                    "گزینه ت",
+                    "گزینه ث"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": 20,
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "گزینه الف",
+                    "گزینه ب",
+                    "گزینه پ",
+                    "گزینه ت",
+                    "گزینه ث"
+                ]
+            },
+            "user_answered": "1"
+        }
+
+
+
+
+
+
+
+
+
+
+    ]
+}
