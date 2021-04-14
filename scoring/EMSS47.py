@@ -42,8 +42,8 @@ class EMSS47(Data):
             if interval[0] <= raw_score <= interval[1]:
                 return dictionary.raw2t[interval]
 
-        else:
-            return None
+            else:
+                return None
 
     def t_score_summary(self, t_score):
         
