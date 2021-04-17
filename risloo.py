@@ -120,6 +120,6 @@ if (__name__ == '__main__'):
     rsl = risloo(**unilities.get_args())
     rsl.export()
     rsl.export_json()
-    # rsl.export_excell()
+    rsl.export_excell()
     
     
