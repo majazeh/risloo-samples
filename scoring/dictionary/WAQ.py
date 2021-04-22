@@ -6,7 +6,7 @@ f5 = 'relationship_with_religion'
 f6 = 'relationship_with_right_and_wrong'
 f7 = 'relationship_with_hereafter'
 
-
+option_numbers = 5
 
 factors = {
     1 :(f1,)
