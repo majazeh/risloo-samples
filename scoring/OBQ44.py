@@ -1,18 +1,23 @@
 from Data import Data
-import scoring.dictionary.YTSI232 as dictionary
+import scoring.dictionary.OBQ44 as dictionary
 
-class YTSI232(Data):
+class OBQ44(Data):
     scores = {'raw' :  None }# 
     
     def scoring_raw(self, score):
         score.set(dictionary.factors_names,0)
+        option_numbers = dictionary.option_numbers
         for i, item in self.items():   
             try:
                 answer = int(item.get('user_answered')) 
                 factors = dictionary.factors[i + 1]
+                
                 for factor in factors:
-                    score.increase(factor , answer ) if factor else None
+                        
+                    score.increase(factor , answer-4 )    
+            
+           
             except:
                 pass
         
-     
+        

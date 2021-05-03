@@ -9,8 +9,8 @@ my_par_dir = my_path.split('/tests')[0]
 
 
 ########################### Parameter setting ################################
-test_name = 'SSS'
-file_name = 'SSS'
+test_name = 'OBQ44'
+file_name = 'OBQ44'
 test_numbers = 2
 test_numbers_list = [1,2]
 

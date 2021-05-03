@@ -3,7 +3,7 @@ import warnings
 import json
 import sys
 from pathlib import Path
-# import openpyxl
+import openpyxl
 
 class risloo():
     def __init__(self, **args):
@@ -120,6 +120,6 @@ if (__name__ == '__main__'):
     rsl = risloo(**unilities.get_args())
     rsl.export()
     rsl.export_json()
-    # rsl.export_excell()
+    rsl.export_excell()
     
     
