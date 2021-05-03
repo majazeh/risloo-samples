@@ -1,5 +1,5 @@
 f1 = 'general'
-f2 = 'perfectionism/certainty'
+f2 = 'perfectionism_certainty'
 f3 = 'responsibility_and_threat_estimation'
 f4 = 'importance_and_control_of_thought'
 f5 = 'complete_performance'

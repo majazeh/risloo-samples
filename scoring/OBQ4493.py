@@ -1,7 +1,7 @@
 from Data import Data
-import scoring.dictionary.OBQ44 as dictionary
+import scoring.dictionary.OBQ4493 as dictionary
 
-class OBQ44(Data):
+class OBQ4493(Data):
     scores = {'raw' :  None }# 
     
     def scoring_raw(self, score):
