@@ -1,7 +1,7 @@
 from Data import Data
-import scoring.dictionary.WAQ as dictionary
+import scoring.dictionary.WAQ93 as dictionary
 
-class WAQ(Data):
+class WAQ93(Data):
     scores = {'raw' :  None }# 
     
     def scoring_raw(self, score):

@@ -1,7 +1,7 @@
 from Data import Data
-import scoring.dictionary.GI as dictionary
+import scoring.dictionary.KJGI93 as dictionary
 
-class GI(Data):
+class KJGI93(Data):
     scores = {'raw' :  None }# 
     
     def scoring_raw(self, score):
