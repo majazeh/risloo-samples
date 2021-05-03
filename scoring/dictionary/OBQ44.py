@@ -6,7 +6,7 @@ f5 = 'complete_performance'
 
 option_numbers = 7
 
-factors_names = (f1,f2,f3,f4,f5)
+factors_names = ('raw',f1,f2,f3,f4,f5)
 
 factors = {
     1 :(f1,)

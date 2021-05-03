@@ -12,6 +12,7 @@ class OBQ44(Data):
                 answer = int(item.get('user_answered')) 
                 factors = dictionary.factors[i + 1]
                 
+                score.increase('raw' , answer-4 )
                 for factor in factors:
                         
                     score.increase(factor , answer-4 )    

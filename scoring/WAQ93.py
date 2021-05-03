@@ -1,10 +1,11 @@
 from Data import Data
-import scoring.dictionary.GI as dictionary
+import scoring.dictionary.WAQ93 as dictionary
 
-class GI(Data):
+class WAQ93(Data):
     scores = {'raw' :  None }# 
     
     def scoring_raw(self, score):
+        score.set(dictionary.factors_names,0)
         option_numbers = dictionary.option_numbers
         for i, item in self.items():   
             try:
@@ -18,30 +19,13 @@ class GI(Data):
                         
                         score.increase(factor , option_numbers +1  - answer )    
                 else :
-                    
-                    score.increase('raw', answer )
+                    score.increase('raw' , answer )
                     for factor in factors:
-                         
+                        
                         score.increase(factor , answer )    
                 
-           
+
             except:
                 pass
-        
-        raw_score = score.get('raw')
-        interpretation = self.get_level_interpretation(raw_score)
-        score.set('interpretation', interpretation)
-
-    def get_level_interpretation(self,raw_score):
-        
-        intervals = list(dictionary.level_interpretation.keys())
-        
-        for interval in intervals:
-            
-            if interval[0] <= raw_score <= interval[1]:
-                return dictionary.level_interpretation[interval]
-
-        else:
-            return None
         
         
