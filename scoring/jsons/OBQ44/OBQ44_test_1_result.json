@@ -1,6 +1,7 @@
 {
+    "raw": 3,
     "general": 1,
-    "perfectionism/certainty": 8,
+    "perfectionism_certainty": 8,
     "responsibility_and_threat_estimation": 2,
     "importance_and_control_of_thought": -4,
     "complete_performance": -4

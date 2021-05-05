@@ -1,7 +1,7 @@
 #!/bin/sh
 
 folder_name="JCSI"
-file_name="JCSI"
+file_name="JCSI93"
 
 option_numbers=5
 question_numbers=34
