@@ -3,7 +3,7 @@ import warnings
 import json
 import sys
 from pathlib import Path
-# import openpyxl
+
 
 class risloo():
     def __init__(self, **args):
@@ -39,8 +39,22 @@ class risloo():
 
             self.interpreting_scale.interpreting()
 
-
     def export(self):
+
+        for out_type in self.args['output_types']:
+            
+            if out_type =='raw':
+                self.export_raw()
+
+            elif  out_type =='json':
+                self.export_json()
+
+            elif  out_type =='excell':
+                self.export_excell()
+
+    
+    def export_raw(self):
+        
         sys.stdout.write(json.dumps(self.scoring_scale.score.toDict()) + "\n")
         
         if self.args['Interpretation']:
@@ -48,7 +62,8 @@ class risloo():
     
     
     def export_excell(self):
-
+        
+        import openpyxl
         #excell
         my_path = self.my_dir + '/scoring/tests/'
         addr = self.args['input_data'].split('.json')[0]
@@ -119,7 +134,5 @@ class risloo():
 if (__name__ == '__main__'):
     rsl = risloo(**unilities.get_args())
     rsl.export()
-    # rsl.export_json()
-    # rsl.export_excell()
     
     
