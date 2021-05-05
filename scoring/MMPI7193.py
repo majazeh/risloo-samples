@@ -1,7 +1,7 @@
 from Data import Data
-import scoring.dictionary.MMPI71 as dictionary
+import scoring.dictionary.MMPI7193 as dictionary
 
-class MMPI71(Data):
+class MMPI7193(Data):
     scores = {'raw' :  None }# 
     
     def scoring_raw(self, score):

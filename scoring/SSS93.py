@@ -1,7 +1,7 @@
 from Data import Data
-import scoring.dictionary.SSS as dictionary
+import scoring.dictionary.SSS93 as dictionary
 
-class SSS(Data):
+class SSS93(Data):
     scores = {'raw' :  None }# 
     
     def scoring_raw(self, score):

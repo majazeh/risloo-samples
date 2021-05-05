@@ -1,7 +1,7 @@
 from Data import Data
-import scoring.dictionary.PIES32 as dictionary
+import scoring.dictionary.PIES6493 as dictionary
 
-class PIES32(Data):
+class PIES6493(Data):
     scores = {'raw' :  None }# 
     
     def scoring_raw(self, score):
@@ -15,7 +15,7 @@ class PIES32(Data):
                     
                     for factor in factors:
                         
-                        score.increase(factor , option_numbers +1  - answer )    
+                        score.increase(factor , option_numbers +1- answer )    
                 else :
                     for factor in factors:
                         
@@ -25,4 +25,4 @@ class PIES32(Data):
             except:
                 pass
         
-        
+     

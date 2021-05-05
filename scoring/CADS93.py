@@ -1,7 +1,7 @@
 from Data import Data
-import scoring.dictionary.CADS as dictionary
+import scoring.dictionary.CADS93 as dictionary
 
-class CADS(Data):
+class CADS93(Data):
     scores = {'raw' :  None }# 
     
     def scoring_raw(self, score):

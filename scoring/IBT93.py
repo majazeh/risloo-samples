@@ -1,12 +1,11 @@
 from Data import Data
-import scoring.dictionary.JCSI as dictionary
+import scoring.dictionary.IBT93 as dictionary
 
-class JCSI(Data):
+class IBT93(Data):
     scores = {'raw' :  None }# 
     
     def scoring_raw(self, score):
-        option_numbers = dictionary.option_numbers
-
+        option_numbers = dictionary.option_numbers 
         for i, item in self.items():   
             try:
                 answer = int(item.get('user_answered')) 
@@ -16,7 +15,7 @@ class JCSI(Data):
                     
                     for factor in factors:
                         score.increase('raw', option_numbers+1- answer) 
-                        score.increase(factor , option_numbers +1- answer )  
+                        score.increase(factor , option_numbers+1- answer )  
                          
                 else :
                     for factor in factors:

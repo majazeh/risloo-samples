@@ -1,7 +1,7 @@
 from Data import Data
-import scoring.dictionary.SASQ as dictionary
+import scoring.dictionary.PSWQ93 as dictionary
 
-class SASQ(Data):
+class PSWQ93(Data):
     scores = {'raw' :  None }# 
     
     def scoring_raw(self, score):
@@ -10,7 +10,13 @@ class SASQ(Data):
             try:
                 answer = int(item.get('user_answered')) 
                 
-                score.increase('raw', answer)
+                
+                if i+1 in dictionary.reverse_scoring_numbers:
+                    
+                    score.increase('raw', option_numbers+1- answer) 
+                         
+                else :
+                    score.increase('raw', answer)
  
             except:
                 pass

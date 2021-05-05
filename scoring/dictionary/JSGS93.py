@@ -1,4 +1,4 @@
-f1 = 'god_Image'
+f1 = 'god_image'
 f2 = 'god_concept'
 f3 = 'self_image'
 f4 =  'self_concept'

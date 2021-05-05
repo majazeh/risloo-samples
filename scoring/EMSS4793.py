@@ -1,7 +1,7 @@
 from Data import Data
-import scoring.dictionary.EMSS47 as dictionary
+import scoring.dictionary.EMSS4793 as dictionary
 
-class EMSS47(Data):
+class EMSS4793(Data):
     scores = {'raw' :  None }# 
     
     def scoring_raw(self, score):

@@ -95,7 +95,7 @@ factors = {
     , 94 :('punishing_parent_mode',)
     , 95 :('happy_child_mode',)
     , 96 :('happy_child_mode',)
-    , 97 :( 'impulsive_child_mode',)
+    , 97 :('impulsive_child_mode',)
     , 98 :('engraed_child_mode' ,)
     , 99 :('bully_and_attack_mode',)
     , 100 :('compliand_surrender_mode' ,)

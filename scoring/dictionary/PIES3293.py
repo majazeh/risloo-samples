@@ -1,11 +1,11 @@
-f1 = 'Hope'
-f2 = 'Will'
-f3 = 'Purpose'
-f4 = 'Competence'
-f5 = 'Fidelity'
+f1 = 'hope'
+f2 = 'will'
+f3 = 'purpose'
+f4 = 'competence'
+f5 = 'fidelity'
 f6 = 'love'
-f7 = 'Care'
-f8 = 'Wisdom'
+f7 = 'care'
+f8 = 'wisdom'
 
 
 

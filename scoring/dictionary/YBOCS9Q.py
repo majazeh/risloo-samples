@@ -1,11 +1,11 @@
 factors = {
  
-    1 :'Attachment2' , 2 :'Attachment2', 3 :'Attachment2' , 4 :'Attachment2' , 5 :'Attachment2' , 6 :'Attachment2' , 7 :'Attachment2',
-    8 : 'Attachment2', 9 : 'Attachment2', 10 : 'Attachment2'
+    1 :'attachment2' , 2 :'attachment2', 3 :'attachment2' , 4 :'attachment2' , 5 :'attachment2' , 6 :'attachment2' , 7 :'attachment2',
+    8 : 'attachment2', 9 : 'attachment2', 10 : 'attachment2'
     }
 
 
-factors_name = ('Attachment2')
+factors_name = ('attachment2')
 
 
 

@@ -1,7 +1,7 @@
 from Data import Data
-import scoring.dictionary.MOCI as dictionary
+import scoring.dictionary.MOCI93 as dictionary
 
-class MOCI(Data):
+class MOCI93(Data):
     scores = {'raw' :  None }# 
     
     def scoring_raw(self, score):

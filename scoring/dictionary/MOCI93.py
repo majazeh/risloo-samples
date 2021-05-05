@@ -1,7 +1,7 @@
 f1 = 'total'
 f2 = 'control'
 f3 = 'washing'
-f4 = 'slowing/repeat'
+f4 = 'slowing_repeat'
 f5 = 'doubt'
 
 

@@ -24,8 +24,8 @@ f3 = 'Conflict_resolution'
 f4 = 'financial_management'
 f5 = 'leisure_activities'
 f6 = 'sexual_relationship'
-f7 = 'children_&_marriage'
-f8 = 'family_&_friends'
+f7 = 'children_and_marriage'
+f8 = 'family_and_friends'
 f9 = 'religious_orientation'
 
 

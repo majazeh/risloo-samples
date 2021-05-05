@@ -47,4 +47,7 @@ factors = {
 
 reverse_scoring_numbers =(2,4,6,9,10,12,13,17,19,24,25,28,32,33)
 
-factors_interpretation = { (0,34) :'too_weak', (34,68):'weak' , (68,102):'intermediate' ,(102,1000):'strong' }
+factors_interpretation = { (0,34) :'بسیار ضعیف'
+                        , (34,68):'ضعیف'
+                        , (68,102):'متوسط'
+                        ,(102,1000):'قوی' }

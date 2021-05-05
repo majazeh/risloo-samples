@@ -1,9 +1,9 @@
 f1 = 'frequency'
 f2 = 'delay'
-f3 = 'reading_breathing,word_pressure'
+f3 = 'reading_breathing_and_word_pressure'
 f4 = 'movement_of_limbs_and_body'
 f5 = 'psychological_factors'
-f6 = 'head,tongue,mouth,lips_movements'
+f6 = 'head_tongue_mouth_lips_movements'
 
 
 

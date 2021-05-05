@@ -1,24 +1,25 @@
 from Data import Data
-import scoring.dictionary.AEQ as dictionary
+import scoring.dictionary.PIES3293 as dictionary
 
-class AEQ(Data):
+class PIES3293(Data):
     scores = {'raw' :  None }# 
     
     def scoring_raw(self, score):
-        option_numbers = dictionary.option_numbers
-        
+        option_numbers = 5
         for i, item in self.items():   
             try:
                 answer = int(item.get('user_answered')) 
+                factors = dictionary.factors[i + 1]
                 
                 if i+1 in dictionary.reverse_scoring_numbers:
                     
+                    for factor in factors:
                         
-                    score.increase('raw' , option_numbers +1  - answer )    
-                
+                        score.increase(factor , option_numbers +1  - answer )    
                 else :
+                    for factor in factors:
                         
-                    score.increase('raw' , answer )    
+                        score.increase(factor , answer )    
                 
 
             except:
