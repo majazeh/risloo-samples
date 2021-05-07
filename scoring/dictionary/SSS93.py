@@ -6,8 +6,9 @@ f5 = 'psychological_factors'
 f6 = 'head_tongue_mouth_lips_movements'
 
 
-
+factors_names = ('raw',f1,f2,f3,f4,f5,f6)
 option_numbers = 5
+
 
 factors = {
     1 :(f1,)

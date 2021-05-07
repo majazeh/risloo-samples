@@ -6,9 +6,9 @@ import subprocess
 
 
 
-folder_name="EMSS"
-file_name="EMSS4793"
-test_numbers = 200
+folder_name="SSS"
+file_name="SSS93"
+test_numbers = 100
 
 my_path = str(Path(__file__).resolve().parent)
 
