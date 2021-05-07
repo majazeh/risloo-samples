@@ -6,8 +6,8 @@ import subprocess
 
 
 
-folder_name="JPSDI"
-file_name="JPSDI93"
+folder_name="EMSS"
+file_name="EMSS4793"
 test_numbers = 200
 
 my_path = str(Path(__file__).resolve().parent)
