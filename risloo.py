@@ -55,7 +55,7 @@ class risloo():
     
     def export_raw(self):
         
-        sys.stdout.write(json.dumps(self.scoring_scale.score.toDict()) + "\n")
+        sys.stdout.write(json.dumps(self.scoring_scale.score.toDict(),ensure_ascii=False) + "\n")
         
         if self.args['Interpretation']:
             sys.stdout.write(self.interpreting_scale.interpret.get_text() + "\n")
