@@ -9,13 +9,13 @@ my_par_dir = my_path.split('/tests')[0]
 
 
 ########################### Parameter setting ################################
-test_name = 'OBQ44'
-file_name = 'OBQ44'
+folder_name = 'YSQ'
+file_name = 'YSQ9093'
 test_numbers = 2
 test_numbers_list = [1,2]
 
 # test form loading
-with open( my_par_dir + '/forms/' + test_name + '/' + file_name +'.json', 'r') as file:
+with open( my_par_dir + '/forms/' + folder_name + '/' + file_name +'.json', 'r') as file:
     data = json.load(file)
 
 
@@ -45,9 +45,9 @@ for j in range (test_numbers):
 
 
 
-    book.save( my_path + '/' + test_name +'/' + file_name + '_test_' + str(test_numbers_list[j]) + '.xlsx') 
+    book.save( my_path + '/' + folder_name +'/' + file_name + '_test_' + str(test_numbers_list[j]) + '.xlsx') 
 
-    with open( my_path + '/' + test_name + '/' + file_name +'_test_'+ str(test_numbers_list[j]) + '.json', 'w') as file:
+    with open( my_path + '/' + folder_name + '/' + file_name +'_test_'+ str(test_numbers_list[j]) + '.json', 'w') as file:
         json.dump(data, file , ensure_ascii=False ,indent= 4)
 
 
