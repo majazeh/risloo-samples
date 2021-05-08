@@ -4,7 +4,7 @@ f3 = 'washing'
 f4 = 'slowing_repeat'
 f5 = 'doubt'
 
-
+factors_names = (f1,f2,f3,f4,f5)
 
 
 factors = {

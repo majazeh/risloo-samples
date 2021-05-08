@@ -1,6 +1,9 @@
+f1 = 'stress'
+f2 = 'anxiety'
+f3 = 'depression'
 factors = {
-    1 :'stress' , 2 :'anxiety' , 3 :'depression' , 4 :'anxiety' , 5 :'depression' , 6 :'stress' ,  7:'anxiety' , 8 :'stress' , 9 :'anxiety' , 10 :'depression' , 11 :'stress' , 12 :'stress' , 13 :'depression' , 14 :'stress' , 15 :'anxiety' , 16 :'depression' ,
-    17 :'depression' , 18 :'stress' , 19 :'anxiety' , 20 :'anxiety' , 21 :'depression', 
-    22 :'stress' , 23 :'anxiety' , 24 :'depression' , 25 :'anxiety' , 26 :'depression' , 27 :'stress' ,  28:'anxiety' , 29 :'stress' , 30 :'anxiety' , 31 :'depression' , 32 :'stress' , 33 :'stress' , 34 :'depression' , 35 :'stress' , 36 :'anxiety' , 37 :'depression' ,
-    38 :'depression' , 39 :'stress' , 40 :'anxiety' , 41 :'anxiety' , 42 :'depression'
+    1 :f1 , 2 :f2 , 3 :f3 , 4 :f2 , 5 :f3 , 6 :f1 ,  7:f2 , 8 :f1 , 9 :f2 , 10 :f3 , 11 :f1 , 12 :f1 , 13 :f3 , 14 :f1 , 15 :f2 , 16 :f3 ,
+    17 :f3 , 18 :f1 , 19 :f2 , 20 :f2 , 21 :f3, 
+    22 :f1 , 23 :f2 , 24 :f3 , 25 :f2 , 26 :f3 , 27 :f1 ,  28:f2 , 29 :f1 , 30 :f2 , 31 :f3 , 32 :f1 , 33 :f1 , 34 :f3 , 35 :f1 , 36 :f2 , 37 :f3 ,
+    38 :f3 , 39 :f1 , 40 :f2 , 41 :f2 , 42 :f3
 }

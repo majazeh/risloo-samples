@@ -1,4 +1,8 @@
+f1 = 'stress'
+f2 = 'anxiety'
+f3 = 'depression'
+
 factors = {
-    1 :'stress' , 2 :'anxiety' , 3 :'depression' , 4 :'anxiety' , 5 :'depression' , 6 :'stress' ,  7:'anxiety' , 8 :'stress' , 9 :'anxiety' , 10 :'depression' , 11 :'stress' , 12 :'stress' , 13 :'depression' , 14 :'stress' , 15 :'anxiety' , 16 :'depression' ,
-    17 :'depression' , 18 :'stress' , 19 :'anxiety' , 20 :'anxiety' , 21 :'depression' 
+    1 :f1 , 2 :f2 , 3 :f3 , 4 :f2 , 5 :f3 , 6 :f1 ,  7:f2 , 8 :f1 , 9 :f2 , 10 :f3 , 11 :f1 , 12 :f1 , 13 :f3 , 14 :f1 , 15 :f2 , 16 :f3 ,
+    17 :f3 , 18 :f1 , 19 :f2 , 20 :f2 , 21 :f3 
 }

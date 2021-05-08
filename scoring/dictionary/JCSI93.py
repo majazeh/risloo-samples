@@ -4,7 +4,7 @@ f3 = 'understanding_message'
 f4 = 'awareness'
 f5 = 'assertiveness'
 
-factor_names = (f1,f2,f3,f4,f5)
+factor_names = ('raw',f1,f2,f3,f4,f5)
 option_numbers = 5
 factors = {
     1 :(f5,)
@@ -47,7 +47,7 @@ factors = {
 
 reverse_scoring_numbers =(2,4,6,9,10,12,13,17,19,24,25,28,32,33)
 
-factors_interpretation = { (0,34) :'بسیار ضعیف'
+factors_interpretation = { (0,33) :'بسیار ضعیف'
                         , (34,68):'ضعیف'
-                        , (68,102):'متوسط'
-                        ,(102,1000):'قوی' }
+                        , (69,102):'متوسط'
+                        ,(103,1000):'قوی' }

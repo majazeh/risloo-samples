@@ -3,6 +3,8 @@ f2 = 'god_concept'
 f3 = 'self_image'
 f4 =  'self_concept'
 
+factor_names = ('raw',f1,f2,f3,f4,f5)
+
 factors = {
     1 :(f2,)
     , 2 :(f1,)

@@ -7,7 +7,9 @@ f6 = 'love'
 f7 = 'care'
 f8 = 'wisdom'
 
+factors_names = (f1,f2,f3,f4,f5,f6,f7,f8)
 
+option_numbers = 5
 
 factors = {
     1 :(f2,)

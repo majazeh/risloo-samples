@@ -9,8 +9,8 @@ my_par_dir = my_path.split('/tests')[0]
 
 
 ########################### Parameter setting ################################
-folder_name = 'YSQ'
-file_name = 'YSQ9093'
+folder_name = 'IBT'
+file_name = 'IBT93'
 test_numbers = 2
 test_numbers_list = [1,2]
 

@@ -8,6 +8,8 @@ class MMPI7193(Data):
         
         t_dictionary = self.get_gender_and_education_dictionary()
         
+        score.set(dictionary.factors_names,0)
+        
         for i, item in self.items():   
             try:
                 answer = int(item.get('user_answered')) 

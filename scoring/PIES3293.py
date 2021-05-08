@@ -5,7 +5,8 @@ class PIES3293(Data):
     scores = {'raw' :  None }# 
     
     def scoring_raw(self, score):
-        option_numbers = 5
+        option_numbers = dictionary.option_numbers
+        score.set(dictionary.factors_names,0)
         for i, item in self.items():   
             try:
                 answer = int(item.get('user_answered')) 
