@@ -6,8 +6,8 @@ import subprocess
 
 
 
-folder_name="SSS"
-file_name="SSS93"
+folder_name="SASQ"
+file_name="SASQ93"
 test_numbers = 100
 
 my_path = str(Path(__file__).resolve().parent)
