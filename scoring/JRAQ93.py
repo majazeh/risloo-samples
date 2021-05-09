@@ -7,7 +7,6 @@ class JRAQ93(Data):
     def scoring_raw(self, score):
 
         option_numbers = dictionary.option_numbers
-        score.set(dictionary.factors_names,0)
 
         for i, item in self.items():   
             try:
