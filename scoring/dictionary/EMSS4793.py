@@ -11,11 +11,11 @@ raw2t = {
     }
 
 t_score_summary = {
-    (0,29) :'نارضایتی شدید همسران از روابط زناشویی' ,
-    (30,40) :'عدم رضایت از روابط زناشویی همسران' ,
-    (41,60) :'رضایت نسبی و متوسط از روابط زناشویی همسران' ,
-    (61,70) :'رضایت زیاد همسران از روابط زناشویی' ,
-    (71,1000) :'رضایت فوق‌العاده از روابط زناشویی بین همسران' 
+    (0,29) :'severe_dissatisfaction' ,
+    (30,40) :'dissatisfaction' ,
+    (41,60) :'moderate_satisfaction' ,
+    (61,70) :'severe_satisfaction' ,
+    (71,1000) :'extreme_satisfaction' 
 }
 
 f1 = 'personality_issues'
@@ -98,9 +98,9 @@ factors = {
 }
 
 factors_interpretation = {
-    1:'نارضایتی شدید'
-    , 2:'عدم رضایت'
-    , 3:'رضایت متوسط' 
-    , 4:'رضایت زیاد' 
-    , 5:'رضایت فوق‌العاده'
+    1:'severe_dissatisfaction'
+    , 2:'dissatisfaction'
+    , 3:'moderate_satisfaction' 
+    , 4:'severe_satisfaction' 
+    , 5:'extreme_satisfaction'
 }
