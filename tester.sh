@@ -7,7 +7,7 @@
 ## just saving for scientific tests
 
 # test producing:
-python3 /home/mostafa/Majazeh/risloo-samples/tester.py --folder_name CERQS --file_name CERQS93 --test_numbers 2 -s
+# python3 /home/mostafa/Majazeh/risloo-samples/tester.py --folder_name CERQS --file_name CERQS93 --test_numbers 2 -s
 # test scoring
-python3 /home/mostafa/Majazeh/risloo-samples/risloo.py -s CERQS93 -it file -id /home/mostafa/Majazeh/risloo-samples/scoring/tests/CERQS/CERQS93_test_1.json -ot raw json excell
-python3 /home/mostafa/Majazeh/risloo-samples/risloo.py -s CERQS93 -it file -id /home/mostafa/Majazeh/risloo-samples/scoring/tests/CERQS/CERQS93_test_2.json -ot raw json excell
+python3 /home/mostafa/Majazeh/risloo-samples/risloo.py -s AMSC93 -it file -id /home/mostafa/Majazeh/risloo-samples/scoring/tests/AMS/AMSC93_test_1.json -ot raw json excell
+python3 /home/mostafa/Majazeh/risloo-samples/risloo.py -s AMSC93 -it file -id /home/mostafa/Majazeh/risloo-samples/scoring/tests/AMS/AMSC93_test_2.json -ot raw json excell
