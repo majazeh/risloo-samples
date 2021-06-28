@@ -1,7 +1,7 @@
 from Data import Data
 import scoring.dictionary.AMS93 as dictionary
 
-class AMSC93(Data):
+class AMS93(Data):
     scores = {'raw' :  None }# 
     
     def scoring_raw(self, score):
