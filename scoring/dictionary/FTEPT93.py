@@ -68,7 +68,7 @@ factors = {
 reverse_scoring_numbers = (8,23,26,33)
 
 level_interpretation = {
-    (48,96): 'weak'
+    (48,95): 'weak'
     ,(96,144): 'mild'
     ,(144,1000) : 'very_good'
 }
