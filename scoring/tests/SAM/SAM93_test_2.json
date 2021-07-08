@@ -18,7 +18,8 @@
                 ]
             },
             "alias": "gender",
-            "force": true
+            "force": true,
+            "user_answered": "2"
         },
         {
             "type": "text",
@@ -28,7 +29,8 @@
                 "type": "number"
             },
             "alias": "age",
-            "force": true
+            "force": true,
+            "user_answered": "37"
         },
         {
             "type": "text",
@@ -55,7 +57,8 @@
                 ]
             },
             "alias": "education",
-            "force": true
+            "force": true,
+            "user_answered": "8"
         }
     ],
     "items": [
@@ -71,7 +74,8 @@
                     "زیاد",
                     "خیلی زیاد"
                 ]
-            }
+            },
+            "user_answered": "5"
         },
         {
             "type": "text",
@@ -85,7 +89,8 @@
                     "زیاد",
                     "خیلی زیاد"
                 ]
-            }
+            },
+            "user_answered": "4"
         },
         {
             "type": "text",
@@ -99,7 +104,8 @@
                     "زیاد",
                     "خیلی زیاد"
                 ]
-            }
+            },
+            "user_answered": "5"
         },
         {
             "type": "text",
@@ -113,7 +119,8 @@
                     "زیاد",
                     "خیلی زیاد"
                 ]
-            }
+            },
+            "user_answered": "2"
         },
         {
             "type": "text",
@@ -127,7 +134,8 @@
                     "زیاد",
                     "خیلی زیاد"
                 ]
-            }
+            },
+            "user_answered": "5"
         },
         {
             "type": "text",
@@ -141,7 +149,8 @@
                     "زیاد",
                     "خیلی زیاد"
                 ]
-            }
+            },
+            "user_answered": "1"
         },
         {
             "type": "text",
@@ -155,7 +164,8 @@
                     "زیاد",
                     "خیلی زیاد"
                 ]
-            }
+            },
+            "user_answered": "5"
         },
         {
             "type": "text",
@@ -169,7 +179,8 @@
                     "زیاد",
                     "خیلی زیاد"
                 ]
-            }
+            },
+            "user_answered": "3"
         },
         {
             "type": "text",
@@ -183,7 +194,8 @@
                     "زیاد",
                     "خیلی زیاد"
                 ]
-            }
+            },
+            "user_answered": "5"
         },
         {
             "type": "text",
@@ -197,7 +209,8 @@
                     "زیاد",
                     "خیلی زیاد"
                 ]
-            }
+            },
+            "user_answered": "1"
         },
         {
             "type": "text",
@@ -211,7 +224,8 @@
                     "زیاد",
                     "خیلی زیاد"
                 ]
-            }
+            },
+            "user_answered": "1"
         },
         {
             "type": "text",
@@ -225,7 +239,8 @@
                     "زیاد",
                     "خیلی زیاد"
                 ]
-            }
+            },
+            "user_answered": "5"
         },
         {
             "type": "text",
@@ -239,7 +254,8 @@
                     "زیاد",
                     "خیلی زیاد"
                 ]
-            }
+            },
+            "user_answered": "5"
         },
         {
             "type": "text",
@@ -253,7 +269,8 @@
                     "زیاد",
                     "خیلی زیاد"
                 ]
-            }
+            },
+            "user_answered": "2"
         },
         {
             "type": "text",
@@ -267,7 +284,8 @@
                     "زیاد",
                     "خیلی زیاد"
                 ]
-            }
+            },
+            "user_answered": "5"
         },
         {
             "type": "text",
@@ -281,7 +299,8 @@
                     "زیاد",
                     "خیلی زیاد"
                 ]
-            }
+            },
+            "user_answered": "5"
         },
         {
             "type": "text",
@@ -295,7 +314,8 @@
                     "زیاد",
                     "خیلی زیاد"
                 ]
-            }
+            },
+            "user_answered": "4"
         },
         {
             "type": "text",
@@ -309,7 +329,8 @@
                     "زیاد",
                     "خیلی زیاد"
                 ]
-            }
+            },
+            "user_answered": "5"
         },
         {
             "type": "text",
@@ -323,7 +344,8 @@
                     "زیاد",
                     "خیلی زیاد"
                 ]
-            }
+            },
+            "user_answered": "4"
         }
     ]
 }
