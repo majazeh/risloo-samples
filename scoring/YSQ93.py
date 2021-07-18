@@ -1,7 +1,7 @@
 from Data import Data
-import scoring.dictionary.YSQ9093 as dictionary
+import scoring.dictionary.YSQ93 as dictionary
 
-class YSQ9093(Data):
+class YSQ93(Data):
     scores = {'raw':None}
  
     def scoring_raw(self, score): 
