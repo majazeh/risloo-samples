@@ -1,7 +1,7 @@
 from Data import Data
-import scoring.dictionary.PIES6493 as dictionary
+import scoring.dictionary.PIES9A as dictionary
 
-class PIES6493(Data):
+class PIES9A(Data):
     scores = {'raw' :  None }# 
     
     def scoring_raw(self, score):

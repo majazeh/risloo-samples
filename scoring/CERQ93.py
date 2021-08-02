@@ -1,7 +1,7 @@
 from Data import Data
-import scoring.dictionary.CERQS93 as dictionary
+import scoring.dictionary.CERQ93 as dictionary
 
-class CERQS93(Data):
+class CERQ93(Data):
     scores = {'raw' :  None }# 
     
     def scoring_raw(self, score):
