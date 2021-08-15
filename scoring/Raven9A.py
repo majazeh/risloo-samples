@@ -31,12 +31,23 @@ class Raven9A(Data):
         score.set('percentile', dictionary.percentile[iq])
     
     def scoring_level(self, score):
-        for iq_level in dictionary.level:
-            if(self.score.get('iq') >= iq_level):
-                level = dictionary.level.get(iq_level)
-                break
-        score.set('level', level.get('level'))
-        score.set('report', level.get('title'))
+
+        raw_score = score.get('raw')
+        intervals = list(dictionary.level_interpretation.keys())
+        
+        for interval in intervals:    
+            if interval[0] <= raw_score <= interval[1]:
+                score.set('report', dictionary.level_interpretation[interval])
+                return 
+        else:
+            return None
+        
+        # for iq_level in dictionary.level:
+        #     if(self.score.get('iq') >= iq_level):
+        #         level = dictionary.level.get(iq_level)
+        #         break
+        # score.set('level', level.get('level'))
+        # score.set('report', level.get('title'))
 
     def scoring_final(self, score):
         iq = score.get('iq')

@@ -69,7 +69,15 @@ IQ_irani = {
     
 }
 
-
 factors_name_percentile = ('ravan_rahnema' , 'england' , 'irani')
 factors_name_iq = ('ravan_rahnema' , 'irani')
+level_interpretation = {
+    (0,4):  ('کند ذهن')
+    ,(5,9): ('پایین پایین متوسط')
+    ,(10,24) : ('پایین‌تر از متوسط')
+    ,(25,74) : ('متوسط')
+    ,(75,89) : ('باهوش')
+    ,(90,94) : ('باهوش')
+    ,(95,100) : ('خیلی باهوش')
+}
 

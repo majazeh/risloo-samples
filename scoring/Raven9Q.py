@@ -10,7 +10,21 @@ class Raven9Q(Data):
             if(item.get('user_answered') == None): continue
             answer = int(item.get('user_answered'))
             result = self.check_correctness(answer , i+1 )
-            score.increase('raw') if result else None
+            score.increase('raw') if result else None   
+       
+        raw_score = score.get('raw')
+        interpretation = self.get_level_interpretation(raw_score)
+        score.set('report', interpretation)
+
+    def get_level_interpretation(self,raw_score):
+        
+        intervals = list(dictionary.level_interpretation.keys())
+        
+        for interval in intervals:   
+            if interval[0] <= raw_score <= interval[1]:
+                return dictionary.level_interpretation[interval]
+        else:
+            return None
     
     
     def scoring_iq(self, score):      
@@ -19,9 +33,6 @@ class Raven9Q(Data):
         self.grade_ravan_rahnema_iq(score)
         self.grade_irani_iq(score )
     
-        
-        
-
     def scoring_percentile_rank(self, score):
 
         score.set(dictionary.factors_name_percentile,0)
