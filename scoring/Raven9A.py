@@ -2,7 +2,7 @@ from Data import Data
 import scoring.dictionary.Raven9A as dictionary
 
 class Raven9A(Data):
-    scores = {'raw' :  None, 'iq' : None, 'percentile' : None, 'level' : None, 'final' : None}
+    scores = {'raw' :  None, 'iq' : None, 'percentile' : None, 'final' : None}
     def scoring_raw(self, score):
         score.set(dictionary.factors_name, 0)
         for i, item in self.items():
@@ -31,7 +31,6 @@ class Raven9A(Data):
         score.set('percentile', dictionary.percentile[iq])
     
     def scoring_level(self, score):
-
         raw_score = score.get('raw')
         intervals = list(dictionary.level_interpretation.keys())
         
