@@ -1,0 +1,371 @@
+{
+    "title": "پرسشنامه حرمت نفس کوپر اسمیت(فتحی آشتیانی)",
+    "version": "1",
+    "edition": "",
+    "edition_version": null,
+    "filler": "client",
+    "description": "## دستور اجرای آزمون\n\nعبارت های زیر را به دقت مطالعه نموده نظر خود را درباره هر یک از عبارت ها بر اساس این که به شما شبیه است (بلی) یا به شما شبیه نیست (خیر) را مشخص کنید.",
+    "prerequisites": [
+        {
+            "type": "text",
+            "label": "gender",
+            "text": "جنسیت",
+            "answer": {
+                "type": "select",
+                "options": [
+                    "زن",
+                    "مرد"
+                ]
+            },
+            "alias": "gender",
+            "force": true
+        },
+        {
+            "type": "text",
+            "label": "age",
+            "text": "سن",
+            "answer": {
+                "type": "number"
+            },
+            "alias": "age",
+            "force": true
+        },
+        {
+            "type": "text",
+            "label": "education",
+            "text": "تحصیلات",
+            "answer": {
+                "type": "select",
+                "options": [
+                    "ابتدایی اول",
+                    "ابتدایی دوم",
+                    "متوسطه اول",
+                    "متوسطه دوم",
+                    "دیپلم",
+                    "کارشناسی",
+                    "کارشناسی ارشد",
+                    "پزشکی عمومی",
+                    "متخصص",
+                    "دکتری تخصصی",
+                    "حوزوی مقدمات",
+                    "حوزوی سطح۱",
+                    "حوزوی سطح۲",
+                    "حوزوی سطح۳",
+                    "حوزوی سطح۴"
+                ]
+            },
+            "alias": "education",
+            "force": true
+        }
+    ],
+    "items": [
+        {
+            "type": "text",
+            "text": "بيشتر اوقات در خواب و خيال به سر مي‌برم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "text": "از خود خيلي مطمئن هستم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "text": "اغلب آرزو مي‌كنم اي كاش فرد ديگري بودم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "text": "من دوست‌داشتني هستم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "text": "با پدر و مادرم اوقات خوشي را مي‌گذرانم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "text": "هيچ‌وقت درباره چيزي نگران نمي‌شوم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "text": "صحبت كردن در مقابل كلاس برايم سخت است. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "text": "آرزو مي‌كنم اي كاش جوانتر بودم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "text": "چيزهاي زيادي در من وجود دارند كه اگر مي‌توانستم آنها را تغيير مي‌دادم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "text": "به آساني مي‌توانم تصميم بگيرم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "text": "ديگران از با من بودن لذت مي‌برند. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "text": "در خانه زود عصباني مي‌شوم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "text": "هميشه كار را درست انجام مي‌دهم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "text": "به امور تحصيلي خود افتخار مي‌كنم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "text": "هميشه كسي بايد به من بگويد چه كار كنم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "text": "انجام هر كار جديدي وقت زيادي از من مي‌گيرد. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "text": "اغلب از آنچه انجام داده‌ام متأسفم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "text": "بين همسن و سالهاي خود مشهور هستم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "text": "معمولاً والدينم به احساسات من توجه مي‌كنند. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "text": "هرگز خشنود نيستم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "text": "تا آنجا كه بتوانم كار را به نحو احسن انجام مي‌دهم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "text": "من به راحتي تسليم مي‌شوم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "text": "معمولاً مي‌توانم از خود مواظبت كنم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "text": "من فردي نسبتاً شادمان هستم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "text": "من ترجيح مي‌دهم با بچه‌هاي كوچكتر از خودم بازي كنم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "text": "والدينم انتظارات بيش از حدي از من دارند. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "text": "من تمام كساني را كه مي‌شناسم دوست دارم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "text": "دوست دارم معلم در كلاس براي جواب دادن درس صدايم بزند. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            }
+        }
+    ]
+}

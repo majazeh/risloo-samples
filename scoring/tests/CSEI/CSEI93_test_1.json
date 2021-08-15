@@ -1,0 +1,762 @@
+{
+    "title": "پرسشنامه حرمت نفس کوپر اسمیت(فتحی آشتیانی)",
+    "version": "1",
+    "edition": "",
+    "edition_version": null,
+    "filler": "client",
+    "description": "## دستور اجرای آزمون\n\nعبارت های زیر را به دقت مطالعه نموده نظر خود را درباره هر یک از عبارت ها بر اساس این که به شما شبیه است (بلی) یا به شما شبیه نیست (خیر) را مشخص کنید.",
+    "prerequisites": [
+        {
+            "type": "text",
+            "label": "gender",
+            "text": "جنسیت",
+            "answer": {
+                "type": "select",
+                "options": [
+                    "زن",
+                    "مرد"
+                ]
+            },
+            "alias": "gender",
+            "force": true,
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "label": "age",
+            "text": "سن",
+            "answer": {
+                "type": "number"
+            },
+            "alias": "age",
+            "force": true,
+            "user_answered": "37"
+        },
+        {
+            "type": "text",
+            "label": "education",
+            "text": "تحصیلات",
+            "answer": {
+                "type": "select",
+                "options": [
+                    "ابتدایی اول",
+                    "ابتدایی دوم",
+                    "متوسطه اول",
+                    "متوسطه دوم",
+                    "دیپلم",
+                    "کارشناسی",
+                    "کارشناسی ارشد",
+                    "پزشکی عمومی",
+                    "متخصص",
+                    "دکتری تخصصی",
+                    "حوزوی مقدمات",
+                    "حوزوی سطح۱",
+                    "حوزوی سطح۲",
+                    "حوزوی سطح۳",
+                    "حوزوی سطح۴"
+                ]
+            },
+            "alias": "education",
+            "force": true,
+            "user_answered": "8"
+        }
+    ],
+    "items": [
+        {
+            "type": "text",
+            "text": "معمولاً تشویش ندارم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": " برایم بسیار مشکل است در کلاس حرف بزنم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": " اگر می‌توانستم خیلی چیزها را در خودم تغییر می‌دادم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": " می‌توانم بدون مشکل زیاد تصمیم بگیرم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": " دیگران از مصاحبت با من بسیار لذت می‌برند.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": " در منزل به آسانی رنجیده خاطر می‌شوم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": " مدت‌ها طول می‌کشد تا به چیزی عادت تازه عادت کنم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": " افراد همسن من، برایم ارزش زیادی قایلند.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": " معمولاً پدر و مادرم به احساساتم توجه می کنند.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": " به آسانی تسلیم دیگران می‌شوم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": " پدر و مادرم بیش از حد از من انتظار دارند.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": " برایم خیلی مشکل است خودم را آن‌طور که هستم نشان دهم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": " در زندگیم همه چیز درهم و شلوغ است.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "  معمولاً دیگران را تحت تاثیر قرار می‌دهم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": " درباره خودم نظر بدی دارم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "  غالباً دلم می‌خواهد خانه را ترک کنم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": " غالباً در کلاس احساس ناراحتی می کنم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": " فکر می‌کنم از لحاظ جسمانی ناخوشایند تر از اغلب افراد هستم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": " وقتی چیزی برای گفتن دارم آن را می‌گویم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": " پدر و مادرم مرا درک می‌کنند.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": " دیگران اکثراً بیشتر از من مورد علاقه هستند.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "غالباً احساس می‌کنم که به پدر و مادرم مرا به ستوه می‌آورند.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": " در کلاس غالباً مأیوس می شوم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": " غالباً  فکر می‌کنم که دلم می‌خواهد فرد دیگری باشم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": " دیگران غالباً به من اعتماد نمی‌کنند.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": " هرگز مضطرب نیستم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": " به اندازه کافی به خودم اطمینان دارم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": " دیگران به آسانی از من خوششان می‌آید.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "من و والدینم اوقات خوبی را با هم می‌گذرانیم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": " وقت زیادی را به خیال‌بافی می‌گذرانم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": " دلم می‌خواست کم سن تر بودم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": " همیشه آنچه را باید انجام داد انجام می‌دهم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": " از نتایج تحصیلی‌ام احساس غرور می‌کنم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": " همیشه منتظر می‌شوم تا کسی به من بگوید که چه کار باید بکنم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "اغلب از آنچه می‌کنم متأسف می‌شوم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": " هرگز احساس خوشبختی نکرده‌ام.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": " همیشه کارم را به بهترین وجهی که می‌توانم انجام می‌دهم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": " معمولا نمی توانم به تنهایی گلیمم را از آب بیرون بکشم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": " از زندگیم تقریباً راضی هستم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": " ترجیح می‌دهم دوستانی کم سن‌تر از خودم داشته باشم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": " به همه کسانی که می‌شناسم علاقه‌مند هستم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": " دوست دارم در کلاس از من بپرسند.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": " خودم را خوب درک می‌کنم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": " در منزل هیچ‌کس به من توجه زیادی نشان نمی‌دهد.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": " هرگز مورد سرزنش واقع نمی‌شوم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": " در کلاس آن‌طور که دلم می‌خواهد موفق نمی‌شوم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": " می‌توانم یک تصمیم بگیرم و در آن پابرجا بمانم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": " واقعاً دلم نمی‌خواهد یک پسر/دختر باشم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "  در روابط با دیگران راحت نیستم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": " هرگز مرعوب نمی‌شوم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": " غالباً از خودم شرم دارم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "دیگران غالباً برایم دردسر درست می‌کنند.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": " همیشه حقیقت را می‌گویم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": " معلمانم به من می‌فهمانند که نتایجم رضایت بخش نیست.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": " به آنچه می‌تواند برایم اتفاق بیفتد اصلا اهمیت نمی‌دهم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": " در آنچه که به عهده می‌گیرم به ندرت موفق می‌شوم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": " هنگامی که مورد سرزنش قرار می‌گیرم دست و پایم را گم می‌کنم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": " همیشه می‌دانم که به دیگران چه بگویم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        }
+    ]
+}
