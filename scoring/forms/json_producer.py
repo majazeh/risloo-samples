@@ -13,7 +13,7 @@ with open( my_path +'/raw.json', 'r') as file:
 
 ########################### Parameter setting ################################
 folder_name = 'CSEI'
-file_name = 'CSEI9A'
+file_name = 'CSEI93'
 
 options_list = [
                 "بلی",

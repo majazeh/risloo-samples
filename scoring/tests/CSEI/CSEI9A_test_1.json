@@ -72,7 +72,7 @@
                     "خیر"
                 ]
             },
-            "user_answered": "2"
+            "user_answered": "1"
         },
         {
             "type": "text",
@@ -96,7 +96,7 @@
                     "خیر"
                 ]
             },
-            "user_answered": "2"
+            "user_answered": "1"
         },
         {
             "type": "text",
@@ -108,7 +108,7 @@
                     "خیر"
                 ]
             },
-            "user_answered": "2"
+            "user_answered": "1"
         },
         {
             "type": "text",
@@ -120,7 +120,7 @@
                     "خیر"
                 ]
             },
-            "user_answered": "2"
+            "user_answered": "1"
         },
         {
             "type": "text",
@@ -156,7 +156,7 @@
                     "خیر"
                 ]
             },
-            "user_answered": "1"
+            "user_answered": "2"
         },
         {
             "type": "text",
@@ -168,7 +168,7 @@
                     "خیر"
                 ]
             },
-            "user_answered": "1"
+            "user_answered": "2"
         },
         {
             "type": "text",
@@ -180,7 +180,7 @@
                     "خیر"
                 ]
             },
-            "user_answered": "2"
+            "user_answered": "1"
         },
         {
             "type": "text",
@@ -228,7 +228,7 @@
                     "خیر"
                 ]
             },
-            "user_answered": "2"
+            "user_answered": "1"
         },
         {
             "type": "text",
@@ -264,7 +264,7 @@
                     "خیر"
                 ]
             },
-            "user_answered": "1"
+            "user_answered": "2"
         },
         {
             "type": "text",
@@ -300,7 +300,7 @@
                     "خیر"
                 ]
             },
-            "user_answered": "2"
+            "user_answered": "1"
         },
         {
             "type": "text",
@@ -312,7 +312,7 @@
                     "خیر"
                 ]
             },
-            "user_answered": "2"
+            "user_answered": "1"
         },
         {
             "type": "text",
@@ -324,7 +324,7 @@
                     "خیر"
                 ]
             },
-            "user_answered": "2"
+            "user_answered": "1"
         },
         {
             "type": "text",
@@ -348,7 +348,7 @@
                     "خیر"
                 ]
             },
-            "user_answered": "2"
+            "user_answered": "1"
         },
         {
             "type": "text",
@@ -360,7 +360,7 @@
                     "خیر"
                 ]
             },
-            "user_answered": "1"
+            "user_answered": "2"
         },
         {
             "type": "text",
@@ -372,7 +372,7 @@
                     "خیر"
                 ]
             },
-            "user_answered": "2"
+            "user_answered": "1"
         },
         {
             "type": "text",
@@ -384,7 +384,7 @@
                     "خیر"
                 ]
             },
-            "user_answered": "2"
+            "user_answered": "1"
         },
         {
             "type": "text",
@@ -396,7 +396,367 @@
                     "خیر"
                 ]
             },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "من خودم را درك مي‌كنم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
             "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "مثل من بودن خيلي سخت است. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "همه چيز در زندگي من گره خورده است.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "بچه ها معمولاً از عقيده من پيروي مي‌كنند. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "هيچ‌كس در خانه به من توجه زيادي نمي‌كند. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "هرگز سرزنش نمي‌شوم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "آن‌طور كه دوست دارم تكاليف مدرسه‌ام را انجام نمي‌دهم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "مي‌توانم تصميم بگيرم و به آن پايبند بمانم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "من واقعاً دوست ندارم كه يك پسر/ دختر باشم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "من خود را دست كم مي‌گيرم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "دوست ندارم با ديگران باشم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "خيلي وقت‌ها دوست دارم خانه را ترك كنم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "من اصلاً كمرو نيستم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "من اغلب در مدرسه احساس دلخوري مي‌كنم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "من اغلب احساس مي‌كنم كه از خود شرمنده‌ام. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "من به زيبايي ديگران نيستم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "اگر چيزي براي گفتن داشته باشم معمولاً آن را مي‌گويم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "بچه‌ها اغلب از من ایراد می‌گیرند. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "پدر و مادرم مرا ترك مي كنند. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "من هميشه راست مي‌گويم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "معلمان در من احساس ناخوشايند بي‌كفايتي به وجود مي‌آورند. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "برايم مهم نيست كه بر من چه مي‌گذرد. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "من فردي شكست‌خورده هستم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "هنگام سرزنش به آساني تسليم مي‌شوم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "بچه هاي ديگر بيشتر از من مورد علاقه ديگران هستند. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "اغلب اوقات اين احساس را دارم كه والدينم مرا تحت فشار قرار مي‌دهند. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "هميشه مي‌دانم كه به مردم چه بگويم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "اغلب در مدرسه دلسرد مي‌شوم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "type": "text",
+            "text": "معمولاً چيزي مرا آزار مي‌دهد. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "text": "نمي‌توان به من اعتماد كرد. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "بلی",
+                    "خیر"
+                ]
+            },
+            "user_answered": "1"
         }
     ]
 }

@@ -1,8 +1,8 @@
 {
-    "general_self_steem": 5,
+    "general_self_steem": 15,
     "family_self_steem": 3,
-    "social_self_steem": 2,
-    "professional_or_scholastic_self_steem": 3,
-    "life_scale": 2,
-    "total": 13
+    "social_self_steem": 7,
+    "professional_or_scholastic_self_steem": 4,
+    "life_scale": 1,
+    "total": 29
 }
