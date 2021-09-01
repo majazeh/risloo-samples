@@ -58,7 +58,7 @@
             "alias": "education",
             "label": "education",
             "force": true,
-            "user_answered": "8"
+            "user_answered": "6"
         }
     ],
     "items": [
@@ -79,7 +79,7 @@
                     "/Raven-9A/pre/01/01-8"
                 ]
             },
-            "user_answered": "3"
+            "user_answered": "8"
         },
         {
             "type": "image_url",
@@ -98,7 +98,7 @@
                     "/Raven-9A/pre/02/02-8"
                 ]
             },
-            "user_answered": "3"
+            "user_answered": "4"
         },
         {
             "type": "image_url",
@@ -117,7 +117,7 @@
                     "/Raven-9A/pre/03/03-8"
                 ]
             },
-            "user_answered": "1"
+            "user_answered": "5"
         },
         {
             "type": "image_url",
@@ -136,7 +136,7 @@
                     "/Raven-9A/pre/04/04-8"
                 ]
             },
-            "user_answered": "8"
+            "user_answered": "1"
         },
         {
             "type": "image_url",
@@ -155,7 +155,7 @@
                     "/Raven-9A/pre/05/05-8"
                 ]
             },
-            "user_answered": "5"
+            "user_answered": "2"
         },
         {
             "type": "image_url",
@@ -174,7 +174,7 @@
                     "/Raven-9A/pre/06/06-8"
                 ]
             },
-            "user_answered": "4"
+            "user_answered": "5"
         },
         {
             "type": "image_url",
@@ -212,7 +212,7 @@
                     "/Raven-9A/pre/08/08-8"
                 ]
             },
-            "user_answered": "8"
+            "user_answered": "3"
         },
         {
             "type": "image_url",
@@ -250,7 +250,7 @@
                     "/Raven-9A/pre/10/10-8"
                 ]
             },
-            "user_answered": "2"
+            "user_answered": "8"
         },
         {
             "type": "image_url",
@@ -269,7 +269,7 @@
                     "/Raven-9A/pre/11/11-8"
                 ]
             },
-            "user_answered": "8"
+            "user_answered": "7"
         },
         {
             "type": "image_url",
@@ -288,7 +288,7 @@
                     "/Raven-9A/pre/12/12-8"
                 ]
             },
-            "user_answered": "5"
+            "user_answered": "6"
         },
         {
             "type": "image_url",
@@ -307,7 +307,7 @@
                     "/Raven-9A/org/01/01-8"
                 ]
             },
-            "user_answered": "3"
+            "user_answered": "5"
         },
         {
             "type": "image_url",
@@ -364,7 +364,7 @@
                     "/Raven-9A/org/04/04-8"
                 ]
             },
-            "user_answered": "8"
+            "user_answered": "4"
         },
         {
             "type": "image_url",
@@ -440,7 +440,7 @@
                     "/Raven-9A/org/08/08-8"
                 ]
             },
-            "user_answered": "3"
+            "user_answered": "1"
         },
         {
             "type": "image_url",
@@ -459,7 +459,7 @@
                     "/Raven-9A/org/09/09-8"
                 ]
             },
-            "user_answered": "5"
+            "user_answered": "8"
         },
         {
             "type": "image_url",
@@ -630,7 +630,7 @@
                     "/Raven-9A/org/18/18-8"
                 ]
             },
-            "user_answered": "2"
+            "user_answered": "7"
         },
         {
             "type": "image_url",
@@ -668,7 +668,7 @@
                     "/Raven-9A/org/20/20-8"
                 ]
             },
-            "user_answered": "1"
+            "user_answered": "8"
         },
         {
             "type": "image_url",
@@ -706,7 +706,7 @@
                     "/Raven-9A/org/22/22-8"
                 ]
             },
-            "user_answered": "8"
+            "user_answered": "7"
         },
         {
             "type": "image_url",
@@ -763,7 +763,7 @@
                     "/Raven-9A/org/25/25-8"
                 ]
             },
-            "user_answered": "5"
+            "user_answered": "7"
         },
         {
             "type": "image_url",
@@ -782,7 +782,7 @@
                     "/Raven-9A/org/26/26-8"
                 ]
             },
-            "user_answered": "8"
+            "user_answered": "2"
         },
         {
             "type": "image_url",
@@ -801,7 +801,7 @@
                     "/Raven-9A/org/27/27-8"
                 ]
             },
-            "user_answered": "8"
+            "user_answered": "7"
         },
         {
             "type": "image_url",
@@ -858,7 +858,7 @@
                     "/Raven-9A/org/30/30-8"
                 ]
             },
-            "user_answered": "4"
+            "user_answered": "5"
         },
         {
             "type": "image_url",
@@ -877,7 +877,7 @@
                     "/Raven-9A/org/31/31-8"
                 ]
             },
-            "user_answered": "8"
+            "user_answered": "4"
         },
         {
             "type": "image_url",
@@ -896,7 +896,7 @@
                     "/Raven-9A/org/32/32-8"
                 ]
             },
-            "user_answered": "7"
+            "user_answered": "8"
         },
         {
             "type": "image_url",
@@ -934,7 +934,7 @@
                     "/Raven-9A/org/34/34-8"
                 ]
             },
-            "user_answered": "3"
+            "user_answered": "1"
         },
         {
             "type": "image_url",
@@ -953,7 +953,7 @@
                     "/Raven-9A/org/35/35-8"
                 ]
             },
-            "user_answered": "7"
+            "user_answered": "3"
         },
         {
             "type": "image_url",

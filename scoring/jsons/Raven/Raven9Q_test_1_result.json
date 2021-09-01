@@ -1,12 +1,12 @@
 {
-    "raw": 8,
+    "raw": 15,
     "percentile_rank": {
-        "ravan_rahnema": "5-",
-        "england": "5-",
-        "irani": "5-"
+        "ravan_rahnema": "5",
+        "england": "10",
+        "irani": "25"
     },
     "iq": {
-        "ravan_rahnema": "72",
-        "irani": "59"
+        "ravan_rahnema": "74",
+        "irani": "87"
     }
 }

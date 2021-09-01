@@ -17,7 +17,7 @@ class Raven9A(Data):
                 score.increase('raw') if factor else None
     
     def scoring_iq(self, score):
-            age = int(self.prerequisite('age', 'user_answered'))
+            age = float(self.prerequisite('age', 'user_answered'))
             if age < 6: age = 6
             elif age > 18: age = 18
             

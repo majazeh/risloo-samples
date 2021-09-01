@@ -30,7 +30,7 @@
             "alias": "age",
             "label": "age",
             "force": true,
-            "user_answered": "37"
+            "user_answered": "20"
         },
         {
             "type": "text",
@@ -79,7 +79,7 @@
                     "/Raven-9A/pre/01/01-8"
                 ]
             },
-            "user_answered": "6"
+            "user_answered": "8"
         },
         {
             "type": "image_url",
@@ -98,7 +98,7 @@
                     "/Raven-9A/pre/02/02-8"
                 ]
             },
-            "user_answered": "8"
+            "user_answered": "4"
         },
         {
             "type": "image_url",
@@ -155,7 +155,7 @@
                     "/Raven-9A/pre/05/05-8"
                 ]
             },
-            "user_answered": "6"
+            "user_answered": "2"
         },
         {
             "type": "image_url",
@@ -193,7 +193,7 @@
                     "/Raven-9A/pre/07/07-8"
                 ]
             },
-            "user_answered": "4"
+            "user_answered": "6"
         },
         {
             "type": "image_url",
@@ -231,7 +231,7 @@
                     "/Raven-9A/pre/09/09-8"
                 ]
             },
-            "user_answered": "5"
+            "user_answered": "7"
         },
         {
             "type": "image_url",

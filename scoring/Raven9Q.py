@@ -12,9 +12,9 @@ class Raven9Q(Data):
             result = self.check_correctness(answer , i+1 )
             score.increase('raw') if result else None   
        
-        raw_score = score.get('raw')
-        interpretation = self.get_level_interpretation(raw_score)
-        score.set('report', interpretation)
+        # raw_score = score.get('raw')
+        # interpretation = self.get_level_interpretation(raw_score)
+        # score.set('report', interpretation)
 
     def get_level_interpretation(self,raw_score):
         
@@ -37,7 +37,7 @@ class Raven9Q(Data):
 
         score.set(dictionary.factors_name_percentile,0)
         raw_score = self.score.get('raw') 
-        age = int(self.prerequisite('age').get('user_answered'))
+        age = float(self.prerequisite('age').get('user_answered'))
         
         self.grade_ravan_rahnema_percentile(score , raw_score , age )
         self.grade_england_percentile(score , raw_score , age )
@@ -62,7 +62,7 @@ class Raven9Q(Data):
     def grade_irani_iq(self, score):
 
         raw_score = self.score.get('raw')
-        age = int(self.prerequisite('age').get('user_answered'))
+        age = float(self.prerequisite('age').get('user_answered'))
         
 
         irani_dict = dictionary.IQ_irani 
@@ -134,8 +134,8 @@ class Raven9Q(Data):
             percentile_rank_result = my_dictionary[rounded_age][numbers_list[-1]] + '+'
             
         else :
+            
             rounded_score = self.get_rounded_score(raw_score, numbers_list)
-    
             percentile_rank_result = my_dictionary[rounded_age][rounded_score]
 
         return percentile_rank_result
@@ -146,37 +146,28 @@ class Raven9Q(Data):
         N = len(age_list)
         if age <= age_list[0]:
             rounded_age = age_list[0]
+            return rounded_age
         
-        for i in range(N-2):
-            
+        for i in range(N-2):  
             if age_list[i] <= age < age_list[i+1] :
-                rounded_age = age_list[i+1]
-            
-            elif  age_list[N-1] <= age :
-                rounded_age = age_list[N-1]
-
-        return rounded_age
-
-
+                rounded_age = age_list[i]
+                return rounded_age
+        return age_list[N-1]
 
     def get_rounded_score(self ,raw_score, numbers_list):
                 
-            
-        if numbers_list[0] <= raw_score < numbers_list[1] : 
+        N = len(numbers_list)
+        if raw_score <= numbers_list[0]:
             rounded_score = numbers_list[0]
+            return rounded_score
         
-        elif numbers_list[1] <= raw_score < numbers_list[2]: 
-            rounded_score = numbers_list[1]
-        elif numbers_list[2] <= raw_score < numbers_list[3] : 
-            rounded_score = numbers_list[2]
-        elif numbers_list[3] <= raw_score < numbers_list[4] : 
-            rounded_score = numbers_list[3]
-        elif numbers_list[4] <= raw_score < numbers_list[5] : 
-            rounded_score = numbers_list[4]
-        elif numbers_list[5] <= raw_score < numbers_list[6] : 
-            rounded_score = numbers_list[5]
+        for i in range(N-2):
+            if numbers_list[i] <= raw_score < numbers_list[i+1] : 
+                rounded_score = numbers_list[i]
+                
+                return rounded_score
+            
         
-        return rounded_score
-
+        return numbers_list[N-1]
         
 
