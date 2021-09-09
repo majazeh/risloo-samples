@@ -76,8 +76,9 @@ class risloo():
         
         excell_path = my_path + test_name + '/' + names [-1] + '.xlsx'
         
+        Path(my_path + test_name ).mkdir(exist_ok=True) 
+        
         book = openpyxl.load_workbook(excell_path )
-
         
         if "outputs"  in book.sheetnames:
              sheet = book["outputs"]
@@ -109,26 +110,20 @@ class risloo():
                 
                 sheet.cell(row= cnt, column=2).value = out_dic[key]
                 cnt = cnt + 1
-
-        
+   
         book.save(excell_path)
     
     def export_json(self) :
 
         #json
         my_path = self.my_dir + '/scoring/jsons/'
-        
-        
         addr = self.args['input_data'].split('.json')[0]
-        names = addr.split('/')
-        
+        names = addr.split('/')  
         test_name = names [-2]
         
+        Path(my_path + test_name ).mkdir(exist_ok=True) 
         with open( my_path + test_name +'/'+ names[-1] + '_result' +'.json', 'w') as file:
             json.dump(self.scoring_scale.score.toDict(), file, ensure_ascii=False ,indent= 4)
-
-
-
 
         
 if (__name__ == '__main__'):

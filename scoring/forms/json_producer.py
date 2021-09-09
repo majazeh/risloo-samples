@@ -52,6 +52,8 @@ for i in range(question_numbers):
 
 data["items"] = items
 
+Path(my_path + '/' + folder_name ).mkdir(exist_ok=True)
+
 with open( my_path + '/' + folder_name + '/' + file_name +'.json', 'w') as file:
     json.dump(data, file, ensure_ascii=False ,indent= 4)
 

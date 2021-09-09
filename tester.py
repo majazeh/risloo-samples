@@ -48,13 +48,10 @@ for j in range (test_numbers):
     
     if SAVE :
         book = Workbook()
-        sheet = book.active
-        
+        sheet = book.active        
         sheet.title = "question_answers"
-    
         sheet.cell(row = 1, column=1).value = 'شماره سوالات'
-        sheet.cell(row = 1, column=2).value = 'پاسخ  گزینه فرد'
-    
+        sheet.cell(row = 1, column=2).value = 'پاسخ  گزینه فرد'    
 
     for i,item in enumerate(data["items"]):
         num_options = len(item["answer"]["options"])
@@ -65,6 +62,8 @@ for j in range (test_numbers):
             sheet.cell(row = i+2, column=2).value = item ["user_answered"]
 
     if SAVE:
+        Path(my_path +'/scoring/tests/'  + folder_name ).mkdir(exist_ok=True) 
+
         book.save( my_path +'/scoring/tests/'  + folder_name +'/' + file_name + '_test_' + str(test_numbers_list[j]) + '.xlsx') 
 
         with open( my_path + '/scoring/tests/' + folder_name + '/' + file_name +'_test_'+ str(test_numbers_list[j]) + '.json', 'w') as file:
