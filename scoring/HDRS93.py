@@ -18,4 +18,20 @@ class HDRS93(Data):
             except:
                 pass
         
+        raw_score = score.get('raw')
+        interpretation = self._get_level_interpretation(raw_score)
+        score.set('interpretation_level', interpretation)
+        
+
+    def _get_level_interpretation(self,raw_score):
+        
+        intervals = list(dictionary.level_interpretation.keys())
+        
+        for interval in intervals:
+            if interval[0] <= raw_score <= interval[1]:
+                return dictionary.level_interpretation[interval]
+
+        else:
+            return None
+        
         
