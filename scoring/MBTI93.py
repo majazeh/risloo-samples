@@ -1,4 +1,4 @@
-from scales.MBTI9A import MBTI9A
+from scoring.MBTI9A import MBTI9A
 import scoring.dictionary.MBTI93 as dictionary
 
 class MBTI93(MBTI9A):
