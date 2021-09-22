@@ -5,12 +5,15 @@ class Raven9A(Data):
     scores = {'raw' :  None, 'iq' : None, 'percentile' : None, 'final' : None}
     def scoring_raw(self, score):
         score.set(dictionary.factors_name, 0)
+        score.set('report' ,'')
         for i, item in self.items():
             if(item.get('user_answered') == None): continue
             if(i <= 11):
                 factor = dictionary.factors_paper1[i + 1] == item.get('user_answered')
                 score.increase('pre') if factor else None
-            if(i == 11 and score.get('pre') < 6): break
+            if(i == 11 and score.get('pre') < 6):
+                score.set('report', 'No minimum number of corrects!' )
+                break
             if(i >= 12):
                 i2 = i - 11
                 factor = dictionary.factors_paper2[i2] == item.get('user_answered')
