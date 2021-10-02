@@ -1,4 +1,10 @@
 {
-    "state": 57,
-    "trait": 48
+    "state": {
+        "state": 57,
+        "interpretation": "severe"
+    },
+    "trait": {
+        "trait": 52,
+        "interpretation": "moderate"
+    }
 }

@@ -43,8 +43,23 @@ factors = {
     , 36: (f2,)
     , 37: (f2,)
     , 38: (f2,)
-    , 39: (f2,)    
+    , 39: (f2,) 
+    , 40: (f2,)
     }
 
 reverse_scoring_numbers = (1,2,5,8,10,11,15,16,19,20,21,23,26,27,30,33,34,36,39)
+
+state_level_interpretation = {
+    (20,30): 'none'
+    ,(31,42): 'mild'
+    ,(43,53) : 'moderate'
+    ,(54,80) : 'severe'
+}
+trait_level_interpretation = {
+    (20,34): 'none'
+    ,(35,45): 'mild'
+    ,(46,56) : 'moderate'
+    ,(57,80) : 'severe'
+}
+
 
