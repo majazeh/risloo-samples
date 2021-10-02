@@ -1,0 +1,720 @@
+{
+    "title": "پرسشنامه حالت – رگه اضطراب اسپیلبرگر (اضطراب آشکار و نهان)",
+    "version": "1",
+    "edition": "",
+    "edition_version": null,
+    "filler": "client",
+    "description": "## دستور اجرای آزمون\n\nتعدادی از عبارت‌هایی که مردم برای تعریف خود از آن‌ها استفاده می‌کنند در زیر آمده است. هر یک از عبارت‌ها را بخوانید و سپس گزینه‌ای را انتخاب کنید که شما همین الان، یعنی در این لحظه چه احساسی دارید. هیچ پاسخی درست یا غلط نیست. وقت زیادی را صرف هیچ عبارتی نکنید بلکه پاسخی دهید که به نظر می‌رسد به بهترین وجه احساسات شما را در حال حاضر توصیف می‌کند.",
+    "prerequisites": [
+        {
+            "type": "text",
+            "label": "gender",
+            "text": "جنسیت",
+            "answer": {
+                "type": "select",
+                "options": [
+                    "زن",
+                    "مرد"
+                ]
+            },
+            "alias": "gender",
+            "force": true,
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "label": "age",
+            "text": "سن",
+            "answer": {
+                "type": "number"
+            },
+            "alias": "age",
+            "force": true,
+            "user_answered": "37"
+        },
+        {
+            "type": "text",
+            "label": "education",
+            "text": "تحصیلات",
+            "answer": {
+                "type": "select",
+                "options": [
+                    "ابتدایی اول",
+                    "ابتدایی دوم",
+                    "متوسطه اول",
+                    "متوسطه دوم",
+                    "دیپلم",
+                    "کارشناسی",
+                    "کارشناسی ارشد",
+                    "پزشکی عمومی",
+                    "متخصص",
+                    "دکتری تخصصی",
+                    "حوزوی مقدمات",
+                    "حوزوی سطح۱",
+                    "حوزوی سطح۲",
+                    "حوزوی سطح۳",
+                    "حوزوی سطح۴"
+                ]
+            },
+            "alias": "education",
+            "force": true,
+            "user_answered": "8"
+        },
+        {
+            "type": "text",
+            "label": "marital_status",
+            "text": "وضعیت تأهل",
+            "answer": {
+                "type": "select",
+                "options": [
+                    "مجرد",
+                    "متأهل"
+                ]
+            },
+            "alias": "marital_status",
+            "force": true
+        }
+    ],
+    "items": [
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "احساس آرامش می‌کنم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "خیلی کم",
+                    "کم",
+                    "زیاد",
+                    "خیلی زیاد"
+                ]
+            },
+            "user_answered": "3"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "احساس ایمنی می‌کنم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "خیلی کم",
+                    "کم",
+                    "زیاد",
+                    "خیلی زیاد"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "ناآرام (هیجان زده) هستم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "خیلی کم",
+                    "کم",
+                    "زیاد",
+                    "خیلی زیاد"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "احساس می‌کنم اعصابم خرد شده است. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "خیلی کم",
+                    "کم",
+                    "زیاد",
+                    "خیلی زیاد"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "احساس می‌کنم سر حال هستم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "خیلی کم",
+                    "کم",
+                    "زیاد",
+                    "خیلی زیاد"
+                ]
+            },
+            "user_answered": "3"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "احساس می‌کنم اضطراب دارم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "خیلی کم",
+                    "کم",
+                    "زیاد",
+                    "خیلی زیاد"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "الان نگران بدبختی‌های احتمالی خودم هستم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "خیلی کم",
+                    "کم",
+                    "زیاد",
+                    "خیلی زیاد"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "احساس رضایت می‌کنم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "خیلی کم",
+                    "کم",
+                    "زیاد",
+                    "خیلی زیاد"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "احساس می‌کنم هول شده‌ام. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "خیلی کم",
+                    "کم",
+                    "زیاد",
+                    "خیلی زیاد"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "احساس راحتی می‌کنم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "خیلی کم",
+                    "کم",
+                    "زیاد",
+                    "خیلی زیاد"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "احساس می‌کنم اعتماد به نفس دارم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "خیلی کم",
+                    "کم",
+                    "زیاد",
+                    "خیلی زیاد"
+                ]
+            },
+            "user_answered": "3"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "احساس می‌کنم عصبی هستم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "خیلی کم",
+                    "کم",
+                    "زیاد",
+                    "خیلی زیاد"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "عصبانی هستم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "خیلی کم",
+                    "کم",
+                    "زیاد",
+                    "خیلی زیاد"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "احساس تردید (دودلی) می‌کنم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "خیلی کم",
+                    "کم",
+                    "زیاد",
+                    "خیلی زیاد"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "آرام هستم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "خیلی کم",
+                    "کم",
+                    "زیاد",
+                    "خیلی زیاد"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "احساس می‌کنم راضی هستم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "خیلی کم",
+                    "کم",
+                    "زیاد",
+                    "خیلی زیاد"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "نگران هستم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "خیلی کم",
+                    "کم",
+                    "زیاد",
+                    "خیلی زیاد"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "احساس می‌کنم گیج شده‌ام. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "خیلی کم",
+                    "کم",
+                    "زیاد",
+                    "خیلی زیاد"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "احساس می‌کنم ثابت قدم هستم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "خیلی کم",
+                    "کم",
+                    "زیاد",
+                    "خیلی زیاد"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "احساس می‌کنم خشنود هستم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "خیلی کم",
+                    "کم",
+                    "زیاد",
+                    "خیلی زیاد"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "احساس می‌کنم خشنود هستم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "تقریبا هیچ وقت",
+                    "'گاهی'",
+                    "غالبا",
+                    "تقریبا همیشه"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "احساس می‌کنم عصبی و بی‌قرار هستم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "تقریبا هیچ وقت",
+                    "'گاهی'",
+                    "غالبا",
+                    "تقریبا همیشه"
+                ]
+            },
+            "user_answered": "3"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "احساس می‌کنم از خودم رضایت دارم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "تقریبا هیچ وقت",
+                    "'گاهی'",
+                    "غالبا",
+                    "تقریبا همیشه"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "ای کاش به اندازه دیگران خوشحال بودم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "تقریبا هیچ وقت",
+                    "'گاهی'",
+                    "غالبا",
+                    "تقریبا همیشه"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "احساس می‌کنم مثل اینکه شکست خورده‌ام. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "تقریبا هیچ وقت",
+                    "'گاهی'",
+                    "غالبا",
+                    "تقریبا همیشه"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "احساس می‌کنم راحت هستم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "تقریبا هیچ وقت",
+                    "'گاهی'",
+                    "غالبا",
+                    "تقریبا همیشه"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "آرم، خونسرد و خاطر جمع هستم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "تقریبا هیچ وقت",
+                    "'گاهی'",
+                    "غالبا",
+                    "تقریبا همیشه"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "احساس می‌کنم مشکلات به قدری روی هم جمع شده‌اند که نمی‌توانم بر آن‌ها غلبه کنم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "تقریبا هیچ وقت",
+                    "'گاهی'",
+                    "غالبا",
+                    "تقریبا همیشه"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "درباره چیزی که واقعا مهم نیست، بیش از حد نگران می‌شوم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "تقریبا هیچ وقت",
+                    "'گاهی'",
+                    "غالبا",
+                    "تقریبا همیشه"
+                ]
+            },
+            "user_answered": "3"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "خوشحالم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "تقریبا هیچ وقت",
+                    "'گاهی'",
+                    "غالبا",
+                    "تقریبا همیشه"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "افکار پریشانی دارم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "تقریبا هیچ وقت",
+                    "'گاهی'",
+                    "غالبا",
+                    "تقریبا همیشه"
+                ]
+            },
+            "user_answered": "3"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "اعتماد به نفس ندارم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "تقریبا هیچ وقت",
+                    "'گاهی'",
+                    "غالبا",
+                    "تقریبا همیشه"
+                ]
+            },
+            "user_answered": "3"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "احساس ایمنی می‌کنم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "تقریبا هیچ وقت",
+                    "'گاهی'",
+                    "غالبا",
+                    "تقریبا همیشه"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "به آسانی تصمیم می‌گیرم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "تقریبا هیچ وقت",
+                    "'گاهی'",
+                    "غالبا",
+                    "تقریبا همیشه"
+                ]
+            },
+            "user_answered": "3"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "احساس می‌کنم بی‌‌کفایت هستم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "تقریبا هیچ وقت",
+                    "'گاهی'",
+                    "غالبا",
+                    "تقریبا همیشه"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "راضی هستم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "تقریبا هیچ وقت",
+                    "'گاهی'",
+                    "غالبا",
+                    "تقریبا همیشه"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "فکر بی‌اهمیتی از ذهنم می‌گذرد و آزارم می‌دهد.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "تقریبا هیچ وقت",
+                    "'گاهی'",
+                    "غالبا",
+                    "تقریبا همیشه"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "ناامیدی‌ها را آن قدر جدی می‌گیرم که نمی‌توانم ذهن خود را از آن‌ها خلاص کنم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "تقریبا هیچ وقت",
+                    "'گاهی'",
+                    "غالبا",
+                    "تقریبا همیشه"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "آدم ثابت قدمی هستم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "تقریبا هیچ وقت",
+                    "'گاهی'",
+                    "غالبا",
+                    "تقریبا همیشه"
+                ]
+            },
+            "user_answered": "3"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "وقتی به دلخوشی‌ها و علاقه‌های اخیر خود فکر می‌کنم، ناراحت یا آشفته می‌شوم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "تقریبا هیچ وقت",
+                    "'گاهی'",
+                    "غالبا",
+                    "تقریبا همیشه"
+                ]
+            },
+            "user_answered": "2"
+        }
+    ]
+}
