@@ -1,13 +1,14 @@
 import json
 from openpyxl import Workbook ,load_workbook
 from pathlib import Path
+from os.path import join as opj
 
 my_path = str(Path(__file__).resolve().parent)
 my_par_dir = my_path.split('/forms')[0]
 
 
 # raw form loading
-with open( my_path +'/raw.json', 'r') as file:
+with open( opj(my_path , 'raw.json'), 'r') as file:
     data = json.load(file)
 
 
@@ -40,7 +41,7 @@ item = data["items"][0].copy()
 item["answer"]["options"] = options_list
 
 ########################## load questions excell ###########################
-book = load_workbook(my_par_dir + '/tests/'  + folder_name +'/' + file_name  + '.xlsx')
+book = load_workbook(opj(my_par_dir, 'tests', folder_name, file_name + '.xlsx'))
 sheet = book.active
 
 question_numbers =  sheet.max_row - 1
@@ -54,7 +55,7 @@ data["items"] = items
 
 Path(my_path + '/' + folder_name ).mkdir(exist_ok=True)
 
-with open( my_path + '/' + folder_name + '/' + file_name +'.json', 'w') as file:
+with open(opj(my_path, folder_name, file_name + '.json'), 'w') as file:
     json.dump(data, file, ensure_ascii=False ,indent= 4)
 
 

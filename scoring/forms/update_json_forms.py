@@ -12,7 +12,7 @@ my_par_dir = my_path.split('/forms')[0]
 folder_names = os.listdir(my_path)
 for folder_name in folder_names :
     if os.path.isdir(opj(my_path,folder_name)): 
-        for file_name in os.listdir(os.path.join(my_path,folder_name)):
+        for file_name in os.listdir(opj(my_path,folder_name)):
             print(file_name)
             with open( opj(my_path ,folder_name ,file_name) , 'r') as file:
                 data = json.load(file)
