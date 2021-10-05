@@ -8,7 +8,7 @@
     "prerequisites": [
         {
             "type": "text",
-            "label" : "gender",
+            "label": "gender",
             "text": "جنسیت",
             "answer": {
                 "type": "select",
@@ -17,22 +17,22 @@
                     "مرد"
                 ]
             },
-            "alias" : "gender",
+            "alias": "gender",
             "force": true
         },
         {
             "type": "text",
-            "label" : "age",
+            "label": "age",
             "text": "سن",
             "answer": {
                 "type": "number"
             },
-            "alias" : "age",
+            "alias": "age",
             "force": true
         },
         {
             "type": "text",
-            "label" : "education",
+            "label": "education",
             "text": "تحصیلات",
             "answer": {
                 "type": "select",
@@ -54,26 +54,26 @@
                     "حوزوی سطح۴"
                 ]
             },
-            "alias" : "education",
-            "force": true
-        },
-        {
-            "type" : "text",
-            "label" : "job",
-            "text": "شغل",
-            "answer" : {
-                "type" : "text"
-            },
-            "alias" : "job",
+            "alias": "education",
             "force": true
         },
         {
             "type": "text",
-            "label" : "marital_status",
+            "label": "job",
+            "text": "شغل",
+            "answer": {
+                "type": "text"
+            },
+            "alias": "job",
+            "force": true
+        },
+        {
+            "type": "text",
+            "label": "marital_status",
             "text": "وضعیت تأهل",
             "answer": {
                 "type": "select",
-                "options" : [
+                "options": [
                     "مجرد",
                     "ازدواج اول",
                     "ازدواج مجدد",
@@ -82,12 +82,12 @@
                     "ترک‌شده"
                 ]
             },
-            "alias" : "marital_status",
+            "alias": "marital_status",
             "force": true
         },
         {
             "type": "text",
-            "label" : "economi_situation",
+            "label": "economi_situation",
             "text": "وضعیت اقتصادی",
             "answer": {
                 "type": "select",
@@ -103,7 +103,7 @@
         },
         {
             "type": "text",
-            "label" : "problem",
+            "label": "problem",
             "text": "مشکلی که به خاطر آن مراجعه کرده‌اید",
             "answer": {
                 "type": "select",
@@ -123,14 +123,28 @@
         },
         {
             "type": "text",
-            "label" : "hospitalized",
+            "label": "hospitalized",
             "text": "اگر درحال حاضر بستری هستید، چندروز بستری شده‌اید؟",
             "answer": {
                 "type": "number"
             }
+        },
+        {
+            "type": "text",
+            "label": "marital_status",
+            "text": "وضعیت تأهل",
+            "answer": {
+                "type": "select",
+                "options": [
+                    "مجرد",
+                    "متأهل"
+                ]
+            },
+            "alias": "marital_status",
+            "force": true
         }
     ],
-    "items":[
+    "items": [
         {
             "text": "اخیراً، حتی صبح‌ها احساس ضعف و بی‌حالی می‌کنم.",
             "type": "text",

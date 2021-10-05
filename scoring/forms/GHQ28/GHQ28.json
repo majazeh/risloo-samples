@@ -1,42 +1,42 @@
 {
-    "title" : "",
+    "title": "",
     "version": "1",
     "edition": "",
     "edition_version": null,
     "filler": "client",
     "description": "## دستور اجرای آزمون\n\nمی‌خواهیم درباره کسالت و ناراحتی‌های پزشکی و اینکه سلامت عمومی‌شما در طی یک ماه گذشته تا به امروز چگونه بوده است، اطلاعاتی به دست آوریم.\n\nلطفاً در تمامی سوال‌های زیر، پاسخی را که فکر می‌کنید با وضع شما بیشتر مطابقت دارد مشخص کنید. به خاطر داشته باشید که ما می‌خواهیم درباره ناراحتی‌های اخیر شما اطلاعاتی به دست آوریم، نه مشکلات و ناراحتی‌هایی که در گذشته داشته‌اید.\n\nسعی کنید به تمامی سوال‌ها پاسخ دهید.",
-    "prerequisites" : [
+    "prerequisites": [
         {
-            "type" : "text",
-            "label" : "gender",
-            "text" : "جنسیت",
-            "answer" : {
-                "type" : "select",
-                "options" : [
+            "type": "text",
+            "label": "gender",
+            "text": "جنسیت",
+            "answer": {
+                "type": "select",
+                "options": [
                     "زن",
                     "مرد"
                 ]
             },
-            "alias" : "gender",
-            "force" : true
-        },
-        {
-            "type": "text",
-            "label" : "age",
-            "text": "سن",
-            "answer": {
-                "type": "number"
-            },
-            "alias" : "age",
+            "alias": "gender",
             "force": true
         },
         {
             "type": "text",
-            "label" : "education",
+            "label": "age",
+            "text": "سن",
+            "answer": {
+                "type": "number"
+            },
+            "alias": "age",
+            "force": true
+        },
+        {
+            "type": "text",
+            "label": "education",
             "text": "تحصیلات",
             "answer": {
                 "type": "select",
-                "options" : [
+                "options": [
                     "ابتدایی اول",
                     "ابتدایی دوم",
                     "متوسطه اول",
@@ -54,7 +54,21 @@
                     "حوزوی سطح۴"
                 ]
             },
-            "alias" : "education",
+            "alias": "education",
+            "force": true
+        },
+        {
+            "type": "text",
+            "label": "marital_status",
+            "text": "وضعیت تأهل",
+            "answer": {
+                "type": "select",
+                "options": [
+                    "مجرد",
+                    "متأهل"
+                ]
+            },
+            "alias": "marital_status",
             "force": true
         }
     ],

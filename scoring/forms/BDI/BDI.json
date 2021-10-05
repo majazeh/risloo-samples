@@ -1,42 +1,42 @@
 {
-    "title" : "",
+    "title": "",
     "version": "1",
     "edition": "",
     "edition_version": null,
     "filler": "client",
     "description": "## دستور اجرای آزمون\n\nاین پرسشنامه شامل ۲۱ گروه جمله است. لطفاً هر گروه از جملات را با دقت بخوانید. سپس در هر گروه یک جمله را انتخاب کنید که بهتر از همه گویای احساس شما طی ۲ هفته گذشته تا به امروز است. سپس دور شماره کنار جمله‌ای که انتخاب کرده‌اید یک دایره بکشید. اگر در یک گروه از جملات، چند جمله در مورد شما صدق می‌کند دور شماره ای که از همه بالاتر است دایره بکشید. دقت کنید در هیچ یک از جملات بیشتر از یک جمله انتخاب نکنید.",
-    "prerequisites" : [
+    "prerequisites": [
         {
-            "type" : "text",
-            "label" : "gender",
-            "text" : "جنسیت",
-            "answer" : {
-                "type" : "select",
-                "options" : [
+            "type": "text",
+            "label": "gender",
+            "text": "جنسیت",
+            "answer": {
+                "type": "select",
+                "options": [
                     "زن",
                     "مرد"
                 ]
             },
-            "alias" : "gender",
-            "force" : true
-        },
-        {
-            "type": "text",
-            "label" : "age",
-            "text": "سن",
-            "answer": {
-                "type": "number"
-            },
-            "alias" : "age",
+            "alias": "gender",
             "force": true
         },
         {
             "type": "text",
-            "label" : "education",
+            "label": "age",
+            "text": "سن",
+            "answer": {
+                "type": "number"
+            },
+            "alias": "age",
+            "force": true
+        },
+        {
+            "type": "text",
+            "label": "education",
             "text": "تحصیلات",
             "answer": {
                 "type": "select",
-                "options" : [
+                "options": [
                     "ابتدایی اول",
                     "ابتدایی دوم",
                     "متوسطه اول",
@@ -54,7 +54,21 @@
                     "حوزوی سطح۴"
                 ]
             },
-            "alias" : "education",
+            "alias": "education",
+            "force": true
+        },
+        {
+            "type": "text",
+            "label": "marital_status",
+            "text": "وضعیت تأهل",
+            "answer": {
+                "type": "select",
+                "options": [
+                    "مجرد",
+                    "متأهل"
+                ]
+            },
+            "alias": "marital_status",
             "force": true
         }
     ],

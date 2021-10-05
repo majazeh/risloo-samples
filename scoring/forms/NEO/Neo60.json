@@ -16,7 +16,7 @@
                     "مرد"
                 ]
             },
-            "alias" : "gender",
+            "alias": "gender",
             "label": "gender",
             "force": true
         },
@@ -26,7 +26,7 @@
             "answer": {
                 "type": "number"
             },
-            "alias" : "age",
+            "alias": "age",
             "label": "age",
             "force": true
         },
@@ -53,8 +53,22 @@
                     "حوزوی سطح۴"
                 ]
             },
-            "alias" : "education",
+            "alias": "education",
             "label": "education",
+            "force": true
+        },
+        {
+            "type": "text",
+            "label": "marital_status",
+            "text": "وضعیت تأهل",
+            "answer": {
+                "type": "select",
+                "options": [
+                    "مجرد",
+                    "متأهل"
+                ]
+            },
+            "alias": "marital_status",
             "force": true
         }
     ],

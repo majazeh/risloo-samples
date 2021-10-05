@@ -1,42 +1,42 @@
 {
-    "title" : "",
+    "title": "",
     "version": "1",
     "edition": "",
     "edition_version": null,
     "filler": "client",
     "description": "## دستور اجرای آزمون\n\nلطفاً هر عبارت را به دقت بخوانید و مشخص کنید در خلال هفته گذشته تا امروز چقدر از آن علامت در رنج بوده‌اید. پاسخ خود را در ستون مقابل مشخص کنید.",
-    "prerequisites" : [
+    "prerequisites": [
         {
-            "type" : "text",
-            "label" : "gender",
-            "text" : "جنسیت",
-            "answer" : {
-                "type" : "select",
-                "options" : [
+            "type": "text",
+            "label": "gender",
+            "text": "جنسیت",
+            "answer": {
+                "type": "select",
+                "options": [
                     "زن",
                     "مرد"
                 ]
             },
-            "alias" : "gender",
-            "force" : true
-        },
-        {
-            "type": "text",
-            "label" : "age",
-            "text": "سن",
-            "answer": {
-                "type": "number"
-            },
-            "alias" : "age",
+            "alias": "gender",
             "force": true
         },
         {
             "type": "text",
-            "label" : "education",
+            "label": "age",
+            "text": "سن",
+            "answer": {
+                "type": "number"
+            },
+            "alias": "age",
+            "force": true
+        },
+        {
+            "type": "text",
+            "label": "education",
             "text": "تحصیلات",
             "answer": {
                 "type": "select",
-                "options" : [
+                "options": [
                     "ابتدایی اول",
                     "ابتدایی دوم",
                     "متوسطه اول",
@@ -54,7 +54,21 @@
                     "حوزوی سطح۴"
                 ]
             },
-            "alias" : "education",
+            "alias": "education",
+            "force": true
+        },
+        {
+            "type": "text",
+            "label": "marital_status",
+            "text": "وضعیت تأهل",
+            "answer": {
+                "type": "select",
+                "options": [
+                    "مجرد",
+                    "متأهل"
+                ]
+            },
+            "alias": "marital_status",
             "force": true
         }
     ],
