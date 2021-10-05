@@ -97,7 +97,7 @@ class risloo():
         folder_name = names [-2]
         file_name = names [-1]
         Path(my_path + folder_name ).mkdir(exist_ok=True) 
-        with open(opj(my_path, folder_name, file_name + '_result.json', 'w') as file:
+        with open(opj(my_path, folder_name, file_name + '_result.json', 'w')) as file:
             json.dump(self.scoring_scale.score.toDict(), file, ensure_ascii=False ,indent= 4)
         
 if (__name__ == '__main__'):
