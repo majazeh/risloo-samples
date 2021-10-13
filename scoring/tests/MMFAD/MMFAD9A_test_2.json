@@ -1,0 +1,1040 @@
+{
+    "title": "  ۶۰ سوالی-(FAD) پرسشنامه عملکرد خانواده",
+    "version": "1",
+    "edition": "",
+    "edition_version": null,
+    "filler": "client",
+    "description": "",
+    "prerequisites": [
+        {
+            "type": "text",
+            "label": "gender",
+            "text": "جنسیت",
+            "answer": {
+                "type": "select",
+                "options": [
+                    "زن",
+                    "مرد"
+                ]
+            },
+            "alias": "gender",
+            "force": true,
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "label": "age",
+            "text": "سن",
+            "answer": {
+                "type": "number"
+            },
+            "alias": "age",
+            "force": true,
+            "user_answered": "37"
+        },
+        {
+            "type": "text",
+            "label": "education",
+            "text": "تحصیلات",
+            "answer": {
+                "type": "select",
+                "options": [
+                    "ابتدایی اول",
+                    "ابتدایی دوم",
+                    "متوسطه اول",
+                    "متوسطه دوم",
+                    "دیپلم",
+                    "کارشناسی",
+                    "کارشناسی ارشد",
+                    "پزشکی عمومی",
+                    "متخصص",
+                    "دکتری تخصصی",
+                    "حوزوی مقدمات",
+                    "حوزوی سطح۱",
+                    "حوزوی سطح۲",
+                    "حوزوی سطح۳",
+                    "حوزوی سطح۴"
+                ]
+            },
+            "alias": "education",
+            "force": true,
+            "user_answered": "8"
+        },
+        {
+            "type": "text",
+            "label": "marital_status",
+            "text": "وضعیت تأهل",
+            "answer": {
+                "type": "select",
+                "options": [
+                    "مجرد",
+                    "متأهل"
+                ]
+            },
+            "alias": "marital_status",
+            "force": true
+        }
+    ],
+    "items": [
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " برنامه‌ریزی فعالیت‌های خانوادگی ما دشوار است ، چون ما یکدیگر را به درستی درک نمی‌کنیم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " ما اکثرا مشکلات روزمره خانواده را حل می‌کنیم .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "3"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " وقتی یکی از اعضای خانواده ما ناراحت باشد ، بقیه علت آن را می‌دانند .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " وقتی در خانواده ما از کسی کاری خواسته می‌شود، باید پیگیر بود تا به انجام برسد .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " اگر کسی در خانواده ما دچار مشکل شود، سایرین هم درگیر حل آن می‌شوند .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " ما در هنگام بحران می‌توانیم روی حمایت بقیه اعضای خانواده حساب کنیم .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " هرگاه یک وضعیت اضطراری پیش می‌آید، نمی‌دانیم چه بکنیم .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " گاهی خانه از چیزهای مورد نیاز ما خالی می‌شود .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "3"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " ما از ابراز محبت به بکدیگر اکراه داریم .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " ما خواستار آن هستیم که اعضا به وظایف خانوادگی خود عمل کنند .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " ما نمی‌توانیم با یکدیگر درباره احساس غم و غصه خود صحبت کنیم .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "3"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " معمولاً به تصمیمات خود برای حل مشکلات عمل می‌کنیم .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " علاقه سایر اعضای خانواده وقتی به ما جلب می‌شود که موضوع برای خودشان هم مهم باشد .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " از گفته های اعضای خانواده نمی‌توانیم به احساس آن ها پی ببریم .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " درخانواده ما وظایف خانوادگی به تساوی تقسیم نمی‌شود .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " افراد خانواده ما همان گونه که هستند ، مورد قبول یکدیگرند .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " در خانواده ما به آسانی می‌توان مقررات خانه را نقض کرد .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " درخانه ما ، حرف ها بدون کنایه و بی پرده گفته می‌شود .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " بعضی از اعضای خانواده ما خونسرد برخورد می‌کنند .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " ما می‌دانیم درصورت پیش آمدن شرایط اورژانس چه باید کرد .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " ما از تبادل نظر درباره ترس ها و نگرانی های خود پرهیز می‌کنیم .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " برای ما گفتگو درباره احساس های لطیف دشوار است .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " ما برای پرداخت هزینه هایمان دردسر داریم .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " معمولا ما بعد از سعی خانواده برای حل یک مشکل ، درباره موفقیت آمیز بودن یا نبودن آن گفتگو می‌کنیم .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " ما بیش از حد به فکر خود هستیم .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " ما می‌توانیم احساس های خود را به یکدیگر ابراز کنیم .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " ما درباره آداب دستشویی و توالت انتظار خاصی از یکدیگر نداریم .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " ما احساس محبت خود نسبت به یکدیگر را نشان نمی‌دهیم .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "3"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " اعضای خانواده ما مستقیم و بدون واسطه با یکدیگر صحبت می‌کنند .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " هر کدام از ما وظایف و مسؤولیت های خاصی بر عهده دارد .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "3"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " در خانواده ما احساس های ناخوشایند زیادی وجود دارد .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " ما برای زدن یا دست بلند کردن روی دیگران ، ضابطه داریم .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "3"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " ما فقط وقتی با یکدیگر همراه می‌شویم که منافعی در بین باشد .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " برای کاوش در علائق شخصی اعضای خانواده ، کم وقت می‌گذاریم .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " غالبا منظور خود را به زبان نمی‌آوریم .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " ما احساس می‌کنیم سایر اعضای خانواده ما را همان گونه که هستیم ، قبول دارند .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "3"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " وقتی ما به یکدیگر علاقه نشان می‌دهیم که بتوانیم شخصاً از آن بهره مند شویم .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "3"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " ما اکثر ناراحتی های عاطفی اعضای خانواده را رفع می‌کنیم .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " در خانواده ما مهر و عطوفت در درجه دوم اهمیت قرار دارد .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " ما در این باره که هرکسی چه کارهایی را در خانه انجام دهد ، گفتگو می‌کنیم .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " تصمیم‌گیری برای خانواده ما دشوار است .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "3"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " اعضای خانواده ما فقط وقتی به یکدیگر علاقه نشان می‌دهند که خودشان بتوانند از آن بهره مند شوند .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "3"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " ما با یکدیگر رو راست و بی پرده هستیم .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "3"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " ما به هیچ معیار و قاعده پابند نیستیم .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " در خانواده ما اگر از کسی کاری خواسته شود ، باید به او یادآوری کرد .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "3"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " ما می‌توانیم درباره طرز حل کردن مشکلات تصمیم گیری کنیم .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " اگر مقررات خانواده نقض شود ، نمی‌دانیم چه انتظاراتی باید داشت .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " در خانواده ما هر اتفاقی را می‌توان انتظار داشت .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " ما مهر و عطوفت خود را نشان می‌دهیم .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " ما با مشکلاتی که با احساس‌های اعضای خانواده بازی کن ، برخورد می‌کنیم .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " ما بایکدیگر خوب کنار نمی‌آییم .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " ما هنگام عصبانیت با یکدیگر صحبت نمی‌کنیم .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "3"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " ما به طور کلی از وظایف خانگی که بر عهده ما گذاشته می‌شود، ناراضی هستیم .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " ما حتی با وجود حسن نیت ، در زندگی یکدیگر خیلی دخالت می‌کنیم .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "3"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " اعضای خانواده ما برای مقابله با شرایط خطرناک ، قواعد خاصی را رعایت می‌کنند .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " ما به یکدیگر اعتماد و اطمینان داریم .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " ما احساسات (غم، شادی، خشم و . . . خود را در خانه راحت و آشکار بروز می‌دهیم .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " رفت و آمد در خانواده ما معقول و منطقی نیست .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " اگر از عمل یکی از اعضای خانواده خوشمان نیاید، به او می‌گوییم .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": " ما به راه‌های گوناگون حل مشکل فکر می‌کنیم  ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "شدیدا موافقم",
+                    "موافقم",
+                    "مخالفم",
+                    "شدیدا مخالفم"
+                ]
+            },
+            "user_answered": "3"
+        }
+    ]
+}
