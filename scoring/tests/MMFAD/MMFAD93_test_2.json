@@ -1,0 +1,981 @@
+{
+    "title": "FAD-پرسشنامه عملکرد خانواده",
+    "version": "1",
+    "edition": "",
+    "edition_version": null,
+    "filler": "client",
+    "description": "",
+    "prerequisites": [
+        {
+            "type": "text",
+            "label": "gender",
+            "text": "ط¬ظ†ط³غŒطھ",
+            "answer": {
+                "type": "select",
+                "options": [
+                    "ط²ظ†",
+                    "ظ…ط±ط¯"
+                ]
+            },
+            "alias": "gender",
+            "force": true,
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "label": "age",
+            "text": "ط³ظ†",
+            "answer": {
+                "type": "number"
+            },
+            "alias": "age",
+            "force": true,
+            "user_answered": "37"
+        },
+        {
+            "type": "text",
+            "label": "education",
+            "text": "طھط­طµغŒظ„ط§طھ",
+            "answer": {
+                "type": "select",
+                "options": [
+                    "ط§ط¨طھط¯ط§غŒغŒ ط§ظˆظ„",
+                    "ط§ط¨طھط¯ط§غŒغŒ ط¯ظˆظ…",
+                    "ظ…طھظˆط³ط·ظ‡ ط§ظˆظ„",
+                    "ظ…طھظˆط³ط·ظ‡ ط¯ظˆظ…",
+                    "ط¯غŒظ¾ظ„ظ…",
+                    "ع©ط§ط±ط´ظ†ط§ط³غŒ",
+                    "ع©ط§ط±ط´ظ†ط§ط³غŒ ط§ط±ط´ط¯",
+                    "ظ¾ط²ط´ع©غŒ ط¹ظ…ظˆظ…غŒ",
+                    "ظ…طھط®طµطµ",
+                    "ط¯ع©طھط±غŒ طھط®طµطµغŒ",
+                    "ط­ظˆط²ظˆغŒ ظ…ظ‚ط¯ظ…ط§طھ",
+                    "ط­ظˆط²ظˆغŒ ط³ط·ط­غ±",
+                    "ط­ظˆط²ظˆغŒ ط³ط·ط­غ²",
+                    "ط­ظˆط²ظˆغŒ ط³ط·ط­غ³",
+                    "ط­ظˆط²ظˆغŒ ط³ط·ط­غ´"
+                ]
+            },
+            "alias": "education",
+            "force": true,
+            "user_answered": "8"
+        },
+        {
+            "type": "text",
+            "label": "marital_status",
+            "text": "ظˆط¶ط¹غŒطھ طھط£ظ‡ظ„",
+            "answer": {
+                "type": "select",
+                "options": [
+                    "ظ…ط¬ط±ط¯",
+                    "ظ…طھط£ظ‡ظ„"
+                ]
+            },
+            "alias": "marital_status",
+            "force": true
+        }
+    ],
+    "items": [
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "در خانواده ما معمولا بر اساس تصمیماتی که برای حل مشکل گرفته شده است، عمل می‌شود.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "وقتی از یکی از اعضای خانواده ما کاری خواسته می‌شود، برای انجام یافتنش باید یادآوری و پیگیری شود.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "اگر یکی از اعضای خانواده ما دچار مشکل شود، سایر اعضا هم بیش از اندازه در گیر می‌شوند.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "5"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "از آنجا که ما یکدیگر را به درستی درک نمی‌کنیم، برنامه ریزی برای فعالیت‌های خانوادگی برایمان دشوار است.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "در خانه ما از گفتار یکی از اعضا نمی‌توان به احساس او پی برد.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "بعضی از اعضای خانواده ما، احساسات و هیجانات خود را بروز نمی‌دهند.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "در خانه ما، به راحتی می‌توان مقررات خانواده را نقض کرد.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "ما اکثر دلخوری‌های به وجود آمده را بر طرف می‌کنیم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "5"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "توزیع وظایف، در خانه ما عادلانه نیست.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "3"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "اعضای خانواده ما بیش از اندازه خود محور هستند.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "ما نمی‌توانیم درباره غصه‌های خود با یکدیگر صحبت بکنیم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "3"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "ما درباره مشکلات عاطفی اعضای خانواده با هم گفتگو می‌کنیم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "5"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "ما برای پرداخت به موقع هزینه‌های خانواده ، مشکل داریم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "ما از گفتگو درباره ترس‌ها و نگرانی‌های خود، پرهیز می‌کنیم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "ما سعی می‌کنیم برای مشکلات، راه حل‌های مختلفی بیابیم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "5"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "در خانواده ما، افراد برای پرداختن به علائق شخصی خویش، فرصت کمی‌دارند.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "ما هنگامی‌به مسائل یکدیگر توجه نشان می‌دهیم برای خودمان نیز منافعی در بر داشته باشد.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "در خانه ما احساسهای ناخوشایند زیادی وجود دارد.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "5"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "وقتی از عمل یکی از اعضای خانواده خوشمان نیاید، به او می‌گوییم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "3"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "ما با یکدیگر مهربان هستیم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "3"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "ما به هیچ مقررات و ضوابطی پای بند نیستیم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "3"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "هرگاه از یکی از اعضای خانواده ما تقاضایی شود، باید دوباره یادآوری گردد.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "اعضای خانواده ما با حسن نیت بیش از اندازه در زندگی یکدیگر دخالت می‌کنند.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "ما می‌توانیم برای حل مشکلات تصمیم بگیریم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "3"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "در خانواده ما هرج و مرج است.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "3"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "ما نمی‌توانیم به راحتی باهم کنار بیاییم .",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "ما در مورد آداب غذا خوردن ، انتظار خاصی از یکدیگر نداریم",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "در خانه ما هرگاه یکی ناراحت باشد، دیگر اعضای خانواده از علت ناراحتی او اطلاع دارند.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "ما از نشان دادن محبت خود به یکدیگر، اکراه داریم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "وقتی یک وضع اضطراری پیش می‌آید، ما نمی‌دانیم چه باید کرد.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "بعد از این که خانواده ما سعی می‌کند مشکلی را حل کند، اعضا معمولا درباره این که آیا راه حل به کار گرفته شده موثر بوده یا نه با هم تبادل نظر می‌کنند.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "ما اصرار داریم که اعضای خانواده به مسئولیتهای خود عمل کنند.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "اعضای خانواده ما فقط زمانی به مسائل ابراز علاقه می‌کنند که برای خودشان مهم باشد.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "3"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "در مواقع بحران، می‌توانیم به حمایت یکدیگر متکی باشیم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "5"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "اعضای خانواده ما به عوض کنایه زدن، صریح و بی پرده صحبت می‌کنند.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "ما عشق و محبت خود را به یکدیگر ابراز نمی‌کنیم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "5"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "ما می‌دانیم در وضعیت اضطراری چه بکنیم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "افراد خانواده ما یکدیگر را همان گونه که هستند، قبول دارند.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "ما با هم صریح و رو راست هستیم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "5"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "ما با یکدیگر فقط در صورتی همراهی می‌کنیم که موضوع برای خودمان جالب باشد.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "ما احساسات خود را برای یکدیگر ابراز می‌کنیم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "5"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "ما هنگام عصبانیت با یکدیگر صحبت نمی‌کنیم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "در خانواده ما ، مهربانی و ملایمت در درجه دوم اهمیت قرار می‌گیرد.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "در خانه ما مقرراتی جهت جلوگیری ار کتک کاری و یا تنبیه فردی که کتک کاری کرده است، وجود دارد.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "ما احساس می‌کنیم همان گونه که هستیم ، مورد قبول واقع می‌شویم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "ما درباره تقسیم کارهای خانه بین اعضا، با هم صحبت می‌کنیم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "5"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "اعضای خانواده ما فقط زمانی به مسائل یکدیگر توجه نشان می‌دهند که بتوانند از آن بهره ای ببرند.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "درخانواده ما تصمیم گیری امری دشوار است.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "5"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "اعضای خانواده ما در حضور یکدیگر بی رودربایستی گریه می‌کنند.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "درخانه ما وقتی مقررات خانواده نقض می‌شود، معلوم نیست که چه واکنشی بروز خواهد کرد.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "1"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "ما کاملا از وظایفی که خانواده برایمان تعیین می‌کند، ناراضی هستیم.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "2"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "در خانه ما برای شرایط خطرناک، مقرراتی وضع شده است.",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "5"
+        },
+        {
+            "category": "",
+            "type": "text",
+            "description": "",
+            "text": "ما به یکدیگر اعتماد داریم. ",
+            "answer": {
+                "type": "optional",
+                "options": [
+                    "اصلا",
+                    "کم",
+                    "به طور متوسط",
+                    "زیاد",
+                    "کاملا"
+                ]
+            },
+            "user_answered": "2"
+        }
+    ]
+}
