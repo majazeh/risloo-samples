@@ -5,7 +5,6 @@ import sys
 from pathlib import Path
 
 
-
 class risloo():
     def __init__(self, **args):
         self.args = args 
@@ -32,6 +31,7 @@ class risloo():
             
             self.interpreting_scale.interpreting()
 
+
     def export(self):
         for out_type in self.args['output_types']:            
             if out_type =='raw':
@@ -41,6 +41,7 @@ class risloo():
             elif  out_type =='excell':
                 self.export_excell()
   
+
     def export_raw(self):   
         sys.stdout.write(json.dumps(self.scoring_scale.score.toDict(),ensure_ascii=False) + "\n")       
         if self.args['Interpretation']:
@@ -51,6 +52,7 @@ class risloo():
         import openpyxl
         import os
         from os.path import join as opj
+
         #excell
         my_path = opj(self.my_dir ,'scoring','tests')
         addr = self.args['input_data'].split('.json')[0]
@@ -87,6 +89,7 @@ class risloo():
                 cnt = cnt + 1
         book.save(excell_path)
     
+
     def export_json(self) :
         #json
         import os
@@ -96,8 +99,8 @@ class risloo():
         names = addr.split(os.path.sep)  
         folder_name = names [-2]
         file_name = names [-1]
-        Path(my_path + folder_name ).mkdir(exist_ok=True) 
-        with open(opj(my_path, folder_name, file_name + '_result.json', 'w')) as file:
+        Path(opj(my_path ,folder_name)).mkdir(exist_ok=True) 
+        with open(opj(my_path, folder_name, file_name + '_result.json'), 'w') as file:
             json.dump(self.scoring_scale.score.toDict(), file, ensure_ascii=False ,indent= 4)
         
 if (__name__ == '__main__'):
