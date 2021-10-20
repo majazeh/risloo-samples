@@ -5,14 +5,14 @@ class STAIY93(Data):
     scores = {'state': 'state' , 'trait': 'trait'}# 
     
     def scoring_state(self, score):
-        score.set('state',0)
+        score.set(dictionary.factors_names,0)
         
         for i, item in self.items():   
             try:
                 if i+1 > 20 :
                     break
                 answer = int(item.get('user_answered')) 
-                factors = dictionary.factors[i + 1]
+                factors = dictionary.stait_factor[i + 1]
                 if i+1 in dictionary.reverse_scoring_numbers:
                     for factor in factors:
                         score.increase(factor , dictionary.option_numbers + 1 - answer )    
@@ -22,7 +22,8 @@ class STAIY93(Data):
             except:
                 pass
         
-        state_score = score.get('state')
+        # get value of state factor
+        state_score = score.get(dictionary.f1)
         interpretation_dict = dictionary.state_level_interpretation
         interpretation = self.get_level_interpretation(state_score ,
                                              interpretation_dict= interpretation_dict )
@@ -30,14 +31,14 @@ class STAIY93(Data):
 
     
     def scoring_trait(self, score):
-        score.set('trait',0)
+        score.set(dictionary.factors_names,0)
         
         for i, item in self.items():   
             try:
                 if i+1 <= 20 :
                     continue
                 answer = int(item.get('user_answered')) 
-                factors = dictionary.factors[i + 1]
+                factors = dictionary.trait_factor[i + 1]
                 if i+1 in dictionary.reverse_scoring_numbers:
                     for factor in factors:
                         score.increase(factor , dictionary.option_numbers + 1 - answer )    
@@ -47,7 +48,7 @@ class STAIY93(Data):
             except:
                 pass
         
-        state_score = score.get('trait')
+        state_score = score.get(dictionary.f1)
         interpretation_dict = dictionary.trait_level_interpretation
         interpretation = self.get_level_interpretation(state_score ,
                                              interpretation_dict= interpretation_dict )
