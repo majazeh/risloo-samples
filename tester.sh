@@ -1,13 +1,12 @@
 
 ## if NOT saving => enumerous tests
 
-#python3 /home/mostafa/Majazeh/risloo-samples/tester.py --folder_name STAIY --file_name STAIY93 --test_numbers 200 
-
+# python3 tester.py --folder_name MMFAD --file_name MMFAD93 --test_numbers 200 
 
 ## just saving for scientific tests
 
 # test producing:
-# python3 /home/mostafa/Majazeh/risloo-samples/tester.py --folder_name SDCAQ --file_name SDCAQ93 --test_numbers 2 -s
+python3 tester.py --folder_name MMFAD --file_name MMFAD93 --test_numbers 2 -s
 # test scoring
-python3 /home/mostafa/Majazeh/risloo-samples/risloo.py -s STAIY93 -it file -id /home/mostafa/Majazeh/risloo-samples/scoring/tests/STAIY/STAIY93_test_1.json -ot raw json excell
-python3 /home/mostafa/Majazeh/risloo-samples/risloo.py -s STAIY93 -it file -id /home/mostafa/Majazeh/risloo-samples/scoring/tests/STAIY/STAIY93_test_2.json -ot raw json excell
+python3 risloo.py -s MMFAD93 -it file -id ./scoring/tests/MMFAD/MMFAD93_test_1.json -ot raw json excell
+python3 risloo.py -s MMFAD93 -it file -id ./scoring/tests/MMFAD/MMFAD93_test_2.json -ot raw json excell

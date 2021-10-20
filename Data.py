@@ -19,18 +19,22 @@ class Data:
         for method in self.scores:
             getattr(self, 'scoring_' + method)(self.score.tree(self.scores[method]))
         return self.score
-    
+
+
     def interpreting(self):
         for method in self.interprets:
             getattr(self, 'interpreting_' + method)(self.interpret)
     
         return self.interpret
 
+
     def items(self):
         return enumerate(self.__data['items'])
-    
+
+
     def prerequisites(self):
         return self.__prerequisites
+
     
     def prerequisite(self, label, key = None):
         result = self.__prerequisites.get(label)
