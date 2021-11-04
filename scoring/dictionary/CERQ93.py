@@ -8,7 +8,7 @@ f7 = 'putting_to_perspective'
 f8 = 'catastrophizing'
 f9 = 'other_blame'
 f10 = 'adaptive_regulation'
-f11 = 'unadaptive_reglation'
+f11 = 'unadaptive_regulation'
 
 
 option_numbers = 5
