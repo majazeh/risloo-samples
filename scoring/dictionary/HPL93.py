@@ -6,6 +6,7 @@ f5 = 'physical_activity'
 f6 = 'nutrition'
 f7 = 'raw'
 factors_names = (f1,f2,f3,f4,f5,f6,f7)
+options_numbers = 4
 factors = {
     1 :(f1,f7)
     , 2 :(f1,f7)
