@@ -48,9 +48,14 @@ for j in range (test_numbers):
         sheet.cell(row = 1, column=2).value = 'پاسخ  گزینه فرد'    
 
     for i,item in enumerate(data["items"]):
-        num_options = len(item["answer"]["options"])
-        item ["user_answered"] = str(randint(1,num_options))
+        if item["answer"]["type"] == "optional":
+            num_options = len(item["answer"]["options"])
+            item ["user_answered"] = str(randint(1,num_options))
         
+        elif item["answer"]["type"] == "descriptive":
+            item ["user_answered"] = "faik text"
+        
+
         if SAVE:
             sheet.cell(row = i+2, column=1).value = i+1
             sheet.cell(row = i+2, column=2).value = item ["user_answered"]
