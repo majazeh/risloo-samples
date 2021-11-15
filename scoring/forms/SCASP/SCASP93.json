@@ -8,32 +8,58 @@
     "prerequisites": [
         {
             "type": "text",
-            "label": "gender",
-            "text": "جنسیت",
+            "label": "child_name",
+            "text": "نام کودک",
             "answer": {
-                "type": "select",
-                "options": [
-                    "زن",
-                    "مرد"
-                ]
+                "type": "text"
             },
-            "alias": "gender",
+            "alias": "child_name",
             "force": true
         },
         {
             "type": "text",
-            "label": "age",
-            "text": "سن",
+            "label": "child_age",
+            "text": "سن کودک",
             "answer": {
                 "type": "number"
             },
-            "alias": "age",
+            "alias": "child_age",
             "force": true
         },
         {
             "type": "text",
-            "label": "education",
-            "text": "تحصیلات",
+            "label": "birth_order",
+            "text": "کودک آزمودنی شما فرزند چندم خانواده است؟",
+            "answer": {
+                "type": "number"
+            },
+            "alias": "birth_order",
+            "force": true
+        },
+        {
+            "type": "text",
+            "label": "daughters",
+            "text": "تعداد فرزندان دختر",
+            "answer": {
+                "type": "number"
+            },
+            "alias": "daughters",
+            "force": true
+        },
+        {
+            "type": "text",
+            "label": "sons",
+            "text": "تعداد فرزندان پسر",
+            "answer": {
+                "type": "number"
+            },
+            "alias": "sons",
+            "force": true
+        },
+        {
+            "type": "text",
+            "label": "father_education",
+            "text": "تحصیلات پدر",
             "answer": {
                 "type": "select",
                 "options": [
@@ -54,21 +80,54 @@
                     "حوزوی سطح۴"
                 ]
             },
-            "alias": "education",
+            "alias": "father_education",
             "force": true
         },
         {
             "type": "text",
-            "label": "marital_status",
-            "text": "وضعیت تأهل",
+            "label": "father_job",
+            "text": "شغل پدر",
+            "answer": {
+                "type": "text"
+            },
+            "alias": "father_job",
+            "force": true
+        },
+        {
+            "type": "text",
+            "label": "mother_education",
+            "text": "تحصیلات مادر",
             "answer": {
                 "type": "select",
                 "options": [
-                    "مجرد",
-                    "متأهل"
+                    "ابتدایی اول",
+                    "ابتدایی دوم",
+                    "متوسطه اول",
+                    "متوسطه دوم",
+                    "دیپلم",
+                    "کارشناسی",
+                    "کارشناسی ارشد",
+                    "پزشکی عمومی",
+                    "متخصص",
+                    "دکتری تخصصی",
+                    "حوزوی مقدمات",
+                    "حوزوی سطح۱",
+                    "حوزوی سطح۲",
+                    "حوزوی سطح۳",
+                    "حوزوی سطح۴"
                 ]
             },
-            "alias": "marital_status",
+            "alias": "mother_education",
+            "force": true
+        },
+        {
+            "type": "text",
+            "label": "mother_job",
+            "text": "شغل مادر",
+            "answer": {
+                "type": "text"
+            },
+            "alias": "mother_job",
             "force": true
         }
     ],
