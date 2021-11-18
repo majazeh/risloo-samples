@@ -1,5 +1,5 @@
 f1 = 'panic_attack_and_agorophobia'
-f2 = 'separation _anxiety'
+f2 = 'separation_anxiety'
 f3 = 'physical_injury_fears'
 f4 = 'social_phobia'
 f5 = 'obsessive_compulsive'
