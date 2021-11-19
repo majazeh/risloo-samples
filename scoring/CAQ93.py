@@ -5,7 +5,7 @@ class CAQ93(Data):
     scores = {'raw':None, 'norm' : None}
  
     def scoring_raw(self, score): 
-        score.set(dictionary.factors_name,0)
+        score.set(dictionary.factors_names,0)
         for i, item in self.items():
             try:
                 answer = int(item.get('user_answered'))

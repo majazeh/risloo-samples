@@ -5,7 +5,7 @@ factors = {
     }
 
 
-factors_name = ('attachment2')
+factors_names = ('attachment2')
 
 
 

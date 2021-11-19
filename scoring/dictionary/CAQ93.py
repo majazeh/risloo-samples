@@ -1,4 +1,4 @@
-factors_name = (
+factors_names = (
     'c', 'l', 'o', 'q3', 'q4',
     'raw_c', 'raw_l', 'raw_o', 'raw_q3', 'raw_q4',
     'result', 'raw_result',

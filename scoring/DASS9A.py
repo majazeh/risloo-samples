@@ -6,7 +6,7 @@ class DASS9A(Data):
     scores = {'raw':None , 'report':'intensity' }
  
     def scoring_raw(self, score):      
-        score.set(g_dictionary.factors_name,0)
+        score.set(g_dictionary.factors_names,0)
         for i, item in self.items():
             if(item.get('user_answered') == None): continue
             try:
@@ -17,7 +17,7 @@ class DASS9A(Data):
                 pass
     
     def scoring_report(self, score):
-        for factor in g_dictionary.factors_name:
+        for factor in g_dictionary.factors_names:
             interval_dict = g_dictionary.factors_interval[factor]
             factor_value = self.score.get(factor)
 

@@ -1,4 +1,4 @@
-factors_name = ('stress' ,'anxiety' , 'depression')
+factors_names = ('stress' ,'anxiety' , 'depression')
 
 
 factors_interval = { 

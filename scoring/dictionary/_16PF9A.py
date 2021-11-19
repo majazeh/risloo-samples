@@ -1,10 +1,10 @@
-factors_name = ('extraversion', 'anxiety', 'flexibility', 'independence', 'selfcontrol', 'adjustment', 'leadership', 'creativity', 'status')
-factors_name = list(factors_name)
+factors_names = ('extraversion', 'anxiety', 'flexibility', 'independence', 'selfcontrol', 'adjustment', 'leadership', 'creativity', 'status')
+factors_names = list(factors_names)
 f = ('a', 'b', 'c', 'e', 'f', 'g', 'h', 'i', 'l', 'm', 'n', 'o', 'q1', 'q2', 'q3', 'q4')
 for var in f:
-    factors_name.append(var)
-    factors_name.append("raw_" + var)
-factors_name = tuple(factors_name)
+    factors_names.append(var)
+    factors_names.append("raw_" + var)
+factors_names = tuple(factors_names)
 
 
 factors = { 

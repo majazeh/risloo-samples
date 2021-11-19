@@ -4,7 +4,7 @@ import scoring.dictionary.Raven9A as dictionary
 class Raven9A(Data):
     scores = {'raw' :  None, 'iq' : None, 'percentile' : None, 'final' : None}
     def scoring_raw(self, score):
-        score.set(dictionary.factors_name, 0)
+        score.set(dictionary.factors_names, 0)
         score.set('report' ,'')
         for i, item in self.items():
             if(item.get('user_answered') == None): continue

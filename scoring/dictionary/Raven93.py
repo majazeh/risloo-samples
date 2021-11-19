@@ -141,4 +141,4 @@ level = {
     0 : {'level' : 0, 'title' : 'عقب‌مانده'},
 }
 
-factors_name = ('pre', 'raw', 'iq', 'percentile', 'report')
+factors_names = ('pre', 'raw', 'iq', 'percentile', 'report')

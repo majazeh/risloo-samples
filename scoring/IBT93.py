@@ -6,7 +6,7 @@ class IBT93(Data):
     
     def scoring_raw(self, score):
         option_numbers = dictionary.option_numbers
-        score.set(dictionary.factor_names,0) 
+        score.set(dictionary.factors_names,0) 
         for i, item in self.items():   
             try:
                 answer = int(item.get('user_answered')) 

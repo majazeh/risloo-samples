@@ -4,7 +4,7 @@ f3 = 'religious_disobedience'
 
 option_numbers = 4
 
-factor_names = (f1,f2,f3)
+factors_names = (f1,f2,f3)
 
 factors = {
     1 :(f2,)

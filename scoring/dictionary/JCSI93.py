@@ -4,7 +4,7 @@ f3 = 'understanding_message'
 f4 = 'awareness'
 f5 = 'assertiveness'
 
-factor_names = ('raw',f1,f2,f3,f4,f5)
+factors_names = ('raw',f1,f2,f3,f4,f5)
 option_numbers = 5
 factors = {
     1 :(f5,)

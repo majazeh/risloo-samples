@@ -14,5 +14,5 @@ factors = {
             }
         }
 
-factors_name = ('E', 'I', 'S', 'N', 'F', 'T', 'P', 'J', 'report')
+factors_names = ('E', 'I', 'S', 'N', 'F', 'T', 'P', 'J', 'report')
 factors_group = (('E', 'I'), ('S', 'N'), ('F', 'T'), ('P', 'J'))

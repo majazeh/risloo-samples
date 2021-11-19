@@ -4,7 +4,7 @@ import scoring.dictionary.Raven93 as dictionary
 class Raven93(Data):
     scores = {'raw' :  None, 'iq' : None, 'percentile' : None, 'level' : None}
     def scoring_raw(self, score):
-        score.set(dictionary.factors_name, 0)
+        score.set(dictionary.factors_names, 0)
         for i, item in self.items():
             if(item.get('user_answered') == None): continue
             factor = dictionary.factors[i + 1] == item.get('user_answered')

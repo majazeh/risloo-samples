@@ -60,4 +60,4 @@ level_interpretation = {
     ,(95,100) : ('خیلی باهوش')
 }
 
-factors_name = ('pre', 'raw', 'iq', 'percentile')
+factors_names = ('pre', 'raw', 'iq', 'percentile')

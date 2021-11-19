@@ -11,7 +11,7 @@ f10 = 'p'
 
 option_numbers = 5
 
-factor_names = ('raw',f1,f2,f3,f4,f5,f6,f7,f8,f9,f10)
+factors_names = ('raw',f1,f2,f3,f4,f5,f6,f7,f8,f9,f10)
 
 factors = {
     1 :(f1,)

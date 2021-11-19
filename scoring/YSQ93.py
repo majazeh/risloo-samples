@@ -5,7 +5,7 @@ class YSQ93(Data):
     scores = {'raw':None}
  
     def scoring_raw(self, score): 
-        score.set(dictionary.factors_name,0)
+        score.set(dictionary.factors_names,0)
         
         for i, item in self.items():
             try:

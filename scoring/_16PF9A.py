@@ -5,7 +5,7 @@ class _16PF9A(Data):
     scores = {'raw':None, 'norm': None}
  
     def scoring_raw(self, score): 
-        score.set(dictionary.factors_name,0)
+        score.set(dictionary.factors_names,0)
         score.set('status', 'valid')
         b_score = 0
         for i, item in self.items():
