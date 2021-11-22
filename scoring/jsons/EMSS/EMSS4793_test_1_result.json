@@ -1,0 +1,23 @@
+{
+    "raw": 128,
+    "personality_issues": 19,
+    "marital_communication": 18,
+    "Conflict_resolution": 12,
+    "financial_management": 9,
+    "leisure_activities": 13,
+    "sexual_relationship": 12,
+    "children_and_marriage": 12,
+    "family_and_friends": 16,
+    "religious_orientation": 17,
+    "t_score": 33,
+    "t_score_summary": "dissatisfaction",
+    "personality_issues_interpretation": "moderate_satisfaction",
+    "marital_communication_interpretation": "moderate_satisfaction",
+    "Conflict_resolution_interpretation": "dissatisfaction",
+    "financial_management_interpretation": "dissatisfaction",
+    "leisure_activities_interpretation": "moderate_satisfaction",
+    "sexual_relationship_interpretation": "dissatisfaction",
+    "children_and_marriage_interpretation": "dissatisfaction",
+    "family_and_friends_interpretation": "moderate_satisfaction",
+    "religious_orientation_interpretation": "moderate_satisfaction"
+}

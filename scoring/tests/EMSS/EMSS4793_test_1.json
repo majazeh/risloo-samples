@@ -19,7 +19,7 @@
             },
             "alias": "gender",
             "force": true,
-            "user_answered": "1"
+            "user_answered": "2"
         },
         {
             "type": "text",
@@ -58,7 +58,21 @@
             },
             "alias": "education",
             "force": true,
-            "user_answered": "9"
+            "user_answered": "8"
+        },
+        {
+            "type": "text",
+            "label": "marital_status",
+            "text": "وضعیت تأهل",
+            "answer": {
+                "type": "select",
+                "options": [
+                    "مجرد",
+                    "متأهل"
+                ]
+            },
+            "alias": "marital_status",
+            "force": true
         }
     ],
     "items": [
@@ -75,7 +89,7 @@
                     "کاملا مخالفم"
                 ]
             },
-            "user_answered": "2"
+            "user_answered": "4"
         },
         {
             "type": "text",
@@ -105,7 +119,7 @@
                     "کاملا مخالفم"
                 ]
             },
-            "user_answered": "3"
+            "user_answered": "1"
         },
         {
             "type": "text",
@@ -120,7 +134,7 @@
                     "کاملا مخالفم"
                 ]
             },
-            "user_answered": "4"
+            "user_answered": "3"
         },
         {
             "type": "text",
@@ -135,7 +149,7 @@
                     "کاملا مخالفم"
                 ]
             },
-            "user_answered": "4"
+            "user_answered": "2"
         },
         {
             "type": "text",
@@ -165,7 +179,7 @@
                     "کاملا مخالفم"
                 ]
             },
-            "user_answered": "4"
+            "user_answered": "5"
         },
         {
             "type": "text",
@@ -180,7 +194,7 @@
                     "کاملا مخالفم"
                 ]
             },
-            "user_answered": "4"
+            "user_answered": "1"
         },
         {
             "type": "text",
@@ -195,7 +209,7 @@
                     "کاملا مخالفم"
                 ]
             },
-            "user_answered": "4"
+            "user_answered": "5"
         },
         {
             "type": "text",
@@ -210,7 +224,7 @@
                     "کاملا مخالفم"
                 ]
             },
-            "user_answered": "5"
+            "user_answered": "1"
         },
         {
             "type": "text",
@@ -225,7 +239,7 @@
                     "کاملا مخالفم"
                 ]
             },
-            "user_answered": "1"
+            "user_answered": "2"
         },
         {
             "type": "text",
@@ -255,7 +269,7 @@
                     "کاملا مخالفم"
                 ]
             },
-            "user_answered": "4"
+            "user_answered": "2"
         },
         {
             "type": "text",
@@ -270,7 +284,7 @@
                     "کاملا مخالفم"
                 ]
             },
-            "user_answered": "5"
+            "user_answered": "1"
         },
         {
             "type": "text",
@@ -315,7 +329,7 @@
                     "کاملا مخالفم"
                 ]
             },
-            "user_answered": "4"
+            "user_answered": "5"
         },
         {
             "type": "text",
@@ -330,7 +344,7 @@
                     "کاملا مخالفم"
                 ]
             },
-            "user_answered": "2"
+            "user_answered": "4"
         },
         {
             "type": "text",
@@ -345,7 +359,7 @@
                     "کاملا مخالفم"
                 ]
             },
-            "user_answered": "2"
+            "user_answered": "4"
         },
         {
             "type": "text",
@@ -360,7 +374,7 @@
                     "کاملا مخالفم"
                 ]
             },
-            "user_answered": "5"
+            "user_answered": "2"
         },
         {
             "type": "text",
@@ -375,7 +389,7 @@
                     "کاملا مخالفم"
                 ]
             },
-            "user_answered": "1"
+            "user_answered": "5"
         },
         {
             "type": "text",
@@ -390,7 +404,7 @@
                     "کاملا مخالفم"
                 ]
             },
-            "user_answered": "4"
+            "user_answered": "2"
         },
         {
             "type": "text",
@@ -405,7 +419,7 @@
                     "کاملا مخالفم"
                 ]
             },
-            "user_answered": "3"
+            "user_answered": "2"
         },
         {
             "type": "text",
@@ -420,7 +434,7 @@
                     "کاملا مخالفم"
                 ]
             },
-            "user_answered": "2"
+            "user_answered": "3"
         },
         {
             "type": "text",
@@ -435,7 +449,7 @@
                     "کاملا مخالفم"
                 ]
             },
-            "user_answered": "1"
+            "user_answered": "5"
         },
         {
             "type": "text",
@@ -450,7 +464,7 @@
                     "کاملا مخالفم"
                 ]
             },
-            "user_answered": "2"
+            "user_answered": "4"
         },
         {
             "type": "text",
@@ -480,7 +494,7 @@
                     "کاملا مخالفم"
                 ]
             },
-            "user_answered": "3"
+            "user_answered": "4"
         },
         {
             "type": "text",
@@ -495,7 +509,7 @@
                     "کاملا مخالفم"
                 ]
             },
-            "user_answered": "5"
+            "user_answered": "1"
         },
         {
             "type": "text",
@@ -510,7 +524,7 @@
                     "کاملا مخالفم"
                 ]
             },
-            "user_answered": "5"
+            "user_answered": "2"
         },
         {
             "type": "text",
@@ -525,7 +539,7 @@
                     "کاملا مخالفم"
                 ]
             },
-            "user_answered": "2"
+            "user_answered": "5"
         },
         {
             "type": "text",
@@ -555,7 +569,7 @@
                     "کاملا مخالفم"
                 ]
             },
-            "user_answered": "2"
+            "user_answered": "3"
         },
         {
             "type": "text",
@@ -570,7 +584,7 @@
                     "کاملا مخالفم"
                 ]
             },
-            "user_answered": "4"
+            "user_answered": "1"
         },
         {
             "type": "text",
@@ -585,7 +599,7 @@
                     "کاملا مخالفم"
                 ]
             },
-            "user_answered": "5"
+            "user_answered": "4"
         },
         {
             "type": "text",
@@ -600,7 +614,7 @@
                     "کاملا مخالفم"
                 ]
             },
-            "user_answered": "4"
+            "user_answered": "5"
         },
         {
             "type": "text",
@@ -615,7 +629,7 @@
                     "کاملا مخالفم"
                 ]
             },
-            "user_answered": "4"
+            "user_answered": "2"
         },
         {
             "type": "text",
@@ -630,7 +644,7 @@
                     "کاملا مخالفم"
                 ]
             },
-            "user_answered": "4"
+            "user_answered": "1"
         },
         {
             "type": "text",
@@ -645,7 +659,7 @@
                     "کاملا مخالفم"
                 ]
             },
-            "user_answered": "2"
+            "user_answered": "4"
         },
         {
             "type": "text",
@@ -660,7 +674,7 @@
                     "کاملا مخالفم"
                 ]
             },
-            "user_answered": "1"
+            "user_answered": "3"
         },
         {
             "type": "text",
@@ -690,7 +704,7 @@
                     "کاملا مخالفم"
                 ]
             },
-            "user_answered": "2"
+            "user_answered": "4"
         },
         {
             "type": "text",
@@ -705,7 +719,7 @@
                     "کاملا مخالفم"
                 ]
             },
-            "user_answered": "1"
+            "user_answered": "5"
         },
         {
             "type": "text",
@@ -720,7 +734,7 @@
                     "کاملا مخالفم"
                 ]
             },
-            "user_answered": "2"
+            "user_answered": "5"
         },
         {
             "type": "text",
