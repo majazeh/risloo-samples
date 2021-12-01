@@ -1,7 +1,7 @@
 from Data import Data
-import scoring.dictionary.CSI493 as dictionary
+import scoring.dictionary.CSI93 as dictionary
 
-class CSI493(Data):
+class CSI93(Data):
     scores = {'raw' :  None }# 
     
     def scoring_raw(self, score):
@@ -12,17 +12,17 @@ class CSI493(Data):
                 factors = dictionary.factors[i + 1]
                 
                 if i + 1 in dictionary.exception_questions:
-                    if answer == 0  :
+                    if answer == 1  :
                         value = 0
                     else:
                         value = 1
                 elif i + 1 in dictionary.yes_no_questions :
-                    if answer == 0 :
+                    if answer == 1 :
                         value = 1
                     else:
                         value = 0
                 else:
-                    if answer == 0  or answer == 1 :
+                    if answer == 1  or answer == 2 :
                         value = 0
                     else:
                         value = 1
