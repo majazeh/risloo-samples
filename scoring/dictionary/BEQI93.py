@@ -19,7 +19,7 @@ f15 = 'assertiveness'
 f16 = 'intrapersonal_skills'
 f17 = 'interpersonal_skills'
 f18 = 'adjustment'
-f19 = 'mood'
+f19 = 'general_mood'
 f20 = 'stress_management'
 
 
