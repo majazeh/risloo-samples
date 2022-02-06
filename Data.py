@@ -30,6 +30,9 @@ class Data:
 
     def items(self):
         return enumerate(self.__data['items'])
+    
+    def get_items_entirely(self):
+        return self.__data['items']
 
 
     def prerequisites(self):
