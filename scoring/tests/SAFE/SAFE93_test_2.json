@@ -1,0 +1,416 @@
+{
+    "title": "پرسشنامه ارزیابی سیستماتیک محیط خانواده (SAFE)",
+    "version": "1",
+    "edition": "",
+    "edition_version": null,
+    "filler": "client",
+    "description": "## دستور اجرای آزمون\n\n\\برای هر یک از توصیف‌های زیر پاسخی که در حال حاضر به بهترین وجه بیانگر نحوه ارتباط شما در خانواده‌تان هست را انتخاب کنید. توجه داشته باشید که هر چقدر پاسخ شما به توصیف سمت راست نزدیک‌تر باشد، بیانگر همخوانی بیشتر شما با رفتار توصیف شده در سمت راست پیوستار است و بالعکس. از شما می‌خواهم که به خانواده‌تان فکر کنید و بگویید وقتی مشکلاتی در خانواده‌تان ایجاد می‌شود، شما و اعضای خانواده‌تان چگونه با یکدیگر ارتباط برقرار می‌کنید؟",
+    "prerequisites": [
+        {
+            "type": "text",
+            "label": "gender",
+            "text": "جنسیت",
+            "answer": {
+                "type": "select",
+                "options": [
+                    "زن",
+                    "مرد"
+                ]
+            },
+            "alias": "gender",
+            "force": true,
+            "user_answered": "2"
+        },
+        {
+            "type": "text",
+            "label": "age",
+            "text": "سن",
+            "answer": {
+                "type": "number"
+            },
+            "alias": "age",
+            "force": true,
+            "user_answered": "37"
+        },
+        {
+            "type": "text",
+            "label": "education",
+            "text": "تحصیلات",
+            "answer": {
+                "type": "select",
+                "options": [
+                    "ابتدایی اول",
+                    "ابتدایی دوم",
+                    "متوسطه اول",
+                    "متوسطه دوم",
+                    "دیپلم",
+                    "کارشناسی",
+                    "کارشناسی ارشد",
+                    "پزشکی عمومی",
+                    "متخصص",
+                    "دکتری تخصصی",
+                    "حوزوی مقدمات",
+                    "حوزوی سطح۱",
+                    "حوزوی سطح۲",
+                    "حوزوی سطح۳",
+                    "حوزوی سطح۴"
+                ]
+            },
+            "alias": "education",
+            "force": true,
+            "user_answered": "8"
+        },
+        {
+            "type": "text",
+            "label": "marital_status",
+            "text": "وضعیت تأهل",
+            "answer": {
+                "type": "select",
+                "options": [
+                    "مجرد",
+                    "متأهل"
+                ]
+            },
+            "alias": "marital_status",
+            "force": true
+        }
+    ],
+    "items": [
+        {
+            "category": "بخش اول : من و شریک جنسی‌ام / همسرم",
+            "type": "two_side",
+            "description": "",
+            "sides": [
+                "با هم راحت حرف می‌زنید. ",
+                "خیلی از موارد را از هم پنهان می‌‌کنید."
+            ],
+            "answer": {
+                "reverse": true,
+                "type": "range",
+                "min": 1,
+                "max": 5
+            },
+            "user_answered": "3"
+        },
+        {
+            "category": "بخش اول : من و شریک جنسی‌ام / همسرم",
+            "type": "two_side",
+            "description": "",
+            "sides": [
+                "به حرف‌های هم گوش می‌کنید. ",
+                "به حرف‌های هم گوش نمی‌کنید."
+            ],
+            "answer": {
+                "reverse": true,
+                "type": "range",
+                "min": 1,
+                "max": 5
+            },
+            "user_answered": "2"
+        },
+        {
+            "category": "بخش اول : من و شریک جنسی‌ام / همسرم",
+            "type": "two_side",
+            "description": "",
+            "sides": [
+                "یکدیگر را به خوبی درک می‌کنید. ",
+                "همیشه نسبت به هم دچار کج‌فهمی (سو تفاهم) می‌شوید. "
+            ],
+            "answer": {
+                "reverse": true,
+                "type": "range",
+                "min": 1,
+                "max": 5
+            },
+            "user_answered": "2"
+        },
+        {
+            "category": "بخش اول : من و شریک جنسی‌ام / همسرم",
+            "type": "two_side",
+            "description": "",
+            "sides": [
+                "با هم کار می‌کنید. ",
+                "علیه هم کار می‌کنید."
+            ],
+            "answer": {
+                "reverse": true,
+                "type": "range",
+                "min": 1,
+                "max": 5
+            },
+            "user_answered": "1"
+        },
+        {
+            "category": "بخش اول : من و شریک جنسی‌ام / همسرم",
+            "type": "two_side",
+            "description": "",
+            "sides": [
+                "وقتی روشی کارآمد واقع نشود، روش‌های جدید را امتحان می‌کنید. ",
+                "هیچ وقت روش‌های حل مسئله‌تان را تغییر نمی‌دهید. "
+            ],
+            "answer": {
+                "reverse": true,
+                "type": "range",
+                "min": 1,
+                "max": 5
+            },
+            "user_answered": "5"
+        },
+        {
+            "category": "بخش اول : من و شریک جنسی‌ام / همسرم",
+            "type": "two_side",
+            "description": "",
+            "sides": [
+                "از یکدیگر حمایت می‌کنید. ",
+                "یکدیگر را طرد می‌کنید. "
+            ],
+            "answer": {
+                "reverse": true,
+                "type": "range",
+                "min": 1,
+                "max": 5
+            },
+            "user_answered": "3"
+        },
+        {
+            "category": "بخش اول : من و شریک جنسی‌ام / همسرم",
+            "type": "two_side",
+            "description": "",
+            "sides": [
+                "با رعایت مساوات با هم کار می‌کنید. ",
+                "یکی دیگری را کنترل می‌کند و دیگری تسلیم می‌شود."
+            ],
+            "answer": {
+                "reverse": true,
+                "type": "range",
+                "min": 1,
+                "max": 5
+            },
+            "user_answered": "1"
+        },
+        {
+            "category": "بخش دوم: من و فرزندانم",
+            "type": "two_side",
+            "description": "",
+            "sides": [
+                "برای گفتن هر چیزی به هر کسی آزادید.",
+                "بسیاری از موارد را از هم پنهان می‌کنید. "
+            ],
+            "answer": {
+                "reverse": true,
+                "type": "range",
+                "min": 1,
+                "max": 5
+            },
+            "user_answered": "2"
+        },
+        {
+            "category": "بخش دوم: من و فرزندانم",
+            "type": "two_side",
+            "description": "",
+            "sides": [
+                "وقتی من صحبت می‌کنم یک نفر هست که به من گوش کند. ",
+                "به نظر می‌رسد فردی نیست که به حرف‌هایم گوش کند. "
+            ],
+            "answer": {
+                "reverse": true,
+                "type": "range",
+                "min": 1,
+                "max": 5
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "بخش دوم: من و فرزندانم",
+            "type": "two_side",
+            "description": "",
+            "sides": [
+                "وقتی راجع به چیزی صحبت می‌کنیم هر فردی می‌تواند آن را درک کند. ",
+                "بعد از اینکه راجع به چیزی صحبت کردیم هیچ کس متوجه نمی‌شود که باید چه کار کند."
+            ],
+            "answer": {
+                "reverse": true,
+                "type": "range",
+                "min": 1,
+                "max": 5
+            },
+            "user_answered": "2"
+        },
+        {
+            "category": "بخش دوم: من و فرزندانم",
+            "type": "two_side",
+            "description": "",
+            "sides": [
+                "اعضای خانواده به صورت یک تیم با هم کار می‌کنند. ",
+                "به نظر می‌رسد که ما در تیم‌های مختلفی بازی می‌کنیم."
+            ],
+            "answer": {
+                "reverse": true,
+                "type": "range",
+                "min": 1,
+                "max": 5
+            },
+            "user_answered": "3"
+        },
+        {
+            "category": "بخش دوم: من و فرزندانم",
+            "type": "two_side",
+            "description": "",
+            "sides": [
+                "وقتی روشی کارآمد واقع نشود، روش‌های دیگری را امتحان می‌کنیم. ",
+                "هیچ وقت روش‌های جدید حل مسئله را امتحان نمی‌کنیم. "
+            ],
+            "answer": {
+                "reverse": true,
+                "type": "range",
+                "min": 1,
+                "max": 5
+            },
+            "user_answered": "5"
+        },
+        {
+            "category": "بخش دوم: من و فرزندانم",
+            "type": "two_side",
+            "description": "",
+            "sides": [
+                "هر وقت کسی نیاز به حمایت داشته باشد احساس می‌کند بیشتر از آن حمایت را دریافت کرده است ",
+                "هر وقت کسی واقعا نیاز به حمایت داشته باشد احساس می‌کند بیشتر طرد شده است."
+            ],
+            "answer": {
+                "reverse": true,
+                "type": "range",
+                "min": 1,
+                "max": 5
+            },
+            "user_answered": "4"
+        },
+        {
+            "category": "بخش دوم: من و فرزندانم",
+            "type": "two_side",
+            "description": "",
+            "sides": [
+                "نهایتا والدین مسئول این خانواده هستند. ",
+                "به نظر می‌رسد کنترل‌گری بچه‌ها بیشتر از والدین است."
+            ],
+            "answer": {
+                "reverse": true,
+                "type": "range",
+                "min": 1,
+                "max": 5
+            },
+            "user_answered": "5"
+        },
+        {
+            "category": "بخش سوم:‌من و والدینم",
+            "type": "two_side",
+            "description": "",
+            "sides": [
+                "موارد مهم را به یکدیگر می‌گوییم. ",
+                "بسیاری از موارد را از هم پنهان می‌کنیم."
+            ],
+            "answer": {
+                "reverse": true,
+                "type": "range",
+                "min": 1,
+                "max": 5
+            },
+            "user_answered": "1"
+        },
+        {
+            "category": "بخش سوم:‌من و والدینم",
+            "type": "two_side",
+            "description": "",
+            "sides": [
+                "با احترام به حرف‌های یکدیگر گوش می‌کنیم. ",
+                "همیشه یکدیگر را نادیده می‌گیریم و حرف‌مان را به آن‌ها تحمیل می‌کنیم."
+            ],
+            "answer": {
+                "reverse": true,
+                "type": "range",
+                "min": 1,
+                "max": 5
+            },
+            "user_answered": "3"
+        },
+        {
+            "category": "بخش سوم:‌من و والدینم",
+            "type": "two_side",
+            "description": "",
+            "sides": [
+                "با یکدیگر خوب کنار می‌آییم. ",
+                "به نظر می‌رسد اصلا همدیگر را درک نمی‌کنیم."
+            ],
+            "answer": {
+                "reverse": true,
+                "type": "range",
+                "min": 1,
+                "max": 5
+            },
+            "user_answered": "5"
+        },
+        {
+            "category": "بخش سوم:‌من و والدینم",
+            "type": "two_side",
+            "description": "",
+            "sides": [
+                "وقتی لازم باشد با هم کار می‌کنیم. ",
+                "وقتی همکاری لازم باشد به جای آن با هم می‌جنگیم. "
+            ],
+            "answer": {
+                "reverse": true,
+                "type": "range",
+                "min": 1,
+                "max": 5
+            },
+            "user_answered": "5"
+        },
+        {
+            "category": "بخش سوم:‌من و والدینم",
+            "type": "two_side",
+            "description": "",
+            "sides": [
+                "راه‌های جدید حل مسئله را امتحان می‌کنیم. ",
+                "با همان روش‌های همبستگی به کارمان ادامه می‌دهیم."
+            ],
+            "answer": {
+                "reverse": true,
+                "type": "range",
+                "min": 1,
+                "max": 5
+            },
+            "user_answered": "5"
+        },
+        {
+            "category": "بخش سوم:‌من و والدینم",
+            "type": "two_side",
+            "description": "",
+            "sides": [
+                "وقتی واقعا لازم باشد کنار هم هستیم. ",
+                "همیشه به طور اتفاقی کنار هم قرار می‌گیریم یا هرگز به هنگام لزوم کنار هم نیستیم."
+            ],
+            "answer": {
+                "reverse": true,
+                "type": "range",
+                "min": 1,
+                "max": 5
+            },
+            "user_answered": "5"
+        },
+        {
+            "category": "بخش سوم:‌من و والدینم",
+            "type": "two_side",
+            "description": "",
+            "sides": [
+                "با هم مثل دو فرد بالغ رفتار می‌کنیم. ",
+                "رفتارمان با هم مثل رفتار یک والد - کودک است."
+            ],
+            "answer": {
+                "reverse": true,
+                "type": "range",
+                "min": 1,
+                "max": 5
+            },
+            "user_answered": "3"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "me_and_my_partner": {
+        "interaction": 20,
+        "structure": 30,
+        "interpretation": "worthy"
+    },
+    "me_and_my_children": {
+        "interaction": 16,
+        "structure": 6,
+        "interpretation": "aimless/undirected"
+    },
+    "me_and_my_parents": {
+        "interaction": 12,
+        "structure": 18,
+        "interpretation": "aimless/undirected"
+    }
+}
