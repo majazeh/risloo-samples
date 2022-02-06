@@ -48,9 +48,17 @@ for j in range (test_numbers):
         sheet.cell(row = 1, column=2).value = 'پاسخ  گزینه فرد'    
 
     for i,item in enumerate(data["items"]):
-        if item["answer"]["type"] == "optional":
+        if item["answer"]["type"] == "optional" :
             num_options = len(item["answer"]["options"])
             item ["user_answered"] = str(randint(1,num_options))
+        
+        elif item["answer"]["type"] == "range":
+            
+            if item["answer"]["reverse"]:
+                item ["user_answered"] = str(item["answer"]["max"] +1 - randint(1, item["answer"]["max"] - item["answer"]["min"] +1))
+            
+            else:
+                item ["user_answered"] = str(randint(1, item["answer"]["max"] - item["answer"]["min"] +1))
         
         elif item["answer"]["type"] == "descriptive":
             item ["user_answered"] = "faik text"
