@@ -909,22 +909,6 @@
             "category": "",
             "type": "text",
             "description": "",
-            "text": "میزان رضایت خود را از موارد زیر علامت بزنید.",
-            "answer": {
-                "type": "optional",
-                "options": [
-                    "کاملا مخالفم",
-                    "مخالفم",
-                    "نمیدانم",
-                    "موافقم",
-                    "کاملا موافقم"
-                ]
-            }
-        },
-        {
-            "category": "",
-            "type": "text",
-            "description": "",
             "text": "میزان قرابت و نزدکی میان اعضای خانواده‌ام",
             "answer": {
                 "type": "optional",

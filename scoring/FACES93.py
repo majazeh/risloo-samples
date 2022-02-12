@@ -89,8 +89,8 @@ class FACES93(Data):
         cohesion = score.get(dictionary.f9)
         flexibility = score.get(dictionary.f10)
 
-        cohesion_percent = 100 * (cohesion - dictionary.percentage_converter["min"])/(dictionary.percentage_converter["max"] - dictionary.percentage_converter["min"])
-        flexibility_percent = 100 * (flexibility - dictionary.percentage_converter["min"])/(dictionary.percentage_converter["max"] - dictionary.percentage_converter["min"])
+        cohesion_percent = 100 * ((cohesion - dictionary.percentage_converter["min"])/(dictionary.percentage_converter["max"] - dictionary.percentage_converter["min"]))
+        flexibility_percent = 100 * ((flexibility - dictionary.percentage_converter["min"])/(dictionary.percentage_converter["max"] - dictionary.percentage_converter["min"]))
 
         return cohesion_percent, flexibility_percent
 
