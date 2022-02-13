@@ -63,7 +63,7 @@ class SAFE93(Data):
             answer = int(item.get('user_answered'))
 
             if item["answer"]["reverse"]:  
-                score.increase('interaction' , dictionary.option_numbers  + 1 - answer ) 
+                score.increase('interaction' , answer ) 
             
             else:
                 score.increase('interaction' , answer ) 
@@ -75,7 +75,7 @@ class SAFE93(Data):
         answer = int(item.get('user_answered'))  
         
         if item["answer"]["reverse"]:     
-            score.increase('structure' , (dictionary.option_numbers  + 1 - answer)*6 )
+            score.increase('structure' , (answer)*6 )
         
         else :
             score.increase('structure' , answer*6 )
