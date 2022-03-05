@@ -15,14 +15,14 @@ class PIES93(Data):
                 if i+1 in dictionary.reverse_scoring_numbers:
                     
                     for factor in factors:
-                        
                         score.increase(factor , option_numbers +1  - answer )    
+                        score.increase('raw' , option_numbers +1  - answer )    
+                        
                 else :
                     for factor in factors:
-                        
-                        score.increase(factor , answer )    
+                        score.increase(factor , answer ) 
+                        score.increase('raw' , answer ) 
                 
-
             except:
                 pass
         
