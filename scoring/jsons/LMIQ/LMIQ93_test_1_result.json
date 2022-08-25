@@ -1,0 +1,21 @@
+{
+    "1": 15,
+    "2": 12,
+    "3": 12,
+    "4": 10,
+    "5": 8,
+    "6": 13,
+    "7": 10,
+    "8": 8,
+    "9": 13,
+    "10": 11,
+    "honesty": 49,
+    "responsibility": 31,
+    "forgiveness": 24,
+    "emphaty": 8,
+    "raw": 112,
+    "normalized_honesty": 12,
+    "normalized_responsibility": 10,
+    "normalized_forgiveness": 12,
+    "normalized_emphaty": 8
+}

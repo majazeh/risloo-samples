@@ -1,16 +1,18 @@
 #!/bin/bash
 
 
-folder_name="GMIT"
+folder_name="LMIQ"
 file_name=$folder_name"93"
 
-title="پرسشنامه هوش‌های چندگانه گاردنر"
+title="پرسشنامه هوش اخلاقی لینک و همکاران"
 
-description="## دستور اجرای آزمون\n\nخواهشمند است که هر یک از جمله های زیر را با دقت بخوانید و براساس میزان توافق خود با هر یک از عبارات، یکی از گزینه های مقابل را انتخاب کنید."
+description="## دستور اجرای آزمون\n\nلطفا هر یک از عبارات زیر را خوانده و میزان موافقت خود را با آن مشخص کنید:"
 
 option_positions_is_typical_form=$true
 option_list_array="cat dog mouse frog"
 
+
+###########################################
 
 if [ $option_positions_is_typical_form = $true ];then
 
