@@ -7,7 +7,7 @@ f6 = 'behaviour_control'
 f7 = 'overall_performance'
 
 factors_names = (f1, f2, f3, f4, f5, f6, f7)
-option_numbers = 5
+option_numbers = 4
 
 factors = {
     1 :(f1, )
