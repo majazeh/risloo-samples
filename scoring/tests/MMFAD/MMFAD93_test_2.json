@@ -1,5 +1,5 @@
 {
-    "title": "FAD-پرسشنامه عملکرد خانواده",
+    "title": "  ۵۳ سوالی-(FAD) پرسشنامه عملکرد خانواده",
     "version": "1",
     "edition": "",
     "edition_version": null,
@@ -9,12 +9,12 @@
         {
             "type": "text",
             "label": "gender",
-            "text": "ط¬ظ†ط³غŒطھ",
+            "text": "جنسیت",
             "answer": {
                 "type": "select",
                 "options": [
-                    "ط²ظ†",
-                    "ظ…ط±ط¯"
+                    "زن",
+                    "مرد"
                 ]
             },
             "alias": "gender",
@@ -24,7 +24,7 @@
         {
             "type": "text",
             "label": "age",
-            "text": "ط³ظ†",
+            "text": "سن",
             "answer": {
                 "type": "number"
             },
@@ -35,25 +35,25 @@
         {
             "type": "text",
             "label": "education",
-            "text": "طھط­طµغŒظ„ط§طھ",
+            "text": "تحصیلات",
             "answer": {
                 "type": "select",
                 "options": [
-                    "ط§ط¨طھط¯ط§غŒغŒ ط§ظˆظ„",
-                    "ط§ط¨طھط¯ط§غŒغŒ ط¯ظˆظ…",
-                    "ظ…طھظˆط³ط·ظ‡ ط§ظˆظ„",
-                    "ظ…طھظˆط³ط·ظ‡ ط¯ظˆظ…",
-                    "ط¯غŒظ¾ظ„ظ…",
-                    "ع©ط§ط±ط´ظ†ط§ط³غŒ",
-                    "ع©ط§ط±ط´ظ†ط§ط³غŒ ط§ط±ط´ط¯",
-                    "ظ¾ط²ط´ع©غŒ ط¹ظ…ظˆظ…غŒ",
-                    "ظ…طھط®طµطµ",
-                    "ط¯ع©طھط±غŒ طھط®طµطµغŒ",
-                    "ط­ظˆط²ظˆغŒ ظ…ظ‚ط¯ظ…ط§طھ",
-                    "ط­ظˆط²ظˆغŒ ط³ط·ط­غ±",
-                    "ط­ظˆط²ظˆغŒ ط³ط·ط­غ²",
-                    "ط­ظˆط²ظˆغŒ ط³ط·ط­غ³",
-                    "ط­ظˆط²ظˆغŒ ط³ط·ط­غ´"
+                    "ابتدایی اول",
+                    "ابتدایی دوم",
+                    "متوسطه اول",
+                    "متوسطه دوم",
+                    "دیپلم",
+                    "کارشناسی",
+                    "کارشناسی ارشد",
+                    "پزشکی عمومی",
+                    "متخصص",
+                    "دکتری تخصصی",
+                    "حوزوی مقدمات",
+                    "حوزوی سطح۱",
+                    "حوزوی سطح۲",
+                    "حوزوی سطح۳",
+                    "حوزوی سطح۴"
                 ]
             },
             "alias": "education",
@@ -63,12 +63,12 @@
         {
             "type": "text",
             "label": "marital_status",
-            "text": "ظˆط¶ط¹غŒطھ طھط£ظ‡ظ„",
+            "text": "وضعیت تأهل",
             "answer": {
                 "type": "select",
                 "options": [
-                    "ظ…ط¬ط±ط¯",
-                    "ظ…طھط£ظ‡ظ„"
+                    "مجرد",
+                    "متأهل"
                 ]
             },
             "alias": "marital_status",
@@ -91,7 +91,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "2"
+            "user_answered": "1"
         },
         {
             "category": "",
@@ -108,7 +108,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "4"
+            "user_answered": "3"
         },
         {
             "category": "",
@@ -125,7 +125,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "5"
+            "user_answered": "2"
         },
         {
             "category": "",
@@ -142,7 +142,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "2"
+            "user_answered": "5"
         },
         {
             "category": "",
@@ -159,7 +159,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "2"
+            "user_answered": "3"
         },
         {
             "category": "",
@@ -176,7 +176,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "1"
+            "user_answered": "2"
         },
         {
             "category": "",
@@ -193,7 +193,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "2"
+            "user_answered": "5"
         },
         {
             "category": "",
@@ -210,7 +210,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "5"
+            "user_answered": "4"
         },
         {
             "category": "",
@@ -227,7 +227,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "3"
+            "user_answered": "4"
         },
         {
             "category": "",
@@ -244,7 +244,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "4"
+            "user_answered": "5"
         },
         {
             "category": "",
@@ -278,7 +278,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "5"
+            "user_answered": "4"
         },
         {
             "category": "",
@@ -312,7 +312,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "4"
+            "user_answered": "1"
         },
         {
             "category": "",
@@ -329,7 +329,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "5"
+            "user_answered": "4"
         },
         {
             "category": "",
@@ -346,7 +346,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "4"
+            "user_answered": "5"
         },
         {
             "category": "",
@@ -363,7 +363,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "2"
+            "user_answered": "4"
         },
         {
             "category": "",
@@ -380,7 +380,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "5"
+            "user_answered": "4"
         },
         {
             "category": "",
@@ -397,7 +397,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "3"
+            "user_answered": "2"
         },
         {
             "category": "",
@@ -414,7 +414,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "3"
+            "user_answered": "4"
         },
         {
             "category": "",
@@ -431,7 +431,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "3"
+            "user_answered": "4"
         },
         {
             "category": "",
@@ -448,7 +448,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "4"
+            "user_answered": "3"
         },
         {
             "category": "",
@@ -465,7 +465,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "4"
+            "user_answered": "2"
         },
         {
             "category": "",
@@ -482,7 +482,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "3"
+            "user_answered": "1"
         },
         {
             "category": "",
@@ -499,7 +499,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "3"
+            "user_answered": "4"
         },
         {
             "category": "",
@@ -516,7 +516,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "1"
+            "user_answered": "5"
         },
         {
             "category": "",
@@ -533,7 +533,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "2"
+            "user_answered": "5"
         },
         {
             "category": "",
@@ -550,7 +550,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "2"
+            "user_answered": "3"
         },
         {
             "category": "",
@@ -567,7 +567,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "1"
+            "user_answered": "2"
         },
         {
             "category": "",
@@ -584,7 +584,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "1"
+            "user_answered": "5"
         },
         {
             "category": "",
@@ -601,7 +601,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "1"
+            "user_answered": "4"
         },
         {
             "category": "",
@@ -618,7 +618,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "2"
+            "user_answered": "3"
         },
         {
             "category": "",
@@ -652,7 +652,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "5"
+            "user_answered": "3"
         },
         {
             "category": "",
@@ -669,7 +669,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "4"
+            "user_answered": "3"
         },
         {
             "category": "",
@@ -686,7 +686,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "5"
+            "user_answered": "3"
         },
         {
             "category": "",
@@ -703,7 +703,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "4"
+            "user_answered": "2"
         },
         {
             "category": "",
@@ -720,7 +720,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "2"
+            "user_answered": "3"
         },
         {
             "category": "",
@@ -737,7 +737,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "5"
+            "user_answered": "4"
         },
         {
             "category": "",
@@ -754,7 +754,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "4"
+            "user_answered": "3"
         },
         {
             "category": "",
@@ -771,7 +771,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "5"
+            "user_answered": "3"
         },
         {
             "category": "",
@@ -788,7 +788,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "4"
+            "user_answered": "3"
         },
         {
             "category": "",
@@ -822,7 +822,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "1"
+            "user_answered": "2"
         },
         {
             "category": "",
@@ -839,7 +839,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "4"
+            "user_answered": "3"
         },
         {
             "category": "",
@@ -856,7 +856,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "5"
+            "user_answered": "3"
         },
         {
             "category": "",
@@ -873,7 +873,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "4"
+            "user_answered": "5"
         },
         {
             "category": "",
@@ -890,7 +890,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "5"
+            "user_answered": "1"
         },
         {
             "category": "",
@@ -907,7 +907,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "4"
+            "user_answered": "2"
         },
         {
             "category": "",
@@ -924,7 +924,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "1"
+            "user_answered": "2"
         },
         {
             "category": "",
@@ -941,7 +941,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "2"
+            "user_answered": "4"
         },
         {
             "category": "",
@@ -958,7 +958,7 @@
                     "کاملا"
                 ]
             },
-            "user_answered": "5"
+            "user_answered": "1"
         },
         {
             "category": "",

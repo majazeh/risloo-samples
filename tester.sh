@@ -1,6 +1,6 @@
 
 ## if NOT saving => enumerous tests
-folder_name="GMIT"
+folder_name="MMFAD"
 file_name=$folder_name"93"
 
 # python3 tester.py --folder_name $folder_name --file_name $file_name --test_numbers 200 
