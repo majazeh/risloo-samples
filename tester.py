@@ -34,7 +34,9 @@ my_path = str(Path(__file__).resolve().parent)
 with open(opj(my_path,'scoring', 'forms', folder_name, file_name +'.json'), 'r') as file:
     data = json.load(file)
 
+
 for j in range (test_numbers):
+    
     # Test producing
     ##################### user_answered #######################################
     data["prerequisites"][0] ["user_answered"] = "2" # 1 for woman and 2 for man
@@ -56,6 +58,7 @@ for j in range (test_numbers):
             num_options = len(item["answer"]["options"])
             item ["user_answered"] = str(randint(1,num_options))
         
+        
         ## range options
         elif item["answer"]["type"] == "range":
             
@@ -66,11 +69,12 @@ for j in range (test_numbers):
             else:
                 item ["user_answered"] = str(randint(1, item["answer"]["max"] - item["answer"]["min"] +1))
         
+        
         ## descriptive options
         elif item["answer"]["type"] == "descriptive":
             
             if random.random()>=0.5:
-                item ["user_answered"] = "faik text"
+                item ["user_answered"] = "fake text"
             
             else:
                 item ["user_answered"] = ""
@@ -79,25 +83,25 @@ for j in range (test_numbers):
             
         ## sortable options
         elif item["answer"]["type"] =='sortable' :
+            
             num_options = len(item["answer"]["options"])
             random_options = list(range(1 ,num_options +1))
-            random.shuffle (random_options) 
+            random.shuffle(random_options) 
             
-            for i in range(num_options):
-                random_options[i] = str(random_options[i])
+            for k in range(num_options):
+                random_options[k] = str(random_options[k])
             
             item ["user_answered"] = ",".join(random_options)
             
         
-        
-        
+          
         ## number options
         elif item["answer"]["type"] == 'number' :
             
             item ["user_answered"] = randint(1,100)
             
             
-            
+        ### matrix radio options    
         elif item["answer"]["type"]  == 'matrix_radio':
             
             num_horizontal_options = len(item["answer"]["matrix"][0])
@@ -108,7 +112,9 @@ for j in range (test_numbers):
 
         if SAVE:
             sheet.cell(row = i+2, column=1).value = i+1
+            print(item ["user_answered"])
             sheet.cell(row = i+2, column=2).value = item ["user_answered"]
+
 
     if SAVE:
         Path(opj(my_path, 'scoring', 'tests', folder_name)).mkdir(exist_ok=True) 
