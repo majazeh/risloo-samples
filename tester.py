@@ -112,7 +112,7 @@ for j in range (test_numbers):
 
         if SAVE:
             sheet.cell(row = i+2, column=1).value = i+1
-            print(item ["user_answered"])
+            
             sheet.cell(row = i+2, column=2).value = item ["user_answered"]
 
 
