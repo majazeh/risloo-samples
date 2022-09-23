@@ -1,4 +1,5 @@
 import json
+import random 
 from random import randint
 from pathlib import Path
 import subprocess
@@ -48,20 +49,61 @@ for j in range (test_numbers):
         sheet.cell(row = 1, column=2).value = 'پاسخ  گزینه فرد'    
 
     for i,item in enumerate(data["items"]):
+        
+        ## optional options
         if item["answer"]["type"] == "optional" :
+            
             num_options = len(item["answer"]["options"])
             item ["user_answered"] = str(randint(1,num_options))
         
+        ## range options
         elif item["answer"]["type"] == "range":
             
-            if item["answer"]["reverse"]:
-                item ["user_answered"] = str(item["answer"]["max"] +1 - randint(1, item["answer"]["max"] - item["answer"]["min"] +1))
-            
+            if "reverse" in item["answer"]:
+                if item["answer"]["reverse"]:
+                    item ["user_answered"] = str(item["answer"]["max"] +1 - randint(1, item["answer"]["max"] - item["answer"]["min"] +1))
+                
             else:
                 item ["user_answered"] = str(randint(1, item["answer"]["max"] - item["answer"]["min"] +1))
         
+        ## descriptive options
         elif item["answer"]["type"] == "descriptive":
-            item ["user_answered"] = "faik text"
+            
+            if random.random()>=0.5:
+                item ["user_answered"] = "faik text"
+            
+            else:
+                item ["user_answered"] = ""
+         
+         
+            
+        ## sortable options
+        elif item["answer"]["type"] =='sortable' :
+            num_options = len(item["answer"]["options"])
+            random_options = list(range(1 ,num_options +1))
+            random.shuffle (random_options) 
+            
+            for i in range(num_options):
+                random_options[i] = str(random_options[i])
+            
+            item ["user_answered"] = ",".join(random_options)
+            
+        
+        
+        
+        ## number options
+        elif item["answer"]["type"] == 'number' :
+            
+            item ["user_answered"] = randint(1,100)
+            
+            
+            
+        elif item["answer"]["type"]  == 'matrix_radio':
+            
+            num_horizontal_options = len(item["answer"]["matrix"][0])
+            num_vertical_options = len(item["answer"]["matrix"][1]) 
+            
+            item ["user_answered"] = "({},{})".format(randint(1,num_horizontal_options) ,randint(1,num_vertical_options))
         
 
         if SAVE:

@@ -10,9 +10,11 @@ class Score:
             self.__score [factor] = weight
 
     def set(self, key, value):
+        
         if(isinstance(key, str)):
             self.__score[key] = value
-        else:
+        
+        elif (isinstance(key,list)):
             for k in key:
                 self.__score[k] = value
 
