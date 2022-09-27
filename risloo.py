@@ -74,19 +74,29 @@ class risloo():
         sheet.cell(row = 1, column=3).value = 'پاسخ دستی کارشناس'
         
         out_dic = self.scoring_scale.score.toDict()
-        cnt = 2 
-        for key in out_dic.keys():       
-            sheet.cell(row= cnt  , column=1).value = key
-            if isinstance(out_dic[key], dict):          
-                
-                for new_key in out_dic[key].keys():
-                    cnt = cnt + 1         
-                    sheet.cell(row= cnt , column=1).value = new_key
-                    sheet.cell(row= cnt, column=2).value = out_dic[key][new_key]    
+        cnt = 1
+        
+        def report_inner_dict(inner_dic , sheet ,  cnt):
+            
+            
+            if isinstance(inner_dic, dict): 
                 cnt = cnt + 1 
-            else :  
-                sheet.cell(row= cnt, column=2).value = out_dic[key]
+                for new_key in inner_dic.keys():
+                    sheet.cell(row= cnt , column=1).value = new_key
+                    
+                    sheet , cnt = report_inner_dict(inner_dic[new_key], sheet , cnt)
+                           
+
+            else:
+                sheet.cell(row= cnt, column=2).value = inner_dic
                 cnt = cnt + 1
+     
+            
+            return sheet , cnt
+            
+            
+
+        sheet , _ = report_inner_dict(out_dic , sheet ,  cnt)
         book.save(excell_path)
     
 
