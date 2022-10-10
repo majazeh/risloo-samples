@@ -3,6 +3,7 @@ import scoring.dictionary.LMIQ93 as dictionary
 
 class LMIQ93(Data):
     scores = {'raw' :  None }# 
+    option_numbers = 5
     
     def scoring_raw(self, score):
         
@@ -12,9 +13,9 @@ class LMIQ93(Data):
                 answer = int(item.get('user_answered')) 
                 factors = dictionary.factors[i + 1]
                 
-                score.increase('raw', answer )
+                score.increase('raw', self.option_numbers +1 - answer )
                 for factor in factors:        
-                    score.increase(factor , answer )    
+                    score.increase(factor , self.option_numbers +1 - answer )    
                 
            
             except:
