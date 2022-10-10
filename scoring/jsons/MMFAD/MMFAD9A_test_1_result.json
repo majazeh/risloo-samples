@@ -1,10 +1,10 @@
 {
-    "problem_solving": 13,
-    "roles": 21,
-    "affective_responsiveness": 22,
-    "communication": 13,
-    "affective_involvement": 21,
-    "behaviour_control": 23,
+    "raw": 152,
     "overall_performance": 35,
-    "raw": 148
+    "problem_solving": 13,
+    "communication": 13,
+    "roles": 24,
+    "affective_involvement": 22,
+    "behaviour_control": 25,
+    "affective_responsiveness": 20
 }
