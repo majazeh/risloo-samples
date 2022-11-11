@@ -1,22 +1,12 @@
 *.pyc
 *.pyo
-scoring/dictionary/_16PF9A.py
 
-scoring/PMCIEF93.py
-scoring/dictionary/PMCIEF93.py
 *PMCIEF93*
-
-scoring/PASTQ93.py
-scoring/dictionary/PASTQ93.py
-
-scoring/MIBQ93.py
-scoring/dictionary/MIBQ93.py
-
-scoring/JPFQ93.py
-scoring/dictionary/JPFQ93.py
-
-scoring/ALVVCT93.py
-scoring/dictionary/ALVVCT93.py
+*PMCIEF9A*
+*PASTQ93*
+*MIBQ93*
+*JPFQ93*
+*ALVVCT93*
 
 
 
