@@ -37,9 +37,9 @@ factors = {
 }
 
 level_interpretation = {
-    (0,13):  ('very_desirable' , "0%_20%")
-    ,(14,25): ('desirable' , "20%_40%")
-    ,(26,37) : ('moderate' , "40%_60%")
-    ,(38,49) : ('undesirable' , "60%_80%")
-    ,(50,59) : ('very_undesirable' ,"80%_100%")
+    (0,13):  ('very_desirable' , "0%-20%")
+    ,(14,25): ('desirable' , "20%-40%")
+    ,(26,37) : ('moderate' , "40%-60%")
+    ,(38,49) : ('undesirable' , "60%-80%")
+    ,(50,59) : ('very_undesirable' ,"80%-100%")
 }
