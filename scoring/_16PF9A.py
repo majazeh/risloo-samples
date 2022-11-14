@@ -39,6 +39,8 @@ class _16PF9A(Data):
         gender = self.prerequisite('gender', 'user_answered')
         norm = dictionary.norm.get('woman' if gender != '2' else 'men')
         for fi in dictionary.f:
+            if(score.get('raw_' + fi) == None):
+                score.set('raw_' + fi, 0)
             factor = fi.upper()
             selective_norm = norm.get(factor)
             for level in selective_norm:
