@@ -39,6 +39,8 @@ class CAQ93(Data):
         else: level = 3
         score.set('anxiety_level', level)
         for factor in ['c', 'l', 'o', 'q3', 'q4']:
+            if(score.get('raw_' + factor) == None):
+                score.set('raw_' + factor, 0)
             score.set(factor, self.find_norm(score.get('raw_' + factor), factor))
 
 
