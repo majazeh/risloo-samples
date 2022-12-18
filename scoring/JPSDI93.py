@@ -5,7 +5,9 @@ class JPSDI93(Data):
     scores = {'raw' :  None }# 
     
     def scoring_raw(self, score):
-        score.set(dictionary.factors_names,0)
+        for i in dictionary.factors_names:
+            score.set(i,0)
+
         for i, item in self.items():   
             try:
                 answer = int(item.get('user_answered')) 
