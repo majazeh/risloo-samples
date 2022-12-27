@@ -34,6 +34,9 @@ class Data(object):
     
     def get_items_entirely(self):
         return self.__data['items']
+    
+    def get_prerequisites_entirely(self):
+        return self.__data['prerequisites']
 
 
     def prerequisites(self):
