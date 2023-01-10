@@ -88,8 +88,6 @@ factors = {
     68 : f16,
     69 : f16,
     70 : f16,
-    71 : f16,
-    72 : f16,
 }
 
 obsession_severity = {

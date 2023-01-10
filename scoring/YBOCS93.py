@@ -12,6 +12,8 @@ class YBOCS93(Data):
                 factor = dictionary.factors[i + 1]
                 if (i >= 58 and i <= 62 and int(dict(self.items()).get(58).get('user_answered')) == 1) :
                     answer = 1
+                if (i >= 63 and i <= 67 and int(dict(self.items()).get(63).get('user_answered')) == 1) :
+                    answer = 1
                 score.increase(factor, answer -1)
             except:
                 pass
