@@ -13,6 +13,9 @@ class Data(object):
             prerequisites = self.__data['prerequisites']
             self.__prerequisites = {}
             for prerequisite in prerequisites:
+                if(prerequisite.get('label') == 'age' and prerequisite.get('user_answered')):
+                    prerequisite['user_answered'] = int(float(prerequisite['user_answered']))
+                    pass
                 self.__prerequisites[prerequisite.get('label')] = prerequisite
 
     
