@@ -1,12 +1,12 @@
-f1 = 'f1'
-f2 = 'f2'
-f3 = 'f3'
-f4 = 'f4'
-f5 = 'f5'
-f6 = 'f6'
-f7 = 'f7'
-f8 = 'f8'
-f9 = 'f9'
+f1 = 'nutrition'
+f2 = 'sleep'
+f3 = 'sport'
+f4 = 'awareness'
+f5 = 'conflict_stress'
+f6 = 'affection_management'
+f7 = 'security'
+f8 = 'disease_prevention'
+f9 = 'god_relation'
 
 factorList = [f1,f2,f3,f4,f5,f6,f7,f8,f9]
 indicator = {
