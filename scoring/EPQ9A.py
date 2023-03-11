@@ -1,7 +1,7 @@
 from Data import Data
-import scoring.dictionary.EPQC93 as dictionary
+import scoring.dictionary.EPQ9A as dictionary
 
-class EPQC93(Data):
+class EPQ9A(Data):
     scores = {'raw' :  None }# 
     
     def scoring_raw(self, score):
