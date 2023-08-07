@@ -41,7 +41,12 @@ class SCL9093(Data):
             score.set(index, factors[index])
 
         score.set('gsi', score.get('total') / 90)
-        score.set('psdi', score.get('total') / score.get('pst'))
+        psdi = score.get('pst')
+        if ( psdi > 0 ):
+            psdi = score.get('total') / score.get('pst')
+        else:
+            psdi = 0
+        score.set('psdi', psdi)
 
         
         
