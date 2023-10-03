@@ -32,7 +32,7 @@ class Raven9A(Data):
     
     def scoring_percentile(self, score):
         iq = self.score.get('iq')
-        operator = None
+        operator = ''
         if isinstance(iq, str):
             operator = iq[0:1]
             iq = int(iq[1:])
