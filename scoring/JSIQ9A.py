@@ -2,8 +2,8 @@ from Data import Data
 import scoring.dictionary.JSIQ9A as dictionary
 
 class JSIQ9A(Data):
-    scores = {'raw' :  None }# 
-    
+    scores = {'raw' :  None }#
+
     def scoring_raw(self, score):
         total = 0
         section_1 = {"total": 0}
@@ -18,13 +18,17 @@ class JSIQ9A(Data):
             section_1["total"] += answer
             total += answer
             section_1[key] = answer
-        
+
         for i,item in enumerate(list[20:100], start=1):
             answer = int(item.get('user_answered'))
             answer = answer if answer is not None else 1
+            if i in dictionary.reverse_scoring_numbers:
+                answer += answer
+            else
+                answer += 6 - answer
             total += answer
-            section_2["total"] += answer
             for f in dictionary.factors[i]:
+                section_2["total"] += answer
                 section_2[f] += answer
         for i,item in enumerate(list[100:], start=1):
             answer = int(item.get('user_answered'))
@@ -35,5 +39,4 @@ class JSIQ9A(Data):
         score.set("section_3",section_3)
 
 
-        
-     
+

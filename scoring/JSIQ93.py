@@ -26,8 +26,8 @@ class JSIQ93(Data):
             else
                 answer += 6 - answer
             total += answer
-            section_2["total"] += answer
             for f in dictionary.factors[i]:
+                section_2["total"] += answer
                 section_2[f] += answer
 
         score.set("total",total)
