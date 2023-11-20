@@ -23,7 +23,7 @@ class JSIQ93(Data):
             answer = answer if answer is not None else 1
             if i in dictionary.reverse_scoring_numbers:
                 answer += answer
-            else
+            else:
                 answer += 6 - answer
             total += answer
             for f in dictionary.factors[i]:
