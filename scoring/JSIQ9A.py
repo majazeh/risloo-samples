@@ -23,9 +23,9 @@ class JSIQ9A(Data):
             answer = int(item.get('user_answered'))
             answer = answer if answer is not None else 1
             if i in dictionary.reverse_scoring_numbers:
-                answer += answer
+                answer = answer
             else:
-                answer += 6 - answer
+                answer = 6 - answer
             total += answer
             for f in dictionary.factors[i]:
                 section_2["total"] += answer
