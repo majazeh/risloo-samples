@@ -55,7 +55,7 @@ class EMSS93(Data):
                 return dictionary.raw2t[interval]
 
         else:
-            return None
+            return 0
 
     def t_score_summary(self, t_score):
         
@@ -67,7 +67,7 @@ class EMSS93(Data):
                 return dictionary.t_score_summary[interval]
 
         else:
-            return None
+            return 0
 
     
     def level2_report(self, score):
