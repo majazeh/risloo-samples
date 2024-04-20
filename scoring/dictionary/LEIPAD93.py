@@ -14,7 +14,6 @@ f13 = "trust_in_god"
 
 factors_names = (f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13)
 
-
 factors = {
     1: (f1,f8),
     6: (f1,f8),
