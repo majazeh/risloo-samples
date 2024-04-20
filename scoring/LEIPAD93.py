@@ -10,8 +10,8 @@ class LEIPAD93(Data):
         for i, item in self.items():   
             try:
                 answer = int(item.get('user_answered')) - 1
-                if i === 41 :
-                    if answer === 0 :
+                if i == 41:
+                    if answer == 0 :
                         answer = 1
                     else :
                         answer = 0
