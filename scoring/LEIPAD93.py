@@ -6,7 +6,6 @@ class LEIPAD93(Data):
     
     def scoring_raw(self, score):
         score.set(dictionary.factors_names,0)
-        option_numbers = dictionary.option_numbers
         for i, item in self.items():   
             try:
                 answer = int(item.get('user_answered')) - 1
