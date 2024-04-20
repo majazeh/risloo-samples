@@ -15,7 +15,6 @@ class LEIPAD93(Data):
                     else :
                         answer = 0
                 factors = dictionary.factors[i + 1]
-                score.increase('raw' , answer )
                 for factor in factors:
                     score.increase(factor , answer )    
             except:
