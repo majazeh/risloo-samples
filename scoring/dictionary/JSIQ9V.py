@@ -7,8 +7,8 @@ f6 = "perceived_spousal_safety"
 
 section_1_items = [
 "anger", "courage", "compassion", "bighearted", "pessimist",
-"masculinity", "pessimism", "incuriosity", "fidelity", "playmate",
-"intimacy", "talkative", "mindlessness", "twinkling", "miserly",
+"masculinity", "cynicism", "indifference_to_family_responsibilities", "fidelity", "cronyism",
+"selfishness", "lack_of_prudence", "indecisiveness", "twinkling", "miserly",
 "intimacy", "verbosity", "thoughtlessness", "wordplay", "power",
 "silence", "autonomy", "advocacy", "marital_affection", "transactional_and_manipulative",
 "forgiveness", "apathetic", "honor", "sexual_voracity", "having_an_aunt_like_personality",
@@ -102,7 +102,7 @@ factors = {
     49: (f2,),
     50: (f2,),
     51: (f2,),
-    52: (f2,f4,f5,),
+    52: (f4,f5,),
     53: (f2,),
     54: (f2,),
     55: (f2,),
