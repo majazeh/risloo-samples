@@ -1,5 +1,5 @@
 factors = ['1','2a','2b','3','4','5','6a','6b','7','8a','8b','9','a','b','c','d','e','f','g','h','aa','bb','cc','dd','ee','ff','gg','y','z', 'x',
-           '1-1','1-2','1-3','2a-1','2a-2','2a-3','2b-1','2b-2','2b-3','3-1','3-2','3-3','4-1','4-2','4-3','5-1','5-2','5-3','6a-1','6a-2','6a-3','6b-1','6b-2','6b-3','7-1','7-2','7-3','8a-1','8a-2','8a-3','8b-1','8b-2','8b-3','9-1','9-2','9-3']
+           '1_1','1_2','1_3','2a_1','2a_2','2a_3','2b_1','2b_2','2b_3','3_1','3_2','3_3','4_1','4_2','4_3','5_1','5_2','5_3','6a_1','6a_2','6a_3','6b_1','6b_2','6b_3','7_1','7_2','7_3','8a_1','8a_2','8a_3','8b_1','8b_2','8b_3','9_1','9_2','9_3']
 # raw_factor = {
 #     1:[[{"factor": "1", "weight": 1},{"factor": "3", "weight": 3},{"factor": "ff", "weight": 1}],[{"factor": "5", "weight": 1}]],
 #     2:[[{"factor": "5", "weight": 1},{"factor": "d", "weight": 1},{"factor": "y", "weight": 1}],[{"factor": "1", "weight": 2},{"factor": "9", "weight": 2},{"factor": "8b", "weight": 2},{"factor": "a", "weight": 3}]],
@@ -162,169 +162,169 @@ factors = ['1','2a','2b','3','4','5','6a','6b','7','8a','8b','9','a','b','c','d'
 # }
 
 raw_factor = {
-1:[[{"factor": "1", "weight": 1},{"factor": "3", "weight": 3},{"factor": "ff", "weight": 1},{"factor": "3-1", "weight": 1}],[{"factor": "5", "weight": 1},{"factor": "5-2", "weight": 1}]],
-2:[[{"factor": "5", "weight": 1},{"factor": "d", "weight": 1},{"factor": "y", "weight": 1},{"factor": "5-2", "weight": 1}],[{"factor": "1", "weight": 2},{"factor": "9", "weight": 2},{"factor": "8b", "weight": 2},{"factor": "a", "weight": 3},{"factor": "1-1", "weight": 1},{"factor": "9-3", "weight": 1}]],
-3:[[{"factor": "1", "weight": 3},{"factor": "a", "weight": 1},{"factor": "9-1", "weight": 1}],[{"factor": "3", "weight": 1},{"factor": "ee", "weight": 1}]],
-4:[[{"factor": "9", "weight": 2},{"factor": "8a", "weight": 3},{"factor": "b", "weight": 2},{"factor": "bb", "weight": 1},{"factor": "8a-2", "weight": 1},{"factor": "9-2", "weight": 1}],[{"factor": "3", "weight": 1},{"factor": "7", "weight": 1},{"factor": "7-2", "weight": 1}]],
-5:[[{"factor": "3", "weight": 2},{"factor": "d", "weight": 1},{"factor": "y", "weight": 1},{"factor": "3-2", "weight": 1},{"factor": "7-2", "weight": 1}],[{"factor": "6a", "weight": 2},{"factor": "6b", "weight": 2},{"factor": "8a", "weight": 1},{"factor": "f", "weight": 3},{"factor": "bb", "weight": 1},{"factor": "cc", "weight": 1},{"factor": "6b-3", "weight": 1},{"factor": "8a-3", "weight": 1}]],
-6:[[{"factor": "3", "weight": 2},{"factor": "7", "weight": 1},{"factor": "7-2", "weight": 1}],[{"factor": "8b", "weight": 1},{"factor": "g", "weight": 3},{"factor": "h", "weight": 1}]],
+1:[[{"factor": "1", "weight": 1},{"factor": "3", "weight": 3},{"factor": "ff", "weight": 1},{"factor": "3_1", "weight": 1}],[{"factor": "5", "weight": 1},{"factor": "5_2", "weight": 1}]],
+2:[[{"factor": "5", "weight": 1},{"factor": "d", "weight": 1},{"factor": "y", "weight": 1},{"factor": "5_2", "weight": 1}],[{"factor": "1", "weight": 2},{"factor": "9", "weight": 2},{"factor": "8b", "weight": 2},{"factor": "a", "weight": 3},{"factor": "1_1", "weight": 1},{"factor": "9_3", "weight": 1}]],
+3:[[{"factor": "1", "weight": 3},{"factor": "a", "weight": 1},{"factor": "9_1", "weight": 1}],[{"factor": "3", "weight": 1},{"factor": "ee", "weight": 1}]],
+4:[[{"factor": "9", "weight": 2},{"factor": "8a", "weight": 3},{"factor": "b", "weight": 2},{"factor": "bb", "weight": 1},{"factor": "8a_2", "weight": 1},{"factor": "9_2", "weight": 1}],[{"factor": "3", "weight": 1},{"factor": "7", "weight": 1},{"factor": "7_2", "weight": 1}]],
+5:[[{"factor": "3", "weight": 2},{"factor": "d", "weight": 1},{"factor": "y", "weight": 1},{"factor": "3_2", "weight": 1},{"factor": "7_2", "weight": 1}],[{"factor": "6a", "weight": 2},{"factor": "6b", "weight": 2},{"factor": "8a", "weight": 1},{"factor": "f", "weight": 3},{"factor": "bb", "weight": 1},{"factor": "cc", "weight": 1},{"factor": "6b_3", "weight": 1},{"factor": "8a_3", "weight": 1}]],
+6:[[{"factor": "3", "weight": 2},{"factor": "7", "weight": 1},{"factor": "7_2", "weight": 1}],[{"factor": "8b", "weight": 1},{"factor": "g", "weight": 3},{"factor": "h", "weight": 1}]],
 7:[[{"factor": "5", "weight": 3},{"factor": "a", "weight": 2}],[{"factor": "d", "weight": 1}]],
-8:[[{"factor": "3", "weight": 2},{"factor": "ee", "weight": 1},{"factor": "7-1", "weight": 1}],[{"factor": "6a", "weight": 2},{"factor": "bb", "weight": 3},{"factor": "cc", "weight": 1},{"factor": "6a-2", "weight": 1}]],
-9:[[{"factor": "3", "weight": 2},{"factor": "7", "weight": 3},{"factor": "d", "weight": 1},{"factor": "y", "weight": 1},{"factor": "3-3", "weight": 1},{"factor": "7-3", "weight": 1}],[{"factor": "6a", "weight": 2},{"factor": "6b", "weight": 1},{"factor": "a", "weight": 1},{"factor": "g", "weight": 1},{"factor": "bb", "weight": 2}]],
-10:[[{"factor": "4", "weight": 2},{"factor": "5", "weight": 2},{"factor": "f", "weight": 1},{"factor": "cc", "weight": 1},{"factor": "y", "weight": 1},{"factor": "4-2", "weight": 1},{"factor": "5-1", "weight": 1}],[{"factor": "3", "weight": 1},{"factor": "2a", "weight": 2},{"factor": "8b", "weight": 1},{"factor": "b", "weight": 2},{"factor": "c", "weight": 3},{"factor": "aa", "weight": 2},{"factor": "ff", "weight": 2},{"factor": "2a-3", "weight": 1},{"factor": "8b-2", "weight": 1}]],
+8:[[{"factor": "3", "weight": 2},{"factor": "ee", "weight": 1},{"factor": "7_1", "weight": 1}],[{"factor": "6a", "weight": 2},{"factor": "bb", "weight": 3},{"factor": "cc", "weight": 1},{"factor": "6a_2", "weight": 1}]],
+9:[[{"factor": "3", "weight": 2},{"factor": "7", "weight": 3},{"factor": "d", "weight": 1},{"factor": "y", "weight": 1},{"factor": "3_3", "weight": 1},{"factor": "7_3", "weight": 1}],[{"factor": "6a", "weight": 2},{"factor": "6b", "weight": 1},{"factor": "a", "weight": 1},{"factor": "g", "weight": 1},{"factor": "bb", "weight": 2}]],
+10:[[{"factor": "4", "weight": 2},{"factor": "5", "weight": 2},{"factor": "f", "weight": 1},{"factor": "cc", "weight": 1},{"factor": "y", "weight": 1},{"factor": "4_2", "weight": 1},{"factor": "5_1", "weight": 1}],[{"factor": "3", "weight": 1},{"factor": "2a", "weight": 2},{"factor": "8b", "weight": 1},{"factor": "b", "weight": 2},{"factor": "c", "weight": 3},{"factor": "aa", "weight": 2},{"factor": "ff", "weight": 2},{"factor": "2a_3", "weight": 1},{"factor": "8b_2", "weight": 1}]],
 11:[[{"factor": "c", "weight": 1},{"factor": "aa", "weight": 3}],[{"factor": "a", "weight": 1},{"factor": "d", "weight": 1}]],
-12:[[{"factor": "1", "weight": 3},{"factor": "a", "weight": 2},{"factor": "cc", "weight": 1},{"factor": "1-2", "weight": 1},{"factor": "6b-3", "weight": 1}]],
-13:[[{"factor": "1", "weight": 1},{"factor": "2a", "weight": 1},{"factor": "e", "weight": 3},{"factor": "1-3", "weight": 1},{"factor": "2a-2", "weight": 1}],[{"factor": "4", "weight": 1},{"factor": "g", "weight": 1},{"factor": "4-1", "weight": 1}]],
+12:[[{"factor": "1", "weight": 3},{"factor": "a", "weight": 2},{"factor": "cc", "weight": 1},{"factor": "1_2", "weight": 1},{"factor": "6b_3", "weight": 1}]],
+13:[[{"factor": "1", "weight": 1},{"factor": "2a", "weight": 1},{"factor": "e", "weight": 3},{"factor": "1_3", "weight": 1},{"factor": "2a_2", "weight": 1}],[{"factor": "4", "weight": 1},{"factor": "g", "weight": 1},{"factor": "4_1", "weight": 1}]],
 14:[[{"factor": "c", "weight": 1},{"factor": "d", "weight": 2},{"factor": "h", "weight": 3},{"factor": "gg", "weight": 1}],[{"factor": "f", "weight": 1}]],
-15:[[{"factor": "1", "weight": 1},{"factor": "7", "weight": 2},{"factor": "ee", "weight": 1},{"factor": "ff", "weight": 1}],[{"factor": "6a", "weight": 2},{"factor": "f", "weight": 2},{"factor": "bb", "weight": 2},{"factor": "cc", "weight": 3},{"factor": "dd", "weight": 1},{"factor": "6a-2", "weight": 1}]],
-16:[[{"factor": "8a", "weight": 1},{"factor": "ff", "weight": 3},{"factor": "gg", "weight": 2},{"factor": "8a-1", "weight": 1}]],
+15:[[{"factor": "1", "weight": 1},{"factor": "7", "weight": 2},{"factor": "ee", "weight": 1},{"factor": "ff", "weight": 1}],[{"factor": "6a", "weight": 2},{"factor": "f", "weight": 2},{"factor": "bb", "weight": 2},{"factor": "cc", "weight": 3},{"factor": "dd", "weight": 1},{"factor": "6a_2", "weight": 1}]],
+16:[[{"factor": "8a", "weight": 1},{"factor": "ff", "weight": 3},{"factor": "gg", "weight": 2},{"factor": "8a_1", "weight": 1}]],
 17:[[{"factor": "1", "weight": 1},{"factor": "a", "weight": 1},{"factor": "ee", "weight": 3}],[{"factor": "g", "weight": 1},{"factor": "dd", "weight": 1}]],
-18:[[{"factor": "9", "weight": 2},{"factor": "6a", "weight": 2},{"factor": "6b", "weight": 1},{"factor": "8a", "weight": 1},{"factor": "8b", "weight": 1},{"factor": "f", "weight": 1},{"factor": "g", "weight": 1},{"factor": "bb", "weight": 2},{"factor": "dd", "weight": 3},{"factor": "6a-1", "weight": 1},{"factor": "6b-2", "weight": 1},{"factor": "9-2", "weight": 1}],[{"factor": "3", "weight": 1},{"factor": "7", "weight": 2},{"factor": "2a", "weight": 1},{"factor": "ee", "weight": 1},{"factor": "7-1", "weight": 1}]],
-19:[[{"factor": "2b", "weight": 1},{"factor": "8a", "weight": 2},{"factor": "8b", "weight": 3},{"factor": "b", "weight": 2},{"factor": "dd", "weight": 1},{"factor": "gg", "weight": 1},{"factor": "2b-3", "weight": 1},{"factor": "8a-2", "weight": 1},{"factor": "8b-1", "weight": 1}],[{"factor": "4", "weight": 1},{"factor": "5", "weight": 1},{"factor": "7", "weight": 1},{"factor": "d", "weight": 1}]],
-20:[[{"factor": "2b", "weight": 3},{"factor": "8b", "weight": 2},{"factor": "a", "weight": 1},{"factor": "b", "weight": 1},{"factor": "2a-1", "weight": 1},{"factor": "2b-1", "weight": 1},{"factor": "8b-3", "weight": 1}],[{"factor": "5", "weight": 1},{"factor": "f", "weight": 1}]],
-21:[[{"factor": "6a", "weight": 3},{"factor": "6b", "weight": 2},{"factor": "f", "weight": 1},{"factor": "g", "weight": 1},{"factor": "bb", "weight": 2},{"factor": "cc", "weight": 2},{"factor": "dd", "weight": 1},{"factor": "6a-1", "weight": 1},{"factor": "6b-2", "weight": 1},{"factor": "9-1", "weight": 1}],[{"factor": "3", "weight": 2},{"factor": "7", "weight": 2},{"factor": "ee", "weight": 1},{"factor": "3-2", "weight": 1},{"factor": "7-1", "weight": 1}]],
+18:[[{"factor": "9", "weight": 2},{"factor": "6a", "weight": 2},{"factor": "6b", "weight": 1},{"factor": "8a", "weight": 1},{"factor": "8b", "weight": 1},{"factor": "f", "weight": 1},{"factor": "g", "weight": 1},{"factor": "bb", "weight": 2},{"factor": "dd", "weight": 3},{"factor": "6a_1", "weight": 1},{"factor": "6b_2", "weight": 1},{"factor": "9_2", "weight": 1}],[{"factor": "3", "weight": 1},{"factor": "7", "weight": 2},{"factor": "2a", "weight": 1},{"factor": "ee", "weight": 1},{"factor": "7_1", "weight": 1}]],
+19:[[{"factor": "2b", "weight": 1},{"factor": "8a", "weight": 2},{"factor": "8b", "weight": 3},{"factor": "b", "weight": 2},{"factor": "dd", "weight": 1},{"factor": "gg", "weight": 1},{"factor": "2b_3", "weight": 1},{"factor": "8a_2", "weight": 1},{"factor": "8b_1", "weight": 1}],[{"factor": "4", "weight": 1},{"factor": "5", "weight": 1},{"factor": "7", "weight": 1},{"factor": "d", "weight": 1}]],
+20:[[{"factor": "2b", "weight": 3},{"factor": "8b", "weight": 2},{"factor": "a", "weight": 1},{"factor": "b", "weight": 1},{"factor": "2a_1", "weight": 1},{"factor": "2b_1", "weight": 1},{"factor": "8b_3", "weight": 1}],[{"factor": "5", "weight": 1},{"factor": "f", "weight": 1}]],
+21:[[{"factor": "6a", "weight": 3},{"factor": "6b", "weight": 2},{"factor": "f", "weight": 1},{"factor": "g", "weight": 1},{"factor": "bb", "weight": 2},{"factor": "cc", "weight": 2},{"factor": "dd", "weight": 1},{"factor": "6a_1", "weight": 1},{"factor": "6b_2", "weight": 1},{"factor": "9_1", "weight": 1}],[{"factor": "3", "weight": 2},{"factor": "7", "weight": 2},{"factor": "ee", "weight": 1},{"factor": "3_2", "weight": 1},{"factor": "7_1", "weight": 1}]],
 22:[[{"factor": "8a", "weight": 1},{"factor": "g", "weight": 1},{"factor": "h", "weight": 1},{"factor": "bb", "weight": 3}],[{"factor": "d", "weight": 1}]],
-23:[[{"factor": "3", "weight": 2},{"factor": "7", "weight": 3},{"factor": "ee", "weight": 1},{"factor": "y", "weight": 1},{"factor": "3-2", "weight": 1},{"factor": "7-3", "weight": 1}],[{"factor": "6a", "weight": 2},{"factor": "8a", "weight": 2},{"factor": "g", "weight": 1},{"factor": "bb", "weight": 1},{"factor": "dd", "weight": 2},{"factor": "8a-2", "weight": 1}]],
-24:[[{"factor": "4", "weight": 3},{"factor": "5", "weight": 2},{"factor": "g", "weight": 1},{"factor": "y", "weight": 1},{"factor": "4-2", "weight": 1}],[{"factor": "1", "weight": 1},{"factor": "2a", "weight": 2},{"factor": "d", "weight": 1},{"factor": "e", "weight": 2},{"factor": "1-3", "weight": 1},{"factor": "2a-2", "weight": 1}]],
-25:[[{"factor": "2b", "weight": 2},{"factor": "8a", "weight": 3},{"factor": "8b", "weight": 1},{"factor": "b", "weight": 2},{"factor": "h", "weight": 1},{"factor": "gg", "weight": 2},{"factor": "z", "weight": 1},{"factor": "2b-3", "weight": 1},{"factor": "8a-2", "weight": 1},{"factor": "8b-3", "weight": 1}],[{"factor": "5", "weight": 1}]],
-26:[[{"factor": "2a", "weight": 1},{"factor": "8b", "weight": 1},{"factor": "b", "weight": 3},{"factor": "c", "weight": 1},{"factor": "aa", "weight": 1},{"factor": "ff", "weight": 2},{"factor": "gg", "weight": 1},{"factor": "2a-3", "weight": 1},{"factor": "8b-1", "weight": 1}],[{"factor": "4", "weight": 1},{"factor": "5", "weight": 1},{"factor": "f", "weight": 2},{"factor": "cc", "weight": 1},{"factor": "4-2", "weight": 1},{"factor": "5-1", "weight": 1}]],
-27:[[{"factor": "7", "weight": 1},{"factor": "3-2", "weight": 1},{"factor": "7-2", "weight": 1}],[{"factor": "8b", "weight": 1},{"factor": "g", "weight": 3},{"factor": "dd", "weight": 1}]],
-28:[[{"factor": "4", "weight": 1},{"factor": "6a", "weight": 2},{"factor": "6b", "weight": 3},{"factor": "8a", "weight": 1},{"factor": "f", "weight": 1},{"factor": "cc", "weight": 1},{"factor": "5-3", "weight": 1},{"factor": "6a-3", "weight": 1},{"factor": "6b-1", "weight": 1},{"factor": "8a-3", "weight": 1}],[{"factor": "3", "weight": 2},{"factor": "7", "weight": 1},{"factor": "3-2", "weight": 1}]],
+23:[[{"factor": "3", "weight": 2},{"factor": "7", "weight": 3},{"factor": "ee", "weight": 1},{"factor": "y", "weight": 1},{"factor": "3_2", "weight": 1},{"factor": "7_3", "weight": 1}],[{"factor": "6a", "weight": 2},{"factor": "8a", "weight": 2},{"factor": "g", "weight": 1},{"factor": "bb", "weight": 1},{"factor": "dd", "weight": 2},{"factor": "8a_2", "weight": 1}]],
+24:[[{"factor": "4", "weight": 3},{"factor": "5", "weight": 2},{"factor": "g", "weight": 1},{"factor": "y", "weight": 1},{"factor": "4_2", "weight": 1}],[{"factor": "1", "weight": 1},{"factor": "2a", "weight": 2},{"factor": "d", "weight": 1},{"factor": "e", "weight": 2},{"factor": "1_3", "weight": 1},{"factor": "2a_2", "weight": 1}]],
+25:[[{"factor": "2b", "weight": 2},{"factor": "8a", "weight": 3},{"factor": "8b", "weight": 1},{"factor": "b", "weight": 2},{"factor": "h", "weight": 1},{"factor": "gg", "weight": 2},{"factor": "z", "weight": 1},{"factor": "2b_3", "weight": 1},{"factor": "8a_2", "weight": 1},{"factor": "8b_3", "weight": 1}],[{"factor": "5", "weight": 1}]],
+26:[[{"factor": "2a", "weight": 1},{"factor": "8b", "weight": 1},{"factor": "b", "weight": 3},{"factor": "c", "weight": 1},{"factor": "aa", "weight": 1},{"factor": "ff", "weight": 2},{"factor": "gg", "weight": 1},{"factor": "2a_3", "weight": 1},{"factor": "8b_1", "weight": 1}],[{"factor": "4", "weight": 1},{"factor": "5", "weight": 1},{"factor": "f", "weight": 2},{"factor": "cc", "weight": 1},{"factor": "4_2", "weight": 1},{"factor": "5_1", "weight": 1}]],
+27:[[{"factor": "7", "weight": 1},{"factor": "3_2", "weight": 1},{"factor": "7_2", "weight": 1}],[{"factor": "8b", "weight": 1},{"factor": "g", "weight": 3},{"factor": "dd", "weight": 1}]],
+28:[[{"factor": "4", "weight": 1},{"factor": "6a", "weight": 2},{"factor": "6b", "weight": 3},{"factor": "8a", "weight": 1},{"factor": "f", "weight": 1},{"factor": "cc", "weight": 1},{"factor": "5_3", "weight": 1},{"factor": "6a_3", "weight": 1},{"factor": "6b_1", "weight": 1},{"factor": "8a_3", "weight": 1}],[{"factor": "3", "weight": 2},{"factor": "7", "weight": 1},{"factor": "3_2", "weight": 1}]],
 29:[[{"factor": "3", "weight": 2},{"factor": "a", "weight": 1},{"factor": "c", "weight": 2},{"factor": "d", "weight": 1},{"factor": "aa", "weight": 3}]],
 30:[[{"factor": "bb", "weight": 3}]],
-31:[[{"factor": "2a", "weight": 2},{"factor": "b", "weight": 2},{"factor": "c", "weight": 3},{"factor": "d", "weight": 1},{"factor": "aa", "weight": 1},{"factor": "ff", "weight": 1},{"factor": "2a-3", "weight": 1}],[{"factor": "4", "weight": 2},{"factor": "5", "weight": 2},{"factor": "4-2", "weight": 1},{"factor": "5-1", "weight": 1}]],
-32:[[{"factor": "1", "weight": 2},{"factor": "2a", "weight": 2},{"factor": "e", "weight": 2},{"factor": "ee", "weight": 3},{"factor": "3-3", "weight": 1}],[{"factor": "cc", "weight": 1}]],
+31:[[{"factor": "2a", "weight": 2},{"factor": "b", "weight": 2},{"factor": "c", "weight": 3},{"factor": "d", "weight": 1},{"factor": "aa", "weight": 1},{"factor": "ff", "weight": 1},{"factor": "2a_3", "weight": 1}],[{"factor": "4", "weight": 2},{"factor": "5", "weight": 2},{"factor": "4_2", "weight": 1},{"factor": "5_1", "weight": 1}]],
+32:[[{"factor": "1", "weight": 2},{"factor": "2a", "weight": 2},{"factor": "e", "weight": 2},{"factor": "ee", "weight": 3},{"factor": "3_3", "weight": 1}],[{"factor": "cc", "weight": 1}]],
 33:[[{"factor": "8b", "weight": 1},{"factor": "h", "weight": 1},{"factor": "aa", "weight": 3}]],
-34:[[{"factor": "1", "weight": 1},{"factor": "9", "weight": 2},{"factor": "8a", "weight": 1},{"factor": "8b", "weight": 2},{"factor": "a", "weight": 3},{"factor": "h", "weight": 1},{"factor": "gg", "weight": 1},{"factor": "z", "weight": 1},{"factor": "1-1", "weight": 1},{"factor": "8a-2", "weight": 1},{"factor": "8b-1", "weight": 1},{"factor": "9-3", "weight": 1}],[{"factor": "4", "weight": 1},{"factor": "5", "weight": 1},{"factor": "7", "weight": 1},{"factor": "5-2", "weight": 1}]],
-35:[[{"factor": "1", "weight": 1},{"factor": "2a", "weight": 2},{"factor": "8b", "weight": 1},{"factor": "b", "weight": 2},{"factor": "e", "weight": 3},{"factor": "h", "weight": 1},{"factor": "1-3", "weight": 1},{"factor": "2a-2", "weight": 1}],[{"factor": "4", "weight": 2},{"factor": "g", "weight": 1}]],
-36:[[{"factor": "1", "weight": 3},{"factor": "2a", "weight": 2},{"factor": "e", "weight": 1},{"factor": "2a-2", "weight": 1}],[{"factor": "4", "weight": 1},{"factor": "g", "weight": 1},{"factor": "4-2", "weight": 1}]],
-37:[[{"factor": "8a", "weight": 2},{"factor": "f", "weight": 3},{"factor": "8a-3", "weight": 1}]],
-38:[[{"factor": "1", "weight": 2},{"factor": "2a", "weight": 3},{"factor": "b", "weight": 2},{"factor": "e", "weight": 2},{"factor": "1-3", "weight": 1},{"factor": "2a-2", "weight": 1}],[{"factor": "4", "weight": 2},{"factor": "5", "weight": 2},{"factor": "f", "weight": 1},{"factor": "4-1", "weight": 1}]],
-39:[[{"factor": "1", "weight": 1},{"factor": "5", "weight": 1},{"factor": "6a", "weight": 3},{"factor": "8a", "weight": 2},{"factor": "f", "weight": 2},{"factor": "5-3", "weight": 1},{"factor": "6b-3", "weight": 1}],[{"factor": "ee", "weight": 1},{"factor": "ff", "weight": 1}]],
-40:[[{"factor": "4", "weight": 1},{"factor": "h", "weight": 1},{"factor": "bb", "weight": 3},{"factor": "4-3", "weight": 1}],[{"factor": "ee", "weight": 1}]],
-41:[[{"factor": "5", "weight": 1},{"factor": "6a", "weight": 2},{"factor": "6b", "weight": 3},{"factor": "8a", "weight": 1},{"factor": "a", "weight": 1},{"factor": "f", "weight": 2},{"factor": "cc", "weight": 1},{"factor": "5-3", "weight": 1},{"factor": "6a-3", "weight": 1},{"factor": "6b-3", "weight": 1},{"factor": "8a-3", "weight": 1}],[{"factor": "3", "weight": 2},{"factor": "ee", "weight": 1}]],
-42:[[{"factor": "2b", "weight": 2},{"factor": "a", "weight": 1},{"factor": "b", "weight": 3},{"factor": "ff", "weight": 2},{"factor": "2b-1", "weight": 1}],[{"factor": "7", "weight": 2},{"factor": "7-3", "weight": 1}]],
-43:[[{"factor": "2b", "weight": 2},{"factor": "bb", "weight": 1},{"factor": "ff", "weight": 3},{"factor": "gg", "weight": 2},{"factor": "z", "weight": 1},{"factor": "2b-1", "weight": 1},{"factor": "9-3", "weight": 1}],[{"factor": "4", "weight": 1},{"factor": "7", "weight": 1},{"factor": "d", "weight": 2}]],
-44:[[{"factor": "9", "weight": 2},{"factor": "6a", "weight": 2},{"factor": "bb", "weight": 1},{"factor": "dd", "weight": 3},{"factor": "6a-1", "weight": 1},{"factor": "9-2", "weight": 1}],[{"factor": "3", "weight": 1},{"factor": "ee", "weight": 1}]],
-45:[[{"factor": "ee", "weight": 1},{"factor": "ff", "weight": 1}],[{"factor": "6a", "weight": 2},{"factor": "8a", "weight": 1},{"factor": "f", "weight": 2},{"factor": "h", "weight": 1},{"factor": "bb", "weight": 1},{"factor": "cc", "weight": 3},{"factor": "dd", "weight": 1},{"factor": "6a-2", "weight": 1}]],
-46:[[{"factor": "8b", "weight": 3},{"factor": "b", "weight": 1},{"factor": "8b-1", "weight": 1}],[{"factor": "cc", "weight": 1}]],
-47:[[{"factor": "1", "weight": 2},{"factor": "2b", "weight": 3},{"factor": "b", "weight": 2},{"factor": "1-2", "weight": 1},{"factor": "2b-2", "weight": 1}],[{"factor": "4", "weight": 1}]],
+34:[[{"factor": "1", "weight": 1},{"factor": "9", "weight": 2},{"factor": "8a", "weight": 1},{"factor": "8b", "weight": 2},{"factor": "a", "weight": 3},{"factor": "h", "weight": 1},{"factor": "gg", "weight": 1},{"factor": "z", "weight": 1},{"factor": "1_1", "weight": 1},{"factor": "8a_2", "weight": 1},{"factor": "8b_1", "weight": 1},{"factor": "9_3", "weight": 1}],[{"factor": "4", "weight": 1},{"factor": "5", "weight": 1},{"factor": "7", "weight": 1},{"factor": "5_2", "weight": 1}]],
+35:[[{"factor": "1", "weight": 1},{"factor": "2a", "weight": 2},{"factor": "8b", "weight": 1},{"factor": "b", "weight": 2},{"factor": "e", "weight": 3},{"factor": "h", "weight": 1},{"factor": "1_3", "weight": 1},{"factor": "2a_2", "weight": 1}],[{"factor": "4", "weight": 2},{"factor": "g", "weight": 1}]],
+36:[[{"factor": "1", "weight": 3},{"factor": "2a", "weight": 2},{"factor": "e", "weight": 1},{"factor": "2a_2", "weight": 1}],[{"factor": "4", "weight": 1},{"factor": "g", "weight": 1},{"factor": "4_2", "weight": 1}]],
+37:[[{"factor": "8a", "weight": 2},{"factor": "f", "weight": 3},{"factor": "8a_3", "weight": 1}]],
+38:[[{"factor": "1", "weight": 2},{"factor": "2a", "weight": 3},{"factor": "b", "weight": 2},{"factor": "e", "weight": 2},{"factor": "1_3", "weight": 1},{"factor": "2a_2", "weight": 1}],[{"factor": "4", "weight": 2},{"factor": "5", "weight": 2},{"factor": "f", "weight": 1},{"factor": "4_1", "weight": 1}]],
+39:[[{"factor": "1", "weight": 1},{"factor": "5", "weight": 1},{"factor": "6a", "weight": 3},{"factor": "8a", "weight": 2},{"factor": "f", "weight": 2},{"factor": "5_3", "weight": 1},{"factor": "6b_3", "weight": 1}],[{"factor": "ee", "weight": 1},{"factor": "ff", "weight": 1}]],
+40:[[{"factor": "4", "weight": 1},{"factor": "h", "weight": 1},{"factor": "bb", "weight": 3},{"factor": "4_3", "weight": 1}],[{"factor": "ee", "weight": 1}]],
+41:[[{"factor": "5", "weight": 1},{"factor": "6a", "weight": 2},{"factor": "6b", "weight": 3},{"factor": "8a", "weight": 1},{"factor": "a", "weight": 1},{"factor": "f", "weight": 2},{"factor": "cc", "weight": 1},{"factor": "5_3", "weight": 1},{"factor": "6a_3", "weight": 1},{"factor": "6b_3", "weight": 1},{"factor": "8a_3", "weight": 1}],[{"factor": "3", "weight": 2},{"factor": "ee", "weight": 1}]],
+42:[[{"factor": "2b", "weight": 2},{"factor": "a", "weight": 1},{"factor": "b", "weight": 3},{"factor": "ff", "weight": 2},{"factor": "2b_1", "weight": 1}],[{"factor": "7", "weight": 2},{"factor": "7_3", "weight": 1}]],
+43:[[{"factor": "2b", "weight": 2},{"factor": "bb", "weight": 1},{"factor": "ff", "weight": 3},{"factor": "gg", "weight": 2},{"factor": "z", "weight": 1},{"factor": "2b_1", "weight": 1},{"factor": "9_3", "weight": 1}],[{"factor": "4", "weight": 1},{"factor": "7", "weight": 1},{"factor": "d", "weight": 2}]],
+44:[[{"factor": "9", "weight": 2},{"factor": "6a", "weight": 2},{"factor": "bb", "weight": 1},{"factor": "dd", "weight": 3},{"factor": "6a_1", "weight": 1},{"factor": "9_2", "weight": 1}],[{"factor": "3", "weight": 1},{"factor": "ee", "weight": 1}]],
+45:[[{"factor": "ee", "weight": 1},{"factor": "ff", "weight": 1}],[{"factor": "6a", "weight": 2},{"factor": "8a", "weight": 1},{"factor": "f", "weight": 2},{"factor": "h", "weight": 1},{"factor": "bb", "weight": 1},{"factor": "cc", "weight": 3},{"factor": "dd", "weight": 1},{"factor": "6a_2", "weight": 1}]],
+46:[[{"factor": "8b", "weight": 3},{"factor": "b", "weight": 1},{"factor": "8b_1", "weight": 1}],[{"factor": "cc", "weight": 1}]],
+47:[[{"factor": "1", "weight": 2},{"factor": "2b", "weight": 3},{"factor": "b", "weight": 2},{"factor": "1_2", "weight": 1},{"factor": "2b_2", "weight": 1}],[{"factor": "4", "weight": 1}]],
 48:[[{"factor": "c", "weight": 2},{"factor": "aa", "weight": 3}]],
-49:[[{"factor": "8a", "weight": 1},{"factor": "a", "weight": 1},{"factor": "f", "weight": 3},{"factor": "8a-3", "weight": 1}],[{"factor": "ee", "weight": 1}]],
-50:[[{"factor": "7", "weight": 3},{"factor": "y", "weight": 1},{"factor": "3-1", "weight": 1},{"factor": "7-1", "weight": 1}],[{"factor": "6b", "weight": 1}]],
-51:[[{"factor": "1", "weight": 1},{"factor": "2a", "weight": 1},{"factor": "d", "weight": 3},{"factor": "1-2", "weight": 1}],[{"factor": "6a", "weight": 1},{"factor": "f", "weight": 1}]],
-52:[[{"factor": "5", "weight": 3},{"factor": "6a", "weight": 1},{"factor": "6b", "weight": 2},{"factor": "a", "weight": 2},{"factor": "f", "weight": 2},{"factor": "bb", "weight": 2},{"factor": "5-3", "weight": 1},{"factor": "6a-3", "weight": 1},{"factor": "6b-1", "weight": 1}],[{"factor": "3", "weight": 2},{"factor": "d", "weight": 1}]],
+49:[[{"factor": "8a", "weight": 1},{"factor": "a", "weight": 1},{"factor": "f", "weight": 3},{"factor": "8a_3", "weight": 1}],[{"factor": "ee", "weight": 1}]],
+50:[[{"factor": "7", "weight": 3},{"factor": "y", "weight": 1},{"factor": "3_1", "weight": 1},{"factor": "7_1", "weight": 1}],[{"factor": "6b", "weight": 1}]],
+51:[[{"factor": "1", "weight": 1},{"factor": "2a", "weight": 1},{"factor": "d", "weight": 3},{"factor": "1_2", "weight": 1}],[{"factor": "6a", "weight": 1},{"factor": "f", "weight": 1}]],
+52:[[{"factor": "5", "weight": 3},{"factor": "6a", "weight": 1},{"factor": "6b", "weight": 2},{"factor": "a", "weight": 2},{"factor": "f", "weight": 2},{"factor": "bb", "weight": 2},{"factor": "5_3", "weight": 1},{"factor": "6a_3", "weight": 1},{"factor": "6b_1", "weight": 1}],[{"factor": "3", "weight": 2},{"factor": "d", "weight": 1}]],
 53:[[{"factor": "g", "weight": 3},{"factor": "dd", "weight": 1}],[{"factor": "7", "weight": 2}]],
-54:[[{"factor": "9", "weight": 2},{"factor": "2b", "weight": 2},{"factor": "8a", "weight": 2},{"factor": "8b", "weight": 1},{"factor": "h", "weight": 2},{"factor": "gg", "weight": 3},{"factor": "2b-2", "weight": 1},{"factor": "8a-1", "weight": 1},{"factor": "9-1", "weight": 1}]],
-55:[[],[{"factor": "d", "weight": 2},{"factor": "h", "weight": 3},{"factor": "gg", "weight": 1},{"factor": "9-1", "weight": 1}]],
-56:[[{"factor": "4", "weight": 3},{"factor": "5", "weight": 2},{"factor": "g", "weight": 1},{"factor": "4-1", "weight": 1},{"factor": "5-2", "weight": 1}],[{"factor": "1", "weight": 1}]],
-57:[[{"factor": "6a", "weight": 2},{"factor": "8a", "weight": 1},{"factor": "f", "weight": 1},{"factor": "bb", "weight": 3},{"factor": "6a-2", "weight": 1}],[{"factor": "d", "weight": 1},{"factor": "ee", "weight": 1}]],
-58:[[{"factor": "6a", "weight": 3},{"factor": "6a-3", "weight": 1}],[{"factor": "7", "weight": 1},{"factor": "e", "weight": 1},{"factor": "ee", "weight": 1},{"factor": "7-3", "weight": 1}]],
-59:[[{"factor": "4", "weight": 3},{"factor": "5", "weight": 1},{"factor": "6a", "weight": 1},{"factor": "4-1", "weight": 1}],[{"factor": "1", "weight": 2},{"factor": "2a", "weight": 2},{"factor": "d", "weight": 1}]],
-60:[[{"factor": "6b", "weight": 2},{"factor": "f", "weight": 3},{"factor": "6b-3", "weight": 1}],[{"factor": "3", "weight": 1}]],
-61:[[{"factor": "1", "weight": 3},{"factor": "bb", "weight": 2},{"factor": "1-2", "weight": 1},{"factor": "6b-3", "weight": 1}],[{"factor": "d", "weight": 1}]],
+54:[[{"factor": "9", "weight": 2},{"factor": "2b", "weight": 2},{"factor": "8a", "weight": 2},{"factor": "8b", "weight": 1},{"factor": "h", "weight": 2},{"factor": "gg", "weight": 3},{"factor": "2b_2", "weight": 1},{"factor": "8a_1", "weight": 1},{"factor": "9_1", "weight": 1}]],
+55:[[],[{"factor": "d", "weight": 2},{"factor": "h", "weight": 3},{"factor": "gg", "weight": 1},{"factor": "9_1", "weight": 1}]],
+56:[[{"factor": "4", "weight": 3},{"factor": "5", "weight": 2},{"factor": "g", "weight": 1},{"factor": "4_1", "weight": 1},{"factor": "5_2", "weight": 1}],[{"factor": "1", "weight": 1}]],
+57:[[{"factor": "6a", "weight": 2},{"factor": "8a", "weight": 1},{"factor": "f", "weight": 1},{"factor": "bb", "weight": 3},{"factor": "6a_2", "weight": 1}],[{"factor": "d", "weight": 1},{"factor": "ee", "weight": 1}]],
+58:[[{"factor": "6a", "weight": 3},{"factor": "6a_3", "weight": 1}],[{"factor": "7", "weight": 1},{"factor": "e", "weight": 1},{"factor": "ee", "weight": 1},{"factor": "7_3", "weight": 1}]],
+59:[[{"factor": "4", "weight": 3},{"factor": "5", "weight": 1},{"factor": "6a", "weight": 1},{"factor": "4_1", "weight": 1}],[{"factor": "1", "weight": 2},{"factor": "2a", "weight": 2},{"factor": "d", "weight": 1}]],
+60:[[{"factor": "6b", "weight": 2},{"factor": "f", "weight": 3},{"factor": "6b_3", "weight": 1}],[{"factor": "3", "weight": 1}]],
+61:[[{"factor": "1", "weight": 3},{"factor": "bb", "weight": 2},{"factor": "1_2", "weight": 1},{"factor": "6b_3", "weight": 1}],[{"factor": "d", "weight": 1}]],
 62:[[],[{"factor": "2a", "weight": 1},{"factor": "d", "weight": 3}]],
-63:[[{"factor": "3", "weight": 3},{"factor": "9", "weight": 2},{"factor": "2b", "weight": 1},{"factor": "b", "weight": 1},{"factor": "h", "weight": 1},{"factor": "aa", "weight": 1},{"factor": "ee", "weight": 2},{"factor": "ff", "weight": 2},{"factor": "2b-3", "weight": 1},{"factor": "3-3", "weight": 1}],[{"factor": "5", "weight": 2},{"factor": "f", "weight": 1}]],
-64:[[{"factor": "9", "weight": 2},{"factor": "2a", "weight": 2},{"factor": "2b", "weight": 3},{"factor": "8b", "weight": 1},{"factor": "e", "weight": 1},{"factor": "g", "weight": 2},{"factor": "h", "weight": 1},{"factor": "ff", "weight": 2},{"factor": "gg", "weight": 2},{"factor": "z", "weight": 1},{"factor": "2a-1", "weight": 1},{"factor": "2b-1", "weight": 1},{"factor": "8b-3", "weight": 1},{"factor": "9-1", "weight": 1}]],
+63:[[{"factor": "3", "weight": 3},{"factor": "9", "weight": 2},{"factor": "2b", "weight": 1},{"factor": "b", "weight": 1},{"factor": "h", "weight": 1},{"factor": "aa", "weight": 1},{"factor": "ee", "weight": 2},{"factor": "ff", "weight": 2},{"factor": "2b_3", "weight": 1},{"factor": "3_3", "weight": 1}],[{"factor": "5", "weight": 2},{"factor": "f", "weight": 1}]],
+64:[[{"factor": "9", "weight": 2},{"factor": "2a", "weight": 2},{"factor": "2b", "weight": 3},{"factor": "8b", "weight": 1},{"factor": "e", "weight": 1},{"factor": "g", "weight": 2},{"factor": "h", "weight": 1},{"factor": "ff", "weight": 2},{"factor": "gg", "weight": 2},{"factor": "z", "weight": 1},{"factor": "2a_1", "weight": 1},{"factor": "2b_1", "weight": 1},{"factor": "8b_3", "weight": 1},{"factor": "9_1", "weight": 1}]],
 65:[[{"factor": "c", "weight": 2},{"factor": "aa", "weight": 3}],[{"factor": "cc", "weight": 1}]],
-66:[[{"factor": "8a", "weight": 2},{"factor": "8b", "weight": 3},{"factor": "a", "weight": 1},{"factor": "e", "weight": 1},{"factor": "8a-1", "weight": 1},{"factor": "8b-2", "weight": 1},{"factor": "9-3", "weight": 1}]],
-67:[[{"factor": "8a", "weight": 3},{"factor": "8a-2", "weight": 1}]],
-68:[[{"factor": "5", "weight": 1},{"factor": "6a", "weight": 2},{"factor": "f", "weight": 2},{"factor": "cc", "weight": 1},{"factor": "dd", "weight": 1},{"factor": "5-1", "weight": 1}],[{"factor": "3", "weight": 2},{"factor": "2a", "weight": 1},{"factor": "8b", "weight": 2},{"factor": "b", "weight": 2},{"factor": "c", "weight": 3},{"factor": "aa", "weight": 2},{"factor": "ee", "weight": 1},{"factor": "2a-3", "weight": 1},{"factor": "8b-2", "weight": 1}]],
-69:[[{"factor": "1", "weight": 1},{"factor": "2a", "weight": 2},{"factor": "b", "weight": 1},{"factor": "e", "weight": 3},{"factor": "ff", "weight": 1},{"factor": "1-3", "weight": 1},{"factor": "2a-2", "weight": 1}],[{"factor": "4", "weight": 2},{"factor": "5", "weight": 2},{"factor": "cc", "weight": 1},{"factor": "4-1", "weight": 1}]],
-70:[[{"factor": "4", "weight": 3},{"factor": "5", "weight": 1},{"factor": "8a", "weight": 1},{"factor": "g", "weight": 1},{"factor": "y", "weight": 1},{"factor": "4-2", "weight": 1}],[{"factor": "1", "weight": 2},{"factor": "2a", "weight": 2},{"factor": "a", "weight": 1},{"factor": "e", "weight": 2},{"factor": "1-3", "weight": 1},{"factor": "2a-2", "weight": 1}]],
-71:[[{"factor": "3", "weight": 2},{"factor": "2a", "weight": 3},{"factor": "8b", "weight": 1},{"factor": "a", "weight": 1},{"factor": "b", "weight": 2},{"factor": "aa", "weight": 1},{"factor": "ee", "weight": 2},{"factor": "ff", "weight": 2},{"factor": "z", "weight": 1},{"factor": "2a-1", "weight": 1},{"factor": "3-3", "weight": 1}],[{"factor": "5", "weight": 1},{"factor": "6b", "weight": 1},{"factor": "f", "weight": 1},{"factor": "cc", "weight": 2}]],
-72:[[{"factor": "d", "weight": 1},{"factor": "h", "weight": 3},{"factor": "9-1", "weight": 1}]],
-73:[[{"factor": "6a", "weight": 2},{"factor": "8a", "weight": 2},{"factor": "bb", "weight": 1},{"factor": "cc", "weight": 3},{"factor": "dd", "weight": 2},{"factor": "6a-2", "weight": 1},{"factor": "8a-3", "weight": 1}],[{"factor": "7", "weight": 2},{"factor": "ee", "weight": 1},{"factor": "7-2", "weight": 1}]],
-74:[[{"factor": "6b", "weight": 1},{"factor": "8b", "weight": 1},{"factor": "g", "weight": 1},{"factor": "bb", "weight": 1},{"factor": "dd", "weight": 3},{"factor": "6b-2", "weight": 1},{"factor": "9-2", "weight": 1}],[{"factor": "7", "weight": 2},{"factor": "e", "weight": 1},{"factor": "ee", "weight": 1},{"factor": "7-1", "weight": 1}]],
-75:[[{"factor": "4", "weight": 1},{"factor": "bb", "weight": 3},{"factor": "4-3", "weight": 1}],[{"factor": "3", "weight": 1},{"factor": "ee", "weight": 2}]],
-76:[[{"factor": "6a", "weight": 3},{"factor": "bb", "weight": 1},{"factor": "cc", "weight": 1},{"factor": "6a-3", "weight": 1}],[{"factor": "7", "weight": 1},{"factor": "d", "weight": 2},{"factor": "ee", "weight": 1}]],
-77:[[{"factor": "4", "weight": 3},{"factor": "6a", "weight": 2},{"factor": "g", "weight": 1},{"factor": "dd", "weight": 1},{"factor": "4-3", "weight": 1},{"factor": "6a-1", "weight": 1}],[{"factor": "1", "weight": 2},{"factor": "2a", "weight": 1},{"factor": "ff", "weight": 1}]],
-78:[[{"factor": "9", "weight": 1},{"factor": "6b", "weight": 3},{"factor": "8a", "weight": 2},{"factor": "f", "weight": 1},{"factor": "bb", "weight": 1},{"factor": "cc", "weight": 1},{"factor": "6b-1", "weight": 1},{"factor": "8a-3", "weight": 1},{"factor": "9-2", "weight": 1}],[{"factor": "3", "weight": 2},{"factor": "7", "weight": 1},{"factor": "ee", "weight": 1},{"factor": "3-2", "weight": 1}]],
-79:[[{"factor": "3", "weight": 1},{"factor": "2b", "weight": 2},{"factor": "ee", "weight": 3},{"factor": "z", "weight": 1},{"factor": "2b-3", "weight": 1}]],
-80:[[{"factor": "1", "weight": 2},{"factor": "2a", "weight": 2},{"factor": "8b", "weight": 3},{"factor": "b", "weight": 2},{"factor": "ff", "weight": 2},{"factor": "z", "weight": 1},{"factor": "2a-1", "weight": 1},{"factor": "8b-2", "weight": 1}]],
-81:[[{"factor": "1", "weight": 2},{"factor": "3", "weight": 1},{"factor": "3-2", "weight": 1},{"factor": "7-2", "weight": 1}],[{"factor": "6b", "weight": 2},{"factor": "f", "weight": 3},{"factor": "cc", "weight": 1},{"factor": "6b-3", "weight": 1}]],
+66:[[{"factor": "8a", "weight": 2},{"factor": "8b", "weight": 3},{"factor": "a", "weight": 1},{"factor": "e", "weight": 1},{"factor": "8a_1", "weight": 1},{"factor": "8b_2", "weight": 1},{"factor": "9_3", "weight": 1}]],
+67:[[{"factor": "8a", "weight": 3},{"factor": "8a_2", "weight": 1}]],
+68:[[{"factor": "5", "weight": 1},{"factor": "6a", "weight": 2},{"factor": "f", "weight": 2},{"factor": "cc", "weight": 1},{"factor": "dd", "weight": 1},{"factor": "5_1", "weight": 1}],[{"factor": "3", "weight": 2},{"factor": "2a", "weight": 1},{"factor": "8b", "weight": 2},{"factor": "b", "weight": 2},{"factor": "c", "weight": 3},{"factor": "aa", "weight": 2},{"factor": "ee", "weight": 1},{"factor": "2a_3", "weight": 1},{"factor": "8b_2", "weight": 1}]],
+69:[[{"factor": "1", "weight": 1},{"factor": "2a", "weight": 2},{"factor": "b", "weight": 1},{"factor": "e", "weight": 3},{"factor": "ff", "weight": 1},{"factor": "1_3", "weight": 1},{"factor": "2a_2", "weight": 1}],[{"factor": "4", "weight": 2},{"factor": "5", "weight": 2},{"factor": "cc", "weight": 1},{"factor": "4_1", "weight": 1}]],
+70:[[{"factor": "4", "weight": 3},{"factor": "5", "weight": 1},{"factor": "8a", "weight": 1},{"factor": "g", "weight": 1},{"factor": "y", "weight": 1},{"factor": "4_2", "weight": 1}],[{"factor": "1", "weight": 2},{"factor": "2a", "weight": 2},{"factor": "a", "weight": 1},{"factor": "e", "weight": 2},{"factor": "1_3", "weight": 1},{"factor": "2a_2", "weight": 1}]],
+71:[[{"factor": "3", "weight": 2},{"factor": "2a", "weight": 3},{"factor": "8b", "weight": 1},{"factor": "a", "weight": 1},{"factor": "b", "weight": 2},{"factor": "aa", "weight": 1},{"factor": "ee", "weight": 2},{"factor": "ff", "weight": 2},{"factor": "z", "weight": 1},{"factor": "2a_1", "weight": 1},{"factor": "3_3", "weight": 1}],[{"factor": "5", "weight": 1},{"factor": "6b", "weight": 1},{"factor": "f", "weight": 1},{"factor": "cc", "weight": 2}]],
+72:[[{"factor": "d", "weight": 1},{"factor": "h", "weight": 3},{"factor": "9_1", "weight": 1}]],
+73:[[{"factor": "6a", "weight": 2},{"factor": "8a", "weight": 2},{"factor": "bb", "weight": 1},{"factor": "cc", "weight": 3},{"factor": "dd", "weight": 2},{"factor": "6a_2", "weight": 1},{"factor": "8a_3", "weight": 1}],[{"factor": "7", "weight": 2},{"factor": "ee", "weight": 1},{"factor": "7_2", "weight": 1}]],
+74:[[{"factor": "6b", "weight": 1},{"factor": "8b", "weight": 1},{"factor": "g", "weight": 1},{"factor": "bb", "weight": 1},{"factor": "dd", "weight": 3},{"factor": "6b_2", "weight": 1},{"factor": "9_2", "weight": 1}],[{"factor": "7", "weight": 2},{"factor": "e", "weight": 1},{"factor": "ee", "weight": 1},{"factor": "7_1", "weight": 1}]],
+75:[[{"factor": "4", "weight": 1},{"factor": "bb", "weight": 3},{"factor": "4_3", "weight": 1}],[{"factor": "3", "weight": 1},{"factor": "ee", "weight": 2}]],
+76:[[{"factor": "6a", "weight": 3},{"factor": "bb", "weight": 1},{"factor": "cc", "weight": 1},{"factor": "6a_3", "weight": 1}],[{"factor": "7", "weight": 1},{"factor": "d", "weight": 2},{"factor": "ee", "weight": 1}]],
+77:[[{"factor": "4", "weight": 3},{"factor": "6a", "weight": 2},{"factor": "g", "weight": 1},{"factor": "dd", "weight": 1},{"factor": "4_3", "weight": 1},{"factor": "6a_1", "weight": 1}],[{"factor": "1", "weight": 2},{"factor": "2a", "weight": 1},{"factor": "ff", "weight": 1}]],
+78:[[{"factor": "9", "weight": 1},{"factor": "6b", "weight": 3},{"factor": "8a", "weight": 2},{"factor": "f", "weight": 1},{"factor": "bb", "weight": 1},{"factor": "cc", "weight": 1},{"factor": "6b_1", "weight": 1},{"factor": "8a_3", "weight": 1},{"factor": "9_2", "weight": 1}],[{"factor": "3", "weight": 2},{"factor": "7", "weight": 1},{"factor": "ee", "weight": 1},{"factor": "3_2", "weight": 1}]],
+79:[[{"factor": "3", "weight": 1},{"factor": "2b", "weight": 2},{"factor": "ee", "weight": 3},{"factor": "z", "weight": 1},{"factor": "2b_3", "weight": 1}]],
+80:[[{"factor": "1", "weight": 2},{"factor": "2a", "weight": 2},{"factor": "8b", "weight": 3},{"factor": "b", "weight": 2},{"factor": "ff", "weight": 2},{"factor": "z", "weight": 1},{"factor": "2a_1", "weight": 1},{"factor": "8b_2", "weight": 1}]],
+81:[[{"factor": "3", "weight": 1},{"factor": "3_2", "weight": 1},{"factor": "7_2", "weight": 1}],[{"factor": "6b", "weight": 2},{"factor": "f", "weight": 3},{"factor": "cc", "weight": 1},{"factor": "6b_3", "weight": 1}]],
 82:[[{"factor": "b", "weight": 1},{"factor": "aa", "weight": 3}]],
-83:[[{"factor": "g", "weight": 3},{"factor": "h", "weight": 1},{"factor": "9-2", "weight": 1}],[{"factor": "d", "weight": 1}]],
-84:[[{"factor": "9", "weight": 2},{"factor": "2a", "weight": 2},{"factor": "2b", "weight": 2},{"factor": "8b", "weight": 2},{"factor": "b", "weight": 3},{"factor": "aa", "weight": 1},{"factor": "ff", "weight": 2},{"factor": "gg", "weight": 1},{"factor": "z", "weight": 1},{"factor": "2a-1", "weight": 1},{"factor": "2b-1", "weight": 1},{"factor": "8b-1", "weight": 1},{"factor": "9-1", "weight": 1}],[{"factor": "4", "weight": 1},{"factor": "5", "weight": 2},{"factor": "6a", "weight": 1},{"factor": "f", "weight": 2},{"factor": "cc", "weight": 2},{"factor": "4-2", "weight": 1}]],
-85:[[{"factor": "1", "weight": 3},{"factor": "2a", "weight": 1},{"factor": "2b", "weight": 1},{"factor": "e", "weight": 1},{"factor": "gg", "weight": 1},{"factor": "1-2", "weight": 1},{"factor": "2a-2", "weight": 1},{"factor": "2b-2", "weight": 1}],[{"factor": "4", "weight": 2},{"factor": "4-1", "weight": 1}]],
-86:[[{"factor": "4", "weight": 2},{"factor": "5", "weight": 3},{"factor": "f", "weight": 1},{"factor": "dd", "weight": 1},{"factor": "y", "weight": 1},{"factor": "4-2", "weight": 1},{"factor": "5-1", "weight": 1}],[{"factor": "1", "weight": 1}]],
-87:[[{"factor": "3", "weight": 2},{"factor": "2a", "weight": 3},{"factor": "b", "weight": 2},{"factor": "2a-2", "weight": 1},{"factor": "3-1", "weight": 1}],[{"factor": "4", "weight": 1}]],
-88:[[{"factor": "9", "weight": 2},{"factor": "8a", "weight": 2},{"factor": "8b", "weight": 1},{"factor": "a", "weight": 2},{"factor": "gg", "weight": 3},{"factor": "8a-1", "weight": 1}],[{"factor": "3", "weight": 1}]],
-89:[[{"factor": "8b", "weight": 3},{"factor": "gg", "weight": 1},{"factor": "8b-2", "weight": 1}],[{"factor": "4", "weight": 1}]],
+83:[[{"factor": "g", "weight": 3},{"factor": "h", "weight": 1},{"factor": "9_2", "weight": 1}],[{"factor": "d", "weight": 1}]],
+84:[[{"factor": "9", "weight": 2},{"factor": "2a", "weight": 2},{"factor": "2b", "weight": 2},{"factor": "8b", "weight": 2},{"factor": "b", "weight": 3},{"factor": "aa", "weight": 1},{"factor": "ff", "weight": 2},{"factor": "gg", "weight": 1},{"factor": "z", "weight": 1},{"factor": "2a_1", "weight": 1},{"factor": "2b_1", "weight": 1},{"factor": "8b_1", "weight": 1},{"factor": "9_1", "weight": 1}],[{"factor": "4", "weight": 1},{"factor": "5", "weight": 2},{"factor": "6a", "weight": 1},{"factor": "f", "weight": 2},{"factor": "cc", "weight": 2},{"factor": "4_2", "weight": 1}]],
+85:[[{"factor": "1", "weight": 3},{"factor": "2a", "weight": 1},{"factor": "2b", "weight": 1},{"factor": "e", "weight": 1},{"factor": "gg", "weight": 1},{"factor": "1_2", "weight": 1},{"factor": "2a_2", "weight": 1},{"factor": "2b_2", "weight": 1}],[{"factor": "4", "weight": 2},{"factor": "4_1", "weight": 1}]],
+86:[[{"factor": "4", "weight": 2},{"factor": "5", "weight": 3},{"factor": "f", "weight": 1},{"factor": "dd", "weight": 1},{"factor": "y", "weight": 1},{"factor": "4_2", "weight": 1},{"factor": "5_1", "weight": 1}],[{"factor": "1", "weight": 1}]],
+87:[[{"factor": "3", "weight": 2},{"factor": "2a", "weight": 3},{"factor": "b", "weight": 2},{"factor": "2a_2", "weight": 1},{"factor": "3_1", "weight": 1}],[{"factor": "4", "weight": 1}]],
+88:[[{"factor": "9", "weight": 2},{"factor": "8a", "weight": 2},{"factor": "8b", "weight": 1},{"factor": "a", "weight": 2},{"factor": "gg", "weight": 3},{"factor": "8a_1", "weight": 1}],[{"factor": "3", "weight": 1}]],
+89:[[{"factor": "8b", "weight": 3},{"factor": "gg", "weight": 1},{"factor": "8b_2", "weight": 1}],[{"factor": "4", "weight": 1}]],
 90:[[{"factor": "8a", "weight": 1},{"factor": "h", "weight": 1},{"factor": "bb", "weight": 3}],[{"factor": "7", "weight": 1},{"factor": "ee", "weight": 1}]],
-91:[[{"factor": "2b", "weight": 3},{"factor": "8a", "weight": 2},{"factor": "1-2", "weight": 1},{"factor": "2b-3", "weight": 1},{"factor": "8a-1", "weight": 1}],[{"factor": "5", "weight": 1}]],
-92:[[{"factor": "4", "weight": 1},{"factor": "6a", "weight": 3},{"factor": "g", "weight": 2},{"factor": "bb", "weight": 1},{"factor": "cc", "weight": 1},{"factor": "dd", "weight": 1},{"factor": "4-3", "weight": 1},{"factor": "6a-3", "weight": 1}],[{"factor": "3", "weight": 2},{"factor": "ee", "weight": 1}]],
-93:[[{"factor": "3", "weight": 1},{"factor": "7", "weight": 3},{"factor": "d", "weight": 1},{"factor": "y", "weight": 1},{"factor": "3-3", "weight": 1},{"factor": "7-2", "weight": 1}],[{"factor": "6a", "weight": 2}]],
+91:[[{"factor": "2b", "weight": 3},{"factor": "8a", "weight": 2},{"factor": "1_2", "weight": 1},{"factor": "2b_3", "weight": 1},{"factor": "8a_1", "weight": 1}],[{"factor": "5", "weight": 1}]],
+92:[[{"factor": "4", "weight": 1},{"factor": "6a", "weight": 3},{"factor": "g", "weight": 2},{"factor": "bb", "weight": 1},{"factor": "cc", "weight": 1},{"factor": "dd", "weight": 1},{"factor": "4_3", "weight": 1},{"factor": "6a_3", "weight": 1}],[{"factor": "3", "weight": 2},{"factor": "ee", "weight": 1}]],
+93:[[{"factor": "3", "weight": 1},{"factor": "7", "weight": 3},{"factor": "d", "weight": 1},{"factor": "y", "weight": 1},{"factor": "3_3", "weight": 1},{"factor": "7_2", "weight": 1}],[{"factor": "6a", "weight": 2}]],
 94:[[{"factor": "5", "weight": 1},{"factor": "f", "weight": 1},{"factor": "cc", "weight": 1}],[{"factor": "d", "weight": 3},{"factor": "ee", "weight": 1}]],
-95:[[{"factor": "2b", "weight": 2},{"factor": "8a", "weight": 2},{"factor": "a", "weight": 1},{"factor": "g", "weight": 2},{"factor": "ff", "weight": 3},{"factor": "gg", "weight": 2},{"factor": "2b-2", "weight": 1},{"factor": "8a-1", "weight": 1}]],
-96:[[{"factor": "3", "weight": 2},{"factor": "7", "weight": 3},{"factor": "e", "weight": 1},{"factor": "y", "weight": 1},{"factor": "3-3", "weight": 1},{"factor": "7-2", "weight": 1}],[{"factor": "6a", "weight": 1},{"factor": "8a", "weight": 1},{"factor": "g", "weight": 2}]],
-97:[[{"factor": "6b", "weight": 3},{"factor": "8a", "weight": 2},{"factor": "bb", "weight": 1},{"factor": "6b-1", "weight": 1},{"factor": "8a-3", "weight": 1}],[{"factor": "3", "weight": 2},{"factor": "7", "weight": 1},{"factor": "d", "weight": 1},{"factor": "ee", "weight": 1},{"factor": "3-2", "weight": 1}]],
-98:[[{"factor": "2b", "weight": 3},{"factor": "ff", "weight": 1},{"factor": "2b-2", "weight": 1}]],
-99:[[{"factor": "1", "weight": 1},{"factor": "2a", "weight": 3},{"factor": "8b", "weight": 2},{"factor": "b", "weight": 2},{"factor": "c", "weight": 2},{"factor": "d", "weight": 1},{"factor": "ee", "weight": 2},{"factor": "ff", "weight": 2},{"factor": "2a-3", "weight": 1},{"factor": "8b-2", "weight": 1}],[{"factor": "4", "weight": 2},{"factor": "5", "weight": 2},{"factor": "6a", "weight": 1},{"factor": "f", "weight": 2},{"factor": "cc", "weight": 2},{"factor": "dd", "weight": 1},{"factor": "4-2", "weight": 1},{"factor": "5-1", "weight": 1}]],
-100:[[{"factor": "1", "weight": 3},{"factor": "2a", "weight": 1},{"factor": "2a-2", "weight": 1}],[{"factor": "4", "weight": 1},{"factor": "7", "weight": 1},{"factor": "4-2", "weight": 1}]],
-101:[[{"factor": "4", "weight": 2},{"factor": "5", "weight": 3},{"factor": "y", "weight": 1},{"factor": "4-2", "weight": 1},{"factor": "5-1", "weight": 1}],[{"factor": "3", "weight": 1}]],
+95:[[{"factor": "2b", "weight": 2},{"factor": "8a", "weight": 2},{"factor": "a", "weight": 1},{"factor": "g", "weight": 2},{"factor": "ff", "weight": 3},{"factor": "gg", "weight": 2},{"factor": "2b_2", "weight": 1},{"factor": "8a_1", "weight": 1}]],
+96:[[{"factor": "3", "weight": 2},{"factor": "7", "weight": 3},{"factor": "e", "weight": 1},{"factor": "y", "weight": 1},{"factor": "3_3", "weight": 1},{"factor": "7_2", "weight": 1}],[{"factor": "6a", "weight": 1},{"factor": "8a", "weight": 1},{"factor": "g", "weight": 2}]],
+97:[[{"factor": "6b", "weight": 3},{"factor": "8a", "weight": 2},{"factor": "bb", "weight": 1},{"factor": "6b_1", "weight": 1},{"factor": "8a_3", "weight": 1}],[{"factor": "3", "weight": 2},{"factor": "7", "weight": 1},{"factor": "d", "weight": 1},{"factor": "ee", "weight": 1},{"factor": "3_2", "weight": 1}]],
+98:[[{"factor": "2b", "weight": 3},{"factor": "ff", "weight": 1},{"factor": "2b_2", "weight": 1}]],
+99:[[{"factor": "1", "weight": 1},{"factor": "2a", "weight": 3},{"factor": "8b", "weight": 2},{"factor": "b", "weight": 2},{"factor": "c", "weight": 2},{"factor": "d", "weight": 1},{"factor": "ee", "weight": 2},{"factor": "ff", "weight": 2},{"factor": "2a_3", "weight": 1},{"factor": "8b_2", "weight": 1}],[{"factor": "4", "weight": 2},{"factor": "5", "weight": 2},{"factor": "6a", "weight": 1},{"factor": "f", "weight": 2},{"factor": "cc", "weight": 2},{"factor": "dd", "weight": 1},{"factor": "4_2", "weight": 1},{"factor": "5_1", "weight": 1}]],
+100:[[{"factor": "1", "weight": 3},{"factor": "2a", "weight": 1},{"factor": "2a_2", "weight": 1}],[{"factor": "4", "weight": 1},{"factor": "7", "weight": 1},{"factor": "4_2", "weight": 1}]],
+101:[[{"factor": "4", "weight": 2},{"factor": "5", "weight": 3},{"factor": "y", "weight": 1},{"factor": "4_2", "weight": 1},{"factor": "5_1", "weight": 1}],[{"factor": "3", "weight": 1}]],
 102:[[{"factor": "1", "weight": 2},{"factor": "3", "weight": 3}]],
-103:[[{"factor": "4", "weight": 3},{"factor": "5", "weight": 2},{"factor": "g", "weight": 1},{"factor": "4-1", "weight": 1},{"factor": "5-2", "weight": 1}]],
-104:[[{"factor": "5", "weight": 1},{"factor": "9", "weight": 2},{"factor": "6a", "weight": 2},{"factor": "6b", "weight": 2},{"factor": "f", "weight": 2},{"factor": "bb", "weight": 2},{"factor": "dd", "weight": 3},{"factor": "5-3", "weight": 1},{"factor": "6a-1", "weight": 1},{"factor": "6b-2", "weight": 1},{"factor": "9-2", "weight": 1}],[{"factor": "7", "weight": 1},{"factor": "e", "weight": 1},{"factor": "ee", "weight": 1},{"factor": "7-1", "weight": 1}]],
+103:[[{"factor": "4", "weight": 3},{"factor": "5", "weight": 2},{"factor": "g", "weight": 1},{"factor": "4_1", "weight": 1},{"factor": "5_2", "weight": 1}]],
+104:[[{"factor": "5", "weight": 1},{"factor": "9", "weight": 2},{"factor": "6a", "weight": 2},{"factor": "6b", "weight": 2},{"factor": "f", "weight": 2},{"factor": "bb", "weight": 2},{"factor": "dd", "weight": 3},{"factor": "5_3", "weight": 1},{"factor": "6a_1", "weight": 1},{"factor": "6b_2", "weight": 1},{"factor": "9_2", "weight": 1}],[{"factor": "7", "weight": 1},{"factor": "e", "weight": 1},{"factor": "ee", "weight": 1},{"factor": "7_1", "weight": 1}]],
 105:[[{"factor": "8a", "weight": 1},{"factor": "c", "weight": 1},{"factor": "aa", "weight": 3}]],
-106:[[{"factor": "2a", "weight": 3},{"factor": "8b", "weight": 2},{"factor": "b", "weight": 1},{"factor": "e", "weight": 2},{"factor": "h", "weight": 2},{"factor": "ff", "weight": 2},{"factor": "z", "weight": 1},{"factor": "2a-1", "weight": 1}],[{"factor": "4", "weight": 1},{"factor": "cc", "weight": 2}]],
-107:[[{"factor": "9", "weight": 2},{"factor": "2b", "weight": 2},{"factor": "8a", "weight": 2},{"factor": "8b", "weight": 1},{"factor": "b", "weight": 2},{"factor": "ff", "weight": 1},{"factor": "gg", "weight": 3},{"factor": "2b-2", "weight": 1},{"factor": "8a-1", "weight": 1},{"factor": "9-1", "weight": 1}],[{"factor": "7", "weight": 2}]],
-108:[[{"factor": "8b", "weight": 3},{"factor": "3-1", "weight": 1},{"factor": "8b-2", "weight": 1}]],
-109:[[{"factor": "3", "weight": 3},{"factor": "b", "weight": 1},{"factor": "ee", "weight": 1},{"factor": "3-3", "weight": 1}]],
-110:[[{"factor": "2b", "weight": 2},{"factor": "8a", "weight": 3},{"factor": "8b", "weight": 2},{"factor": "b", "weight": 1},{"factor": "h", "weight": 1},{"factor": "gg", "weight": 1},{"factor": "1-1", "weight": 1},{"factor": "2b-3", "weight": 1},{"factor": "8a-2", "weight": 1},{"factor": "8b-3", "weight": 1}],[{"factor": "4", "weight": 1},{"factor": "7", "weight": 1},{"factor": "7-3", "weight": 1}]],
-111:[[{"factor": "4", "weight": 1},{"factor": "6a", "weight": 2},{"factor": "f", "weight": 2},{"factor": "bb", "weight": 2},{"factor": "cc", "weight": 3},{"factor": "6a-2", "weight": 1}],[{"factor": "1", "weight": 1},{"factor": "ee", "weight": 2},{"factor": "ff", "weight": 2}]],
-112:[[{"factor": "8b", "weight": 2},{"factor": "b", "weight": 2},{"factor": "c", "weight": 3},{"factor": "aa", "weight": 2},{"factor": "ff", "weight": 1},{"factor": "gg", "weight": 1},{"factor": "z", "weight": 1},{"factor": "2a-3", "weight": 1},{"factor": "8b-2", "weight": 1}]],
-113:[[{"factor": "3", "weight": 3},{"factor": "3-1", "weight": 1}]],
-115:[[{"factor": "1", "weight": 1},{"factor": "9", "weight": 2},{"factor": "a", "weight": 3},{"factor": "b", "weight": 1},{"factor": "1-1", "weight": 1},{"factor": "9-3", "weight": 1}],[{"factor": "5", "weight": 1},{"factor": "5-2", "weight": 1}]],
-116:[[{"factor": "1", "weight": 1},{"factor": "2a", "weight": 1},{"factor": "d", "weight": 3},{"factor": "2a-3", "weight": 1}],[{"factor": "6a", "weight": 1}]],
-117:[[{"factor": "9", "weight": 2},{"factor": "6a", "weight": 3},{"factor": "6b", "weight": 2},{"factor": "8a", "weight": 2},{"factor": "f", "weight": 2},{"factor": "bb", "weight": 1},{"factor": "cc", "weight": 2},{"factor": "dd", "weight": 2},{"factor": "1-1", "weight": 1},{"factor": "6a-1", "weight": 1},{"factor": "6b-2", "weight": 1},{"factor": "8a-3", "weight": 1},{"factor": "9-2", "weight": 1}],[{"factor": "3", "weight": 1},{"factor": "7", "weight": 2},{"factor": "2a", "weight": 2},{"factor": "ee", "weight": 1}]],
-118:[[{"factor": "1", "weight": 2},{"factor": "2b", "weight": 2},{"factor": "8a", "weight": 3},{"factor": "8b", "weight": 1},{"factor": "a", "weight": 2},{"factor": "b", "weight": 1},{"factor": "ff", "weight": 1},{"factor": "2b-3", "weight": 1},{"factor": "8a-2", "weight": 1},{"factor": "8b-3", "weight": 1},{"factor": "9-2", "weight": 1}],[{"factor": "7", "weight": 1},{"factor": "d", "weight": 2}]],
-119:[[{"factor": "1", "weight": 2},{"factor": "2a", "weight": 2},{"factor": "b", "weight": 1},{"factor": "e", "weight": 3},{"factor": "1-3", "weight": 1},{"factor": "2a-2", "weight": 1}],[{"factor": "4", "weight": 2},{"factor": "4-1", "weight": 1}]],
-120:[[{"factor": "6a", "weight": 1},{"factor": "a", "weight": 1},{"factor": "bb", "weight": 3},{"factor": "6a-2", "weight": 1}],[{"factor": "ee", "weight": 1}]],
-121:[[{"factor": "9", "weight": 1},{"factor": "2b", "weight": 3},{"factor": "8b", "weight": 1},{"factor": "b", "weight": 1},{"factor": "2b-1", "weight": 1},{"factor": "8b-1", "weight": 1},{"factor": "9-2", "weight": 1}],[{"factor": "d", "weight": 1}]],
-122:[[{"factor": "3", "weight": 3},{"factor": "a", "weight": 2},{"factor": "3-1", "weight": 1}]],
+106:[[{"factor": "2a", "weight": 3},{"factor": "8b", "weight": 2},{"factor": "b", "weight": 1},{"factor": "e", "weight": 2},{"factor": "h", "weight": 2},{"factor": "ff", "weight": 2},{"factor": "z", "weight": 1},{"factor": "2a_1", "weight": 1}],[{"factor": "4", "weight": 1},{"factor": "cc", "weight": 2}]],
+107:[[{"factor": "9", "weight": 2},{"factor": "2b", "weight": 2},{"factor": "8a", "weight": 2},{"factor": "8b", "weight": 1},{"factor": "b", "weight": 2},{"factor": "ff", "weight": 1},{"factor": "gg", "weight": 3},{"factor": "2b_2", "weight": 1},{"factor": "8a_1", "weight": 1},{"factor": "9_1", "weight": 1}],[{"factor": "7", "weight": 2}]],
+108:[[{"factor": "8b", "weight": 3},{"factor": "3_1", "weight": 1},{"factor": "8b_2", "weight": 1}]],
+109:[[{"factor": "3", "weight": 3},{"factor": "b", "weight": 1},{"factor": "ee", "weight": 1},{"factor": "3_3", "weight": 1}]],
+110:[[{"factor": "2b", "weight": 2},{"factor": "8a", "weight": 3},{"factor": "8b", "weight": 2},{"factor": "b", "weight": 1},{"factor": "h", "weight": 1},{"factor": "gg", "weight": 1},{"factor": "1_1", "weight": 1},{"factor": "2b_3", "weight": 1},{"factor": "8a_2", "weight": 1},{"factor": "8b_3", "weight": 1}],[{"factor": "4", "weight": 1},{"factor": "7", "weight": 1},{"factor": "7_3", "weight": 1}]],
+111:[[{"factor": "4", "weight": 1},{"factor": "6a", "weight": 2},{"factor": "f", "weight": 2},{"factor": "bb", "weight": 2},{"factor": "cc", "weight": 3},{"factor": "6a_2", "weight": 1}],[{"factor": "1", "weight": 1},{"factor": "ee", "weight": 2},{"factor": "ff", "weight": 2}]],
+112:[[{"factor": "8b", "weight": 2},{"factor": "b", "weight": 2},{"factor": "c", "weight": 3},{"factor": "aa", "weight": 2},{"factor": "ff", "weight": 1},{"factor": "gg", "weight": 1},{"factor": "z", "weight": 1},{"factor": "2a_3", "weight": 1},{"factor": "8b_2", "weight": 1}]],
+113:[[{"factor": "3", "weight": 3},{"factor": "3_1", "weight": 1}]],
+115:[[{"factor": "1", "weight": 1},{"factor": "9", "weight": 2},{"factor": "a", "weight": 3},{"factor": "b", "weight": 1},{"factor": "1_1", "weight": 1},{"factor": "9_3", "weight": 1}],[{"factor": "5", "weight": 1},{"factor": "5_2", "weight": 1}]],
+116:[[{"factor": "1", "weight": 1},{"factor": "2a", "weight": 1},{"factor": "d", "weight": 3},{"factor": "2a_3", "weight": 1}],[{"factor": "6a", "weight": 1}]],
+117:[[{"factor": "9", "weight": 2},{"factor": "6a", "weight": 3},{"factor": "6b", "weight": 2},{"factor": "8a", "weight": 2},{"factor": "f", "weight": 2},{"factor": "bb", "weight": 1},{"factor": "cc", "weight": 2},{"factor": "dd", "weight": 2},{"factor": "1_1", "weight": 1},{"factor": "6a_1", "weight": 1},{"factor": "6b_2", "weight": 1},{"factor": "8a_3", "weight": 1},{"factor": "9_2", "weight": 1}],[{"factor": "3", "weight": 1},{"factor": "7", "weight": 2},{"factor": "2a", "weight": 2},{"factor": "ee", "weight": 1}]],
+118:[[{"factor": "1", "weight": 2},{"factor": "2b", "weight": 2},{"factor": "8a", "weight": 3},{"factor": "8b", "weight": 1},{"factor": "a", "weight": 2},{"factor": "b", "weight": 1},{"factor": "ff", "weight": 1},{"factor": "2b_3", "weight": 1},{"factor": "8a_2", "weight": 1},{"factor": "8b_3", "weight": 1},{"factor": "9_2", "weight": 1}],[{"factor": "7", "weight": 1},{"factor": "d", "weight": 2}]],
+119:[[{"factor": "1", "weight": 2},{"factor": "2a", "weight": 2},{"factor": "b", "weight": 1},{"factor": "e", "weight": 3},{"factor": "1_3", "weight": 1},{"factor": "2a_2", "weight": 1}],[{"factor": "4", "weight": 2},{"factor": "4_1", "weight": 1}]],
+120:[[{"factor": "6a", "weight": 1},{"factor": "a", "weight": 1},{"factor": "bb", "weight": 3},{"factor": "6a_2", "weight": 1}],[{"factor": "ee", "weight": 1}]],
+121:[[{"factor": "9", "weight": 1},{"factor": "2b", "weight": 3},{"factor": "8b", "weight": 1},{"factor": "b", "weight": 1},{"factor": "2b_1", "weight": 1},{"factor": "8b_1", "weight": 1},{"factor": "9_2", "weight": 1}],[{"factor": "d", "weight": 1}]],
+122:[[{"factor": "3", "weight": 3},{"factor": "a", "weight": 2},{"factor": "3_1", "weight": 1}]],
 123:[[{"factor": "c", "weight": 1},{"factor": "h", "weight": 1},{"factor": "gg", "weight": 3}]],
 124:[[{"factor": "c", "weight": 1},{"factor": "aa", "weight": 3}]],
 125:[[{"factor": "b", "weight": 1},{"factor": "h", "weight": 1},{"factor": "ff", "weight": 3}],[{"factor": "cc", "weight": 2}]],
-127:[[{"factor": "2a", "weight": 1},{"factor": "8a", "weight": 1},{"factor": "8b", "weight": 2},{"factor": "b", "weight": 3},{"factor": "aa", "weight": 1},{"factor": "ff", "weight": 1},{"factor": "gg", "weight": 1},{"factor": "2a-3", "weight": 1},{"factor": "8a-1", "weight": 1},{"factor": "8b-1", "weight": 1},{"factor": "9-3", "weight": 1}],[{"factor": "4", "weight": 1},{"factor": "5", "weight": 2},{"factor": "f", "weight": 2},{"factor": "cc", "weight": 1},{"factor": "4-2", "weight": 1},{"factor": "5-1", "weight": 1}]],
-128:[[{"factor": "6b", "weight": 3},{"factor": "8a", "weight": 1},{"factor": "f", "weight": 2},{"factor": "6b-1", "weight": 1},{"factor": "8a-3", "weight": 1}],[{"factor": "3", "weight": 2},{"factor": "3-2", "weight": 1}]],
+127:[[{"factor": "2a", "weight": 1},{"factor": "8a", "weight": 1},{"factor": "8b", "weight": 2},{"factor": "b", "weight": 3},{"factor": "aa", "weight": 1},{"factor": "ff", "weight": 1},{"factor": "gg", "weight": 1},{"factor": "2a_3", "weight": 1},{"factor": "8a_1", "weight": 1},{"factor": "8b_1", "weight": 1},{"factor": "9_3", "weight": 1}],[{"factor": "4", "weight": 1},{"factor": "5", "weight": 2},{"factor": "f", "weight": 2},{"factor": "cc", "weight": 1},{"factor": "4_2", "weight": 1},{"factor": "5_1", "weight": 1}]],
+128:[[{"factor": "6b", "weight": 3},{"factor": "8a", "weight": 1},{"factor": "f", "weight": 2},{"factor": "6b_1", "weight": 1},{"factor": "8a_3", "weight": 1}],[{"factor": "3", "weight": 2},{"factor": "3_2", "weight": 1}]],
 129:[[{"factor": "d", "weight": 2},{"factor": "h", "weight": 3},{"factor": "gg", "weight": 1}]],
-130:[[{"factor": "3", "weight": 1},{"factor": "7", "weight": 3},{"factor": "y", "weight": 1},{"factor": "7-3", "weight": 1}],[{"factor": "8a", "weight": 2},{"factor": "a", "weight": 1}]],
-131:[[{"factor": "5", "weight": 1},{"factor": "dd", "weight": 1},{"factor": "y", "weight": 1},{"factor": "5-1", "weight": 1}],[{"factor": "3", "weight": 2},{"factor": "b", "weight": 2},{"factor": "c", "weight": 3},{"factor": "aa", "weight": 2},{"factor": "ff", "weight": 1}]],
-132:[[{"factor": "1", "weight": 2},{"factor": "3", "weight": 1},{"factor": "2a", "weight": 1},{"factor": "8b", "weight": 1},{"factor": "ee", "weight": 3},{"factor": "2a-1", "weight": 1},{"factor": "3-3", "weight": 1}],[{"factor": "4", "weight": 1},{"factor": "6a", "weight": 2}]],
-133:[[{"factor": "8b", "weight": 1},{"factor": "ee", "weight": 3},{"factor": "ff", "weight": 1},{"factor": "z", "weight": 1},{"factor": "2a-1", "weight": 1}],[{"factor": "7", "weight": 1}]],
+130:[[{"factor": "3", "weight": 1},{"factor": "7", "weight": 3},{"factor": "y", "weight": 1},{"factor": "7_3", "weight": 1}],[{"factor": "8a", "weight": 2},{"factor": "a", "weight": 1}]],
+131:[[{"factor": "5", "weight": 1},{"factor": "dd", "weight": 1},{"factor": "y", "weight": 1},{"factor": "5_1", "weight": 1}],[{"factor": "3", "weight": 2},{"factor": "b", "weight": 2},{"factor": "c", "weight": 3},{"factor": "aa", "weight": 2},{"factor": "ff", "weight": 1}]],
+132:[[{"factor": "1", "weight": 2},{"factor": "3", "weight": 1},{"factor": "2a", "weight": 1},{"factor": "8b", "weight": 1},{"factor": "ee", "weight": 3},{"factor": "2a_1", "weight": 1},{"factor": "3_3", "weight": 1}],[{"factor": "4", "weight": 1},{"factor": "6a", "weight": 2}]],
+133:[[{"factor": "8b", "weight": 1},{"factor": "ee", "weight": 3},{"factor": "ff", "weight": 1},{"factor": "z", "weight": 1},{"factor": "2a_1", "weight": 1}],[{"factor": "7", "weight": 1}]],
 134:[[{"factor": "8a", "weight": 1},{"factor": "a", "weight": 1},{"factor": "bb", "weight": 3}]],
-135:[[{"factor": "4", "weight": 1},{"factor": "5", "weight": 3},{"factor": "6a", "weight": 1},{"factor": "f", "weight": 2},{"factor": "g", "weight": 1},{"factor": "4-1", "weight": 1},{"factor": "5-3", "weight": 1},{"factor": "6a-3", "weight": 1}],[{"factor": "a", "weight": 1}]],
-136:[[{"factor": "1", "weight": 1},{"factor": "8a", "weight": 3},{"factor": "8b", "weight": 1},{"factor": "gg", "weight": 1},{"factor": "8a-2", "weight": 1},{"factor": "8b-3", "weight": 1}],[{"factor": "d", "weight": 1}]],
+135:[[{"factor": "4", "weight": 1},{"factor": "5", "weight": 3},{"factor": "6a", "weight": 1},{"factor": "f", "weight": 2},{"factor": "g", "weight": 1},{"factor": "4_1", "weight": 1},{"factor": "5_3", "weight": 1},{"factor": "6a_3", "weight": 1}],[{"factor": "a", "weight": 1}]],
+136:[[{"factor": "1", "weight": 1},{"factor": "8a", "weight": 3},{"factor": "8b", "weight": 1},{"factor": "gg", "weight": 1},{"factor": "8a_2", "weight": 1},{"factor": "8b_3", "weight": 1}],[{"factor": "d", "weight": 1}]],
 137:[[{"factor": "8b", "weight": 2},{"factor": "d", "weight": 2},{"factor": "h", "weight": 3}]],
 138:[[{"factor": "c", "weight": 1},{"factor": "aa", "weight": 3}]],
-139:[[{"factor": "5", "weight": 1},{"factor": "6b", "weight": 3},{"factor": "bb", "weight": 1},{"factor": "5-3", "weight": 1},{"factor": "6b-1", "weight": 1}]],
-140:[[{"factor": "2a", "weight": 2},{"factor": "2b", "weight": 1},{"factor": "8b", "weight": 2},{"factor": "b", "weight": 3},{"factor": "gg", "weight": 1},{"factor": "z", "weight": 1},{"factor": "2a-3", "weight": 1},{"factor": "2b-1", "weight": 1},{"factor": "8b-1", "weight": 1}],[{"factor": "5", "weight": 2},{"factor": "f", "weight": 1},{"factor": "cc", "weight": 1}]],
-141:[[{"factor": "1", "weight": 2},{"factor": "9", "weight": 2},{"factor": "8b", "weight": 3},{"factor": "a", "weight": 1},{"factor": "b", "weight": 2},{"factor": "bb", "weight": 1},{"factor": "ff", "weight": 1},{"factor": "z", "weight": 1},{"factor": "8b-1", "weight": 1},{"factor": "9-2", "weight": 1}]],
-142:[[{"factor": "1", "weight": 1},{"factor": "2a", "weight": 3},{"factor": "e", "weight": 2},{"factor": "ff", "weight": 2},{"factor": "2a-2", "weight": 1}],[{"factor": "4", "weight": 2},{"factor": "g", "weight": 1}]],
-143:[[{"factor": "4", "weight": 1},{"factor": "6a", "weight": 2},{"factor": "f", "weight": 1},{"factor": "dd", "weight": 1},{"factor": "4-3", "weight": 1},{"factor": "5-1", "weight": 1}],[{"factor": "1", "weight": 1},{"factor": "2a", "weight": 2},{"factor": "d", "weight": 3},{"factor": "ee", "weight": 1},{"factor": "1-2", "weight": 1}]],
+139:[[{"factor": "5", "weight": 1},{"factor": "6b", "weight": 3},{"factor": "bb", "weight": 1},{"factor": "5_3", "weight": 1},{"factor": "6b_1", "weight": 1}]],
+140:[[{"factor": "2a", "weight": 2},{"factor": "2b", "weight": 1},{"factor": "8b", "weight": 2},{"factor": "b", "weight": 3},{"factor": "gg", "weight": 1},{"factor": "z", "weight": 1},{"factor": "2a_3", "weight": 1},{"factor": "2b_1", "weight": 1},{"factor": "8b_1", "weight": 1}],[{"factor": "5", "weight": 2},{"factor": "f", "weight": 1},{"factor": "cc", "weight": 1}]],
+141:[[{"factor": "1", "weight": 2},{"factor": "9", "weight": 2},{"factor": "8b", "weight": 3},{"factor": "a", "weight": 1},{"factor": "b", "weight": 2},{"factor": "bb", "weight": 1},{"factor": "ff", "weight": 1},{"factor": "z", "weight": 1},{"factor": "8b_1", "weight": 1},{"factor": "9_2", "weight": 1}]],
+142:[[{"factor": "1", "weight": 1},{"factor": "2a", "weight": 3},{"factor": "e", "weight": 2},{"factor": "ff", "weight": 2},{"factor": "2a_2", "weight": 1}],[{"factor": "4", "weight": 2},{"factor": "g", "weight": 1}]],
+143:[[{"factor": "4", "weight": 1},{"factor": "6a", "weight": 2},{"factor": "f", "weight": 1},{"factor": "dd", "weight": 1},{"factor": "4_3", "weight": 1},{"factor": "5_1", "weight": 1}],[{"factor": "1", "weight": 1},{"factor": "2a", "weight": 2},{"factor": "d", "weight": 3},{"factor": "ee", "weight": 1},{"factor": "1_2", "weight": 1}]],
 144:[[{"factor": "c", "weight": 2},{"factor": "aa", "weight": 3}]],
-145:[[{"factor": "5", "weight": 2},{"factor": "7", "weight": 2},{"factor": "y", "weight": 1},{"factor": "5-2", "weight": 1},{"factor": "7-3", "weight": 1}],[{"factor": "1", "weight": 2},{"factor": "9", "weight": 2},{"factor": "a", "weight": 3},{"factor": "b", "weight": 1},{"factor": "1-1", "weight": 1},{"factor": "9-3", "weight": 1}]],
-146:[[{"factor": "5", "weight": 3},{"factor": "a", "weight": 1},{"factor": "f", "weight": 1},{"factor": "dd", "weight": 1},{"factor": "y", "weight": 1},{"factor": "5-3", "weight": 1}],[{"factor": "1", "weight": 1}]],
-147:[[{"factor": "1", "weight": 1},{"factor": "2b", "weight": 2},{"factor": "8a", "weight": 2},{"factor": "a", "weight": 1},{"factor": "ff", "weight": 3},{"factor": "gg", "weight": 2},{"factor": "z", "weight": 1},{"factor": "2b-3", "weight": 1}],[{"factor": "3", "weight": 1},{"factor": "d", "weight": 1}]],
-148:[[{"factor": "4", "weight": 1},{"factor": "6a", "weight": 3},{"factor": "6b", "weight": 2},{"factor": "8a", "weight": 1},{"factor": "g", "weight": 2},{"factor": "bb", "weight": 1},{"factor": "cc", "weight": 2},{"factor": "dd", "weight": 2},{"factor": "4-3", "weight": 1},{"factor": "6a-1", "weight": 1},{"factor": "6b-2", "weight": 1},{"factor": "8a-3", "weight": 1}],[{"factor": "3", "weight": 1},{"factor": "7", "weight": 1},{"factor": "e", "weight": 2},{"factor": "ee", "weight": 1},{"factor": "7-2", "weight": 1}]],
-149:[[{"factor": "9", "weight": 2},{"factor": "6a", "weight": 2},{"factor": "6b", "weight": 2},{"factor": "8a", "weight": 2},{"factor": "8b", "weight": 1},{"factor": "g", "weight": 2},{"factor": "dd", "weight": 3},{"factor": "6a-1", "weight": 1},{"factor": "6b-2", "weight": 1},{"factor": "9-1", "weight": 1}],[{"factor": "7", "weight": 1},{"factor": "2a", "weight": 2},{"factor": "7-1", "weight": 1}]],
-150:[[{"factor": "6a", "weight": 1},{"factor": "bb", "weight": 2},{"factor": "cc", "weight": 3},{"factor": "6a-2", "weight": 1}],[{"factor": "3", "weight": 2},{"factor": "7", "weight": 2},{"factor": "d", "weight": 2},{"factor": "ee", "weight": 1},{"factor": "7-2", "weight": 1}]],
-151:[[{"factor": "3", "weight": 3},{"factor": "8b", "weight": 2},{"factor": "b", "weight": 2},{"factor": "3-1", "weight": 1}],[{"factor": "5", "weight": 1}]],
-152:[[{"factor": "6a", "weight": 1},{"factor": "6b", "weight": 1},{"factor": "bb", "weight": 3},{"factor": "cc", "weight": 1},{"factor": "6a-2", "weight": 1}],[{"factor": "1", "weight": 1},{"factor": "ee", "weight": 1}]],
-153:[[{"factor": "9", "weight": 2},{"factor": "2a", "weight": 2},{"factor": "2b", "weight": 3},{"factor": "8b", "weight": 1},{"factor": "b", "weight": 2},{"factor": "h", "weight": 1},{"factor": "ff", "weight": 2},{"factor": "z", "weight": 1},{"factor": "2a-1", "weight": 1},{"factor": "2b-1", "weight": 1},{"factor": "8b-3", "weight": 1},{"factor": "9-1", "weight": 1}],[{"factor": "4", "weight": 1},{"factor": "f", "weight": 1}]],
-154:[[{"factor": "1", "weight": 2},{"factor": "9", "weight": 2},{"factor": "2b", "weight": 1},{"factor": "a", "weight": 3},{"factor": "z", "weight": 1},{"factor": "1-1", "weight": 1},{"factor": "2b-2", "weight": 1},{"factor": "9-3", "weight": 1}],[{"factor": "7", "weight": 2},{"factor": "7-3", "weight": 1}]],
+145:[[{"factor": "5", "weight": 2},{"factor": "7", "weight": 2},{"factor": "y", "weight": 1},{"factor": "5_2", "weight": 1},{"factor": "7_3", "weight": 1}],[{"factor": "1", "weight": 2},{"factor": "9", "weight": 2},{"factor": "a", "weight": 3},{"factor": "b", "weight": 1},{"factor": "1_1", "weight": 1},{"factor": "9_3", "weight": 1}]],
+146:[[{"factor": "5", "weight": 3},{"factor": "a", "weight": 1},{"factor": "f", "weight": 1},{"factor": "dd", "weight": 1},{"factor": "y", "weight": 1},{"factor": "5_3", "weight": 1}],[{"factor": "1", "weight": 1}]],
+147:[[{"factor": "1", "weight": 1},{"factor": "2b", "weight": 2},{"factor": "8a", "weight": 2},{"factor": "a", "weight": 1},{"factor": "ff", "weight": 3},{"factor": "gg", "weight": 2},{"factor": "z", "weight": 1},{"factor": "2b_3", "weight": 1}],[{"factor": "3", "weight": 1},{"factor": "d", "weight": 1}]],
+148:[[{"factor": "4", "weight": 1},{"factor": "6a", "weight": 3},{"factor": "6b", "weight": 2},{"factor": "8a", "weight": 1},{"factor": "g", "weight": 2},{"factor": "bb", "weight": 1},{"factor": "cc", "weight": 2},{"factor": "dd", "weight": 2},{"factor": "4_3", "weight": 1},{"factor": "6a_1", "weight": 1},{"factor": "6b_2", "weight": 1},{"factor": "8a_3", "weight": 1}],[{"factor": "3", "weight": 1},{"factor": "7", "weight": 1},{"factor": "e", "weight": 2},{"factor": "ee", "weight": 1},{"factor": "7_2", "weight": 1}]],
+149:[[{"factor": "9", "weight": 2},{"factor": "6a", "weight": 2},{"factor": "6b", "weight": 2},{"factor": "8a", "weight": 2},{"factor": "8b", "weight": 1},{"factor": "g", "weight": 2},{"factor": "dd", "weight": 3},{"factor": "6a_1", "weight": 1},{"factor": "6b_2", "weight": 1},{"factor": "9_1", "weight": 1}],[{"factor": "7", "weight": 1},{"factor": "2a", "weight": 2},{"factor": "7_1", "weight": 1}]],
+150:[[{"factor": "6a", "weight": 1},{"factor": "bb", "weight": 2},{"factor": "cc", "weight": 3},{"factor": "6a_2", "weight": 1}],[{"factor": "3", "weight": 2},{"factor": "7", "weight": 2},{"factor": "d", "weight": 2},{"factor": "ee", "weight": 1},{"factor": "7_2", "weight": 1}]],
+151:[[{"factor": "3", "weight": 3},{"factor": "8b", "weight": 2},{"factor": "b", "weight": 2},{"factor": "3_1", "weight": 1}],[{"factor": "5", "weight": 1}]],
+152:[[{"factor": "6a", "weight": 1},{"factor": "6b", "weight": 1},{"factor": "bb", "weight": 3},{"factor": "cc", "weight": 1},{"factor": "6a_2", "weight": 1}],[{"factor": "1", "weight": 1},{"factor": "ee", "weight": 1}]],
+153:[[{"factor": "9", "weight": 2},{"factor": "2a", "weight": 2},{"factor": "2b", "weight": 3},{"factor": "8b", "weight": 1},{"factor": "b", "weight": 2},{"factor": "h", "weight": 1},{"factor": "ff", "weight": 2},{"factor": "z", "weight": 1},{"factor": "2a_1", "weight": 1},{"factor": "2b_1", "weight": 1},{"factor": "8b_3", "weight": 1},{"factor": "9_1", "weight": 1}],[{"factor": "4", "weight": 1},{"factor": "f", "weight": 1}]],
+154:[[{"factor": "1", "weight": 2},{"factor": "9", "weight": 2},{"factor": "2b", "weight": 1},{"factor": "a", "weight": 3},{"factor": "z", "weight": 1},{"factor": "1_1", "weight": 1},{"factor": "2b_2", "weight": 1},{"factor": "9_3", "weight": 1}],[{"factor": "7", "weight": 2},{"factor": "7_3", "weight": 1}]],
 155:[[{"factor": "6a", "weight": 3},{"factor": "a", "weight": 2},{"factor": "cc", "weight": 1}],[{"factor": "3", "weight": 1}]],
 156:[[{"factor": "2a", "weight": 1},{"factor": "8b", "weight": 1},{"factor": "gg", "weight": 3}]],
-157:[[{"factor": "6b", "weight": 3},{"factor": "8a", "weight": 2},{"factor": "f", "weight": 2},{"factor": "6b-1", "weight": 1},{"factor": "8a-3", "weight": 1}],[{"factor": "3", "weight": 2},{"factor": "7", "weight": 1},{"factor": "d", "weight": 2},{"factor": "ee", "weight": 1},{"factor": "3-2", "weight": 1}]],
-158:[[{"factor": "2b", "weight": 1},{"factor": "8a", "weight": 1},{"factor": "8b", "weight": 2},{"factor": "g", "weight": 3},{"factor": "h", "weight": 2},{"factor": "2b-2", "weight": 1},{"factor": "8a-1", "weight": 1}],[{"factor": "3", "weight": 1}]],
-159:[[{"factor": "7", "weight": 3},{"factor": "y", "weight": 1},{"factor": "7-1", "weight": 1}]],
-160:[[{"factor": "8b", "weight": 3},{"factor": "8b-2", "weight": 1}],[{"factor": "3", "weight": 1},{"factor": "d", "weight": 2}]]
+157:[[{"factor": "6b", "weight": 3},{"factor": "8a", "weight": 2},{"factor": "f", "weight": 2},{"factor": "6b_1", "weight": 1},{"factor": "8a_3", "weight": 1}],[{"factor": "3", "weight": 2},{"factor": "7", "weight": 1},{"factor": "d", "weight": 2},{"factor": "ee", "weight": 1},{"factor": "3_2", "weight": 1}]],
+158:[[{"factor": "2b", "weight": 1},{"factor": "8a", "weight": 1},{"factor": "8b", "weight": 2},{"factor": "g", "weight": 3},{"factor": "h", "weight": 2},{"factor": "2b_2", "weight": 1},{"factor": "8a_1", "weight": 1}],[{"factor": "3", "weight": 1}]],
+159:[[{"factor": "7", "weight": 3},{"factor": "y", "weight": 1},{"factor": "7_1", "weight": 1}]],
+160:[[{"factor": "8b", "weight": 3},{"factor": "8b_2", "weight": 1}],[{"factor": "3", "weight": 1},{"factor": "d", "weight": 2}]]
 }
 
 br = {
     "male": {
-        "13-15": {
+        "13_15": {
             "1": [
                 {"min": 0, "br": 1},
                 {"min": 2, "br": 5},
@@ -1482,7 +1482,7 @@ br = {
                 {"min": 13, "br": 95},
                 {"min": 14, "br": 100},
             ],
-            "1-1": [
+            "1_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 29},
                 {"min": 2, "br": 44},
@@ -1492,7 +1492,7 @@ br = {
                 {"min": 6, "br": 87},
                 {"min": 7, "br": 96},
             ],
-            "1-2": [
+            "1_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 44},
                 {"min": 2, "br": 63},
@@ -1502,7 +1502,7 @@ br = {
                 {"min": 6, "br": 97},
                 {"min": 7, "br": 98},
             ],
-            "1-3": [
+            "1_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 42},
                 {"min": 2, "br": 68},
@@ -1512,7 +1512,7 @@ br = {
                 {"min": 6, "br": 95},
                 {"min": 7, "br": 97},
             ],
-            "2a-1": [
+            "2a_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 15},
                 {"min": 2, "br": 25},
@@ -1524,7 +1524,7 @@ br = {
                 {"min": 8, "br": 94},
                 {"min": 9, "br": 99},
             ],
-            "2a-2": [
+            "2a_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 24},
                 {"min": 2, "br": 41},
@@ -1539,7 +1539,7 @@ br = {
                 {"min": 11, "br": 95},
                 {"min": 12, "br": 98},
             ],
-            "2a-3": [
+            "2a_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 16},
                 {"min": 2, "br": 31},
@@ -1551,7 +1551,7 @@ br = {
                 {"min": 8, "br": 89},
                 {"min": 9, "br": 97},
             ],
-            "2b-1": [
+            "2b_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 16},
                 {"min": 2, "br": 27},
@@ -1562,7 +1562,7 @@ br = {
                 {"min": 7, "br": 83},
                 {"min": 8, "br": 99},
             ],
-            "2b-2": [
+            "2b_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 40},
                 {"min": 2, "br": 51},
@@ -1573,7 +1573,7 @@ br = {
                 {"min": 7, "br": 96},
                 {"min": 8, "br": 98},
             ],
-            "2b-3": [
+            "2b_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 14},
                 {"min": 2, "br": 27},
@@ -1584,7 +1584,7 @@ br = {
                 {"min": 7, "br": 90},
                 {"min": 8, "br": 97},
             ],
-            "3-1": [
+            "3_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 7},
                 {"min": 2, "br": 23},
@@ -1594,7 +1594,7 @@ br = {
                 {"min": 6, "br": 92},
                 {"min": 7, "br": 99},
             ],
-            "3-2": [
+            "3_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 4},
                 {"min": 2, "br": 6},
@@ -1607,7 +1607,7 @@ br = {
                 {"min": 9, "br": 78},
                 {"min": 10, "br": 95},
             ],
-            "3-3": [
+            "3_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 5},
                 {"min": 2, "br": 9},
@@ -1618,7 +1618,7 @@ br = {
                 {"min": 7, "br": 88},
                 {"min": 8, "br": 98},
             ],
-            "4-1": [
+            "4_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 1},
                 {"min": 2, "br": 3},
@@ -1630,7 +1630,7 @@ br = {
                 {"min": 8, "br": 85},
                 {"min": 9, "br": 99},
             ],
-            "4-2": [
+            "4_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 2},
                 {"min": 2, "br": 6},
@@ -1645,7 +1645,7 @@ br = {
                 {"min": 11, "br": 92},
                 {"min": 12, "br": 98},
             ],
-            "4-3": [
+            "4_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 9},
                 {"min": 2, "br": 24},
@@ -1654,7 +1654,7 @@ br = {
                 {"min": 5, "br": 84},
                 {"min": 6, "br": 97},
             ],
-            "5-1": [
+            "5_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 5},
                 {"min": 2, "br": 9},
@@ -1667,7 +1667,7 @@ br = {
                 {"min": 9, "br": 90},
                 {"min": 10, "br": 99},
             ],
-            "5-2": [
+            "5_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 4},
                 {"min": 2, "br": 10},
@@ -1677,7 +1677,7 @@ br = {
                 {"min": 6, "br": 86},
                 {"min": 7, "br": 97},
             ],
-            "5-3": [
+            "5_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 17},
                 {"min": 2, "br": 40},
@@ -1688,7 +1688,7 @@ br = {
                 {"min": 7, "br": 97},
                 {"min": 8, "br": 99},
             ],
-            "6a-1": [
+            "6a_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 10},
                 {"min": 2, "br": 16},
@@ -1699,7 +1699,7 @@ br = {
                 {"min": 7, "br": 80},
                 {"min": 8, "br": 99},
             ],
-            "6a-2": [
+            "6a_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 9},
                 {"min": 2, "br": 24},
@@ -1711,7 +1711,7 @@ br = {
                 {"min": 8, "br": 86},
                 {"min": 9, "br": 98},
             ],
-            "6a-3": [
+            "6a_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 7},
                 {"min": 2, "br": 19},
@@ -1725,7 +1725,7 @@ br = {
                 {"min": 10, "br": 94},
                 {"min": 11, "br": 97},
             ],
-            "6b-1": [
+            "6b_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 52},
                 {"min": 2, "br": 68},
@@ -1735,7 +1735,7 @@ br = {
                 {"min": 6, "br": 89},
                 {"min": 7, "br": 98},
             ],
-            "6b-2": [
+            "6b_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 16},
                 {"min": 2, "br": 27},
@@ -1745,7 +1745,7 @@ br = {
                 {"min": 6, "br": 85},
                 {"min": 7, "br": 99},
             ],
-            "6b-3": [
+            "6b_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 31},
                 {"min": 2, "br": 59},
@@ -1755,7 +1755,7 @@ br = {
                 {"min": 6, "br": 96},
                 {"min": 7, "br": 97},
             ],
-            "7-1": [
+            "7_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 4},
                 {"min": 2, "br": 8},
@@ -1766,7 +1766,7 @@ br = {
                 {"min": 7, "br": 82},
                 {"min": 8, "br": 97},
             ],
-            "7-2": [
+            "7_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 3},
                 {"min": 2, "br": 6},
@@ -1779,7 +1779,7 @@ br = {
                 {"min": 9, "br": 85},
                 {"min": 10, "br": 99},
             ],
-            "7-3": [
+            "7_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 1},
                 {"min": 2, "br": 8},
@@ -1790,7 +1790,7 @@ br = {
                 {"min": 7, "br": 90},
                 {"min": 8, "br": 98},
             ],
-            "8a-1": [
+            "8a_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 28},
                 {"min": 2, "br": 43},
@@ -1802,7 +1802,7 @@ br = {
                 {"min": 8, "br": 94},
                 {"min": 9, "br": 97},
             ],
-            "8a-2": [
+            "8a_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 7},
                 {"min": 2, "br": 20},
@@ -1814,7 +1814,7 @@ br = {
                 {"min": 8, "br": 94},
                 {"min": 9, "br": 98},
             ],
-            "8a-3": [
+            "8a_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 24},
                 {"min": 2, "br": 29},
@@ -1829,7 +1829,7 @@ br = {
                 {"min": 11, "br": 97},
                 {"min": 12, "br": 99},
             ],
-            "8b-1": [
+            "8b_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 11},
                 {"min": 2, "br": 19},
@@ -1841,7 +1841,7 @@ br = {
                 {"min": 8, "br": 84},
                 {"min": 9, "br": 97},
             ],
-            "8b-2": [
+            "8b_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 15},
                 {"min": 2, "br": 35},
@@ -1853,7 +1853,7 @@ br = {
                 {"min": 8, "br": 92},
                 {"min": 9, "br": 99},
             ],
-            "8b-3": [
+            "8b_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 10},
                 {"min": 2, "br": 23},
@@ -1863,7 +1863,7 @@ br = {
                 {"min": 6, "br": 82},
                 {"min": 7, "br": 98},
             ],
-            "9-1": [
+            "9_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 12},
                 {"min": 2, "br": 24},
@@ -1876,7 +1876,7 @@ br = {
                 {"min": 9, "br": 94},
                 {"min": 10, "br": 99},
             ],
-            "9-2": [
+            "9_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 7},
                 {"min": 2, "br": 16},
@@ -1890,7 +1890,7 @@ br = {
                 {"min": 10, "br": 91},
                 {"min": 11, "br": 97},
             ],
-            "9-3": [
+            "9_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 23},
                 {"min": 2, "br": 40},
@@ -3100,7 +3100,7 @@ br = {
                 {"min": 15, "br": 95},
                 {"min": 16, "br": 100},
             ],
-            "1-1": [
+            "1_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 31},
                 {"min": 2, "br": 44},
@@ -3110,7 +3110,7 @@ br = {
                 {"min": 6, "br": 87},
                 {"min": 7, "br": 97},
             ],
-            "1-2": [
+            "1_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 39},
                 {"min": 2, "br": 65},
@@ -3120,7 +3120,7 @@ br = {
                 {"min": 6, "br": 99},
                 {"min": 7, "br": 100},
             ],
-            "1-3": [
+            "1_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 40},
                 {"min": 2, "br": 64},
@@ -3130,7 +3130,7 @@ br = {
                 {"min": 6, "br": 91},
                 {"min": 7, "br": 99},
             ],
-            "2a-1": [
+            "2a_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 14},
                 {"min": 2, "br": 26},
@@ -3142,7 +3142,7 @@ br = {
                 {"min": 8, "br": 92},
                 {"min": 9, "br": 99},
             ],
-            "2a-2": [
+            "2a_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 21},
                 {"min": 2, "br": 38},
@@ -3157,7 +3157,7 @@ br = {
                 {"min": 11, "br": 95},
                 {"min": 12, "br": 98},
             ],
-            "2a-3": [
+            "2a_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 19},
                 {"min": 2, "br": 33},
@@ -3169,7 +3169,7 @@ br = {
                 {"min": 8, "br": 94},
                 {"min": 9, "br": 97},
             ],
-            "2b-1": [
+            "2b_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 14},
                 {"min": 2, "br": 27},
@@ -3180,7 +3180,7 @@ br = {
                 {"min": 7, "br": 84},
                 {"min": 8, "br": 99},
             ],
-            "2b-2": [
+            "2b_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 43},
                 {"min": 2, "br": 60},
@@ -3191,7 +3191,7 @@ br = {
                 {"min": 7, "br": 97},
                 {"min": 8, "br": 98},
             ],
-            "2b-3": [
+            "2b_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 17},
                 {"min": 2, "br": 35},
@@ -3202,7 +3202,7 @@ br = {
                 {"min": 7, "br": 88},
                 {"min": 8, "br": 97},
             ],
-            "3-1": [
+            "3_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 10},
                 {"min": 2, "br": 29},
@@ -3212,7 +3212,7 @@ br = {
                 {"min": 6, "br": 96},
                 {"min": 7, "br": 99},
             ],
-            "3-2": [
+            "3_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 2},
                 {"min": 2, "br": 4},
@@ -3225,7 +3225,7 @@ br = {
                 {"min": 9, "br": 82},
                 {"min": 10, "br": 95},
             ],
-            "3-3": [
+            "3_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 2},
                 {"min": 2, "br": 7},
@@ -3236,7 +3236,7 @@ br = {
                 {"min": 7, "br": 90},
                 {"min": 8, "br": 98},
             ],
-            "4-1": [
+            "4_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 2},
                 {"min": 2, "br": 4},
@@ -3248,7 +3248,7 @@ br = {
                 {"min": 8, "br": 87},
                 {"min": 9, "br": 99},
             ],
-            "4-2": [
+            "4_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 2},
                 {"min": 2, "br": 6},
@@ -3263,7 +3263,7 @@ br = {
                 {"min": 11, "br": 86},
                 {"min": 12, "br": 98},
             ],
-            "4-3": [
+            "4_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 7},
                 {"min": 2, "br": 22},
@@ -3272,7 +3272,7 @@ br = {
                 {"min": 5, "br": 83},
                 {"min": 6, "br": 97},
             ],
-            "5-1": [
+            "5_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 4},
                 {"min": 2, "br": 8},
@@ -3285,7 +3285,7 @@ br = {
                 {"min": 9, "br": 85},
                 {"min": 10, "br": 99},
             ],
-            "5-2": [
+            "5_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 6},
                 {"min": 2, "br": 12},
@@ -3295,7 +3295,7 @@ br = {
                 {"min": 6, "br": 81},
                 {"min": 7, "br": 97},
             ],
-            "5-3": [
+            "5_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 19},
                 {"min": 2, "br": 47},
@@ -3306,7 +3306,7 @@ br = {
                 {"min": 7, "br": 98},
                 {"min": 8, "br": 99},
             ],
-            "6a-1": [
+            "6a_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 12},
                 {"min": 2, "br": 28},
@@ -3317,7 +3317,7 @@ br = {
                 {"min": 7, "br": 89},
                 {"min": 8, "br": 99},
             ],
-            "6a-2": [
+            "6a_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 6},
                 {"min": 2, "br": 20},
@@ -3329,7 +3329,7 @@ br = {
                 {"min": 8, "br": 97},
                 {"min": 9, "br": 98},
             ],
-            "6a-3": [
+            "6a_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 7},
                 {"min": 2, "br": 20},
@@ -3343,7 +3343,7 @@ br = {
                 {"min": 10, "br": 93},
                 {"min": 11, "br": 97},
             ],
-            "6b-1": [
+            "6b_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 89},
                 {"min": 2, "br": 73},
@@ -3353,7 +3353,7 @@ br = {
                 {"min": 6, "br": 89},
                 {"min": 7, "br": 95},
             ],
-            "6b-2": [
+            "6b_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 21},
                 {"min": 2, "br": 33},
@@ -3363,7 +3363,7 @@ br = {
                 {"min": 6, "br": 89},
                 {"min": 7, "br": 99},
             ],
-            "6b-3": [
+            "6b_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 39},
                 {"min": 2, "br": 62},
@@ -3373,7 +3373,7 @@ br = {
                 {"min": 6, "br": 93},
                 {"min": 7, "br": 97},
             ],
-            "7-1": [
+            "7_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 4},
                 {"min": 2, "br": 7},
@@ -3384,7 +3384,7 @@ br = {
                 {"min": 7, "br": 79},
                 {"min": 8, "br": 97},
             ],
-            "7-2": [
+            "7_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 3},
                 {"min": 2, "br": 4},
@@ -3397,7 +3397,7 @@ br = {
                 {"min": 9, "br": 84},
                 {"min": 10, "br": 99},
             ],
-            "7-3": [
+            "7_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 5},
                 {"min": 2, "br": 7},
@@ -3408,7 +3408,7 @@ br = {
                 {"min": 7, "br": 87},
                 {"min": 8, "br": 98},
             ],
-            "8a-1": [
+            "8a_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 33},
                 {"min": 2, "br": 51},
@@ -3420,7 +3420,7 @@ br = {
                 {"min": 8, "br": 93},
                 {"min": 9, "br": 97},
             ],
-            "8a-2": [
+            "8a_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 9},
                 {"min": 2, "br": 20},
@@ -3432,7 +3432,7 @@ br = {
                 {"min": 8, "br": 92},
                 {"min": 9, "br": 98},
             ],
-            "8a-3": [
+            "8a_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 22},
                 {"min": 2, "br": 30},
@@ -3447,7 +3447,7 @@ br = {
                 {"min": 11, "br": 96},
                 {"min": 12, "br": 99},
             ],
-            "8b-1": [
+            "8b_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 12},
                 {"min": 2, "br": 21},
@@ -3459,7 +3459,7 @@ br = {
                 {"min": 8, "br": 86},
                 {"min": 9, "br": 97},
             ],
-            "8b-2": [
+            "8b_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 12},
                 {"min": 2, "br": 30},
@@ -3471,7 +3471,7 @@ br = {
                 {"min": 8, "br": 90},
                 {"min": 9, "br": 99},
             ],
-            "8b-3": [
+            "8b_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 13},
                 {"min": 2, "br": 30},
@@ -3481,7 +3481,7 @@ br = {
                 {"min": 6, "br": 81},
                 {"min": 7, "br": 98},
             ],
-            "9-1": [
+            "9_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 12},
                 {"min": 2, "br": 30},
@@ -3494,7 +3494,7 @@ br = {
                 {"min": 9, "br": 96},
                 {"min": 10, "br": 99},
             ],
-            "9-2": [
+            "9_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 9},
                 {"min": 2, "br": 18},
@@ -3508,7 +3508,7 @@ br = {
                 {"min": 10, "br": 89},
                 {"min": 11, "br": 97},
             ],
-            "9-3": [
+            "9_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 24},
                 {"min": 2, "br": 42},
@@ -3522,7 +3522,7 @@ br = {
         },
     },
     "female": {
-        "13-15": {
+        "13_15": {
             "1": [
                 {"min": 0, "br": 1},
                 {"min": 2, "br": 4},
@@ -4736,7 +4736,7 @@ br = {
                 {"min": 15, "br": 90},
                 {"min": 16, "br": 95},
             ],
-            "1-1": [
+            "1_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 31},
                 {"min": 2, "br": 50},
@@ -4746,7 +4746,7 @@ br = {
                 {"min": 6, "br": 87},
                 {"min": 7, "br": 96},
             ],
-            "1-2": [
+            "1_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 46},
                 {"min": 2, "br": 67},
@@ -4756,7 +4756,7 @@ br = {
                 {"min": 6, "br": 97},
                 {"min": 7, "br": 98},
             ],
-            "1-3": [
+            "1_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 49},
                 {"min": 2, "br": 69},
@@ -4766,7 +4766,7 @@ br = {
                 {"min": 6, "br": 93},
                 {"min": 7, "br": 99},
             ],
-            "2a-1": [
+            "2a_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 17},
                 {"min": 2, "br": 30},
@@ -4778,7 +4778,7 @@ br = {
                 {"min": 8, "br": 92},
                 {"min": 9, "br": 99},
             ],
-            "2a-2": [
+            "2a_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 25},
                 {"min": 2, "br": 44},
@@ -4793,7 +4793,7 @@ br = {
                 {"min": 11, "br": 94},
                 {"min": 12, "br": 98},
             ],
-            "2a-3": [
+            "2a_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 15},
                 {"min": 2, "br": 29},
@@ -4805,7 +4805,7 @@ br = {
                 {"min": 8, "br": 90},
                 {"min": 9, "br": 97},
             ],
-            "2b-1": [
+            "2b_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 16},
                 {"min": 2, "br": 32},
@@ -4816,7 +4816,7 @@ br = {
                 {"min": 7, "br": 97},
                 {"min": 8, "br": 99},
             ],
-            "2b-2": [
+            "2b_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 44},
                 {"min": 2, "br": 59},
@@ -4827,7 +4827,7 @@ br = {
                 {"min": 7, "br": 97},
                 {"min": 8, "br": 98},
             ],
-            "2b-3": [
+            "2b_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 16},
                 {"min": 2, "br": 33},
@@ -4838,7 +4838,7 @@ br = {
                 {"min": 7, "br": 90},
                 {"min": 8, "br": 97},
             ],
-            "3-1": [
+            "3_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 7},
                 {"min": 2, "br": 23},
@@ -4848,7 +4848,7 @@ br = {
                 {"min": 6, "br": 91},
                 {"min": 7, "br": 99},
             ],
-            "3-2": [
+            "3_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 1},
                 {"min": 2, "br": 3},
@@ -4861,7 +4861,7 @@ br = {
                 {"min": 9, "br": 75},
                 {"min": 10, "br": 95},
             ],
-            "3-3": [
+            "3_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 2},
                 {"min": 2, "br": 8},
@@ -4872,7 +4872,7 @@ br = {
                 {"min": 7, "br": 95},
                 {"min": 8, "br": 97},
             ],
-            "4-1": [
+            "4_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 2},
                 {"min": 2, "br": 4},
@@ -4884,7 +4884,7 @@ br = {
                 {"min": 8, "br": 87},
                 {"min": 9, "br": 99},
             ],
-            "4-2": [
+            "4_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 2},
                 {"min": 2, "br": 5},
@@ -4899,7 +4899,7 @@ br = {
                 {"min": 11, "br": 90},
                 {"min": 12, "br": 98},
             ],
-            "4-3": [
+            "4_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 12},
                 {"min": 2, "br": 26},
@@ -4908,7 +4908,7 @@ br = {
                 {"min": 5, "br": 90},
                 {"min": 6, "br": 97},
             ],
-            "5-1": [
+            "5_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 6},
                 {"min": 2, "br": 9},
@@ -4921,7 +4921,7 @@ br = {
                 {"min": 9, "br": 87},
                 {"min": 10, "br": 99},
             ],
-            "5-2": [
+            "5_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 6},
                 {"min": 2, "br": 9},
@@ -4931,7 +4931,7 @@ br = {
                 {"min": 6, "br": 80},
                 {"min": 7, "br": 97},
             ],
-            "5-3": [
+            "5_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 26},
                 {"min": 2, "br": 46},
@@ -4942,7 +4942,7 @@ br = {
                 {"min": 7, "br": 96},
                 {"min": 8, "br": 99},
             ],
-            "6a-1": [
+            "6a_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 12},
                 {"min": 2, "br": 22},
@@ -4953,7 +4953,7 @@ br = {
                 {"min": 7, "br": 87},
                 {"min": 8, "br": 99},
             ],
-            "6a-2": [
+            "6a_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 16},
                 {"min": 2, "br": 28},
@@ -4965,7 +4965,7 @@ br = {
                 {"min": 8, "br": 96},
                 {"min": 9, "br": 98},
             ],
-            "6a-3": [
+            "6a_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 8},
                 {"min": 2, "br": 24},
@@ -4979,7 +4979,7 @@ br = {
                 {"min": 10, "br": 96},
                 {"min": 11, "br": 97},
             ],
-            "6b-1": [
+            "6b_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 62},
                 {"min": 2, "br": 75},
@@ -4989,7 +4989,7 @@ br = {
                 {"min": 6, "br": 93},
                 {"min": 7, "br": 98},
             ],
-            "6b-2": [
+            "6b_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 24},
                 {"min": 2, "br": 37},
@@ -4999,7 +4999,7 @@ br = {
                 {"min": 6, "br": 87},
                 {"min": 7, "br": 99},
             ],
-            "6b-3": [
+            "6b_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 42},
                 {"min": 2, "br": 70},
@@ -5009,7 +5009,7 @@ br = {
                 {"min": 6, "br": 94},
                 {"min": 7, "br": 97},
             ],
-            "7-1": [
+            "7_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 4},
                 {"min": 2, "br": 9},
@@ -5020,7 +5020,7 @@ br = {
                 {"min": 7, "br": 79},
                 {"min": 8, "br": 97},
             ],
-            "7-2": [
+            "7_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 2},
                 {"min": 2, "br": 3},
@@ -5033,7 +5033,7 @@ br = {
                 {"min": 9, "br": 82},
                 {"min": 10, "br": 99},
             ],
-            "7-3": [
+            "7_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 4},
                 {"min": 2, "br": 7},
@@ -5044,7 +5044,7 @@ br = {
                 {"min": 7, "br": 88},
                 {"min": 8, "br": 98},
             ],
-            "8a-1": [
+            "8a_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 31},
                 {"min": 2, "br": 47},
@@ -5056,7 +5056,7 @@ br = {
                 {"min": 8, "br": 91},
                 {"min": 9, "br": 97},
             ],
-            "8a-2": [
+            "8a_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 8},
                 {"min": 2, "br": 20},
@@ -5068,7 +5068,7 @@ br = {
                 {"min": 8, "br": 93},
                 {"min": 9, "br": 98},
             ],
-            "8a-3": [
+            "8a_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 22},
                 {"min": 2, "br": 40},
@@ -5083,7 +5083,7 @@ br = {
                 {"min": 11, "br": 98},
                 {"min": 12, "br": 99},
             ],
-            "8b-1": [
+            "8b_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 11},
                 {"min": 2, "br": 23},
@@ -5095,7 +5095,7 @@ br = {
                 {"min": 8, "br": 87},
                 {"min": 9, "br": 97},
             ],
-            "8b-2": [
+            "8b_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 22},
                 {"min": 2, "br": 33},
@@ -5107,7 +5107,7 @@ br = {
                 {"min": 8, "br": 92},
                 {"min": 9, "br": 99},
             ],
-            "8b-3": [
+            "8b_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 10},
                 {"min": 2, "br": 24},
@@ -5117,7 +5117,7 @@ br = {
                 {"min": 6, "br": 85},
                 {"min": 7, "br": 97},
             ],
-            "9-1": [
+            "9_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 20},
                 {"min": 2, "br": 30},
@@ -5130,7 +5130,7 @@ br = {
                 {"min": 9, "br": 93},
                 {"min": 10, "br": 99},
             ],
-            "9-2": [
+            "9_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 10},
                 {"min": 2, "br": 17},
@@ -5144,7 +5144,7 @@ br = {
                 {"min": 10, "br": 95},
                 {"min": 11, "br": 97},
             ],
-            "9-3": [
+            "9_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 26},
                 {"min": 2, "br": 43},
@@ -6371,7 +6371,7 @@ br = {
                 {"min": 15, "br": 90},
                 {"min": 16, "br": 95},
             ],
-            "1-1": [
+            "1_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 28},
                 {"min": 2, "br": 41},
@@ -6381,7 +6381,7 @@ br = {
                 {"min": 6, "br": 85},
                 {"min": 7, "br": 96},
             ],
-            "1-2": [
+            "1_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 49},
                 {"min": 2, "br": 69},
@@ -6391,7 +6391,7 @@ br = {
                 {"min": 6, "br": 97},
                 {"min": 7, "br": 98},
             ],
-            "1-3": [
+            "1_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 40},
                 {"min": 2, "br": 60},
@@ -6401,7 +6401,7 @@ br = {
                 {"min": 6, "br": 91},
                 {"min": 7, "br": 99},
             ],
-            "2a-1": [
+            "2a_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 12},
                 {"min": 2, "br": 24},
@@ -6413,7 +6413,7 @@ br = {
                 {"min": 8, "br": 94},
                 {"min": 9, "br": 99},
             ],
-            "2a-2": [
+            "2a_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 22},
                 {"min": 2, "br": 39},
@@ -6428,7 +6428,7 @@ br = {
                 {"min": 11, "br": 95},
                 {"min": 12, "br": 98},
             ],
-            "2a-3": [
+            "2a_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 18},
                 {"min": 2, "br": 31},
@@ -6440,7 +6440,7 @@ br = {
                 {"min": 8, "br": 90},
                 {"min": 9, "br": 97},
             ],
-            "2b-1": [
+            "2b_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 12},
                 {"min": 2, "br": 25},
@@ -6451,7 +6451,7 @@ br = {
                 {"min": 7, "br": 84},
                 {"min": 8, "br": 98},
             ],
-            "2b-2": [
+            "2b_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 39},
                 {"min": 2, "br": 53},
@@ -6462,7 +6462,7 @@ br = {
                 {"min": 7, "br": 96},
                 {"min": 8, "br": 98},
             ],
-            "2b-3": [
+            "2b_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 15},
                 {"min": 2, "br": 28},
@@ -6473,7 +6473,7 @@ br = {
                 {"min": 7, "br": 90},
                 {"min": 8, "br": 97},
             ],
-            "3-1": [
+            "3_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 10},
                 {"min": 2, "br": 27},
@@ -6483,7 +6483,7 @@ br = {
                 {"min": 6, "br": 97},
                 {"min": 7, "br": 99},
             ],
-            "3-2": [
+            "3_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 2},
                 {"min": 2, "br": 4},
@@ -6496,7 +6496,7 @@ br = {
                 {"min": 9, "br": 85},
                 {"min": 10, "br": 98},
             ],
-            "3-3": [
+            "3_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 2},
                 {"min": 2, "br": 7},
@@ -6507,7 +6507,7 @@ br = {
                 {"min": 7, "br": 93},
                 {"min": 8, "br": 97},
             ],
-            "4-1": [
+            "4_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 4},
                 {"min": 2, "br": 9},
@@ -6519,7 +6519,7 @@ br = {
                 {"min": 8, "br": 85},
                 {"min": 9, "br": 99},
             ],
-            "4-2": [
+            "4_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 2},
                 {"min": 2, "br": 5},
@@ -6534,7 +6534,7 @@ br = {
                 {"min": 11, "br": 87},
                 {"min": 12, "br": 97},
             ],
-            "4-3": [
+            "4_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 5},
                 {"min": 2, "br": 22},
@@ -6543,7 +6543,7 @@ br = {
                 {"min": 5, "br": 83},
                 {"min": 6, "br": 98},
             ],
-            "5-1": [
+            "5_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 6},
                 {"min": 2, "br": 11},
@@ -6556,7 +6556,7 @@ br = {
                 {"min": 9, "br": 85},
                 {"min": 10, "br": 99},
             ],
-            "5-2": [
+            "5_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 5},
                 {"min": 2, "br": 10},
@@ -6566,7 +6566,7 @@ br = {
                 {"min": 6, "br": 85},
                 {"min": 7, "br": 97},
             ],
-            "5-3": [
+            "5_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 15},
                 {"min": 2, "br": 47},
@@ -6577,7 +6577,7 @@ br = {
                 {"min": 7, "br": 95},
                 {"min": 8, "br": 98},
             ],
-            "6a-1": [
+            "6a_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 6},
                 {"min": 2, "br": 16},
@@ -6588,7 +6588,7 @@ br = {
                 {"min": 7, "br": 86},
                 {"min": 8, "br": 99},
             ],
-            "6a-2": [
+            "6a_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 10},
                 {"min": 2, "br": 24},
@@ -6600,7 +6600,7 @@ br = {
                 {"min": 8, "br": 87},
                 {"min": 9, "br": 98},
             ],
-            "6a-3": [
+            "6a_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 12},
                 {"min": 2, "br": 23},
@@ -6614,7 +6614,7 @@ br = {
                 {"min": 10, "br": 94},
                 {"min": 11, "br": 97},
             ],
-            "6b-1": [
+            "6b_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 59},
                 {"min": 2, "br": 75},
@@ -6624,7 +6624,7 @@ br = {
                 {"min": 6, "br": 90},
                 {"min": 7, "br": 98},
             ],
-            "6b-2": [
+            "6b_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 12},
                 {"min": 2, "br": 31},
@@ -6634,7 +6634,7 @@ br = {
                 {"min": 6, "br": 88},
                 {"min": 7, "br": 99},
             ],
-            "6b-3": [
+            "6b_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 43},
                 {"min": 2, "br": 72},
@@ -6644,7 +6644,7 @@ br = {
                 {"min": 6, "br": 88},
                 {"min": 7, "br": 97},
             ],
-            "7-1": [
+            "7_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 4},
                 {"min": 2, "br": 11},
@@ -6655,7 +6655,7 @@ br = {
                 {"min": 7, "br": 82},
                 {"min": 8, "br": 97},
             ],
-            "7-2": [
+            "7_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 1},
                 {"min": 2, "br": 3},
@@ -6668,7 +6668,7 @@ br = {
                 {"min": 9, "br": 87},
                 {"min": 10, "br": 99},
             ],
-            "7-3": [
+            "7_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 4},
                 {"min": 2, "br": 10},
@@ -6679,7 +6679,7 @@ br = {
                 {"min": 7, "br": 89},
                 {"min": 8, "br": 98},
             ],
-            "8a-1": [
+            "8a_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 26},
                 {"min": 2, "br": 47},
@@ -6691,7 +6691,7 @@ br = {
                 {"min": 8, "br": 93},
                 {"min": 9, "br": 97},
             ],
-            "8a-2": [
+            "8a_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 7},
                 {"min": 2, "br": 18},
@@ -6703,7 +6703,7 @@ br = {
                 {"min": 8, "br": 92},
                 {"min": 9, "br": 98},
             ],
-            "8a-3": [
+            "8a_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 24},
                 {"min": 2, "br": 31},
@@ -6718,7 +6718,7 @@ br = {
                 {"min": 11, "br": 94},
                 {"min": 12, "br": 99},
             ],
-            "8b-1": [
+            "8b_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 8},
                 {"min": 2, "br": 18},
@@ -6730,7 +6730,7 @@ br = {
                 {"min": 8, "br": 83},
                 {"min": 9, "br": 97},
             ],
-            "8b-2": [
+            "8b_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 12},
                 {"min": 2, "br": 32},
@@ -6742,7 +6742,7 @@ br = {
                 {"min": 8, "br": 98},
                 {"min": 9, "br": 99},
             ],
-            "8b-3": [
+            "8b_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 12},
                 {"min": 2, "br": 21},
@@ -6752,7 +6752,7 @@ br = {
                 {"min": 6, "br": 83},
                 {"min": 7, "br": 98},
             ],
-            "9-1": [
+            "9_1": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 12},
                 {"min": 2, "br": 24},
@@ -6765,7 +6765,7 @@ br = {
                 {"min": 9, "br": 96},
                 {"min": 10, "br": 99},
             ],
-            "9-2": [
+            "9_2": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 7},
                 {"min": 2, "br": 14},
@@ -6779,7 +6779,7 @@ br = {
                 {"min": 10, "br": 90},
                 {"min": 11, "br": 97},
             ],
-            "9-3": [
+            "9_3": [
                 {"min": 0, "br": 0},
                 {"min": 1, "br": 22},
                 {"min": 2, "br": 36},

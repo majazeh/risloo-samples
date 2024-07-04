@@ -50,6 +50,7 @@ class MACI93(Data):
         raw = self.score.get('raw')
         for i in dictionary.factors:
             rawScore = raw.get(i)
+            score.set(i, 0)
             if(i == 'x'):
                 list = dictionary.br.get('x')
             else:
@@ -163,3 +164,4 @@ class MACI93(Data):
             score.set('brstatus', 2)
             status = 2
         score.set('status', status)
+        
