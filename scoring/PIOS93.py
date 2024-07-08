@@ -18,4 +18,8 @@ class PIOS93(Data):
             except:
                 pass
         
+        score.set(dictionary.f1 + "_percentage", round(score.get(dictionary.f1) / 76, 3))
+        score.set(dictionary.f2 + "_percentage", round(score.get(dictionary.f2) / 44, 3))
+        score.set(dictionary.f3 + "_percentage", round(score.get(dictionary.f3) / 32, 3))
+        
         

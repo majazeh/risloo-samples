@@ -38,14 +38,15 @@ class MACI93(Data):
     def scoring_x(self, score):
         raw_x = (score.get('1') + score.get('2a')) * 1.5
         raw_x += (score.get('3') + score.get('4')+ score.get('7')) * 0.7
-        raw_x = score.get('2b') * 2
-        raw_x = score.get('6b') * 3
+        raw_x += score.get('2b') * 2
+        raw_x += score.get('6b') * 3
         raw_x += score.get('5') + score.get('6a')+ score.get('8a')+ score.get('8b')
         score.set('x', round(raw_x))
         
     def scoring_br(self, score):
         gender = 'male' if self.prerequisite('gender', 'user_answered') == 'male' else 'female'
         ageGroup = '13-15' if int(self.prerequisite('age', 'user_answered')) <= 15 else '16-19'
+        
         brGroup = dictionary.br.get(gender).get(ageGroup)
         raw = self.score.get('raw')
         for i in dictionary.factors:
@@ -56,10 +57,9 @@ class MACI93(Data):
             else:
                 list = brGroup.get(i)
             for j in list:
-                if(j.get('min') >= rawScore):
+                if(j.get('min') > rawScore):
                     break
                 score.set(i, j.get('br'))
-        
     def scoring_correction_x(self, score):
         listc = ['1','2a','2b','3','4','5','6a','6b','7','8a','8b','9']
         weight = 0
@@ -87,23 +87,22 @@ class MACI93(Data):
             ad = ff - 84
         elif (ff >= 85 and ee >= 85):
             ad = (ee - 84) + (ff - 84)
-        
         weight = 0
         for i in dictionary.correction_ad:
-            if(i.get('min') >= ad):
+            if(i.get('min') > ad):
                 break
             weight = i.get('weight')
         if(ad != None):
             for i in listc:
                 sc = score.get('br').get(i)
-                update = sc + weight
+                update = sc - weight
                 if (update < 1):
                     update = 1
                 elif (update > 115):
                     update = 115
                 score.get('br').set(i, update)
     def scoring_correction_dd(self, score):
-        listc = ['a','b','c','d','e','f','g','h','aa','bb','cc','dd','ee','ff','gg']
+        listc = ['a','b','c','d','e','f','g','h','aa','ee','ff','gg']
         br = score.get('br')
         dd = br.get('y') - br.get('z')
         absdd = abs(dd)
@@ -131,7 +130,6 @@ class MACI93(Data):
             if(score.get('br').get(i) > maxdc):
                 maxdc = score.get('br').get(i)
                 maxfc = i
-        
         if(maxfc == '4' or maxfc == '5' or maxfc == '7'):
             dc = 4
         elif (maxfc == '2b' or maxfc == '2a' or maxfc == '8b'):
@@ -157,8 +155,8 @@ class MACI93(Data):
         up = False
         listc = ['1','2a','2b','3','4','5','6a','6b','7','8a','8b']
         for i in listc:
-            if(score.get('br').get(i) > 60):
-                listc = True
+            if(score.get('br').get(i) >= 60):
+                up = True
         score.set('brstatus', 0)
         if(up == False):
             score.set('brstatus', 2)
