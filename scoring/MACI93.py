@@ -125,7 +125,7 @@ class MACI93(Data):
         maxdc = -100000
         maxfc = None
         dc = None
-        finder = ['1','2a','2b','3','4','5','6a','6b','7','8a','8b']
+        finder = ['1','3','5','4','7','8a','2a','6b','8b','6a','2b']
         for i in finder:
             if(score.get('br').get(i) > maxdc):
                 maxdc = score.get('br').get(i)
