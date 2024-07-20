@@ -44,7 +44,7 @@ class MACI93(Data):
         score.set('x', round(raw_x))
         
     def scoring_br(self, score):
-        gender = 'male' if self.prerequisite('gender', 'user_answered') == 'male' else 'female'
+        gender = 'male' if self.prerequisite('gender', 'user_answered') == '2' else 'female'
         ageGroup = '13-15' if int(self.prerequisite('age', 'user_answered')) <= 15 else '16-19'
         
         brGroup = dictionary.br.get(gender).get(ageGroup)
@@ -88,6 +88,8 @@ class MACI93(Data):
         elif (ff >= 85 and ee >= 85):
             ad = (ee - 84) + (ff - 84)
         weight = 0
+        if(ad == None):
+            return
         for i in dictionary.correction_ad:
             if(i.get('min') > ad):
                 break
