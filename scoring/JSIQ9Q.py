@@ -22,7 +22,8 @@ class JSIQ9Q(Data):
         }
         for i, key in enumerate(dictionary.section_1_items):
             answer = int(list[i].get('user_answered'))
-            answer = (answer - 1) if answer is not None else 1
+            answer = (answer - 1) if answer is not None else 0
+            answer = 0 if answer < 0 else answer
             section_1[key] = answer
             subfactor = dictionary.section_1_factor[i + 1]
             factorL[subfactor] += 1
