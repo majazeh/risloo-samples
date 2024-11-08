@@ -32,7 +32,7 @@ class Raven9A(Data):
                 score.set('iq', iq)
     
     def scoring_percentile(self, score):
-        iq = self.score.get('iq')
+        iq = self.score.get('iq') if self.score.get('iq') != None else 0
         operator = ''
         if isinstance(iq, str):
             operator = iq[0:1]
@@ -41,7 +41,7 @@ class Raven9A(Data):
         score.set('percentile', operator + str(dictionary.percentile[iq]))
     
     def scoring_report(self, score):
-        iq = self.score.get('iq')
+        iq = self.score.get('iq') if self.score.get('iq') != None else 0
         operator = None
         if isinstance(iq, str):
             operator = iq[0:1]
@@ -51,5 +51,6 @@ class Raven9A(Data):
                 break
         score.set('level', dictionary.level[i].get('level'))
         score.set('report', dictionary.level[i].get('title'))
+
 
             
