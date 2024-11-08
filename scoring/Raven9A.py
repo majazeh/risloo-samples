@@ -7,12 +7,11 @@ class Raven9A(Data):
         score.set(dictionary.factors_names, 0)
         score.set('pre', 0)
         for i, item in self.items():
-            pre = int(score.get('pre')) if score.get('pre') != None else 0
             if(item.get('user_answered') == None): continue
             if(i <= 11):
                 factor = dictionary.factors_paper1[i + 1] == item.get('user_answered')
                 score.increase('pre') if factor else None
-            if(i == 11 and pre < 6):
+            if(i == 11 and score.get('pre') < 6):
                 # score.set('report', 'No minimum number of corrects!' )
                 break
             if(i >= 12):
