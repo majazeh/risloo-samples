@@ -12,9 +12,9 @@ class SISRI93(Data):
             try:
                 answer = int(item.get('user_answered'))
                 if i+1 in dictionary.reversed_scoring_numbers:
-                    answer = 5 - answer
+                    answer = answer - 1
                 else:
-                    answer = answer - 1                
+                    answer = 5 - answer
                 factors = dictionary.factors[i + 1]     
                 score.increase('total', answer )
                 for factor in factors:
