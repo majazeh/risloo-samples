@@ -6,7 +6,6 @@ class Raven93(Data):
     def scoring_raw(self, score):
         score.set(dictionary.factors_names, 0)
         self.score.set('raw', 0)
-        self.score.set('pre', 0)
         self.score.set('iq', 0)
         self.score.set('percentile', 0)
         for i, item in self.items():
