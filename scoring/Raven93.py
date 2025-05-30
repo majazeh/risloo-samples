@@ -26,7 +26,7 @@ class Raven93(Data):
             score.set('iq', iq)
     
     def scoring_percentile(self, score):
-        iq = self.getIntIQ()
+        iq = self.getIntIQ() if self.getIntIQ() > 57 else 57
         score.set('percentile', dictionary.percentile[iq])
 
     def getIntIQ(self):
