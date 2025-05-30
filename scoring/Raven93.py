@@ -5,6 +5,10 @@ class Raven93(Data):
     scores = {'raw' :  None, 'iq' : None, 'percentile' : None, 'level' : None}
     def scoring_raw(self, score):
         score.set(dictionary.factors_names, 0)
+        self.score.set('raw', 0)
+        self.score.set('pre', 0)
+        self.score.set('iq', 0)
+        self.score.set('percentile', 0)
         for i, item in self.items():
             if(item.get('user_answered') == None): continue
             factor = dictionary.factors[i + 1] == item.get('user_answered')
