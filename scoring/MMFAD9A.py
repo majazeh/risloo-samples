@@ -1,3 +1,4 @@
+import math
 from Data import Data
 import scoring.dictionary.MMFAD9A as dictionary
 
@@ -6,21 +7,27 @@ class MMFAD9A(Data):
     
     def scoring_raw(self, score):
         option_numbers = dictionary.option_numbers
-        score.set(dictionary.factors_names, 0)
+        lists = {}
+        for factor in dictionary.factors_names:
+            lists[factor] = {
+                "raw" : 0,
+                "avg" : 0,
+                "report": ''
+            }
         for i, item in self.items():   
             try:
                 answer = int(item.get('user_answered')) 
                 factors = dictionary.factors[i + 1]
-                
-                if i+1 in dictionary.reverse_scoring_numbers:
-                    score.increase('raw' , option_numbers + 1 - answer )         
-                    for factor in factors:    
-                        score.increase(factor ,  option_numbers + 1 - answer)    
-                else :
-                    score.increase('raw' ,  answer )
-                    for factor in factors:     
-                        score.increase(factor , answer )    
+                for factor in factors:
+                    scoreAnswer = (option_numbers + 1 - answer) if i+1 in dictionary.reverse_scoring_numbers else answer
+                    lists[factor]['raw'] += scoreAnswer 
+                    lists[factor]['avg'] += 1
             except:
                 pass
+        for factor in lists:
+            avg = math.floor((lists[factor]['raw'] / lists[factor]['avg']) * 10) / 10
+            lists[factor]['avg'] = int(avg) if avg == int(avg) else avg
+            lists[factor]['report'] = 'healthy' if lists[factor]['avg'] < dictionary.CoP[factor] else 'unhealthy'
+            score.set(factor, lists[factor])
         
         

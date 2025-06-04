@@ -1,6 +1,6 @@
-f1= "secure_attachment"
-f2= "avoidant_attachment"
-f3= "ambivalence_attachment"
+f1= "secure"
+f2= "avoidant"
+f3= "ambivalence"
 
 
 

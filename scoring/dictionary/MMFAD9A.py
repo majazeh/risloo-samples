@@ -9,6 +9,16 @@ f7 = 'overall_performance'
 factors_names = (f1, f2, f3, f4, f5, f6, f7)
 option_numbers = 4
 
+CoP = {
+    'problem_solving': 2.2,
+    'roles': 2.3,
+    'affective_responsiveness': 2.2,
+    'communication': 2.2,
+    'affective_involvement': 2.1,
+    'behaviour_control': 1.9,
+    'overall_performance': 2,
+}
+
 factors = {
     2 :(f1, )
     , 12 :(f1, )
