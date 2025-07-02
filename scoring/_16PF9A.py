@@ -40,7 +40,7 @@ class _16PF9A(Data):
         for fi in factors:
             score.set(fi, factors[fi])
 
-        if(b_score >= 53):
+        if(b_score >= 59):
             score.set('status', 'invalid_b' if score.get('status') == 'valid' else 'invalid_b_final')
         score.set('b_count', b_score)
     
