@@ -56,7 +56,6 @@ class _16PF9A(Data):
             for level in selective_norm:
                 if(itemObject['raw'] >= level):
                     itemObject['value'] = selective_norm.get(level)
-                    print(fi, itemObject)
                     break
 
                 
