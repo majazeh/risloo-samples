@@ -1,4 +1,4 @@
-# factors_names = ('extraversion', 'anxiety', 'flexibility', 'independence', 'selfcontrol', 'adjustment', 'leadership', 'creativity', 'status')
+# factors_names = ('extraversion', 'anxiety', 'inflexibility', 'independence', 'selfcontrol', 'adjustment', 'leadership', 'creativity', 'status')
 # factors_names = list(factors_names)
 factors_names = ()
 f = ('a', 'b', 'c', 'e', 'f', 'g', 'h', 'i', 'l', 'm', 'n', 'o', 'q1', 'q2', 'q3', 'q4')

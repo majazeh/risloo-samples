@@ -62,9 +62,9 @@ class _16PF93(Data):
         score.set('anxiety', (-3 * score.get('c').get('value') - score.get('h').get('value') + score.get('l').get('value') + 3 * score.get('o').get('value') - score.get('q3').get('value') + 3 * score.get('q4').get('value') + 44) / 10)
         
         if gender == 2:
-            score.set('flexibility', (-2 * score.get('a').get('value') + 2 * score.get('f').get('value') - 6 * score.get('i').get('value') - 4 * score.get('m').get('value') - 2 * score.get('q1').get('value') + 121) / 10)
+            score.set('inflexibility', (-2 * score.get('a').get('value') + 2 * score.get('f').get('value') - 6 * score.get('i').get('value') - 4 * score.get('m').get('value') - 2 * score.get('q1').get('value') + 121) / 10)
         else:
-            score.set('flexibility', (-score.get('a').get('value') + 4 * score.get('e').get('value') + 2 * score.get('f').get('value') - 6 * score.get('i').get('value') + 2 * score.get('l').get('value') - 4 * score.get('m').get('value') + 72) / 10)
+            score.set('inflexibility', (-score.get('a').get('value') + 4 * score.get('e').get('value') + 2 * score.get('f').get('value') - 6 * score.get('i').get('value') + 2 * score.get('l').get('value') - 4 * score.get('m').get('value') + 72) / 10)
         
         if gender == 2:
             score.set('independence', (5 * score.get('e').get('value') - score.get('g').get('value') + 3 * score.get('h').get('value') + 2 * score.get('l').get('value') - score.get('n').get('value') - 2 * score.get('o').get('value') + 2 * score.get('q1').get('value') + score.get('q2').get('value') + 6) / 10)
