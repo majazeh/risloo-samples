@@ -1,3 +1,4 @@
+import math
 from Data import Data
 import scoring.dictionary.Raven93 as dictionary
 
@@ -5,13 +6,32 @@ class Raven93(Data):
     scores = {'raw' :  None, 'iq' : None, 'percentile' : None, 'level' : None}
     def scoring_raw(self, score):
         score.set(dictionary.factors_names, 0)
+        _sets = {
+            0: 'a',
+            1: 'b',
+            2: 'c',
+            3: 'd',
+            4: 'e'
+        }
+        sets = {
+            'a': 0,
+            'b': 0,
+            'c': 0,
+            'd': 0,
+            'e': 0
+        }
         self.score.set('raw', 0)
         self.score.set('iq', 0)
         self.score.set('percentile', 0)
         for i, item in self.items():
+            _setIndex = math.floor(i / 12)
+            _set = _sets[_setIndex]
             if(item.get('user_answered') == None): continue
             factor = dictionary.factors[i + 1] == item.get('user_answered')
             score.increase('raw') if factor else None
+            sets[_set] += 1 if factor else 0
+            
+        score.set('set', sets)
     
     def scoring_iq(self, score):
             age = int(self.prerequisite('age', 'user_answered'))
@@ -43,6 +63,6 @@ class Raven93(Data):
                 level = dictionary.level.get(iq_level)
                 break
         score.set('level', level.get('level'))
-        score.set('report', level.get('title'))    
+        score.set('report', level.get('title'))   
 
             

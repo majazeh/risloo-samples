@@ -132,13 +132,13 @@ percentile = {
 }
 
 level = {
-    149 : {'level' : 6, 'title' : 'حدود نابغه'},
-    125 : {'level' : 5, 'title' : 'بسیار ممتاز'},
-    113 : {'level' : 4, 'title' : 'ممتاز'},
-    89 : {'level' : 3, 'title' : 'متوسط'},
-    77 : {'level' : 2, 'title' : 'کودن (پایین‌تر از متوسط'},
-    65 : {'level' : 1, 'title' : 'عقب‌مانده مرزی'},
-    0 : {'level' : 0, 'title' : 'عقب‌مانده'},
+    149 : {'level' : 6, 'title' : 'Very superior'},
+    125 : {'level' : 5, 'title' : 'Superior'},
+    113 : {'level' : 4, 'title' : 'High average'},
+    89 : {'level' : 3, 'title' : 'Average'},
+    77 : {'level' : 2, 'title' : 'Low average'},
+    65 : {'level' : 1, 'title' : 'Borderline'},
+    0 : {'level' : 0, 'title' : 'Extremely low'},
 }
 
 factors_names = ('pre', 'raw', 'iq', 'percentile', 'report')
