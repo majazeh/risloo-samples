@@ -21,7 +21,6 @@ class YMQ93(Data):
                     factorList[factor]['count'] += 1
             except:
                 pass
-        print(factorList)
         for factor in factorList:
             score.set(factor, {
                 'raw': factorList[factor].get('raw'),
