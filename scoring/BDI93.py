@@ -30,7 +30,6 @@ class BDI93(Data):
                 else:
                     answer = option - 1
                 factors = dictionary.factors[i + 1]
-                print([i+1, option, answer])
                 if((i == 1 or i == 8) and answer != 0):
                     suicide_alert+=1
                 for factor in factors:

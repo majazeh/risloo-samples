@@ -23,9 +23,6 @@ class _16PF(Data):
                 self.converted_LR_scores = self.converted_LR_scores + (converted_score,)
         
         
-        print(self.converted_HR_scores)
-        print(self.converted_LR_scores)
-
         self.level_1_report(interpret)
         self.level_2_report(interpret)
         self.level_3_report(interpret)
