@@ -3,7 +3,7 @@ f2="other_oriented"
 f3="socially_prescribed"
 f4="total"
 
-factor_namse = (f1, f2, f3, f4)
+factor_names = (f1, f2, f3, f4)
 
 factors = {
     1: (f1, f4),
