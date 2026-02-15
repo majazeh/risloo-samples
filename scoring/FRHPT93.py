@@ -40,11 +40,11 @@ class FRHPT93(Data):
         
         for key in factors:
             factor = factors[key]
-            level = self.getLevel(key, factor['raw'])
-            factors[key]['level'] = level
             factors[key]['percentage'] = round(factors[key]['raw'] / (factors[key]['percentage'] * 6), 4)
             if(key == 'un' or key == 'sp'):
-                factors[key]['raw'] = factors[key]['raw'] * (4/3)
+                factors[key]['raw'] = round(factors[key]['raw'] * (4/3), 0)
+            level = self.getLevel(key, factor['raw'])
+            factors[key]['level'] = level
             score.set('factors', factors)
         vi,vr = self.vrin()
         li,lr = self.lie_scale()
