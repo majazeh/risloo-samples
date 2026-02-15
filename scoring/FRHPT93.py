@@ -8,7 +8,8 @@ class FRHPT93(Data):
         for fi in dictionary.factor_list:
             factors[fi] = {
                 'raw' : 0,
-                'level': 'extremely_low'
+                'level': 'extremely_low',
+                'percentage': 0
             }
         identical = [0] * 6
         consecutive = [[None, None]]
@@ -35,22 +36,22 @@ class FRHPT93(Data):
             item_factors = dictionary.factors.get(index, ())
             for factor in item_factors:
                 factors[factor]['raw'] += s
+                factors[factor]['percentage'] += 1
         
         for key in factors:
             factor = factors[key]
             level = self.getLevel(key, factor['raw'])
             factors[key]['level'] = level
+            factors[key]['percentage'] = round(factors[key]['raw'] / (factors[key]['percentage'] * 6), 4)
+            if(key == 'un' or key == 'sp'):
+                factors[key]['raw'] = factors[key]['raw'] * (4/3)
             score.set('factors', factors)
         vi,vr = self.vrin()
         li,lr = self.lie_scale()
         di, dr = self.defensiveness_scale(factors)
         mi, mr = self.midpoint_responses(median, noneMedian)
-        vdi, vdr = self.validity(identical, consecutive, median)
         indicators = {
-            'validity': {
-                'value': vdi,
-                'level': vdr
-            },
+            'validity': self.validity(identical, consecutive, median),
             'vrin' : {
                 'value': vi,
                 'level': vr
@@ -75,13 +76,27 @@ class FRHPT93(Data):
         consecutive.pop(0)
         consecutive = sorted([row[1] for row in consecutive], reverse=True)
         firstConsecutive = consecutive[0]
+        result = {
+            'identical': {
+                'value': firstIdentical,
+                'error': None
+            },
+            'consecutive': {
+                'value': firstConsecutive,
+                'error': None
+            },
+            'median': {
+                'value': median,
+                'error': None
+            }
+        }
         if(firstIdentical >= 166):
-            return [firstIdentical, 'exceeded identical responses threshold']
-        elif (firstConsecutive >= 40):
-            return [firstConsecutive, 'exceeded consecutive identical responses threshold']
-        elif (median >= 31):
-            return [median, 'exceeded median response threshold']
-        return [0, None]
+            result['identical']['error'] = 'exceeded identical responses threshold'
+        if (firstConsecutive >= 40):
+            result['consecutive']['error']= 'exceeded consecutive identical responses threshold'
+        if (median >= 31):
+            result['median']['error']= 'exceeded median response threshold'
+        return result
 
     def midpoint_responses(self, m, n):
         report = ''
@@ -108,7 +123,7 @@ class FRHPT93(Data):
             value = dictionary.defensiveness_scale[key]
             if value > 0 and factors[key]['raw'] >= value :
                 score += 1
-            elif value < 0 and factors[key]['raw'] <= value:
+            elif value < 0 and factors[key]['raw'] <= abs(value):
                 score += 1
         if score >= 35:
             report = 'extremely_high'
