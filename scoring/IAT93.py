@@ -5,13 +5,8 @@ class IAT93(Data):
     
     def scoring_raw(self, score):
         for i, item in self.items():   
-            try:
-                answer = int(item.get('user_answered')) 
-                factors = dictionary.factors[i + 1]
-                score.increase('raw' , answer )            
-           
-            except:
-                pass
+            answer = int(item.get('user_answered')) 
+            score.increase('raw' , answer )            
         raw = score.get('raw')
         score.set('percentage', round(raw / 20, 4))
         score.set('report', 'severe_addiction')
