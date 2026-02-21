@@ -70,4 +70,3 @@ factors = {
     
 
 }
-reverse_scoring_numbers = { f1 :(35,) , f2 : () ,f3 :() }

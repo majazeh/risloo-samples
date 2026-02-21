@@ -15,28 +15,27 @@ class JRAQ93(Data):
                 
         for i, item in self.items():   
             answer = int(item.get('user_answered')) 
-            if(i == 34):
+            if(i == 34 or i == 7):
+                clinicalScore = 0 if answer <= 2 else 1
+                answer = answer
+            else:
+                clinicalScore = 1 if answer <= 2 else 0
                 answer = 5 - answer
+                
             factors = dictionary.factors[i + 1]
-            clinicalScore = 0 if answer <= 2 else 1
             for factor in factors:
                 groups['clinical'][factor]['raw'] += clinicalScore
                 groups['clinical'][factor]['count'] += 1
                 
                 groups['research'][factor]['raw'] += answer - 1
                 groups['research'][factor]['count'] += 3
-                
-        for i, item in self.items():   
-            answer = int(item.get('user_answered'))
-            answer = answer if 'adherence' in dictionary.factors[i +1] else (5 - answer)
-            if(i == 34):
-                answer = 5 - answer
-            clinicalScore = 0 if answer <= 2 else 1
-            groups['clinical']['total']['raw'] += clinicalScore
-            groups['clinical']['total']['count'] += 1
             
-            groups['research']['total']['raw'] += answer - 1
-            groups['research']['total']['count'] += 3
+        
+        groups['clinical']['total']['raw'] += (21 - groups['clinical']['ambivalence']['raw']) + (17 - groups['clinical']['disobedience']['raw']) + groups['clinical']['adherence']['raw']
+        groups['clinical']['total']['count'] = 60
+        
+        groups['research']['total']['raw'] += (63 - groups['research']['ambivalence']['raw']) + (51 - groups['research']['disobedience']['raw']) + groups['research']['adherence']['raw']
+        groups['research']['total']['count'] = 180
         
         for group in groups:
             for factor in groups[group]:
