@@ -23,7 +23,8 @@ class BSSI93(Data):
             except:
                 pass
         for factor in list:
-            list[factor]['percentage'] = round(list[factor]['raw'] / (list[factor]['count'] * 5), 2)
+            max_score = list[factor]['count'] * 2  # هر گویه حداکثر ۲ امتیاز دارد (گزینه۱=۰، گزینه۲=۱، گزینه۳=۲)
+            list[factor]['percentage'] = round(list[factor]['raw'] / max_score, 2) if max_score else 0
             score.set(factor, {
                 'raw': list[factor]['raw'],
                 'percentage': list[factor]['percentage']

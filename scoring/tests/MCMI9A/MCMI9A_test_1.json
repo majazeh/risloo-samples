@@ -1,0 +1,608 @@
+{
+    "title": "IV",
+    "prerequisites": [
+        {
+            "label": "gender",
+            "user_answered": "2"
+        },
+        {
+            "label": "age",
+            "user_answered": "37"
+        },
+        {
+            "label": "education",
+            "user_answered": "8"
+        },
+        {
+            "label": "marital_status",
+            "user_answered": "1"
+        }
+    ],
+    "items": [
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "1"
+        },
+        {
+            "user_answered": "2"
+        },
+        {
+            "user_answered": "2"
+        }
+    ]
+}
