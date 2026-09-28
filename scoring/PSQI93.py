@@ -9,9 +9,9 @@ import re
 # ترتیب گویه‌ها در فرم: Q1..Q4 ، Q5a..Q5j ، Q6..Q9  (18 گویه)
 # Q1/Q3 ساعت کامل 0..23 بدون دقیقه (P1، بازنگری 2026-09-24) ، Q2 دقیقه ، Q4 ساعت اعشاری ، بقیه گزینه‌ای 1..4 -> کد 0..3
 #
-# هیچ گویه‌ای معکوس نمی‌شود. مولفه وابسته به پاسخ مفقود یا نامعتبر، ناموجود (None) است؛
+# هیچ گویه‌ای معکوس نمی‌شود. مولفه وابسته به پاسخ مفقود یا غیرقابل‌محاسبه، ناموجود (None) است؛
 # تنها استثنا Q5j است (اصلاح 20 مه 2005): فراوانی یا توضیح مفقود => 0.
-# نمایش همه‌یا‌هیچ: اگر حتی یک مولفه ناموجود باشد، status = invalid و هیچ نمره‌ای خروجی نمی‌گیرد.
+# بازنگری 2026-09-28: نمره‌های قابل‌محاسبه همیشه حفظ می‌شوند؛ اعتبار و علت‌ها جدا گزارش می‌شوند.
 
 Q1, Q2, Q3, Q4 = 0, 1, 2, 3
 Q5A, Q5J = 4, 13
@@ -32,6 +32,16 @@ components = [
 
 MISSING = object()
 INVALID = object()
+
+REASONS = {
+    'missing': 'پاسخ‌های ضروری ناقص‌اند',
+    'clock': 'قالب ساعت نامعتبر',
+    'equal_times': 'زمان خواب‌وبیداری یکسان',
+    'sleep_exceeds_bed': 'مدت خواب بیشتر از مدت حضور در بستر',
+    'number': 'پاسخ عددی نامعتبر',
+    'duration': 'مدت خواب غیرمجاز',
+    'category': 'گزینهٔ پاسخ نامعتبر',
+}
 
 # نرمال‌سازی نمایشی اعداد فارسی/عربی؛ گزینه، واحد و معنا عوض نمی‌شود.
 _DIGITS = str.maketrans('۰۱۲۳۴۵۶۷۸۹٠١٢٣٤٥٦٧٨٩٫', '01234567890123456789.')
@@ -55,9 +65,9 @@ def category(value):
     text = _text(value)
     if text is None:
         return MISSING
-    if not text.isdigit() or not 1 <= int(text) <= 4:
+    if not text.isascii() or not text.isdigit() or text.lstrip('0') not in ('1', '2', '3', '4'):
         return INVALID
-    return int(text) - 1
+    return int(text.lstrip('0')) - 1
 
 
 def number(value):
@@ -81,7 +91,10 @@ def number(value):
         return MISSING
     if not _NUMBER.match(text):
         return INVALID
-    return Fraction(text)
+    try:
+        return Fraction(text)
+    except (ValueError, OverflowError):
+        return INVALID
 
 
 def clock(value):
@@ -157,8 +170,10 @@ def disturbances(total):
     return 3
 
 
-def compute(answers, q5j_description=None):
-    """answers: فهرست 18 پاسخ خام به ترتیب فرم ؛ خروجی: فهرست هفت مولفه C1..C7 (None = ناموجود)."""
+def evaluate(answers, q5j_description=None):
+    """Return the seven available components and distinct validity reasons."""
+    answers = list(answers) if isinstance(answers, (list, tuple)) else []
+    answers = (answers + [None] * 18)[:18]
     q2, q4 = number(answers[Q2]), number(answers[Q4])
     bed, rise = clock(answers[Q1]), clock(answers[Q3])
     q5a = category(answers[Q5A])
@@ -166,19 +181,38 @@ def compute(answers, q5j_description=None):
     q5j = category(answers[Q5J])
     q6, q7, q8, q9 = (category(answers[i]) for i in (Q6, Q7, Q8, Q9))
 
-    # P2: ساعت خواب واقعی بیش از 24 نامعتبر است.
+    reasons = []
+
+    def flag(key):
+        if REASONS[key] not in reasons:
+            reasons.append(REASONS[key])
+
+    required = [q2, q4, bed, rise, q5a, *q5, q6, q7, q8, q9]
+    if any(value is MISSING for value in required):
+        flag('missing')
+    if any(value is INVALID for value in (bed, rise)):
+        flag('clock')
+    if any(value is INVALID for value in (q2, q4)):
+        flag('number')
+    if any(value is INVALID for value in (q5a, *q5, q5j, q6, q7, q8, q9)):
+        flag('category')
     if ok(q4) and q4 > 24:
-        q4 = INVALID
+        flag('duration')
 
     c1 = q6 if ok(q6) else None
     c2 = pair(latency_minutes(q2) + q5a) if ok(q2, q5a) else None
     c3 = duration(q4) if ok(q4) else None
 
     c4 = None
-    if ok(q4, bed, rise):
+    if ok(bed, rise):
         in_bed = (rise - bed) % (24 * 60)   # فاصله رو به جلو، با عبور از نیمه‌شب
-        # ساعت‌های برابر مبهم‌اند؛ خواب بیش از زمان بستر نامعتبر است و به 100٪ بریده نمی‌شود.
-        if in_bed != 0 and q4 * 60 <= in_bed:
+        if in_bed == 0:
+            flag('equal_times')
+        elif ok(q4):
+            # Retain the mathematical score even for contradictory durations.
+            # The ratio is not clipped; invalidity is reported independently.
+            if q4 * 60 > in_bed:
+                flag('sleep_exceeds_bed')
             c4 = efficiency(100 * q4 * 60 / in_bed)
 
     # Q5j مؤثر: فراوانی مفقود یا توضیح خالی => 0 ؛ فراوانی نامعتبر => C5 ناموجود.
@@ -191,7 +225,12 @@ def compute(answers, q5j_description=None):
 
     c6 = q7 if ok(q7) else None
     c7 = pair(q8 + q9) if ok(q8, q9) else None
-    return [c1, c2, c3, c4, c5, c6, c7]
+    return [c1, c2, c3, c4, c5, c6, c7], reasons
+
+
+def compute(answers, q5j_description=None):
+    """Compatibility helper: seven components C1..C7 (None = unavailable)."""
+    return evaluate(answers, q5j_description)[0]
 
 
 class PSQI93(Data):
@@ -199,14 +238,19 @@ class PSQI93(Data):
 
     def scoring_raw(self, score):
         items = self.get_items_entirely()
+        items = items if isinstance(items, (list, tuple)) else []
+        items = [item if isinstance(item, dict) else {} for item in items]
         answers = [item.get('user_answered') for item in items]
-        vector = compute(answers, items[Q5J].get('user_description'))
+        description = items[Q5J].get('user_description') if len(items) > Q5J else None
+        vector, reasons = evaluate(answers, description)
 
-        valid = all(c is not None for c in vector)
+        complete = all(c is not None for c in vector)
+        valid = complete and not reasons
         score.set('status', 'valid' if valid else 'invalid')
+        score.set('invalid_reasons', '؛ '.join(reasons) if reasons else None)
         for name, value in zip(components, vector):
-            score.set(name, value if valid else None)
-        total = sum(vector) if valid else None
+            score.set(name, value)
+        total = sum(vector) if complete else None
         score.set('total', total)
         # نشانگر غربال دوتایی روی نمره کل، نه تشخیص و نه درجه‌بندی شدت.
         score.set('screening', None if total is None else ('positive' if total >= CUTOFF else 'negative'))
