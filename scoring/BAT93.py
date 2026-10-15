@@ -45,10 +45,19 @@ class BAT93(Data):
 
     @staticmethod
     def _answer(item, index):
+        value = item.get('user_answered')
+        # JSON answers may be numbers or integer strings. Reject booleans and
+        # fractional numbers instead of letting int() silently truncate them.
+        if isinstance(value, bool) or not isinstance(value, (int, float, str)):
+            raise ValueError('BAT93 item {} must have an integer answer'.format(index))
+
         try:
-            answer = int(item.get('user_answered'))
-        except (TypeError, ValueError):
-            raise ValueError('BAT93 item {} is unanswered'.format(index))
+            answer = int(value)
+        except (TypeError, ValueError, OverflowError):
+            raise ValueError('BAT93 item {} must have an integer answer'.format(index))
+
+        if isinstance(value, float) and value != answer:
+            raise ValueError('BAT93 item {} must have an integer answer'.format(index))
 
         if not 1 <= answer <= dictionary.options:
             raise ValueError('BAT93 item {} answer {} is outside 1..{}'.format(
