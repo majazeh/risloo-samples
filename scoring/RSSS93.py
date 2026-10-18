@@ -16,11 +16,12 @@ from Data import Data
 # محاسبه بر جمع دقیق گویه‌هاست و گردکردن فقط آخرین گام است: دو رقم اعشار، نیمه به بالا، با حساب
 # صحیح (نه round() که نیمه را به زوج می‌برد، و نه بریدن). شش مولفه همیشه دقیق‌اند (گام 0.2 یا
 # 0.25)؛ فقط total گرد می‌شود. مقدار گردشده همان عددی است که نمایش داده می‌شود و هیچ محاسبه‌ای
-# از آن ساخته نمی‌شود. جمع خام، درصد، صدک، نمرهٔ استاندارد، طبقه، برچسب و «حوزهٔ غالب» نه محاسبه
-# می‌شود و نه ذخیره.
+# از آن ساخته نمی‌شود. درصد هر حوزه و کل مستقیماً از جمع دقیق پاسخ‌های همان حوزه ساخته می‌شود:
+# نسبت به بیشینه، گردکردن نیمه به بالا به درصد صحیح، سپس تقسیم بر ۱۰۰؛ ذخیره با پسوند _percent
+# در بازهٔ 0..1. صدک، نمرهٔ استاندارد، طبقه، برچسب و «حوزهٔ غالب» ساخته نمی‌شوند.
 #
 # همه‌یا‌هیچ: یک پاسخ مفقود (incomplete) یا یک مقدار بیرون از 1..5 و شمار گویه جز ۲۶ (invalid)
-# هر هفت نمره را None می‌کند؛ پاسخ مفقود با 1 یا هر مقدار دیگری پر نمی‌شود و «بی‌نمره» صفر نیست.
+# هر هفت میانگین و هفت درصد را None می‌کند؛ پاسخ مفقود با 1 یا هر مقدار دیگری پر نمی‌شود و «بی‌نمره» صفر نیست.
 
 ITEMS = 26
 OPTIONS = 5
@@ -62,7 +63,7 @@ def mean(total, count):
 
 def compute(answers):
     """answers: پاسخ‌های خام به ترتیب فرم ؛ خروجی: (status, {نمره: مقدار})."""
-    empty = {name: None for name in SCALES}
+    empty = {key: None for name in SCALES for key in (name, name + '_percent')}
     if len(answers) != ITEMS:
         return 'invalid', empty
     values = [value(a) for a in answers]
@@ -70,8 +71,13 @@ def compute(answers):
         return 'invalid', empty
     if any(v is MISSING for v in values):
         return 'incomplete', empty
-    return 'valid', {name: mean(sum(values[n - 1] for n in items), len(items))
-                     for name, items in SCALES.items()}
+    scores = {}
+    for name, items in SCALES.items():
+        raw = sum(values[n - 1] for n in items)
+        maximum = len(items) * OPTIONS
+        scores[name] = mean(raw, len(items))
+        scores[name + '_percent'] = ((200 * raw + maximum) // (2 * maximum)) / 100
+    return 'valid', scores
 
 
 class RSSS93(Data):
