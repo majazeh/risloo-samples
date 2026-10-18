@@ -7,6 +7,9 @@ f5 = 'spiritual_influences'
 factors_names = (f1,f2,f3,f4,f5)
 option_numbers = 5
 
+# Highest possible raw score of each factor: items × 4
+maxes = {f1: 32, f2: 28, f3: 20, f4: 12, f5: 8}
+
 factors = {
     10 :(f1,)
     ,11 :(f1,)

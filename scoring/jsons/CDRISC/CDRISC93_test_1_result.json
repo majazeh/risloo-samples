@@ -1,7 +1,22 @@
 {
-    "personal_competence": 15,
-    "trust_in_ones_instincts_and_tolerance_of_negative_affect": 16,
-    "positive_acceptance_of_change_and_secure_relationship": 5,
-    "control": 5,
-    "spiritual_influences": 0
+    "personal_competence": {
+        "raw": 15,
+        "percent": 0.469
+    },
+    "trust_in_ones_instincts_and_tolerance_of_negative_affect": {
+        "raw": 16,
+        "percent": 0.571
+    },
+    "positive_acceptance_of_change_and_secure_relationship": {
+        "raw": 5,
+        "percent": 0.25
+    },
+    "control": {
+        "raw": 5,
+        "percent": 0.417
+    },
+    "spiritual_influences": {
+        "raw": 0,
+        "percent": 0.0
+    }
 }
