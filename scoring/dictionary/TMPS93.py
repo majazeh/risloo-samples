@@ -5,6 +5,9 @@ f4="total"
 
 factors_names = (f1, f2, f3, f4)
 
+# Highest possible raw score of each factor: items × 5
+maxes = {f1: 50, f2: 50, f3: 50, f4: 150}
+
 factors = {
     1: (f1, f4),
     2: (f1, f4),
