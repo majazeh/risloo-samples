@@ -1,7 +1,23 @@
 {
-    "level_1": 3,
-    "level_4": 2,
-    "level_3": 5,
-    "level_2": 5,
+    "level_1": {
+        "raw": 3,
+        "percent": 0.2
+    },
+    "level_2": {
+        "raw": 5,
+        "percent": 0.333
+    },
+    "level_3": {
+        "raw": 5,
+        "percent": 0.333
+    },
+    "level_4": {
+        "raw": 2,
+        "percent": 0.133
+    },
+    "total": {
+        "raw": 36,
+        "percent": 0.6
+    },
     "psdi": "level_2,level_3"
 }

@@ -6,6 +6,13 @@ f4 = 'level_4'
 option_numbers = 4
 
 factors_names = (f1,f2,f3,f4)
+
+# Highest possible raw score of each stage: one option per set × 15 sets
+maxes = {f1: 15, f2: 15, f3: 15, f4: 15}
+
+# Total = Σ stage count × stage number; 15 sets × 4 at most
+weights = {f1: 1, f2: 2, f3: 3, f4: 4}
+total_max = 60
 factors = {
     1 :{1 :f4 , 2:f3 , 3:f1 , 4:f2}
     , 2 :{1 :f3 , 2:f2 , 3:f4 , 4:f1}
