@@ -1,4 +1,10 @@
 {
-    "satisfaction": 26,
-    "efficiency": 19
+    "satisfaction": {
+        "raw": 26,
+        "percent": 0.48
+    },
+    "efficacy": {
+        "raw": 19,
+        "percent": 0.45
+    }
 }

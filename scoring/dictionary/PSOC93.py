@@ -1,9 +1,12 @@
 f1 = 'satisfaction'
-f2 = 'efficiency'
+f2 = 'efficacy'
 
 option_numbers = 6
 
 factors_names = (f1,f2)
+
+# Highest possible raw score of each factor: items × 6
+maxes = {f1: 54, f2: 42}
 
 factors = { 
     2 :(f1,)
