@@ -4,9 +4,15 @@ f3 = 'fear_of_others_judgment'
 f4 = 'preoccupation_with_self_worth'
 
 
+total = 'total'
+
+
 option_numbers = 5
 
-factors_names = ('raw',f1,f2,f3,f4)
+factors_names = (total,f1,f2,f3,f4)
+
+# Highest possible raw score of each: items x 4 (options score 0..4)
+maxes = {total: 76, f1: 28, f2: 16, f3: 16, f4: 16}
 
 factors = {
     4 :(f1,)
