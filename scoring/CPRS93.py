@@ -4,14 +4,14 @@ from Data import Data
 from scoring.dictionary.CPRS93 import NORMS_1978, PERSIAN_TABLES
 
 # CPRS93 — فرم کوتاه ویژهٔ والدین مقیاس درجه‌بندی کانرز (CPRS-48)، ۴۸ گویه، گزارش والد.
-# مرجع: CPRS_impl_scoring_norms_fa.md (بستهٔ CPRS48-FA-SH2007-D1).
+# مرجع: CPRS_impl_scoring_norms_fa.md (بستهٔ CPRS48-FA-SH2007-D2).
 #
 # هر گویه چهار گزینه دارد؛ گزینهٔ 1..4 -> ارزش خام 0..3. گویهٔ معکوس ندارد.
 # دو نمره‌گذاری از یک پاسخ‌نامه:
-#   بلوک ۱، عوامل کلاسیک ۱۹۷۸ (classic_*): نمره میانگین گویه‌ها؛
-#     T = 50 + 10 × (میانگین − M) ÷ SD با M و SD جنسیت و گروه سنی کودک (۶..۸ یا ۹..۱۱)،
-#     میانگین گردنشده در فرمول، T گرد به نزدیک‌ترین عدد صحیح و نیمه رو به بالا، بی‌سقف (۳۳..۱۷۵)؛
-#     میانگین برای نمایش دو رقم اعشار، نیمه رو به بالا. رتبهٔ درصدی ندارد.
+#   بلوک ۱، عوامل کلاسیک ۱۹۷۸ (classic_*): نمرهٔ خام جمع گویه‌ها (D2، ۲۰۲۶-۱۱-۱۱)؛
+#     T = 50 + 10 × (میانگین − M) ÷ SD با میانگین = خام ÷ شمار گویه‌ها، چون هنجار ۱۹۷۸ میانگین گویه است،
+#     و M و SD جنسیت و گروه سنی کودک (۶..۸ یا ۹..۱۱)؛ میانگین گردنشده در فرمول، T گرد به نزدیک‌ترین
+#     عدد صحیح و نیمه رو به بالا، بی‌سقف (۳۳..۱۷۵). میانگین نگه داشته نمی‌شود. رتبهٔ درصدی ندارد.
 #   بلوک ۲، عوامل منبع فارسی (persian_*): نمره جمع گویه‌ها؛ T و رتبهٔ درصدی از جدول، بی‌تفکیک سن و جنسیت.
 #     گویه‌های ۱۱ و ۱۳ در conduct و psychosomatic هر دو؛ total جمع هر ۴۸ گویه است، نه جمع عامل‌ها.
 #     رتبهٔ درصدی متن است: عدد، یا با «<» همان‌طور که در جدول آمده.
@@ -65,7 +65,7 @@ def half_up(value, places):
 
 
 def empty():
-    keys = [f'classic_{name}_{part}' for name in CLASSIC for part in ('mean', 't')]
+    keys = [f'classic_{name}_{part}' for name in CLASSIC for part in ('raw', 't')]
     keys += [f'persian_{name}_{part}' for name in list(PERSIAN) + ['total'] for part in ('raw', 't', 'pr')]
     return {key: None for key in keys}
 
@@ -89,9 +89,10 @@ def compute(answers, child_gender, child_age):
     norms = NORMS_1978[(CHILD_GENDER[gender], group)]
     result = {}
     for name, numbers in CLASSIC.items():
-        mean = Fraction(sum(item[n] for n in numbers), len(numbers))
+        raw = sum(item[n] for n in numbers)
+        mean = Fraction(raw, len(numbers))
         m, sd = (Fraction(Decimal(x)) for x in norms[name])
-        result[f'classic_{name}_mean'] = float(half_up(mean, 2))
+        result[f'classic_{name}_raw'] = raw
         result[f'classic_{name}_t'] = int(half_up(50 + 10 * (mean - m) / sd, 0))
     sums = {name: sum(item[n] for n in numbers) for name, numbers in PERSIAN.items()}
     sums['total'] = sum(item.values())
