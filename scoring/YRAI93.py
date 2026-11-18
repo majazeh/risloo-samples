@@ -3,7 +3,7 @@ from decimal import Decimal, ROUND_HALF_UP
 from Data import Data
 import scoring.dictionary.YRAI93 as dictionary
 
-# YRAI — آزمون اجتناب یانگ و ریگ. 40 items, options 1..6 («کاملاً غلط» .. «کاملاً درست»)
+# YRAI — آزمون اجتناب یانگ-رای. 40 items, options 1..6 («کاملاً غلط» .. «کاملاً درست»)
 # scored as chosen; no reversed item. Items 9, 13 and 40 count in two factors each.
 #   intentionally_not_thinking_about_upsetting_things  = 3 items  (3..18)
 #   substance_abuse                                    = 3 items  (3..18)
